@@ -24,7 +24,26 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h1 className="mb-[14px] text-[18px]">Platform</h1>
+                        <h1 className="mb-[14px] text-[18px]">Usecases</h1>
+                        <div className="flex flex-col gap-[6px]">
+                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
+                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
+                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
+                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="mb-[14px] text-[18px]">Company</h1>
+                        <div className="flex flex-col gap-[6px]">
+                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
+                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
+                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
+                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
+                            <Link className="font-[200] text-gray-600" href={"/"}>Chat Embed</Link>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="mb-[14px] text-[18px]">Work with us</h1>
                         <div className="flex flex-col gap-[6px]">
                             <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
@@ -36,39 +55,11 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h1 className="mb-[14px] text-[18px]">Platform</h1>
+                        <h1 className="mb-[14px] text-[18px]">Legal</h1>
                         <div className="flex flex-col gap-[6px]">
                             <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Chat Embed</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Blogs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Integrations</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="mb-[14px] text-[18px]">Platform</h1>
-                        <div className="flex flex-col gap-[6px]">
-                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Chat Embed</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Blogs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Integrations</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="mb-[14px] text-[18px]">Platform</h1>
-                        <div className="flex flex-col gap-[6px]">
-                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Chat Embed</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Blogs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Integrations</Link>
                         </div>
                     </div>
                 </div>
