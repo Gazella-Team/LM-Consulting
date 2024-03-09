@@ -11,22 +11,22 @@ const GazellaTeamFont = localFont({
       style: 'normal',
     },
     {
-      path: '../Fonts/stolzl_medium.otf',
+      path: '../fonts/stolzl_medium.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../Fonts/stolzl_regular.otf',
+      path: '../fonts/stolzl_regular.otf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../Fonts/stolzl_book.otf',
+      path: '../fonts/stolzl_book.otf',
       weight: '200',
       style: 'normal',
     },
     {
-      path: '../Fonts/stolzl_light.otf',
+      path: '../fonts/stolzl_light.otf',
       weight: '100',
       style: 'normal',
     },
