@@ -11,6 +11,11 @@ const GazellaTeamFont = localFont({
       style: 'normal',
     },
     {
+      path: '../Fonts/stolzl_medium.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
       path: '../Fonts/stolzl_regular.otf',
       weight: '300',
       style: 'normal',

@@ -13,7 +13,7 @@ export default function Prices() {
     return (
         <section className="bg-white flex flex-col pb-[100px]">
             <div className="w-[90%] mx-auto max-w-[1200px] text-center">
-                <div className="grid grid-cols-4 gap-[24px] mt-[-400px] mb-[50px]">
+                <div className="grid grid-cols-4 gap-[24px] mt-[-360px] mb-[50px]">
                     {pricingData.map((v:any, index) => <PriceCard key={index} Obj={v} />)}
                 </div>
                 <p className="font-[200] text-[14px] text-gray-400">All prices are listed without danish VAT. VAT will only be applied for Danish (DK) companies. All plans have a commitment period of minimum 12 months.</p>
@@ -27,7 +27,8 @@ const PriceCard = (props:any) => {
         props.Obj.vfm ?   
         
         <Reveal delayTime={0}>
-        <div className="shadow-clean bg-white rounded-[14px] text-left p-[24px] flex flex-col gap-[30px]">
+        <div className="shadow-clean border-[5px] border-yellow-400 bg-white rounded-[14px] text-left p-[24px] flex flex-col gap-[30px]">
+            <p className="absolute mt-[-70px] text-yellow-400 ml-[54px]">Most popular</p>
         <Reveal delayTime={0}>
             <div>
                 <h2 className="text-[24px] font-[300] text-gray-800">{props.Obj.planName}</h2>
@@ -67,7 +68,7 @@ const PriceCard = (props:any) => {
         </Reveal>
     </div>
     </Reveal>:        <Reveal delayTime={0}>
-            <div className="shadow-clean rounded-[14px] bg-white text-left p-[24px] flex flex-col gap-[30px]">
+            <div className="shadow-clean border-[5px] border-white rounded-[14px] bg-white text-left p-[24px] flex flex-col gap-[30px]">
             <Reveal delayTime={0}>
                 <div>
                     <h2 className="text-[24px] font-[300] text-gray-800">{props.Obj.planName}</h2>
