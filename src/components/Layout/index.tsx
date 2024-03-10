@@ -63,7 +63,7 @@ export default function Layout({
           </div >:null}
           <div className={noticeActive ? "pt-[50px]":""}>
           <Navbar white={mode === "white"} />
-            <div>
+            <div className={mode === "white" ? "pt-[80px]":""}>
                 {children}
             </div>
             <Footer />

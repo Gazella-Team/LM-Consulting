@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="py-[50px] flex justify-between font-[300] text-gray-800">
                     <div>
                         <h1 className="mb-[14px] text-[18px]">Platform</h1>
-                        <div className="flex flex-col gap-[6px] font-[200]">
+                        <div className="flex flex-col gap-[6px] font-[200] text-[14px]">
                             <Link className="text-gray-600" href={"/"}>Waitlits</Link>
                             <Link className="text-gray-600" href={"/"}>Workflow Analytics</Link>
                             <Link className="text-gray-600" href={"/"}>Cron Jobs</Link>
@@ -25,7 +25,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <h1 className="mb-[14px] text-[18px]">Usecases</h1>
-                        <div className="flex flex-col gap-[6px]">
+                        <div className="flex flex-col gap-[6px] text-[14px]">
                             <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
@@ -34,7 +34,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <h1 className="mb-[14px] text-[18px]">Company</h1>
-                        <div className="flex flex-col gap-[6px]">
+                        <div className="flex flex-col gap-[6px] text-[14px]">
                             <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
@@ -44,7 +44,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <h1 className="mb-[14px] text-[18px]">Work with us</h1>
-                        <div className="flex flex-col gap-[6px]">
+                        <div className="flex flex-col gap-[6px] text-[14px]">
                             <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
@@ -56,7 +56,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <h1 className="mb-[14px] text-[18px]">Legal</h1>
-                        <div className="flex flex-col gap-[6px]">
+                        <div className="flex flex-col gap-[6px] text-[14px]">
                             <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
                             <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
@@ -66,7 +66,7 @@ export default function Footer() {
                 <div className="w-full border-t-[1px] py-[30px] flex items-center justify-between">
                     <div className="flex items-center gap-[20px] text-gray-800">
                         <Link href={"/"} className="font-[400] text-[22px] flex flex-col leading-0">toolbird<span className="text-[8px] font-[200] leading-0 mt-[-6px]">by Gazella Team</span></Link>
-                        <p className="text-[14px] font-[200]">powered by Gazella Team</p>
+                        <p className="text-[14px] font-[200] text-gray-600">&copy; Copyright {new Date().getFullYear()} toolbird. All rights reserved</p>
                     </div>
                     <div className="flex items-center gap-[16px]">
                         <FaTiktok size={26} color="rgb(75 85 99)" />
@@ -74,7 +74,6 @@ export default function Footer() {
                         <FaLinkedin size={28} color="rgb(75 85 99)" />
                     </div>
                 </div>
-                <p className="text-center font-[200] text-[14px] text-gray-600 pb-[30px]">&copy; Copyright {new Date().getFullYear()} toolbird. All rights reserved</p>
             </div>
         </footer>
         </>
