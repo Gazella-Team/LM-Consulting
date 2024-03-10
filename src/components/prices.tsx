@@ -18,8 +18,6 @@ const pricingData = [
   , planPrice: "$39", planPriceMethod: "/mo", vfm:false, includes: ["3 tools", "Performance analytics", "4 newsletters", "Custom support", "Free onboarding", "3 tools", "Performance analytics", "4 newsletters"], discludes: []},
 ]
 
-const enterpriseData = ["3 tools", "Performance analytics", "4 newsletters", "Custom support", "Free onboarding", "3 tools", "Performance analytics", "4 newsletters"];
-
 export default function Prices() {
     return (
         <section className="bg-white flex flex-col pb-[100px]">
@@ -136,7 +134,7 @@ const PriceCard = (props:any) => {
         props.Obj.vfm ?   
         
         <Reveal delayTime={0}>
-        <div className="shadow-clean border-[5px] border-yellow-400 bg-white rounded-[14px] text-left p-[24px] flex flex-col gap-[30px]">
+        <div className="shadow-clean border-[4px] border-yellow-400 bg-white rounded-[14px] text-left p-[24px] flex flex-col gap-[30px]">
         <Reveal delayTime={0}>
             <div>
                 <div className="h-[60px]">

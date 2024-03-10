@@ -12,11 +12,12 @@ export default function Navbar(props:any) {
                 <Link href={"/product"}>Product</Link>
                 <Link href={"/"}>Resources</Link>
                 <Link href={"/pricing"}>Pricing</Link>
+                <Link href={"/customers"}>Customers</Link>
                 <Link href={"/blog"}>Blog</Link>
                 <Link href={"/guides"}>Guides</Link>
             </div>
             <div className="w-[25%] flex items-center gap-[16px] justify-end">
-                <Link className="text-gray-800 font-[300] px-[6px] py-[10px] text-[15px] rounded-full" href={"/"}>Log In</Link>
+                <Link target="_blank" className="text-gray-800 font-[300] px-[6px] py-[10px] text-[15px] rounded-full" href={"/login"}>Log In</Link>
                 <Link className="bg-main text-white text-center px-[24px] py-[10px] text-[15px] rounded-full font-[300]" href={"/"}>Join Waitlist</Link>
             </div>
             
@@ -32,11 +33,12 @@ export default function Navbar(props:any) {
                     <Link href={"/product"}>Product</Link>
                     <Link href={"/"}>Resources</Link>
                     <Link href={"/pricing"}>Pricing</Link>
+                    <Link href={"/customers"}>Customers</Link>
                     <Link href={"/blog"}>Blog</Link>
                     <Link href={"/guides"}>Guides</Link>
                 </div>
                 <div className="w-[25%] flex items-center gap-[16px] justify-end">
-                    <Link className="text-white font-[300] px-[6px] py-[10px] text-[15px] rounded-full" href={"/"}>Log In</Link>
+                    <Link target="_blank" className="text-white font-[300] px-[6px] py-[10px] text-[15px] rounded-full" href={"/login"}>Log In</Link>
                     <Link className="bg-white text-main text-center px-[24px] py-[10px] text-[15px] rounded-full font-[300]" href={"/"}>Join Waitlist</Link>
                 </div>
                 
