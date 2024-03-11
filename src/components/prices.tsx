@@ -149,7 +149,7 @@ const PriceCard = (props:any) => {
         </Reveal>
         <Reveal delayTime={0}>
             <div>
-                <h1 className="text-[36px] font-[300]">{props.Obj.planPrice}<span className="text-[15px] font-[200] text-gray-600">{props.Obj.planPriceMethod}</span></h1>
+                <h1 className="text-[46px] font-[300] text-gray-800">{props.Obj.planPrice}<span className="text-[15px] font-[200] text-gray-600">{props.Obj.planPriceMethod}</span></h1>
             </div>
         </Reveal>
         <Reveal delayTime={0}>
@@ -192,7 +192,7 @@ const PriceCard = (props:any) => {
             </Reveal>
             <Reveal delayTime={0}>
                 <div>
-                    <h1 className="text-[36px] font-[300] text-gray-800">{props.Obj.planPrice}<span className="text-[15px] font-[200] text-gray-600">{props.Obj.planPriceMethod}</span></h1>
+                    <h1 className="text-[46px] font-[300] text-gray-800">{props.Obj.planPrice}<span className="text-[15px] font-[200] text-gray-600">{props.Obj.planPriceMethod}</span></h1>
                 </div>
             </Reveal>
             <Reveal delayTime={0}>
