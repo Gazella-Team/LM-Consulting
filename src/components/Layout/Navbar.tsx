@@ -18,12 +18,24 @@ export default function Navbar(props:any) {
                 <Link href={"/"} className="font-[400] text-[22px] flex flex-col leading-0">toolbird<span className="text-[8px] font-[200] leading-0 mt-[-6px]">by Gazella Team</span></Link>
             </div>
             <div className="flex-1 flex items-center text-[15px] justify-center gap-[30px] font-[200]">
-                <Link href={"/product"}>Product</Link>
-                <Link href={"/"}>Resources</Link>
-                <Link href={"/pricing"}>Pricing</Link>
-                <Link href={"/customers"}>Customers</Link>
-                <Link href={"/blog"}>Blog</Link>
-                <Link href={"/guides"}>Guides</Link>
+            <Flyout heading="All tools you need" triggerName="Platform" links={[
+        { name: 'Waitlists', description: 'Get a better understanding', href: '/waitlists', icon: ChartPieIcon },
+        { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
+        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
+        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+      ]} />
+                    <Flyout heading="Getting you started" triggerName="Resources" links={[
+        { name: 'Templates', description: 'Get a better understanding', href: '#', icon: ChartPieIcon },
+        { name: 'Usecases', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
+        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
+      ]} />
+                    <Link href={"/pricing"}>Pricing</Link>
+                    <Link href={"/customers"}>Customers</Link>
+                    <Link href={"/blog"}>Blog</Link>
+                    <Link href={"/guides"}>Guides</Link>
             </div>
             <div className="w-[25%] flex items-center gap-[16px] justify-end">
                 <Link target="_blank" className="text-gray-800 font-[300] px-[6px] py-[10px] text-[15px] rounded-full" href={"/login"}>Log In</Link>
@@ -39,18 +51,19 @@ export default function Navbar(props:any) {
                     <Link href={"/"} className="font-[400] text-[22px] flex flex-col leading-0">toolbird<span className="text-[8px] font-[200] leading-0 mt-[-6px]">by Gazella Team</span></Link>
                 </div>
                 <div className="flex-1 flex items-center text-[15px] justify-center gap-[30px] font-[200]">
-                    <Flyout triggerName="Platform" links={[
-        { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+                    <Flyout heading="All tools you need" triggerName="Platform" links={[
+        { name: 'Waitlists', description: 'Get a better understanding', href: '/waitlists', icon: ChartPieIcon },
         { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-        { name: 'Security', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
+        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
         { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-        { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
+        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
       ]} />
-                    <Link href={"/product"}>Product</Link>
-                    <Flyout triggerName="Resources" links={[
-        { name: 'Templates', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+                    <Flyout heading="Getting you started" triggerName="Resources" links={[
+        { name: 'Templates', description: 'Get a better understanding', href: '#', icon: ChartPieIcon },
         { name: 'Usecases', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-        { name: 'Guides', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
+        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
+        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
       ]} />
                     <Link href={"/pricing"}>Pricing</Link>
                     <Link href={"/customers"}>Customers</Link>
