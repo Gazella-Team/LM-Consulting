@@ -1,4 +1,13 @@
 import Link from "next/link";
+import Flyout from "./Flyout";
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import {
+  ArrowPathIcon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+} from '@heroicons/react/24/outline'
 
 export default function Navbar(props:any) {
     return (
@@ -30,8 +39,19 @@ export default function Navbar(props:any) {
                     <Link href={"/"} className="font-[400] text-[22px] flex flex-col leading-0">toolbird<span className="text-[8px] font-[200] leading-0 mt-[-6px]">by Gazella Team</span></Link>
                 </div>
                 <div className="flex-1 flex items-center text-[15px] justify-center gap-[30px] font-[200]">
+                    <Flyout triggerName="Platform" links={[
+        { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+        { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+        { name: 'Security', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
+        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+        { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+      ]} />
                     <Link href={"/product"}>Product</Link>
-                    <Link href={"/"}>Resources</Link>
+                    <Flyout triggerName="Resources" links={[
+        { name: 'Templates', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+        { name: 'Usecases', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+        { name: 'Guides', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
+      ]} />
                     <Link href={"/pricing"}>Pricing</Link>
                     <Link href={"/customers"}>Customers</Link>
                     <Link href={"/blog"}>Blog</Link>
