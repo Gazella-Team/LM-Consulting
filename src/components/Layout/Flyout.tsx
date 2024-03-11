@@ -30,16 +30,12 @@ export default function Flyout(props:any) {
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
           <div className="w-screen max-w-[50%] mx-auto flex-auto overflow-hidden p-10 rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
             <div className='flex items-center gap-[10px] mb-[30px]'>
-              {props.headingIcon}
               <h1 className='text-gray-800 text-[24px] font-[300]'>{props.heading}</h1>
             </div>
 
             <div className="grid grid-cols-2 gap-x-[30px] gap-y-[30px]">
               {solutions.map((item:any) => (
                 <div key={item.name} className="group relative flex items-center gap-x-6 py-2 px-4 border-l-[3px] border-main hover:border-white hover:rounded-[14px] hover:shadow-clean transition-all">
-                  <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-[14px] bg-gray-50 group-hover:bg-white">
-                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-main" aria-hidden="true" />
-                  </div>
                   <div>
                     <a href={item.href} className="font-[400] text-gray-800">
                       {item.name}
