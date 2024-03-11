@@ -12,7 +12,7 @@ export default function Affilate() {
                     <h1 className="font-[300] tracking-tight text-[50px] mb-[14px]">Earn money with us</h1>
                 </Reveal>
                 <Reveal delayTime={0}>
-                    <p className="font-[200] text-gray-600 text-[18px]">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className="font-[200] text-gray-600 text-[18px]">"We care about the relationships that are formed between the brands and influencers on our platform.</p>
                 </Reveal>
             </div>
         </section>
