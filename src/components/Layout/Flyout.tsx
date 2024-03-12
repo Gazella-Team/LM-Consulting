@@ -35,7 +35,7 @@ export default function Flyout(props:any) {
 
             <div className="grid grid-cols-2 gap-x-[30px] gap-y-[30px]">
               {solutions.map((item:any) => (
-                <div key={item.name} className="group relative flex items-center gap-x-6 py-2 px-4 border-l-[3px] border-main hover:border-white hover:rounded-[14px] hover:shadow-clean transition-all">
+                <div key={item.name} className="group relative flex items-center gap-x-6 py-2 px-4 border-l-[3px] border-main hover:bg-gray-50 transition-all">
                   <div>
                     <a href={item.href} className="font-[400] text-gray-800">
                       {item.name}

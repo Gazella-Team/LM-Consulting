@@ -36,7 +36,6 @@ export default function Navbar(props:any) {
         { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
       ]} />
                     <Link href={"/pricing"}>Pricing</Link>
-                    <Link href={"/customers"}>Customers</Link>
                     <Link href={"/blog"}>Blog</Link>
                     <Link href={"/guides"}>Guides</Link>
             </div>
@@ -71,7 +70,6 @@ export default function Navbar(props:any) {
         { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
       ]} />
                     <Link href={"/pricing"}>Pricing</Link>
-                    <Link href={"/customers"}>Customers</Link>
                     <Link href={"/blog"}>Blog</Link>
                     <Link href={"/guides"}>Guides</Link>
                 </div>
