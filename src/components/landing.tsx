@@ -10,7 +10,6 @@ export default function Landing() {
                 <Reveal delayTime={0.1}>
                     <p className="font-[200] text-[20px] w-[60%] mx-auto">Pitch is the fastest way for your team to create and share beautiful presentations that get results.</p>
                 </Reveal>
-
             </div>
         </section>
     )

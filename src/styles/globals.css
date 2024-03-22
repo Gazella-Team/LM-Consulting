@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "DM Sans";
+}
+
+html {
+    background-color: rgb(248 250 252);
+}
+
+@font-face {
+    font-family: 'headingFont';
+    src: url('/fonts/Rebond Grotesque Bold.otf'); 
+}
+.headingText {
+    font-family: "headingFont";
+}
+
