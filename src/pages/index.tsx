@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section style={{backgroundImage: "url(/bgs/wave.svg)"}} className="min-h-screen bg-center bg-cover flex flex-col justify-center">
+    <section className="min-h-screen bg-white md:bg-[url(/bgs/wave.svg)] bg-center bg-cover flex flex-col justify-center">
       <div className="flex w-[80%] mx-auto justify-center gap-10 flex-col">
         <Reveal delayTime={0.1}>
           <h1 className="text-[40px] leading-[45px] md:text-[60px] w-[94%] max-w-[600px] text-gray-800 md:leading-[65px] headingText">The all-in-one toolbox for tech startups<span className="text-main">.</span></h1>

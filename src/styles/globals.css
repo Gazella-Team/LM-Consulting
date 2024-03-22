@@ -20,3 +20,9 @@ html {
     font-family: "headingFont";
 }
 
+.bgWave {
+    background-image: url(/public/bgs/wave.svg);
+    background-position: center;
+    background-size: cover;
+}
+
