@@ -23,12 +23,14 @@ export default function Home() {
             Demo coming soon...
           </p>
         </Reveal>
-        <div className="flex items-center gap-4">
-          <p className="text-gray-600">Powered by</p>
-          <Link target="_blank" href={"https://gazellateam.com/"}>
-            <img className="w-[80px]" src="/gtlogogray.svg"></img>
-          </Link>
-        </div>
+        <Reveal delayTime={0.1}>
+          <div className="flex items-center gap-4">
+            <p className="text-gray-600">Powered by</p>
+            <Link target="_blank" href={"https://gazellateam.com/"}>
+              <img className="w-[80px]" src="/gtlogogray.svg"></img>
+            </Link>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

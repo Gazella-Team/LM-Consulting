@@ -2,8 +2,8 @@ import Head from 'next/head'
 
 const Meta = ({ 
   title = "ToolBird",
-  keywords = "All the tools your SaaS needs to start, scale and run - on one platform only",
-  description = "All the tools your SaaS needs to start, scale and run - on one platform only",
+  keywords = "The all-in-one toolbox for tech startups",
+  description = "All the tools your tech startup needs to start, scale and run - in one platform only",
   icon = "/favicon.png",
   banner = "/seo/banner.png",
   url = ""
