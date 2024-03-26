@@ -32,7 +32,7 @@ export default function Home() {
           </p>
           <div>
             <form
-              action="https://api.toolbird.io/v1/waitlist/pk-4b80adaa56f54107/submit"
+              action="https://api.toolbird.io/v1/waitlist/pk-430c7277cbb6430b/submit"
               method="POST"
             >
               <input type="text" name="name" />
