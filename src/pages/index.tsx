@@ -39,7 +39,7 @@ export default function Home() {
 
 	<input type="email" name="email" placeholder="Enter your email" />
 	
-	<button>Subscribe</button>
+	<button>Subscribe here</button>
 </form>
 
           </div>
