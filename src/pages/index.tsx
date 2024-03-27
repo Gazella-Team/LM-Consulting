@@ -42,10 +42,10 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <form className="flex justify-between gap-2" action="https://api.toolbird.io/v1/waitlist/sk-f195eaa8253b4f81/submit" method="POST">
-            <input className="bg-slate-50 flex-1 pl-5 rounded-xl border border-gray-600/10 placeholder:text-sm" type="email" name="email" placeholder="Enter your email" />
-            <button className="bg-main text-white px-5 py-2 rounded-xl text-sm">Subscribe</button>
-          </form>
+        <form action="https://api.toolbird.io/v1/waitlist/pk-3f2895072cb64663/submit" method="POST">
+          <input type="email" name="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </form>
           <p className="text-center text-sm mt-4 text-gray-400">Free usage for the first month. Limited spots.</p>
         </div>
       </div>
