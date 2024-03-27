@@ -31,16 +31,17 @@ export default function Home() {
             <br></br>
           </p>
           <div>
-            <form
-              action="https://api.toolbird.io/v1/waitlist/pk-430c7277cbb6430b/submit"
-              method="POST"
-            >
-              <input type="text" name="name" />
 
-              <input type="email" name="email" placeholder="Enter your email" />
+          <form action="https://api.toolbird.io/v1/waitlist/pk-9215c4ff672e474a/submit" method="POST">
 
-              <button>Subscribe</button>
-            </form>
+	<input type="text" name="name" />
+
+
+	<input type="email" name="email" placeholder="Enter your email" />
+	
+	<button>Subscribe</button>
+</form>
+
           </div>
         </Reveal>
         <Reveal delayTime={0.1}>
