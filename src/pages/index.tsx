@@ -1,18 +1,21 @@
 import { CheckCircleIcon } from "@heroicons/react/20/solid"
+import { useState } from "react"
 
 export default function Home() {
-  function handleSubmit(data:any) {
+  function handleSubmit() {
     fetch('https://api.toolbird.io/v1/waitlist/pk-9215c4ff672e474a/submit', {
         method: 'POST',
         body: JSON.stringify({
-            email: data.email,
-            name: data.name, // (Optional) Name field
+            email: email,
         }),
         headers: {
             'Content-Type': 'application/json',
         },
     })
-}
+  }
+
+  const [email, setEmail] = useState("")
+
   return (
     <section className="bg-[url(/bg.svg)] bg-center bg-cover h-screen flex items-center justify-center">
       <div className="bg-white rounded-xl border border-gray-600/10 p-14 w-[94%] mx-auto max-w-[500px] min-h-[600px] shadow-xl flex flex-col justify-between">
@@ -42,10 +45,10 @@ export default function Home() {
           </div>
         </div>
         <div>
-        <form action="https://api.toolbird.io/v1/waitlist/pk-3f2895072cb64663/submit" method="POST">
-          <input type="email" name="email" placeholder="Enter your email" />
-          <button>Subscribe</button>
-        </form>
+          <input type="e-mail" className="bg-slate-50" value={email} onChange={(value) => setEmail(value.currentTarget.value)}></input>
+          <button onClick={() => handleSubmit()}>
+            Join waitlist
+          </button>
           <p className="text-center text-sm mt-4 text-gray-400">Free usage for the first month. Limited spots.</p>
         </div>
       </div>
