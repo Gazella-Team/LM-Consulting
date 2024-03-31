@@ -1,18 +1,21 @@
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
-import { toast } from "sonner";
+import toast from "react-hot-toast";
 
 export default function Home() {
-  function handleSubmit() {
-    fetch("https://api.toolbird.io/v1/waitlist/pk-9215c4ff672e474a/submit", {
-      method: "POST",
-      body: JSON.stringify({
-        email: email,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
+  async function handleSubmit() {
+    await fetch(
+      "https://api.toolbird.io/v1/waitlist/pk-9215c4ff672e474a/submit",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          email: email,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then((response) => {
         setEmail("");
         toast.success("You have been added to the waitlist!");
