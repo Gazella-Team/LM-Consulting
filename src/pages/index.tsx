@@ -79,13 +79,13 @@ export default function Home() {
             <input
               placeholder="lasse@toolbird.io"
               type="email"
-              className="bg-slate-50 text-sm pl-2 text-gray-800 border border-gray-600/10 rounded-md flex-1 placeholder:text-sm"
+              className="bg-slate-50 text-sm pl-2 text-gray-800 border border-gray-600/10 rounded-md flex-1 placeholder:text-sm active:outline-main focus:outline-main"
               value={email}
               onChange={(value) => setEmail(value.currentTarget.value)}
             />
             <button
               type="submit"
-              className="bg-main hover:bg-main/90 text-white px-4 py-2 text-sm font-medium rounded-md active:scale-[0.99]"
+              className="bg-main hover:bg-main/90 text-white px-4 py-2 text-sm font-medium rounded-md active:scale-[0.99] active:bg-main/90 focus:bg-main/90 focus:outline-none active:outline-none"
             >
               Join waitlist
             </button>
