@@ -8,28 +8,8 @@ import Link from "next/link";
 const GazellaTeamFont = localFont({
   src: [
     {
-      path: '../fonts/stolzl_bold.otf',
+      path: '../fonts/gelix-semibold.ttf',
       weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/stolzl_medium.otf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/stolzl_regular.otf',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/stolzl_book.otf',
-      weight: '200',
-      style: 'normal',
-    },
-    {
-      path: '../fonts/stolzl_light.otf',
-      weight: '100',
       style: 'normal',
     },
   ],
