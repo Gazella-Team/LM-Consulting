@@ -1,6 +1,8 @@
 import Link from "next/link";
 import DashboardDisplay from "./dashboarddisplay";
 import Features from "./features";
+import { Reveal } from "./Animations/Reveal";
+import { RevealLight } from "./Animations/RevealLight";
 
 export default function Hero() {
     return (
@@ -12,12 +14,18 @@ export default function Hero() {
                             <p>Built with 💜 by SaaS developers</p>
                         </div>
                     </div>
-                    <h1 className="text-[70px] font-[500] text-gray-800 leading-[100%] tracking-tighter mx-auto">The ultimate toolbox for <span className="text-main">SaaS developers</span> to get better overview and <span className="underline decoration-solid">save time</span></h1>
-                    <p className="text-xl font-[400] max-w-[770px] mx-auto text-gray-600">Discover, collaborate, and grow, our all-in-one platform empowers you to build and scale your influencer marketing with thousands of verified influencers.</p>
-                    <div className="flex items-center justify-center gap-2 mt-4">
-                        <Link className="bg-main border-[3px] border-main text-white px-6 py-2 rounded-full" href={"/waitlist"}>Join waitlist</Link>
-                        <Link className="bg-transparent border-[3px] border-main text-main px-6 py-2 rounded-full" href={"/waitlist"}>Hear our story</Link>
-                    </div>
+                    <Reveal delayTime={0.1}>
+                        <h1 className="text-[70px] font-[500] text-gray-800 leading-[100%] tracking-tighter mx-auto">The ultimate toolbox for <span className="text-main">SaaS developers</span> to get better overview and <span className="underline decoration-solid">save time</span></h1>
+                    </Reveal>
+                    <Reveal delayTime={0.2}>
+                        <p className="text-xl font-[400] max-w-[770px] mx-auto text-gray-600">Discover, collaborate, and grow, our all-in-one platform empowers you to build and scale your influencer marketing with thousands of verified influencers.</p>
+                    </Reveal>
+                    <RevealLight delayTime={0.4}>
+                        <div className="flex items-center justify-center gap-2 mt-4">
+                            <Link className="bg-main border-[3px] border-main text-white px-6 py-2 rounded-full" href={"/waitlist"}>Join waitlist</Link>
+                            <Link className="bg-transparent border-[3px] border-main text-main px-6 py-2 rounded-full" href={"/waitlist"}>Hear our story</Link>
+                        </div>
+                    </RevealLight>
                 </div>
                 <DashboardDisplay />
             </div>

@@ -20,7 +20,7 @@ export const Reveal = ({ children, delayTime }: Props) => {
     <div ref={ref}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 0, rotateX: 0 },
+          hidden: { opacity: 0, y: 20, rotateX: 0 },
           visible: { opacity: 1, y: 0, rotateX: 0 },
         }}
         initial="hidden"

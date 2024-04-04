@@ -5,12 +5,14 @@ export default function Navbar() {
         <nav className="h-[90px] bg-white flex items-center">
             <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
                 <div className="w-[20%] flex items-center justify-start">
-                    <img className="w-28" src="/logos/logogray.svg"></img>
+                    <Link href={"/"}>
+                        <img className="w-28" src="/logos/logogray.svg"></img>
+                    </Link>
                 </div>
                 <div className="flex-1 flex items-center justify-center gap-7">
                     <Link href={"/home"}>Home</Link>
                     <Link href={"/home"}>Guides</Link>
-                    <Link href={"/home"}>Public</Link>
+                    <Link href={"/public-building"}>Public</Link>
                     <Link href={"/home"}>Contact</Link>
                 </div>
                 <div className="w-[20%] flex items-center justify-end gap-5">
