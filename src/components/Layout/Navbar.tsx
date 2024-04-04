@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav className="h-[90px] bg-white flex items-center">
             <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
                 <div className="w-[20%] flex items-center justify-start">
-                    <img className="w-32" src="/logos/logogray.svg"></img>
+                    <img className="w-28" src="/logos/logogray.svg"></img>
                 </div>
                 <div className="flex-1 flex items-center justify-center gap-7">
                     <Link href={"/home"}>Home</Link>

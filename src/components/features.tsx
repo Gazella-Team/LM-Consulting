@@ -1,6 +1,6 @@
 export default function Features() {
     return (
-        <section className="py-[100px] bg-white">
+        <section className="py-[100px] bg-white mt-[-240px]">
             <div>
                 <h1 className="text-center text-[30px] font-[500]">Say goobye to countless expensive subscriptions</h1>
             </div>

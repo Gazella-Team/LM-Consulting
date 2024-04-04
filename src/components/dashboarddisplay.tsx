@@ -1,8 +1,8 @@
 export default function DashboardDisplay() {
     return (
-        <section style={{ backgroundImage: 'radial-gradient(circle, rgba(94,23,235,0.43323266806722693) 0%, rgba(255,255,255,1) 100%)' }} className="py-[100px] bg-cover z-0">
+        <section className="pt-[70px] bg-cover">
             <div className="w-[96%] mx-auto max-w-[1200px]">
-                <img  className="rounded-xl" src="/showcases/demo.png"></img>
+                <img className="rounded-xl z-[0]" src="/showcases/demo.png"></img>
             </div>
         </section>
     )
