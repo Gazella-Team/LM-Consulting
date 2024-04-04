@@ -93,7 +93,7 @@ export default function PricingTable() {
     return (
         <section className="pb-[100px]">
             <div className="w-[96%] mx-auto max-w-[1300px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-                {pricingData.map((v, index) => <PricingCard Obj={v} />)}
+                {pricingData.map((v, index) => <PricingCard key={index} Obj={v} />)}
             </div>
         </section>
     )

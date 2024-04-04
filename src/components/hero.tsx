@@ -20,7 +20,7 @@ export default function Hero() {
                         <h1 className="text-[70px] font-[500] text-gray-800 leading-[100%] tracking-tighter mx-auto">The ultimate toolbox for <span className="text-main">SaaS developers</span> to get better overview and <span className="underline decoration-solid">save time</span></h1>
                     </Reveal>
                     <Reveal delayTime={0.2}>
-                        <p className="text-xl font-[200] max-w-[770px] mx-auto text-gray-600">Manage web analytics, feature flags, cron jobs, webhooks, automation, waitlists and more within just one platform. ToolBird makes building MVP's faster and easier.</p>
+                        <p className="text-xl font-[200] max-w-[770px] mx-auto text-gray-600">Manage web analytics, feature flags, cron jobs, webhooks, automation, waitlists and more within just one platform. ToolBird makes building MVP&apos;s faster and easier.</p>
                     </Reveal>
                     <RevealLight delayTime={0.4}>
                         <div className="flex items-center justify-center gap-2 mt-4">
