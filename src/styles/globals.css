@@ -2,17 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
-    font-family: 'headingFont';
-    src: url('/fonts/Rebond Grotesque Bold.otf'); 
-}
-.headingText {
-    font-family: "headingFont";
+    font-family: 'ToolBirdDisplay';
+    src: url('/fonts/gelix-regular.ttf');
+    font-weight: 300;
 }
 
-.bgWave {
-    background-image: url(/public/bgs/wave.svg);
-    background-position: center;
-    background-size: cover;
+@font-face {
+    font-family: 'ToolBirdDisplay';
+    src: url('/fonts/gelix-medium.ttf');
+    font-weight: 400;
 }
 
+@font-face {
+    font-family: 'ToolBirdDisplay';
+    src: url('/fonts/gelix-semibold.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'ToolBirdDisplay';
+    src: url('/fonts/gelix-bold.ttf');
+    font-weight: 600;
+}
+
+* {
+    font-family: "ToolBirdDisplay";
+}
