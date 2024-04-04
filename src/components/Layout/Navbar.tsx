@@ -1,17 +1,20 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+    const router = useRouter()
+    const path = router.pathname
     return (
         <nav className="h-[90px] bg-white flex items-center">
             <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
                 <div className="w-[20%] flex items-center justify-start">
                     <Link href={"/"}>
-                        <img className="w-28" src="/logos/logogray.svg"></img>
+                        <img className="w-28" src={path === "/guides" ? "/logos/guideslogogray.svg":"/logos/logogray.svg"}></img>
                     </Link>
                 </div>
                 <div className="flex-1 flex items-center justify-center gap-7">
                     <Link href={"/home"}>Home</Link>
-                    <Link href={"/home"}>Guides</Link>
+                    <Link href={"/guides"}>Guides</Link>
                     <Link href={"/public-building"}>Public</Link>
                     <Link href={"/home"}>Contact</Link>
                 </div>
