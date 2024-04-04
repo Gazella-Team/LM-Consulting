@@ -121,9 +121,9 @@ const PricingCard = (props:any) => {
             </div>
             <div className="border-t border-gray-600/10">
                 <div className="p-6">
-                    <h2 className="mb-4 font-[500] uppercase">Tools</h2>//
+                    <h2 className="mb-4 font-[500] uppercase">Tools</h2>
                     <div className="flex flex-col gap-4">
-                        {props.Obj.tools.map((v:any) => <div className="flex items-center justify-between text-gray-600 border-b border-gray-600/10 pb-4">{v[0]}{v[1] ? <CheckBadgeIcon width={20} />:<XCircleIcon width={20} />}</div>)}
+                        {props.Obj.tools.map((v:any) => <div key={v} className="flex items-center justify-between text-gray-600 border-b border-gray-600/10 pb-4">{v[0]}{v[1] ? <CheckBadgeIcon width={20} />:<XCircleIcon width={20} />}</div>)}
                     </div>
                 </div>
             </div>
