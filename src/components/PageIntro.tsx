@@ -10,7 +10,7 @@ interface PageIntroProps {
 
 export default function PageIntro(props:PageIntroProps) {
     return (
-        <section className="py-[100px]">
+        <section className="py-[100px] pb-[50px]">
             <div className="w-[96%] mx-auto max-w-[1000px] text-center">
                 {props.hook &&  
                 <RevealLight delayTime={0.4}>
@@ -22,10 +22,10 @@ export default function PageIntro(props:PageIntroProps) {
                 </RevealLight>
                 }
                 <Reveal delayTime={0.1}>
-                    <h1 className="text-[70px] font-[500] text-gray-800">{props.heading} {props.highlighted && <span className="text-main">{props.highlighted}</span>}</h1>
+                    <h1 className="text-[70px] font-[500] text-gray-800 tracking-tighter">{props.heading} {props.highlighted && <span className="text-main">{props.highlighted}</span>}</h1>
                 </Reveal>
                 <Reveal delayTime={0.2}>
-                    <p className="text-xl font-[400] max-w-[770px] mx-auto text-gray-600">{props.paragraph}</p>
+                    <p className="text-xl font-[200] max-w-[770px] mx-auto text-gray-600">{props.paragraph}</p>
                 </Reveal>
             </div>
         </section>
