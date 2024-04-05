@@ -1,3 +1,5 @@
+import { InformationCircleIcon } from "@heroicons/react/24/outline"
+
 const stats = {
     userCount: "0",
     mrr: "$0",

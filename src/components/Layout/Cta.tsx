@@ -12,7 +12,7 @@ export default function Cta() {
                     <p className="font-[200] text-[18px] w-[80%] mx-auto text-gray-200 mb-[50px]">Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy.</p>
                 </Reveal>
                 <Reveal delayTime={0.3}>
-                    <Link className="bg-white text-main text-center px-[40px] py-[14px] text-[15px] rounded-full font-[300]" href={"/"}>Join Waitlist</Link>
+                    <Link className="bg-white text-main text-center px-[40px] py-[14px] text-[15px] rounded-full font-[500]" href={"/"}>Join Waitlist</Link>
                 </Reveal>
             </div>
         </section>
