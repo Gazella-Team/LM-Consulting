@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import PageIntro from "@/components/PageIntro";
+import Goals from "@/components/goals";
 import Stats from "@/components/stats";
 
 export default function PublicBuilding() {
@@ -20,8 +21,9 @@ export default function PublicBuilding() {
     const month = new Date().getUTCMonth()
     return (
         <Layout>
-            <PageIntro hook="" highlighted={`${months[month]}`} heading="Stats for" paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy." />
+            <PageIntro hook="💼 Public building" highlighted={`${months[month]}`} heading="Stats for" paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy." />
             <Stats />
+            <Goals />
         </Layout>
     )
 }
