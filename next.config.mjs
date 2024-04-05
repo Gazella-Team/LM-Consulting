@@ -6,7 +6,7 @@ const nextConfig = {
       beforeFiles: [
         {
           source: '/app/:path*',
-          destination: 'https://app.toolbird.io/app/:path*',
+          destination: 'https://app.toolbird.io/a/:path*',
         },
       ],
     }
