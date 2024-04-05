@@ -6,7 +6,7 @@ import { RevealLight } from "./Animations/RevealLight";
 
 export default function Hero() {
     return (
-        <section style={{ backgroundImage: 'linear-gradient(3deg, rgba(94,23,235,0.3435968137254902) 0%, rgba(255,255,255,1) 76%)' }}  className="py-[100px]">
+        <section   className="py-[100px]">
             <div className="">
                 <div className="max-w-[1200px] w-[96%] mx-auto flex flex-col gap-6 text-center">
                     <RevealLight delayTime={0.3}>

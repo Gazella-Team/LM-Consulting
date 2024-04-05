@@ -5,7 +5,7 @@ export default function Navbar() {
     const router = useRouter()
     const path = router.pathname
     return (
-        <nav className="h-[90px] bg-white flex items-center">
+        <nav className="h-[90px] flex items-center">
             <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
                 <div className="w-[20%] flex items-center justify-start">
                     <Link href={"/"}>
