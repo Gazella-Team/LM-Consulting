@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Cta() {
     return (
-        <section className="py-[240px] bg-[url(/bgs/ctabg.svg)] bg-cover bg-center">
+        <section className="py-[240px] pb-[140px] bg-[url(/bgs/ctabg.svg)] bg-cover bg-center">
             <div className="w-[90%] mx-auto text-center max-w-[1000px]">
                 <Reveal delayTime={0.3}>
                     <h1 className="font-[500] tracking-tighter text-white text-[60px] mb-[14px]">Ready to boost your development?</h1>
