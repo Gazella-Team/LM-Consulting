@@ -13,7 +13,7 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className="flex-1 flex items-center justify-center gap-7">
-                    <Link href={"/home"}>Home</Link>
+                    <Link href={"/"}>Home</Link>
                     <Link href={"/guides"}>Guides</Link>
                     <Link href={"/public-building"}>Public</Link>
                     <Link href={"/home"}>Contact</Link>
