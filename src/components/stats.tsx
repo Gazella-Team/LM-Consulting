@@ -9,7 +9,7 @@ const stats = {
 
 export default function Stats() {
     return (
-        <section className="py-[100px] pt-0 bg-white text-gray-800">
+        <section className="py-[100px] pt-0 text-gray-800">
             <div className="w-[96%] mx-auto max-w-[1200px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
                 <div className="p-10 border border-gray-600/10 rounded-xl">
                     <h1 className="text-gray-600 mb-3 font-[200]">Total users</h1>
