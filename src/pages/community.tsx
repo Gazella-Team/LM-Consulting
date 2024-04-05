@@ -21,12 +21,11 @@ export default function Community() {
         withCTA: false,
       }}
     >
-      <PageIntro
-        hook="🥳 A new way of learning"
-        highlighted="ToolBird Guides"
-        heading="Introducing"
-        paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy."
-      />
+      <div className="bg-[#5e17eb]">
+        <div className="mx-auto max-w-6xl p-8">
+          <h1 className="font-semibold text-white text-2xl">Community</h1>
+        </div>
+      </div>
       <HallEmbed appId="Z72sP4H41GZp" theme="light" />
     </Layout>
   );
