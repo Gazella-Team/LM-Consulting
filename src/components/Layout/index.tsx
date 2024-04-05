@@ -1,25 +1,23 @@
 import Navbar from "./Navbar";
 import Meta from "./Meta";
-import Footer from "./Footer";
+import Footer, { FooterProps } from "./Footer";
 import { useState } from "react";
-import Link from "next/link";
 
-export default function Layout({
-  className,
-  children,
-}: {
+type LayoutProps = {
   className?: string;
-  children: React.ReactNode;
-}) {
+  children?: React.ReactNode;
+  footerProps?: FooterProps;
+};
 
+export default function Layout({ children, footerProps }: LayoutProps) {
   const [noticeActive, setNoticeActive] = useState(true);
   return (
     <div className="flex flex-col justify-between min-h-screen">
-    <Meta />
+      <Meta />
       <div>
         <Navbar />
         {children}
-        <Footer />
+        <Footer {...footerProps} />
       </div>
     </div>
   );

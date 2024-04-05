@@ -2,32 +2,39 @@ import { Reveal } from "./Animations/Reveal";
 import { RevealLight } from "./Animations/RevealLight";
 
 interface PageIntroProps {
-    heading: string,
-    paragraph:string,
-    highlighted:string,
-    hook:string,
+  heading: string;
+  paragraph: string;
+  highlighted: string;
+  hook: string;
 }
 
-export default function PageIntro(props:PageIntroProps) {
-    return (
-        <section className="py-[100px] pb-[50px]">
-            <div className="w-[96%] mx-auto max-w-[1000px] text-center">
-                {props.hook &&  
-                <RevealLight delayTime={0.4}>
-                    <div>
-                        <div className="inline-block mx-auto bg-slate-50 py-2 text-gray-600 px-6 rounded-full border border-gray-600/10">
-                            <p>{props.hook}</p>
-                        </div>
-                    </div>
-                </RevealLight>
-                }
-                <Reveal delayTime={0.1}>
-                    <h1 className="text-[70px] font-[500] text-gray-800 tracking-tighter">{props.heading} {props.highlighted && <span className="text-main">{props.highlighted}</span>}</h1>
-                </Reveal>
-                <Reveal delayTime={0.2}>
-                    <p className="text-xl font-[200] max-w-[770px] mx-auto text-gray-600">{props.paragraph}</p>
-                </Reveal>
+export default function PageIntro(props: PageIntroProps) {
+  return (
+    <section className="py-[100px] pb-[50px]">
+      <div className="w-[96%] mx-auto max-w-[1000px] text-center">
+        {props.hook && (
+          <RevealLight delayTime={0.4}>
+            <div>
+              <div className="inline-block mx-auto bg-slate-50 py-2 text-gray-600 px-6 rounded-full border border-gray-600/10">
+                <p>{props.hook}</p>
+              </div>
             </div>
-        </section>
-    )
+          </RevealLight>
+        )}
+        <Reveal delayTime={0.1}>
+          <h1 className="text-[70px] font-[500] text-gray-800 tracking-tighter">
+            {props.heading}{" "}
+            {props.highlighted && (
+              <span className="text-main">{props.highlighted}</span>
+            )}
+          </h1>
+        </Reveal>
+        <Reveal delayTime={0.2}>
+          <p className="text-xl font-[200] max-w-[770px] mx-auto text-gray-600">
+            {props.paragraph}
+          </p>
+        </Reveal>
+      </div>
+    </section>
+  );
 }
