@@ -17,7 +17,7 @@ export default function Layout({ children, footerProps }: LayoutProps) {
       <div>
         <Navbar />
         {children}
-        <Footer {...footerProps} />
+        {/*<Footer {...footerProps} />*/}
       </div>
     </div>
   );

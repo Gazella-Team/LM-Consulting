@@ -22,15 +22,15 @@ export default function PageIntro(props: PageIntroProps) {
           </RevealLight>
         )}
         <Reveal delayTime={0.1}>
-          <h1 className="text-[50px] md:text-[60px] xl:text-[70px] leading-[100%] font-[500] text-gray-800 tracking-tighter">
+          <h1 className="text-[50px] md:text-[60px] xl:text-[70px] leading-[100%] font-semibold text-gray-800 heading">
             {props.heading}{" "}
             {props.highlighted && (
-              <span className="text-main">{props.highlighted}</span>
+              <span className="text-main heading">{props.highlighted}</span>
             )}
           </h1>
         </Reveal>
         <Reveal delayTime={0.2}>
-          <p className="text-base md:text-lg xl:text-xl font-[200] max-w-[770px] mx-auto text-gray-600">
+          <p className="text-base md:text-lg xl:text-xl font-light max-w-[870px] mx-auto text-gray-600">
             {props.paragraph}
           </p>
         </Reveal>

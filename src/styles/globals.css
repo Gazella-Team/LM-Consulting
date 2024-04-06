@@ -2,37 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: "Inter";
+}
+
+.heading {
+    font-family: "Bricolage Grotesque";
+    letter-spacing: -0.025em;
+}
+
 body {
     overflow-x: hidden;
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 29%, rgba(94,23,235,0.06348476890756305) 100%);
-}
-
-
-@font-face {
-    font-family: 'ToolBirdDisplay';
-    src: url('/fonts/gelix-regular.ttf');
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'ToolBirdDisplay';
-    src: url('/fonts/gelix-medium.ttf');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'ToolBirdDisplay';
-    src: url('/fonts/gelix-semibold.ttf');
-    font-weight: 500;
-}
-
-@font-face {
-    font-family: 'ToolBirdDisplay';
-    src: url('/fonts/gelix-bold.ttf');
-    font-weight: 600;
-}
-
-* {
-    font-family: "ToolBirdDisplay";
 }
