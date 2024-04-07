@@ -17,6 +17,7 @@ export default function Community() {
 
   return (
     <Layout
+      white={false}
       footerProps={{
         withCTA: false,
       }}

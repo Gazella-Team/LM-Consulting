@@ -15,7 +15,7 @@ export default function PageIntro(props: PageIntroProps) {
         {props.hook && (
           <RevealLight delayTime={0.4}>
             <div>
-              <div className="inline-block mx-auto bg-slate-50 py-2 text-gray-600 px-6 rounded-full border border-gray-600/10">
+              <div className="inline-block text-sm mx-auto bg-slate-50 py-2 text-gray-600 px-6 rounded-full border border-gray-600/10">
                 <p>{props.hook}</p>
               </div>
             </div>

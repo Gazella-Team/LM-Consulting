@@ -20,7 +20,7 @@ export default function PublicBuilding() {
     ];
     const month = new Date().getUTCMonth()
     return (
-        <Layout>
+        <Layout white={false}>
             <PageIntro hook="💼 Public building" highlighted={`${months[month]}`} heading="Stats for" paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy." />
             <Stats />
             <Goals />
