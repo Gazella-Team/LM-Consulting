@@ -10,10 +10,10 @@ export default function Navbar({white}:{white:boolean}) {
         <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
             <div className="w-[20%] flex items-center justify-start">
                 <Link href={"/"}>
-                    <img className="w-28" src={path === "/guides" ? "/logos/guideslogogray.svg":"/logos/logogray.svg"}></img>
+                    <h2 className="font-[700] text-xl">toolbird.io</h2>
                 </Link>
             </div>
-            <div className="flex-1 flex items-center justify-center gap-7">
+            <div className="flex-1 flex items-center justify-center gap-7 font-[600]">
                 <Link href={"/about"}>Our story</Link>
                 <Link href={"/community"}>Community</Link>
                 <Link href={"/"}>Contact</Link>
