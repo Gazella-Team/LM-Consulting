@@ -17,7 +17,7 @@ export default function Hero() {
             </RevealLight>
           <Reveal delayTime={0.1}>
             <h1 className="text-[50px] md:text-[60px] xl:text-[70px] leading-[100%] font-semibold text-gray-800 heading">
-            Gilroy
+            ToolBird
             </h1>
           </Reveal>
           <Reveal delayTime={0.2}>
