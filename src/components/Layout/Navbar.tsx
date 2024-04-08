@@ -18,7 +18,7 @@ export default function Navbar({white}:{white:boolean}) {
                 <Link href={"/community"}>Community</Link>
                 <Link href={"/"}>Contact</Link>
             </div>
-            <div className="w-[20%] flex items-center justify-end gap-5">
+            <div className="w-[20%] flex items-center justify-end gap-5 font-medium">
                 <Link target="_blank" href={"https://app.toolbird.io/auth/login"}>Log in</Link>
                 <Link className="bg-main border-[3px] border-main text-white px-6 py-2 rounded-full" href={"https://app.toolbird.io/auth/login"}>Join waitlist</Link>
             </div>
