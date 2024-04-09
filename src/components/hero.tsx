@@ -20,7 +20,7 @@ export default function Hero() {
           <p className="text-base md:text-lg xl:text-xl font-regular max-w-[800px] mx-auto text-gray-600">
             Manage web analytics, cron jobs, monitoring, feature flags,
             waitlists, client feedback and more within just one platform.
-            ToolBird makes building MVPs easier
+            ToolBird makes building tech products easier
           </p>
         </Reveal>
         <RevealLight delayTime={0.4}>
