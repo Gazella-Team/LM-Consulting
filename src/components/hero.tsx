@@ -9,8 +9,8 @@ export default function Hero() {
         <section className="py-[100px] pb-[0px]">
         <div className="w-[96%] mx-auto max-w-[1300px] flex flex-col gap-5 text-center">
           <Reveal delayTime={0.1}>
-            <h1 className="text-[40px] md:text-[50px] xl:text-[60px] leading-[100%] font-bold text-gray-800 heading">
-            Empowering SaaS developers
+            <h1 className="text-[36px] md:text-[46px] xl:text-[56px] leading-[100%] font-bold text-gray-800 heading">
+            The ultimate toolbox for SaaS developers
             </h1>
           </Reveal>
           <Reveal delayTime={0.2}>
