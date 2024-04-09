@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <Layout white={true}>
       <Hero />
-      <img src="/phonebg.svg"></img>
+      <DashboardDisplay />
     </Layout>
   )
 }

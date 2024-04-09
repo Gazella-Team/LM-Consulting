@@ -2,12 +2,10 @@ import { Reveal } from "./Animations/Reveal";
 
 export default function DashboardDisplay() {
     return (
-        <section className="py-[70px] bg-cover">
-            <div className="w-[96%] mx-auto max-w-[1200px]">
-                <Reveal delayTime={0.5}>
-                    <img className="rounded-xl shadow-xl border border-gray-600/10 z-[0]" src="/showcases/demo.png"></img>
-                </Reveal>
-            </div>
+        <section className="bg-[url(/bgs/line.svg)] bg-center bg-cover py-[100px]">
+            <Reveal delayTime={0.5}>
+                <img className="w-[60%] mx-auto rounded-xl shadow-clean border border-gray-600/10" src="/showcases/dash.webp"></img>
+            </Reveal>
         </section>
     )
 }

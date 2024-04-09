@@ -7,10 +7,10 @@ import { RevealLight } from "./Animations/RevealLight";
 export default function Hero() {
     return (
         <section className="py-[100px] pb-[0px]">
-        <div className="w-[96%] mx-auto max-w-[1300px] flex flex-col gap-5 text-center">
+        <div className="w-[96%] mx-auto max-w-[1100px] flex flex-col gap-5 text-center">
           <Reveal delayTime={0.1}>
-            <h1 className="text-[36px] md:text-[46px] xl:text-[56px] leading-[100%] font-bold text-gray-800 heading">
-            The ultimate toolbox for SaaS developers
+            <h1 className="text-[36px] md:text-[46px] xl:text-[56px] leading-[110%] font-bold text-gray-800 heading">
+            The ultimate toolbox for SaaS developers to get better overview and save time
             </h1>
           </Reveal>
           <Reveal delayTime={0.2}>
