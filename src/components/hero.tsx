@@ -20,8 +20,7 @@ export default function Hero() {
           </Reveal>
           <RevealLight delayTime={0.4}>
             <div className="flex items-center justify-center gap-2 mt-4 font-medium">
-                <Link className="bg-main border-[3px] border-main text-white px-6 py-2 rounded-full" href={"https://app.toolbird.io/auth/login"}>Log in</Link>
-                <Link className="bg-main border-[3px] border-main text-white px-6 py-2 rounded-full" href={"https://app.toolbird.io/auth/login"}>Learn more</Link>
+                <Link target="_blank" className="bg-main border-[3px] border-main text-white px-6 py-2 rounded-full" href={"https://app.toolbird.io/auth/login"}>Join waitlist</Link>
              </div>
         </RevealLight>
         </div>

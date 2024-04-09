@@ -8,17 +8,12 @@ export default function Navbar({white}:{white:boolean}) {
         white ? 
     <nav className="h-[90px] flex items-center bg-transparent">
         <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
-            <div className="w-[20%] flex items-center justify-start">
+            <div className="w-[50%] flex items-center justify-start">
                 <Link href={"/"}>
                     <h2 className="font-[700] text-xl">toolbird.io</h2>
                 </Link>
             </div>
-            <div className="flex-1 flex items-center justify-center gap-7 font-[600]">
-                <Link href={"/about"}>Our story</Link>
-                <Link href={"/community"}>Community</Link>
-                <Link href={"/"}>Contact</Link>
-            </div>
-            <div className="w-[20%] flex items-center justify-end gap-5 font-medium">
+            <div className="w-[50%] flex items-center justify-end gap-5 font-medium">
                 <Link target="_blank" href={"https://app.toolbird.io/auth/login"}>Log in</Link>
                 <Link className="bg-main border-[3px] border-main text-white px-6 py-2 rounded-full" href={"https://app.toolbird.io/auth/login"}>Join waitlist</Link>
             </div>
