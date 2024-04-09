@@ -10,7 +10,7 @@ export default function Navbar({white}:{white:boolean}) {
         <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
             <div className="w-[50%] flex items-center justify-start">
                 <Link href={"/"}>
-                    <h2 className="font-[700] text-xl">toolbird.io</h2>
+                    <h2 className="font-[700] text-2xl tracking-tight">ToolBird</h2>
                 </Link>
             </div>
             <div className="w-[50%] flex items-center justify-end gap-5 font-medium">

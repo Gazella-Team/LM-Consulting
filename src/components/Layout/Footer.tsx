@@ -11,21 +11,14 @@ export type FooterProps = {
 export default function Footer({ withCTA = true }: FooterProps) {
   return (
     <>
-      {withCTA && <CTA />}
-      <footer className="py-[10px] border-t-[1px]">
+      <footer className="py-4 border-t border-gray-600/10">
         <div className="w-[94%] mx-auto max-w-[1200px] flex flex-col">
-          <div className="w-full flex items-center justify-between">
+          <div className="w-full flex items-center justify-center">
             <div className="flex items-center gap-[20px] text-gray-800">
-              <img className="w-28" src="/logos/logogray.svg"></img>
-              <p className="text-[14px] font-[200] text-gray-600">
+              <p className="text-[14px] font-regular text-gray-400">
                 &copy; Copyright {new Date().getFullYear()} ToolBird. All rights
                 reserved
               </p>
-            </div>
-            <div className="flex items-center gap-[16px]">
-              <FaTiktok size={26} color="rgb(75 85 99)" />
-              <FaInstagram size={28} color="rgb(75 85 99)" />
-              <FaLinkedin size={28} color="rgb(75 85 99)" />
             </div>
           </div>
         </div>
