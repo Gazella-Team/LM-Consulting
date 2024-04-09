@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ebay/nice-modal-react": "^1.2.13",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
+    "@radix-ui/react-dialog": "^1.0.5",
     "@usehall/react": "^0.2.0",
     "axios": "^1.6.8",
+    "clsx": "^2.1.0",
     "framer-motion": "^11.0.6",
     "headlessui": "^0.0.0",
     "heroicons": "^2.1.3",
@@ -22,7 +25,8 @@
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.0.1",
-    "sonner": "^1.4.41"
+    "sonner": "^1.4.41",
+    "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",
