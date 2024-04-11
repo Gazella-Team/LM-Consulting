@@ -8,7 +8,6 @@ export default function Home() {
     <Layout white={true}>
       <Hero />
       <DashboardDisplay />
-      <Features />
     </Layout>
   )
 }

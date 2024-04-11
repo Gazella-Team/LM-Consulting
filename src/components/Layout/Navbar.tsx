@@ -15,7 +15,7 @@ export default function Navbar({ white }: { white: boolean }) {
           </Link>
         </div>
         <div className="w-[50%] flex items-center justify-end gap-5 font-medium">
-          <Link target="_blank" href={"https://app.toolbird.io/auth/login"}>
+          <Link className="hidden sm:flex" target="_blank" href={"https://app.toolbird.io/auth/login"}>
             Log in
           </Link>
           <button
