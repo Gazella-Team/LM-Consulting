@@ -13,6 +13,9 @@ export default function PageIntro(props: PageIntroProps) {
     <section className="py-[100px] pb-[50px]">
       <div className="w-[96%] mx-auto max-w-[1000px] flex flex-col gap-6 text-center">
         <Reveal delayTime={0.1}>
+          <p className="font-[Caveat] text-main text-3xl">{props.hook}</p>
+        </Reveal>
+        <Reveal delayTime={0.1}>
           <h1 className="text-[40px] md:text-[50px] xl:text-[60px] leading-[110%] font-bold text-gray-800 heading">
             {props.heading}{" "}
             {props.highlighted && (
