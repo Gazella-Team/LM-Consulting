@@ -11,9 +11,11 @@ export default function Hero() {
     <section className="py-[100px] pb-[0px]">
       <div className="w-[96%] mx-auto max-w-[1100px] flex flex-col gap-5 text-center">
         <Reveal delayTime={0.1}>
-          <h1 className="text-[36px] md:text-[46px] xl:text-[56px] leading-[110%] font-bold text-gray-800 heading">
-            The ultimate toolbox for SaaS developers to get better overview and
-            save time
+          <p className="font-[Caveat] text-main text-3xl">#1 toolbox for SaaS developers</p>
+        </Reveal>
+        <Reveal delayTime={0.1}>
+          <h1 className="text-xl md:text-3xl xl:text-6xl leading-[110%] font-bold text-gray-800 heading">
+            Build better products faster
           </h1>
         </Reveal>
         <Reveal delayTime={0.2}>
