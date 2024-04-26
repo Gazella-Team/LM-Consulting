@@ -16,7 +16,7 @@ export default function PageIntro(props: PageIntroProps) {
           <p className="font-[Caveat] text-main text-3xl">{props.hook}</p>
         </Reveal>
         <Reveal delayTime={0.1}>
-          <h1 className="text-[40px] md:text-[50px] xl:text-[60px] leading-[110%] font-bold text-gray-800 heading">
+          <h1 className="text-[40px] md:text-[50px] xl:text-[60px] leading-[110%] font-black text-gray-800 heading">
             {props.heading}{" "}
             {props.highlighted && (
               <span className="text-main heading">{props.highlighted}</span>

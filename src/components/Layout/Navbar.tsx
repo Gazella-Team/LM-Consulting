@@ -15,6 +15,7 @@ export default function Navbar({ white }: { white: boolean }) {
           </Link>
         </div>
         <div className="flex-1 flex items-center gap-5 justify-center text-sm font-medium">
+          <Link href={"/pricing"}>Pricing</Link>
           <Link href={"/about"}>Our story</Link>
           <Link href={"/"}>Community</Link>
           <Link href={"/contact"}>Contact</Link>

@@ -14,7 +14,7 @@ export default function Hero() {
           <p className="font-[Caveat] text-main text-3xl">#1 toolbox for SaaS developers</p>
         </Reveal>
         <Reveal delayTime={0.1}>
-          <h1 className="text-xl md:text-3xl xl:text-6xl leading-[110%] font-bold text-gray-800 heading">
+          <h1 className="text-xl md:text-3xl xl:text-6xl leading-[110%] font-black text-gray-800 heading">
             Build better products faster
           </h1>
         </Reveal>
