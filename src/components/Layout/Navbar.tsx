@@ -11,16 +11,16 @@ export default function Navbar({ white }: { white: boolean }) {
       <div className="w-[96%] mx-auto flex items-center justify-between text-gray-800">
         <div className="w-[250px] flex items-center justify-start">
           <Link href={"/"}>
-            <img className="w-[120px]" src="/logos/logogray.svg"></img>
+            <img className="w-[110px]" src="/logos/logo.svg"></img>
           </Link>
         </div>
-        <div className="flex-1 flex items-center gap-5 justify-center text-sm font-medium">
+        <div className="flex-1 flex items-center gap-8 justify-center text-sm font-medium text-gray-800">
           <Link href={"/pricing"}>Pricing</Link>
           <Link href={"/about"}>Our story</Link>
           <Link href={"/"}>Community</Link>
           <Link href={"/contact"}>Contact</Link>
         </div>
-        <div className="w-[250px] flex items-center justify-end gap-5 font-medium">
+        <div className="w-[250px] flex items-center justify-end gap-5 font-medium text-gray-800">
           <Link className="hidden text-sm sm:flex" target="_blank" href={"https://app.toolbird.io/auth/login"}>
             Log in
           </Link>

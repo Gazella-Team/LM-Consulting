@@ -5,7 +5,7 @@ import JoinWaitlistModal from "../modals/JoinWaitlistModal";
 
 export default function Cta() {
   return (
-    <section className="bg-main py-[100px]">
+    <section className="bg-[url(/bgs/wave.svg)] bg-center bg-cover py-[100px]">
       <div className="w-[90%] mx-auto text-center max-w-[1000px]">
         <Reveal delayTime={0.3}>
           <h1 className="font-bold leading-[100%] tracking-tighter text-white text-[60px] mb-8">
