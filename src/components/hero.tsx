@@ -33,9 +33,6 @@ export default function Hero() {
             >
               Join waitlist
             </button>
-            <Link className="bg-transparent font-semibold border-[3px] border-main text-sm text-main px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all" href={"/"}>
-              View features
-            </Link>
           </div>
         </RevealLight>
       </div>
