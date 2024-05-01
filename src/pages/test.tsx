@@ -6,6 +6,7 @@ export default function TestPage() {
       .post("https://api.toolbird.io/v1/event", {
         url: document.location.href,
         referrer: document.referrer,
+        screen: `${window.screen.width}x${window.screen.height}`,
       })
       .then((res) => {
         console.log(res);
