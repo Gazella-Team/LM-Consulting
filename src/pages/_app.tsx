@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Toaster />
       <Script
-        src="https://api.toolbird/js/script.js"
+        src="https://api.toolbird.io/js/script.js"
         strategy="lazyOnload"
         data-domain="toolbird.io"
       />
