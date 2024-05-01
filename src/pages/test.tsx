@@ -7,6 +7,7 @@ export default function TestPage() {
         url: document.location.href,
         referrer: document.referrer,
         screen: `${window.screen.width}x${window.screen.height}`,
+        language: navigator.language,
       })
       .then((res) => {
         console.log(res);
