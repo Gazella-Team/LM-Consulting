@@ -26,6 +26,10 @@ const config: Config = {
       },
       boxShadow: {
         clean: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+      },
+      gridTemplateColumns: {
+        bentoLeft: "60% 1fr",
+        bentoRight: "1fr 60%"
       }
     },
   },
