@@ -14,12 +14,12 @@ export default function Hero() {
           <p className="font-[Caveat] text-main text-3xl">#1 toolbox for SaaS developers</p>
         </Reveal>
         <Reveal delayTime={0.1}>
-          <h1 className="text-3xl md:text-5xl xl:text-6xl leading-[110%] font-black text-gray-800 heading">
-            Build better products faster
+          <h1 className="text-3xl md:text-5xl xl:text-7xl max-w-[800px] mx-auto leading-[110%] font-black text-gray-800 heading">
+            The ultimate toolbox for SaaS developers
           </h1>
         </Reveal>
         <Reveal delayTime={0.2}>
-          <p className="text-base md:text-lg xl:text-xl font-regular max-w-[800px] mx-auto w-[85%] text-gray-600">
+          <p className="text-base md:text-lg xl:text-xl font-regular max-w-[600px] mx-auto w-[85%] text-gray-600">
             Manage web analytics, cron jobs, monitoring, feature flags,
             waitlists, client feedback and more within just one platform.
             ToolBird makes building tech products easier

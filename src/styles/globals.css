@@ -54,4 +54,5 @@
 
 body {
     overflow-x: hidden;
+    background-image: url(/public/bgs/grid.svg);
 }

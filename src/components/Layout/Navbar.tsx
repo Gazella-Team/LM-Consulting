@@ -2,6 +2,7 @@ import NiceModal from "@ebay/nice-modal-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import JoinWaitlistModal from "../modals/JoinWaitlistModal";
+import Flyout from "./Flyout";
 
 export default function Navbar({ white }: { white: boolean }) {
   const router = useRouter();
@@ -14,7 +15,12 @@ export default function Navbar({ white }: { white: boolean }) {
             <img className="w-[110px]" src="/logos/logo.svg"></img>
           </Link>
         </div>
-
+        <div className="flex-1 flex items-center justify-center gap-8 font-semibold text-sm">
+          <Flyout triggerName="Products" heading="Every tool needed to build products" links={[{name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}]} />
+          <Link href={"/"}>Pricing</Link>
+          <Link href={"/"}>About</Link>
+          <Link href={"/"}>Contact</Link>
+        </div>
         <div className="w-[250px] flex items-center justify-end gap-5 font-medium text-gray-800">
           <Link className="hidden font-semibold text-sm sm:flex" target="_blank" href={"https://app.toolbird.io/auth/login"}>
             Log in
