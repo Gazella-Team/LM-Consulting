@@ -16,7 +16,8 @@ export default function Navbar({ white }: { white: boolean }) {
           </Link>
         </div>
         <div className="flex-1 flex items-center justify-center gap-8 font-semibold text-sm">
-          <Flyout triggerName="Products" heading="Every tool needed to build products" links={[{name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}]} />
+          {/** <Flyout triggerName="Products" heading="Every tool needed to build products" links={[{name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}]} />*/}
+          <Link href={"/"}>Products</Link>
           <Link href={"/"}>Pricing</Link>
           <Link href={"/"}>About</Link>
           <Link href={"/"}>Contact</Link>

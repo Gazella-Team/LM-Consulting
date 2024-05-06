@@ -7,6 +7,10 @@ export default function About() {
             </div>
             <p className="text-lg text-gray-600">
             Manage web analytics, cron jobs, monitoring, feature flags, waitlists, client feedback and more within just one platform. ToolBird makes building tech products easier
+            <br></br><br></br>
+            Manage web analytics, cron jobs, monitoring, feature flags, waitlists, client feedback and more within just one platform. ToolBird makes building tech products easier
+            <br></br><br></br>
+            Manage web analytics, cron jobs, monitoring, feature flags, waitlists, client feedback and more within just one platform. ToolBird makes building tech products easier
             </p>
         </div>
     )
