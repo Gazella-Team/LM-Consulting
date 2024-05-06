@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import CTA from "./Cta";
 import NiceModal from "@ebay/nice-modal-react";
 import JoinWaitlistModal from "../modals/JoinWaitlistModal";
+import { Reveal } from "../Animations/Reveal";
 
 export type FooterProps = {
   withCTA?: boolean;
@@ -13,6 +14,11 @@ export type FooterProps = {
 export default function Footer({ withCTA = true }: FooterProps) {
   return (
     <>
+                    <div className="flex items-center justify-center mb-8">
+                        <img className="w-20 h-20 object-cover rounded-full border-2 border-main" src="/people/lasseosmann.webp"></img>
+                        <img className="w-20 h-20 object-cover rounded-full border-2 border-main ml-[-20px]" src="/people/simonmaribo.webp"></img>
+                    </div>
+
       <div style={{background: "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(94,23,235,0.13631390056022408) 100%)"}} className="pb-[200px] flex flex-col items-center text-center">
         <p className="font-[Caveat] text-main text-3xl mb-3">Say goodbye to high prices and countless subscriptions</p>
         <h2 className="text-4xl md:text-5xl xl:text-6xl font-black mb-6 text-gray-800 mx-auto max-w-3xl w-[90%]">Ready to boost your development?</h2>

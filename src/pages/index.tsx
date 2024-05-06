@@ -24,11 +24,6 @@ export default function Home() {
           <PricingTable />
         </SectionIntro>
       </div>
-      <div id="faq">
-        <SectionIntro founders={true} heading="Frequently Asked Questions" description="" hook="Get all answers you need">
-          <FAQ />
-        </SectionIntro>
-      </div>
     </Layout>
   )
 }
