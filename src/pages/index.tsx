@@ -7,21 +7,28 @@ import FAQ from "@/components/faq";
 import Features from "@/components/features";
 import Hero from "@/components/hero";
 import PricingTable from "@/components/pricingtable";
+import Element from "react-scroll"
 
 export default function Home() {
   return (
     <Layout white={true}>
       <Hero />
       <DashboardDisplay />
-      <SectionIntro heading="All tools in one place" description="Manage web analytics, cron jobs, monitoring, feature flags, waitlists, client feedback and more within just one platform. ToolBird makes building tech products easier" hook="Save time and get better overview">
-        <BentoGridComponent />
-      </SectionIntro>
-      <SectionIntro heading="Every tool, one flat fee" description="Manage web analytics, cron jobs, monitoring, feature flags, waitlists, client feedback and more within just one platform. ToolBird makes building tech products easier" hook="Save time and get better overview">
-        <PricingTable />
-      </SectionIntro>
-      <SectionIntro heading="By developers, for developers" description="Manage web analytics, cron jobs, monitoring, feature flags, waitlists, client feedback and more within just one platform. ToolBird makes building tech products easier" hook="The story behind ToolBird">
-        <About />
-      </SectionIntro>
+      <div id="products">
+        <SectionIntro heading="All tools in one place" description="With our all-in-one platform we ensure better overview and higher productivity" hook="Save time and get better overview">
+          <BentoGridComponent />
+        </SectionIntro>
+      </div>
+      <div id="pricing">
+        <SectionIntro heading="Every tool, fair pricing" description="Paying way too much money, to have countless subscriptions on several platforms is a no-brainer. We offer all tools, unlimited team members in the same platform" hook="Save time and get better overview">
+          <PricingTable />
+        </SectionIntro>
+      </div>
+      <div id="faq">
+        <SectionIntro founders={true} heading="Frequently Asked Questions" description="" hook="Get all answers you need">
+          <FAQ />
+        </SectionIntro>
+      </div>
     </Layout>
   )
 }

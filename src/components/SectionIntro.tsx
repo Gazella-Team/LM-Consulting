@@ -5,11 +5,19 @@ type SectionIntroProps = {
     heading:string,
     description:string
     children: React.ReactNode,
+    founders?:boolean,
 }
 
 export default function SectionIntro(props:SectionIntroProps) {
     return (
         <div className="text-center text-gray-800 mb-14">
+            {props.founders ? 
+                <div className="flex items-center justify-center mb-8">
+                    <img className="w-20 h-20 object-cover rounded-full border-2 border-main" src="/people/lasseosmann.webp"></img>
+                    <img className="w-20 h-20 object-cover rounded-full border-2 border-main ml-[-20px]" src="/people/simonmaribo.webp"></img>
+                </div>
+            :null
+            }
             <Reveal delayTime={0.1}>
                 <p className="font-[Caveat] text-main text-3xl mb-3">{props.hook}</p>
             </Reveal>
