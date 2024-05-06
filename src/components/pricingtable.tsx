@@ -11,18 +11,38 @@ export default function PricingTable() {
                 <div className="grid grid-cols-2 gap-10 rounded-2xl bg-white border border-gray-600/10 p-4 text-left">
                     <div className="p-8 flex flex-col gap-8 opacity-60">
                         <div>
-                            <p>The old way from</p>
+                            <p>The old way, from</p>
                         </div>
-                        <h1 className="text-5xl font-bold">$219<span className="text-xl font-medium ml-2 text-gray-600">/mo</span></h1>
-                        <div className="border-t border-t-gray-600/10">
-                            <p>j</p>
+                        <h1 className="text-5xl font-bold"><span className="line-through">$219</span><span className="text-xl font-medium ml-2 text-gray-600">/mo</span></h1>
+                        <div className="border-t pt-6 border-t-gray-600/10">
+                        <div className="grid grid-cols-2 gap-y-4 pb-10">
+                                <div className="flex items-center gap-2">
+                                    <XCircleIcon width={20} />
+                                    <p className="font-medium">Complete access</p>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <XCircleIcon width={20} />
+                                    <p className="font-medium">Complete access</p>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <XCircleIcon width={20} />
+                                    <p className="font-medium">Complete access</p>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <XCircleIcon width={20} />
+                                    <p className="font-medium">Complete access</p>
+                                </div>
+                            </div>
+                            <div className="flex text-center">
+                                <Link className="bg-slate-50 border border-gray-600/10 py-3 px-4 rounded-full static w-full text-gray-800 font-semibold text-sm" href={"/"}>Keep overpaying for an outdated setup</Link>
+                            </div>
                         </div>
                     </div>
                     <div style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(94,23,235,0.03667804621848737) 100%)"}}  className="rounded-xl border border-gray-600/10 p-8 flex flex-col gap-8 shadow-sm w-full dark:bg-black bg-white dark:bg-grid-white/[0.1] bg-grid-black/[0.04]">
                         <div>
                             <p>The ToolBird way</p>
                         </div>
-                        <h1 className="text-5xl font-bold">$219<span className="text-xl font-medium ml-2 text-gray-600">/mo</span></h1>
+                        <h1 className="text-5xl font-bold">$19<span className="text-xl font-medium ml-2 text-gray-600">/mo</span></h1>
                         <div className="border-t pt-6 border-t-gray-600/10">
                             <div className="grid grid-cols-2 gap-y-4 pb-10">
                                 <div className="flex items-center gap-2">
@@ -31,19 +51,19 @@ export default function PricingTable() {
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckBadgeIcon width={20} />
-                                    <p className="font-medium">Complete access</p>
+                                    <p className="font-medium">All tools</p>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckBadgeIcon width={20} />
-                                    <p className="font-medium">Complete access</p>
+                                    <p className="font-medium">Unlimited seats</p>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckBadgeIcon width={20} />
-                                    <p className="font-medium">Complete access</p>
+                                    <p className="font-medium">24/7 support</p>
                                 </div>
                             </div>
-                            <div className="static">
-                                <Link className="bg-main py-2 px-4 rounded-full static w-full text-white font-semibold text-sm" href={"/"}>Join waitlist</Link>
+                            <div className="flex text-center">
+                                <Link className="bg-main py-3 px-4 border border-main rounded-full static w-full text-white font-semibold text-sm" href={"/"}>Join waitlist</Link>
                             </div>
                         </div>
                     </div>

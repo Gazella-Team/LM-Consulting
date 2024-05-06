@@ -26,13 +26,14 @@ export default function Hero() {
           </p>
         </Reveal>
         <RevealLight delayTime={0.4}>
-          <div className="flex items-center justify-center gap-2 mt-4 font-medium">
+          <div className="flex items-center justify-center gap-3 mt-4 font-medium">
             <button
               onClick={() => NiceModal.show(JoinWaitlistModal)}
               className="bg-main font-semibold border-[3px] border-main text-white text-sm px-6 py-2 rounded-full"
             >
               Join waitlist
             </button>
+            <Link className="bg-transparent font-semibold border-[3px] border-main text-main text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all" href={""}>View features</Link>
           </div>
         </RevealLight>
       </div>

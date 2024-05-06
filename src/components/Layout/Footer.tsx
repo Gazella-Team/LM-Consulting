@@ -11,6 +11,9 @@ export type FooterProps = {
 export default function Footer({ withCTA = true }: FooterProps) {
   return (
     <>
+      <div className="h-[500px] bg-main">
+        <p>hey</p>
+      </div>
       <footer className="py-4 border-t border-gray-600/10">
         <div className="w-[94%] mx-auto max-w-[1200px] flex flex-col">
           <div className="w-full flex items-center justify-center">
