@@ -15,8 +15,8 @@ export default function Footer({ withCTA = true }: FooterProps) {
     <>
       <div style={{background: "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(94,23,235,0.13631390056022408) 100%)"}} className="pb-[200px] flex flex-col items-center text-center">
         <p className="font-[Caveat] text-main text-3xl mb-3">Say goodbye to high prices and countless subscriptions</p>
-        <h2 className="text-6xl font-black mb-6 text-gray-800 mx-auto max-w-3xl">Ready to boost your development?</h2>
-        <p className="text-lg max-w-xl mx-auto text-gray-600 mb-8">Focus 100% on building your idea, and let ToolBird handle the rest</p>
+        <h2 className="text-4xl md:text-5xl xl:text-6xl font-black mb-6 text-gray-800 mx-auto max-w-3xl w-[90%]">Ready to boost your development?</h2>
+        <p className="text-lg max-w-xl mx-auto w-[90%] text-gray-600 mb-8">Focus 100% on building your idea, and let ToolBird handle the rest</p>
         <button
               onClick={() => NiceModal.show(JoinWaitlistModal)}
               className="bg-main font-semibold border-[3px] border-main text-white text-sm px-6 py-2 rounded-full"

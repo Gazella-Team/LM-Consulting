@@ -12,7 +12,7 @@ export default function PricingTable() {
         <Reveal delayTime={0.2}>
             <section className=" text-gray-800">
                 <div className="w-[96%] mx-auto max-w-[1100px]">
-                    <div className="grid grid-cols-2 gap-10 rounded-2xl bg-white border border-gray-600/10 p-4 text-left">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 rounded-2xl bg-white border border-gray-600/10 p-4 text-left">
                         <div className="p-8 flex flex-col gap-8 opacity-60 border border-gray-600/10 rounded-xl">
                             <div className="flex items-center justify-between">
                                 <p>The old way, from</p>
