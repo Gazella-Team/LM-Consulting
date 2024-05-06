@@ -5,6 +5,7 @@ import { Reveal } from "./Animations/Reveal";
 import { RevealLight } from "./Animations/RevealLight";
 import NiceModal from "@ebay/nice-modal-react";
 import JoinWaitlistModal from "./modals/JoinWaitlistModal";
+import {Link as ScrollLink} from "react-scroll";
 
 export default function Hero() {
   return (
@@ -33,7 +34,7 @@ export default function Hero() {
             >
               Join waitlist
             </button>
-            <Link className="bg-transparent font-semibold border-[3px] border-main text-main text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all" href={""}>View features</Link>
+            <ScrollLink smooth={true} to="products" className="bg-transparent font-semibold border-[3px] border-main text-main text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all" href={""}>View features</ScrollLink>
           </div>
         </RevealLight>
       </div>

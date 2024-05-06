@@ -4,12 +4,12 @@ export default function BentoGridComponent() {
     return (
         <section>
             <div className="max-w-6xl mx-auto flex flex-col gap-6 w-[90%]">
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-bentoLeft">
-                    <BentoGridCard Obj={{image:"/showcases/analytics.svg", heading:"Complete analytics system", description: "A skewed grid layout with Title, description and a header component. A skewed grid layout with Title, description and a header component"}} />
-                    <BentoGridCard Obj={{image:"/showcases/waitlists.svg", heading:"Complete analytics system", description: "A skewed grid layout with Title, description and a header component"}} />
+                <div className="grid grid-cols-1 gap-6 lg:grid-cols-bentoLeft">
+                    <BentoGridCard Obj={{image:"/showcases/analytics.svg", heading:"Complete web analytics system", description: "Keep track of all traffic going thorugh your website. Analyze visitors, sources, devices and other essential data points for better cusomer insights"}} />
+                    <BentoGridCard Obj={{image:"/showcases/waitlists.svg", heading:"Waitlist management", description: "Create, manage and run a custom waitlist in a structured dashboard with only two clicks"}} />
                 </div>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-bentoRight">
-                <BentoGridCard Obj={{image:"/showcases/sources.svg", heading:"Complete analytics system", description: "A skewed grid layout with Title, description and a header component"}} />
+                <BentoGridCard Obj={{image:"/showcases/sources.svg", heading:"Collaborate with your team", description: "Share a workspace with your team-members for more productive development"}} />
                     <BentoGridCard Obj={{image:"/showcases/analytics.svg", heading:"Complete analytics system", description: "A skewed grid layout with Title, description and a header component. A skewed grid layout with Title, description and a header component"}} />
                 </div>
             </div>
