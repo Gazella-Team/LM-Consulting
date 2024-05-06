@@ -3,6 +3,7 @@ import { FireIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
 import { GiFlame } from "react-icons/gi"
 import { Reveal } from "./Animations/Reveal"
+import { FaMoneyBill } from "react-icons/fa"
 
 export default function PricingTable() {
     return (
@@ -10,8 +11,12 @@ export default function PricingTable() {
             <div className="w-[96%] mx-auto max-w-[1100px]">
                 <div className="grid grid-cols-2 gap-10 rounded-2xl bg-white border border-gray-600/10 p-4 text-left">
                     <div className="p-8 flex flex-col gap-8 opacity-60">
-                        <div>
+                        <div className="flex items-center justify-between">
                             <p>The old way, from</p>
+                            <div className="bg-red-100 text-red-800 text-xs py-2 px-4 rounded-xl font-bold shadow-sm flex items-center gap-2">
+                                <FaMoneyBill size={18} />
+                                <p>Overspend</p>
+                            </div>
                         </div>
                         <h1 className="text-5xl font-bold"><span className="line-through">$219</span><span className="text-xl font-medium ml-2 text-gray-600">/mo</span></h1>
                         <div className="border-t pt-6 border-t-gray-600/10">
@@ -41,7 +46,8 @@ export default function PricingTable() {
                     <div style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(94,23,235,0.03667804621848737) 100%)"}}  className="rounded-xl border border-gray-600/10 p-8 flex flex-col gap-8 shadow-sm w-full dark:bg-black bg-white dark:bg-grid-white/[0.1] bg-grid-black/[0.04]">
                         <div className="flex items-center justify-between">
                             <p>The ToolBird way</p>
-                            <div className="bg-purple-100 text-main text-xs py-2 px-4 rounded-xl font-bold shadow-sm">
+                            <div className="bg-purple-100 text-main text-xs py-2 px-4 rounded-xl font-bold shadow-sm flex items-center gap-2">
+                                <FaMoneyBill size={18} />
                                 <p>Save $200</p>
                             </div>
                         </div>
