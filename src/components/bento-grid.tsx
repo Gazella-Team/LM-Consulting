@@ -9,7 +9,7 @@ export default function BentoGridComponent() {
                     <BentoGridCard Obj={{image:"/showcases/waitlists.svg", heading:"Waitlist management", description: "Create, manage and run a custom waitlist in a structured dashboard with only two clicks"}} />
                 </div>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-bentoRight">
-                <BentoGridCard Obj={{image:"/showcases/sources.svg", heading:"Collaborate with your team", description: "Share a workspace with your team-members for more productive development"}} />
+                <BentoGridCard Obj={{image:"/showcases/team.svg", heading:"Collaborate with your team", description: "Share a workspace with your team-members for more productive development"}} />
                     <BentoGridCard Obj={{image:"/showcases/analytics.svg", heading:"Complete analytics system", description: "A skewed grid layout with Title, description and a header component. A skewed grid layout with Title, description and a header component"}} />
                 </div>
             </div>
