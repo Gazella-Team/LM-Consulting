@@ -2,10 +2,10 @@ import Head from 'next/head'
 
 const Meta = ({
 	title = 'ToolBird',
-	keywords = 'The all-in-one toolbox for SaaS developers',
-	description = 'All the tools your tech startup needs to start, scale and run, in one platform only',
+	keywords = 'Toolbox SaaS Web Analytics Cron Jobs Monitoring Feature Flags Waitlists Client Feedback Platform Tech Products',
+	description = 'All the tools your SaaS startup needs to start, scale and run, in one platform only',
 	icon = '/seo/favicon.png',
-	banner = '/seo/banner.png',
+	banner = '/seo/banner.jpg',
 	url = '',
 }: {
 	title?: string
@@ -17,7 +17,7 @@ const Meta = ({
 }) => {
 	return (
 		<Head>
-			<meta name="theme-color" content={'#fffff'} key="theme-color" />
+			<meta name="theme-color" content={'#6217ec'} key="theme-color" />
 
 			<meta
 				name="viewport"
@@ -41,7 +41,7 @@ const Meta = ({
 			<meta property="og:title" content={title} key="og:title" />
 			<meta
 				property="og:site_name"
-				content="ToolBird"
+				content="Toolbird"
 				key="og:site_name"
 			/>
 			<meta property="og:url" content={url} key="og:url" />

@@ -1,3 +1,4 @@
+import Meta from '@/components/Layout/Meta'
 import '@/styles/globals.css'
 import NiceModal from '@ebay/nice-modal-react'
 import type { AppProps } from 'next/app'
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				strategy="lazyOnload"
 				data-domain="toolbird.io"
 			/>
+			<Meta />
 		</NiceModal.Provider>
 	)
 }
