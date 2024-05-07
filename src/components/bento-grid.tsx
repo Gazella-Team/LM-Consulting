@@ -10,7 +10,7 @@ export default function BentoGridComponent() {
                 </div>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-bentoRight">
                 <BentoGridCard Obj={{image:"/showcases/team.svg", heading:"Collaborate with your team", description: "Share a workspace with your team-members for more productive development"}} />
-                    <BentoGridCard Obj={{image:"/showcases/analytics.svg", heading:"Complete analytics system", description: "A skewed grid layout with Title, description and a header component. A skewed grid layout with Title, description and a header component"}} />
+                    <BentoGridCard Obj={{image:"/showcases/sources.svg", heading:"Track your leads", description: "Get better insights on your leads and potential customers. ToolBird allows you to track all sources visiting your digital product"}} />
                 </div>
             </div>
         </section>

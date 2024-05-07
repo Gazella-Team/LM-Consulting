@@ -20,7 +20,7 @@ export default function Home() {
         </SectionIntro>
       </div>
       <div id="pricing">
-        <SectionIntro heading="Every tool, fair pricing" description="Paying way too much money, to have countless subscriptions on several platforms is a no-brainer. We offer all tools, unlimited team members in the same platform" hook="Save time and get better overview">
+        <SectionIntro heading="Every tool, fair pricing" description="Paying way too much money, to have countless subscriptions on several platforms is a no-brainer. We offer all tools and unlimited team members in the same platform" hook="Save time and get better overview">
           <PricingTable />
         </SectionIntro>
       </div>

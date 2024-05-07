@@ -2,16 +2,16 @@ import Head from 'next/head'
 
 const Meta = ({ 
   title = "ToolBird",
-  keywords = "The all-in-one toolbox for tech startups",
-  description = "All the tools your tech startup needs to start, scale and run - in one platform only",
-  icon = "/favicon.png",
+  keywords = "The all-in-one toolbox for SaaS developers",
+  description = "All the tools your tech startup needs to start, scale and run, in one platform only",
+  icon = "/seo/favicon.png",
   banner = "/seo/banner.png",
   url = ""
 }: { title?: string, keywords?: string, description?: string, icon?: string, banner?: string, url?: string }) => {
 
   return (
     <Head>
-      <meta name="theme-color" content={"#395a3f"} key="theme-color"/>
+      <meta name="theme-color" content={"#fffff"} key="theme-color"/>
 
       <meta name='viewport' content='width=device-width, initial-scale=1' key="viewport"/>
       <meta name='keywords' content={keywords} key="keyword"/>
