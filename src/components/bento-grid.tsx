@@ -12,6 +12,8 @@ export default function BentoGridComponent() {
                 <BentoGridCard Obj={{image:"/showcases/team.svg", heading:"Collaborate with your team", description: "Share a workspace with your team-members for more productive development"}} />
                     <BentoGridCard Obj={{image:"/showcases/sources.svg", heading:"Track your leads", description: "Get better insights on your leads and potential customers. ToolBird allows you to track all sources visiting your digital product"}} />
                 </div>
+
+                <p className="mx-auto bg-main text-white rounded-xl px-4 py-2 font-bold text-sm mt-4 select-none">And many more tools to come</p>
             </div>
         </section>
     )
