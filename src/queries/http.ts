@@ -1,25 +1,25 @@
-import axios, { AxiosInstance } from "axios";
+import axios, { AxiosInstance } from 'axios'
 
 const http: AxiosInstance = axios.create({
-  baseURL: `${process.env.NEXT_PUBLIC_API_BASE_URL}`,
-  withCredentials: true,
-  timeout: 20000,
-  headers: {
-    "X-Requested-With": "XMLHttpRequest",
-    Accept: "application/json",
-    "Content-Type": "application/json",
-  },
-});
+	baseURL: `${process.env.NEXT_PUBLIC_API_BASE_URL}`,
+	withCredentials: true,
+	timeout: 20000,
+	headers: {
+		'X-Requested-With': 'XMLHttpRequest',
+		Accept: 'application/json',
+		'Content-Type': 'application/json',
+	},
+})
 
 export function getError(error: any) {
-  console.log(error);
-  return (
-    error?.response?.data?.error ||
-    error?.message ||
-    error?.error ||
-    error ||
-    "An unknown error occurred."
-  );
+	console.log(error)
+	return (
+		error?.response?.data?.error ||
+		error?.message ||
+		error?.error ||
+		error ||
+		'An unknown error occurred.'
+	)
 }
 
-export default http;
+export default http

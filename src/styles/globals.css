@@ -3,57 +3,57 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-UltraThin.ttf') format('opentype');
-    font-weight: 100;
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-UltraThin.ttf') format('opentype');
+	font-weight: 100;
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-UltraLight.ttf') format('opentype');
-    font-weight: 200;
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-UltraLight.ttf') format('opentype');
+	font-weight: 200;
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-Light.ttf') format('opentype');
-    font-weight: 300;
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-Light.ttf') format('opentype');
+	font-weight: 300;
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-Regular.ttf') format('opentype');
-    font-weight: 400; /* Medium weight */
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-Regular.ttf') format('opentype');
+	font-weight: 400; /* Medium weight */
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-Medium.ttf') format('opentype');
-    font-weight: 500;
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-Medium.ttf') format('opentype');
+	font-weight: 500;
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-SemiBold.ttf') format('opentype');
-    font-weight: 600;
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-SemiBold.ttf') format('opentype');
+	font-weight: 600;
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-Bold.ttf') format('opentype');
-    font-weight: 700;
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-Bold.ttf') format('opentype');
+	font-weight: 700;
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-Heavy.ttf') format('opentype');
-    font-weight: 800; /* Medium weight */
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-Heavy.ttf') format('opentype');
+	font-weight: 800; /* Medium weight */
 }
 @font-face {
-    font-family: 'MainFont';
-    src: url('/fonts/Gilroy-Black.ttf') format('opentype');
-    font-weight: 900;
+	font-family: 'MainFont';
+	src: url('/fonts/Gilroy-Black.ttf') format('opentype');
+	font-weight: 900;
 }
 
 * {
-    font-family: 'Plus Jakarta Sans';
-    position: relative;
+	font-family: 'Plus Jakarta Sans';
+	position: relative;
 }
 
 body {
-    overflow-x: hidden;
-    background-image: url(/public/bgs/grid.svg);
+	overflow-x: hidden;
+	background-image: url(/public/bgs/grid.svg);
 }
