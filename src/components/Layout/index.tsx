@@ -15,8 +15,8 @@ export default function Layout({ children, footerProps, white }: LayoutProps) {
   return (
     <div className="flex flex-col justify-between min-h-screen">
       <Meta />
-      <div className="w-full dark:bg-black bg-white dark:bg-grid-white/[0.1] bg-grid-black/[0.04] relative">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="w-full bg-white dark:bg-grid-white/[0.1] bg-grid-black/[0.04] relative">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="relative">
           <Navbar white={white} />
         </div>
