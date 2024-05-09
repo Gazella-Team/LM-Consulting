@@ -20,7 +20,7 @@ export default function Navbar({ white }: { white: boolean }) {
 						<RefLink href={'/'}>
 							<img
 								className="w-[110px]"
-								src="/logos/logo.svg"
+								src="/logos/finallogo.svg"
 							></img>
 						</RefLink>
 					</div>
