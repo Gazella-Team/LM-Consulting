@@ -72,14 +72,14 @@ export default function PricingTable() {
 							className="rounded-xl border border-gray-600/10 p-8 flex flex-col gap-8 shadow-sm w-full bg-grid-black/[0.04]"
 						>
 							<div className="flex items-center justify-between">
-								<p>The ToolBird way</p>
+								<p>Early bird pricing</p>
 								<div className="bg-purple-100 text-main text-xs py-2 px-4 rounded-xl font-bold shadow-sm flex items-center gap-2">
 									<FaMoneyBill size={18} />
 									<p>Save $200</p>
 								</div>
 							</div>
 							<h1 className="text-5xl font-bold">
-								$19
+								$29
 								<span className="text-xl font-medium ml-2 text-gray-600">
 									/mo
 								</span>

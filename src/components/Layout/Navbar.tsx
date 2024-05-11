@@ -25,7 +25,6 @@ export default function Navbar({ white }: { white: boolean }) {
 						</RefLink>
 					</div>
 					<div className="flex-1 hidden md:flex items-center justify-center gap-8 font-semibold text-sm">
-						<Flyout triggerName="Products" heading="Every tool needed to build products" links={[{name:"Web Analytics", description:"One system for all analytics", href:"/waitlists"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}]} />
 						<Link smooth={true} to="products" href={'/'}>
 							Products
 						</Link>
