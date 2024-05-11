@@ -17,12 +17,12 @@ export default function Navbar({ white }: { white: boolean }) {
 			<nav className="h-[90px] flex items-center bg-transparent">
 				<div className="w-[96%] max-w-7xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<Link href={'/'}>
+						<RefLink href={'/'}>
 							<img
 								className="w-[110px]"
 								src="/logos/finallogo.svg"
 							></img>
-						</Link>
+						</RefLink>
 					</div>
 					<div className="flex-1 hidden md:flex items-center justify-center gap-8 font-semibold text-sm">
 						<Flyout triggerName="Products" heading="Every tool needed to build products" links={[{name:"Web Analytics", description:"One system for all analytics", href:"/waitlists"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}, {name:"Web Analytics", description:"One system for all analytics", href:"path"}]} />
