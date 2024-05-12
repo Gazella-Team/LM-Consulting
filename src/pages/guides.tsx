@@ -6,7 +6,7 @@ export default function Guides() {
 		<Layout white={true}>
 			<PageIntro
 				hook="🥳 A new way of learning"
-				highlighted="ToolBird Guides"
+				highlighted="Toolbird Guides"
 				heading="Introducing"
 				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy."
 			/>

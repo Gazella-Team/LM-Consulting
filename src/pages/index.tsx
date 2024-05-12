@@ -1,13 +1,9 @@
 import Layout from '@/components/Layout'
 import SectionIntro from '@/components/SectionIntro'
-import About from '@/components/about'
 import BentoGridComponent from '@/components/bento-grid'
 import DashboardDisplay from '@/components/dashboarddisplay'
-import FAQ from '@/components/faq'
-import Features from '@/components/features'
 import Hero from '@/components/hero'
 import PricingTable from '@/components/pricingtable'
-import Element from 'react-scroll'
 
 export default function Home() {
 	return (

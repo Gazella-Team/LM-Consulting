@@ -28,7 +28,7 @@ export default function Hero() {
 					<p className="text-base md:text-lg xl:text-xl font-regular max-w-[600px] mx-auto w-[85%] text-gray-600">
 						Manage web analytics, cron jobs, monitoring, feature
 						flags, waitlists, client feedback and more within just
-						one platform. ToolBird makes building tech products
+						one platform. Toolbird makes building tech products
 						easier
 					</p>
 				</Reveal>

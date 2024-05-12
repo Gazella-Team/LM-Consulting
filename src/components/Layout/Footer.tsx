@@ -39,7 +39,7 @@ export default function Footer({ withCTA = true }: FooterProps) {
 					Ready to boost your development?
 				</h2>
 				<p className="text-lg max-w-xl mx-auto w-[90%] text-gray-600 mb-8">
-					Focus 100% on building your idea, and let ToolBird handle
+					Focus 100% on building your idea, and let Toolbird handle
 					the rest
 				</p>
 				<button
@@ -55,7 +55,7 @@ export default function Footer({ withCTA = true }: FooterProps) {
 						<div className="flex items-center gap-[20px] text-gray-800">
 							<p className="text-[14px] font-regular text-gray-400">
 								&copy; Copyright {new Date().getFullYear()}{' '}
-								ToolBird. All rights reserved
+								Toolbird. All rights reserved
 							</p>
 						</div>
 					</div>

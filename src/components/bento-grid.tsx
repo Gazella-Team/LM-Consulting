@@ -36,7 +36,7 @@ export default function BentoGridComponent() {
 							image: '/showcases/sources.svg',
 							heading: 'Track your leads',
 							description:
-								'Get better insights on your leads and potential customers. ToolBird allows you to track all sources visiting your digital product',
+								'Get better insights on your leads and potential customers. Toolbird allows you to track all sources visiting your digital product',
 						}}
 					/>
 				</div>
