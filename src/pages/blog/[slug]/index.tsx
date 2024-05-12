@@ -1,5 +1,6 @@
 import { Article } from '@/components/content/Article'
 import Layout from '@/components/Layout'
+import Meta from '@/components/Layout/Meta'
 import { allPosts, Post } from 'contentlayer/generated'
 import {
 	GetStaticPaths,
@@ -13,6 +14,11 @@ export default function BlogList({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<Layout>
+			<Meta
+				title={`${post.title} | Toolbird`}
+				description={post.description}
+				banner={post.image}
+			/>
 			<div className="py-8">
 				<Article post={post} />
 			</div>

@@ -1,6 +1,7 @@
 import { cn } from '@/components/Accordion'
 import BlogCard from '@/components/content/BlogCard'
 import Layout from '@/components/Layout'
+import Meta from '@/components/Layout/Meta'
 import { allPosts, Post } from 'contentlayer/generated'
 import {
 	GetStaticProps,
@@ -48,6 +49,11 @@ export default function BlogList({
 
 	return (
 		<Layout>
+			{/* Create SEO banner from image.social when we have 3 blogs */}
+			<Meta
+				title="Blog | Toolbird"
+				description="Latest news and updates from Toolbird aswell as guides."
+			/>
 			<div className="mt-12 mb-8">
 				<div className="max-w-6xl w-[90%] mx-auto">
 					<h1 className="text-4xl font-semibold text-gray-800">

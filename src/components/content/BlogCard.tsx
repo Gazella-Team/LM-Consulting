@@ -15,7 +15,6 @@ export default function BlogCard({ post }: BlogCardProps) {
 		>
 			<img
 				alt={post.title}
-				fetchPriority="high"
 				width="2400"
 				height="1260"
 				decoding="async"
