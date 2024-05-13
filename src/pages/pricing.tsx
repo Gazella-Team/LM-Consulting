@@ -9,7 +9,7 @@ export default function Pricing() {
 				hook="Flexible pricing"
 				highlighted="everyone"
 				heading="Pricing for"
-				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy."
+				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
 			<PricingTable />
 		</Layout>

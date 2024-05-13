@@ -6,7 +6,6 @@ import Cta from "./Cta";
 export default function Footer() {
     return (
         <>
-        <Cta />
          <footer className="py-[10px] border-t-[1px] bg-white">
             <div className="w-[94%] mx-auto max-w-[1200px] flex flex-col">
 				{/* 
