@@ -56,13 +56,13 @@ export default function BlogList({
 			/>
 			<div className="mt-12 mb-8">
 				<div className="max-w-6xl w-[90%] mx-auto">
-					<h1 className="text-4xl font-semibold text-gray-800">
+					<h1 className="text-4xl font-semibold mb-2 text-gray-800">
 						Blog
 					</h1>
 					<h2 className="text-xl text-gray-700">
-						Latest news and updates from Toolbird!
+						Latest news and updates from Toolbird
 					</h2>
-					<div className="my-4 flex">
+					<div className="mt-8 mb-10 flex">
 						<div className="bg-white border rounded-full px-3 py-2.5 flex gap-2">
 							{
 								// Tabs

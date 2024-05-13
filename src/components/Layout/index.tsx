@@ -1,14 +1,13 @@
 import Navbar from './Navbar'
-import Footer, { FooterProps } from './Footer'
+import Footer from './Footer'
 
 type LayoutProps = {
 	className?: string
 	children?: React.ReactNode
-	footerProps?: FooterProps
 	white?: boolean
 }
 
-export default function Layout({ children, footerProps, white }: LayoutProps) {
+export default function Layout({ children,  white }: LayoutProps) {
 	return (
 		<div className="flex flex-col justify-between min-h-screen">
 			<div className="w-full bg-white bg-grid-black/[0.04] relative">
@@ -17,7 +16,9 @@ export default function Layout({ children, footerProps, white }: LayoutProps) {
 					<Navbar white={white || false} />
 				</div>
 				<div className="relative">{children}</div>
-				<Footer {...footerProps} />
+				<div className='relative'>
+					<Footer />
+				</div>
 			</div>
 		</div>
 	)
