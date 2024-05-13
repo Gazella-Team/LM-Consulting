@@ -10,7 +10,7 @@ interface PageIntroProps {
 
 export default function PageIntro(props: PageIntroProps) {
 	return (
-		<section className="py-[70px] pb-[50px] relative">
+		<section className="py-[70px] pb-[80px] relative">
 			<div className='flex items-center justify-center'>
 				<div className="absolute h-[500px] w-[700px] overflow-hidden" style={{background: "radial-gradient(circle, rgba(94,23,235,0.15552958683473385) 0%, rgba(255,255,255,0) 60%)"}}></div>
 			</div>
