@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FaTiktok } from "react-icons/fa";
+import { FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Cta from "./Cta";
@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col gap-3">
                         <img className="w-28" src="/logos/finallogo.svg"></img>
-                        <p className="text-gray-500 text-sm max-w-xs font-medium">Giving modern marketing teams superpowers with short links that stand out.</p>
+                        <p className="text-gray-500 text-sm max-w-xs font-medium">Helping SaaS developers save time and get a better overview when bulding products.</p>
                     </div>
                     <div>
                         <button
@@ -19,6 +19,17 @@ export default function Footer() {
                             >
                                 Get started
                         </button>
+                    </div>
+                    <div className="flex items-center gap-2 mt-3">
+                        <div className="border p-3 rounded-full border-gray-600/10">
+                            <FaLinkedin color="rgb(31 41 55)" />
+                        </div>
+                        <div className="border p-3 rounded-full border-gray-600/10">
+                            <FaTwitter color="rgb(31 41 55)" />
+                        </div>
+                        <div className="border p-3 rounded-full border-gray-600/10">
+                            <FaYoutube color="rgb(31 41 55)" />
+                        </div>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-4">
@@ -62,7 +73,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-center pb-6">
-                <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Toolbird</p>
+                <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE 82, 2TH.1358 KØBENHAVN</p>
             </div>
         </footer>
         </>

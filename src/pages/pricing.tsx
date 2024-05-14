@@ -10,12 +10,11 @@ export default function Pricing() {
 		<Layout white={true}>
 			<PageIntro
 				hook="Flexible pricing"
-				highlighted="everyone"
-				heading="Pricing for"
+				highlighted="stage"
+				heading="Suitable pricing for every"
 				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
 			<PricingTable />
-			<CustomerSlider />
 		</Layout>
 	)
 }

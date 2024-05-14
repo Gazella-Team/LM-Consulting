@@ -8,9 +8,9 @@ export default function About() {
 		<Layout white={true}>
 			<PageIntro
 				hook="By developers, for developers"
-				highlighted="teenage startup"
-				heading="Journey of a"
-				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy."
+				highlighted="startup"
+				heading="From highschool to new"
+				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
 		</Layout>
 	)

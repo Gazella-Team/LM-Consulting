@@ -8,7 +8,7 @@ export default function CustomerSlider() {
         <div>
           <Slider
             width="170px"
-            duration={20}
+            duration={40}
             pauseOnHover={false}
             blurBorders={true}
             blurBoderColor={"#fff"}

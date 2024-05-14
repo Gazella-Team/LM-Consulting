@@ -35,11 +35,11 @@ export default function PricingTable() {
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18}  />
-								<h2 className="text-gray-600">+45 web analytics events</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">+45 web analytics events</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18}  />
-								<h2 className="text-gray-600">Unlimited waitlists</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">Unlimited waitlists</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} />
@@ -80,7 +80,7 @@ export default function PricingTable() {
 						<div className="py-10 pt-6 px-8 flex flex-col gap-6 font-regular">
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">Complete tool access</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">Complete tool access</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
@@ -92,15 +92,15 @@ export default function PricingTable() {
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">24/7 support</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">24/7 support</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">Complete tool access</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">Complete tool access</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">+45 web analytics events</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">+45 web analytics events</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
@@ -145,15 +145,15 @@ export default function PricingTable() {
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800">Complete tool access</h2>
+								<h2 className="text-gray-800 underline decoration-dotted">Complete tool access</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800">Complete tool access</h2>
+								<h2 className="text-gray-800 underline decoration-dotted">Complete tool access</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800">Complete tool access</h2>
+								<h2 className="text-gray-800 underline decoration-dotted">Complete tool access</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
