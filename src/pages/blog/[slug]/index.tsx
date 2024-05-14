@@ -18,6 +18,7 @@ export default function BlogList({
 				title={`${post.title} | Toolbird`}
 				description={post.description}
 				banner={post.image}
+				authors={post.authors.map((author) => author.name)}
 			/>
 			<div className="py-8">
 				<Article post={post} />

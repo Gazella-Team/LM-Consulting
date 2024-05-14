@@ -1,5 +1,5 @@
 import BlogCategoryPage from '@/components/content/blog/BlogCategoryPage'
-import categories from '@/contentlayer/categories'
+import categories from '@/contentlayer/lib/categories'
 import { allPosts, Post } from 'contentlayer/generated'
 import {
 	GetStaticProps,

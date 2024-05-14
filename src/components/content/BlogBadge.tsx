@@ -1,4 +1,4 @@
-import categories from '@/contentlayer/categories'
+import categories from '@/contentlayer/lib/categories'
 import { Post } from 'contentlayer/generated'
 import { cn } from '../Accordion'
 

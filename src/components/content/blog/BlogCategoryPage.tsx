@@ -2,7 +2,7 @@ import { Post } from 'contentlayer/generated'
 import BlogCard from '../BlogCard'
 import Layout from '@/components/Layout'
 import Meta from '@/components/Layout/Meta'
-import categories, { getCategoriesList } from '@/contentlayer/categories'
+import categories, { getCategoriesList } from '@/contentlayer/lib/categories'
 import { cn } from '@/helpers/utils'
 import Link from 'next/link'
 type BlogCategoryPageProps = {

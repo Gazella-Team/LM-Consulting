@@ -7,6 +7,7 @@ const Meta = ({
 	icon = '/seo/favicon.png',
 	banner = '/seo/banner.jpg',
 	url = '',
+	authors,
 }: {
 	title?: string
 	keywords?: string
@@ -14,6 +15,7 @@ const Meta = ({
 	icon?: string
 	banner?: string
 	url?: string
+	authors?: string[]
 }) => {
 	return (
 		<Head>
@@ -74,6 +76,10 @@ const Meta = ({
 				content={banner}
 				key="twitter:banner"
 			/>
+
+			{authors?.map((author, index) => (
+				<meta key={`author-${index}`} name="author" content={author} />
+			))}
 		</Head>
 	)
 }
