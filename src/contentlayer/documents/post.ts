@@ -1,5 +1,6 @@
 import { defineDocumentType, defineNestedType } from 'contentlayer/source-files'
 import readingTime from 'reading-time'
+import categories from '../categories'
 
 const Author = defineNestedType(() => ({
 	name: 'Author',
@@ -35,7 +36,7 @@ export const Post = defineDocumentType(() => ({
 		},
 		category: {
 			type: 'enum',
-			options: ['guides', 'engineering', 'news'],
+			options: Object.keys(categories),
 			required: true,
 		},
 	},
