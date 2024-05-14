@@ -45,7 +45,7 @@ export default function Navbar({ white }: { white: boolean }) {
 						</RefLink>
 						<button
 							onClick={() => NiceModal.show(JoinWaitlistModal)}
-							className="bg-main border-[3px] border-main text-sm font-semibold text-white px-6 py-2 rounded-full"
+							className="bg-gray-800 border-[3px] border-gray-800 font-medium text-sm text-white px-6 py-1 rounded-full"
 						>
 							Join waitlist
 						</button>
