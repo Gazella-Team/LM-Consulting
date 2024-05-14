@@ -15,7 +15,7 @@ export default function Navbar({ white }: { white: boolean }) {
 	return (
 		<>
 			<nav className="h-[90px] flex items-center bg-transparent">
-				<div className="w-[96%] max-w-7xl mx-auto flex items-center justify-between text-gray-800">
+				<div className="w-[86%] max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
 						<RefLink href={'/'}>
 							<img
@@ -25,12 +25,15 @@ export default function Navbar({ white }: { white: boolean }) {
 						</RefLink>
 					</div>
 					<div className="flex-1 hidden md:flex items-center justify-center gap-8 font-semibold text-sm">
-						<Link smooth={true} to="products" href={'/'}>
+						<RefLink href={'/'}>
 							Products
-						</Link>
-						<Link smooth={true} to="pricing" href={'/'}>
+						</RefLink>
+						<RefLink href={'/pricing'}>
 							Pricing
-						</Link>
+						</RefLink>
+						<RefLink href={'/blog'}>
+							Blog
+						</RefLink>
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden md:flex">
 						<RefLink

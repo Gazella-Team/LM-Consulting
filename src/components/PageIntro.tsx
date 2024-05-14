@@ -12,7 +12,7 @@ export default function PageIntro(props: PageIntroProps) {
 	return (
 		<section className="py-[70px] pb-[80px] relative">
 			<div className='flex items-center justify-center'>
-				<div className="absolute h-[500px] w-[700px] overflow-hidden" style={{background: "radial-gradient(circle, rgba(94,23,235,0.15552958683473385) 0%, rgba(255,255,255,0) 60%)"}}></div>
+				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden" style={{background: "radial-gradient(circle, rgba(94,23,235,0.16552958683473385) 0%, rgba(255,255,255,0) 60%)"}}></div>
 			</div>
 			<div className="w-[96%] mx-auto max-w-[1000px] flex flex-col text-center">
 				<Reveal delayTime={0.1}>
@@ -21,7 +21,7 @@ export default function PageIntro(props: PageIntroProps) {
 					</p>
 				</Reveal>
 				<Reveal delayTime={0.1}>
-					<h1 className="text-[30px] mb-4 md:text-[40px] xl:text-[50px] leading-[110%] font-bold text-gray-800">
+					<h1 className="text-[40px] mb-4 md:text-[50px] xl:text-[60px] leading-[110%] font-black text-gray-800">
 						{props.heading}{' '}
 						{props.highlighted && (
 							<span className="text-main heading">

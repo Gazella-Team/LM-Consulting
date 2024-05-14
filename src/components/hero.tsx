@@ -10,18 +10,15 @@ import { Link as ScrollLink } from 'react-scroll'
 export default function Hero() {
 	return (
 		<section className="py-[100px] pb-[0px]">
-			<div className="w-[96%] mx-auto max-w-[1100px] flex flex-col gap-5 text-center">
+			<div className="w-[86%] mx-auto max-w-6xl flex flex-col gap-5 text-center">
 				<Reveal delayTime={0.1}>
 					<p className="font-[Caveat] text-main text-3xl">
 						#1 toolbox for SaaS developers
 					</p>
 				</Reveal>
 				<Reveal delayTime={0.1}>
-					<h1 className="text-4xl md:text-5xl xl:text-7xl max-w-[800px] mx-auto leading-[110%] font-black text-gray-800 heading">
-						The ultimate toolbox for{' '}
-						<span className="bg-gradient-to-r from-main via-purple-600 via-purple-500 via-purple-600 to-main text-transparent bg-clip-text">
-							SaaS developers
-						</span>
+					<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[800px] mx-auto leading-[110%] font-black text-gray-800 heading">
+						The ultimate toolbox for SaaS developers
 					</h1>
 				</Reveal>
 				<Reveal delayTime={0.2}>

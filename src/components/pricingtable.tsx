@@ -6,7 +6,7 @@ import { Reveal } from "./Animations/Reveal";
 export default function PricingTable() {
 	return (
 		<section className="mb-24">
-			<div className="grid grid-cols-1 md:grid-cols-3 mx-auto max-w-6xl gap-6">
+			<div className="grid grid-cols-1 lg:grid-cols-3 mx-auto max-w-6xl w-[86%] gap-6">
 			<div>
 				<div className="bg-white h-full rounded-2xl border border-gray-600/10 text-gray-800 shadow-sm">
 					<div className="flex flex-col gap-2 mb-12 px-7 pt-10">
@@ -23,7 +23,7 @@ export default function PricingTable() {
 						<button
 							className="bg-gray-600 w-full border-[3px] border-gray-600 text-sm font-medium text-white px-6 py-2 rounded-full"
 						>
-							Get started with free
+							Get started
 						</button>
 					</div>
 					<div>
@@ -57,6 +57,7 @@ export default function PricingTable() {
 					<div className="absolutew-full h-[40px] flex items-center justify-center mt-[-20px]">
 						<p className="bg-main select-none text-white px-8 rounded-full py-2 text-xs font-semibold">Popular</p>
 					</div>
+					<div className="mt-[-20px]">
 					<div className="flex flex-col gap-2 pb-12 px-7 pt-10 bg-white rounded-t-2xl">
 						<div className="flex items-center gap-3 bg-white">
 							<div className="bg-main rounded-full h-4 w-4"></div>
@@ -71,7 +72,7 @@ export default function PricingTable() {
 						<button
 							className="bg-main w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
 						>
-							Get started with professional
+							Get started
 						</button>
 					</div>
 					<div>
@@ -110,6 +111,7 @@ export default function PricingTable() {
 								<h2 className="text-gray-600">24/7 support</h2>
 							</div>
 						</div>
+					</div>
 					</div>
 				</div>
 				<div className="bg-white rounded-2xl border border-gray-600/10 text-gray-800 shadow-sm">

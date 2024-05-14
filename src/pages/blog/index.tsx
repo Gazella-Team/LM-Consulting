@@ -18,12 +18,12 @@ const tabs: {
 	{
 		name: 'All blogs',
 		tag: 'all',
-		activeClass: 'text-white bg-gradient-to-r from-cyan-500 to-blue-500',
+		activeClass: 'bg-slate-100',
 	},
 	{
 		name: 'Guides',
 		tag: 'guides',
-		activeClass: 'text-white bg-gradient-to-r from-green-500 to-lime-500',
+		activeClass: 'text-white bg-gradient-to-r from-main to-purple-600',
 	},
 	{
 		name: 'Engineering',
@@ -56,10 +56,10 @@ export default function BlogList({
 			/>
 			<div className="mt-12 mb-8">
 				<div className="max-w-6xl w-[90%] mx-auto">
-					<h1 className="text-4xl font-semibold mb-2 text-gray-800">
+					<h1 className="text-4xl font-black mb-3 text-gray-800">
 						Blog
 					</h1>
-					<h2 className="text-xl text-gray-700">
+					<h2 className="text-lg text-gray-700">
 						Latest news and updates from Toolbird
 					</h2>
 					<div className="mt-8 mb-10 flex">
@@ -84,7 +84,7 @@ export default function BlogList({
 						</div>
 					</div>
 				</div>
-				<div className="min-h-[500px] py-4 bg-white border-y border-gray-600/10">
+				<div className="min-h-[500px] py-14 pt-6">
 					<div className="max-w-6xl w-[90%] gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 						{demoPosts.map((post) => (
 							<BlogCard key={post.slug} post={post} />
