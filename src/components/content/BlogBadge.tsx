@@ -8,9 +8,9 @@ type BlogBadgeProps = {
 
 export default function BlogBadge({ category }: BlogBadgeProps) {
 	const badgeColor = {
-		guides: 'from-green-500 to-lime-500',
+		guides: 'from-main to-purple-600',
 		engineering: 'from-violet-500 to-fuchsia-500',
-		news: 'from-cyan-500 to-blue-500',
+		news: 'from-violet-500 to-purple-500',
 	}
 
 	return (

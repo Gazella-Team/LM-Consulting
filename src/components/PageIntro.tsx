@@ -15,12 +15,12 @@ export default function PageIntro(props: PageIntroProps) {
 				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden" style={{background: "radial-gradient(circle, rgba(94,23,235,0.16552958683473385) 0%, rgba(255,255,255,0) 60%)"}}></div>
 			</div>
 			<div className="w-[96%] mx-auto max-w-[1000px] flex flex-col text-center">
-				<Reveal delayTime={0.1}>
+				<Reveal delayTime={0}>
 					<p className="font-[Caveat] text-main mb-4 text-3xl">
 						{props.hook}
 					</p>
 				</Reveal>
-				<Reveal delayTime={0.1}>
+				<Reveal delayTime={0}>
 					<h1 className="text-[40px] mb-4 md:text-[50px] xl:text-[60px] leading-[110%] font-black text-gray-800">
 						{props.heading}{' '}
 						{props.highlighted && (
@@ -30,7 +30,7 @@ export default function PageIntro(props: PageIntroProps) {
 						)}
 					</h1>
 				</Reveal>
-				<Reveal delayTime={0.2}>
+				<Reveal delayTime={0.1}>
 					<p className="text-base md:text-lg xl:text-xl font-regular max-w-[400px] mx-auto text-gray-600">
 						{props.paragraph}
 					</p>

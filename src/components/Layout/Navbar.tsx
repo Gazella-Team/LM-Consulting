@@ -1,7 +1,6 @@
 import NiceModal from '@ebay/nice-modal-react'
 import { useRouter } from 'next/router'
 import JoinWaitlistModal from '../modals/JoinWaitlistModal'
-import Flyout from './Flyout'
 import { Link, Element } from 'react-scroll'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
@@ -25,6 +24,9 @@ export default function Navbar({ white }: { white: boolean }) {
 						</RefLink>
 					</div>
 					<div className="flex-1 hidden md:flex items-center justify-center gap-8 font-semibold text-sm">
+						<RefLink href={'/analytics'}>
+							Analytics
+						</RefLink>
 						<RefLink href={'/'}>
 							Products
 						</RefLink>
