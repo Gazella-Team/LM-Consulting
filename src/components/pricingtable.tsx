@@ -2,10 +2,22 @@ import { CheckCheckIcon, CheckCircle2Icon, CheckCircleIcon } from "lucide-react"
 import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa";
 import { Reveal } from "./Animations/Reveal";
+import { useState } from "react";
 
 export default function PricingTable() {
+	const [pricingRuntime, setPricingRuntime] = useState("monthly")
 	return (
 		<section className="mb-24">
+			<div className="flex items-center justify-center pb-14">
+				<div className="rounded-full shadow-sm p-1 relative gap- border bg-white border-gray-600/10 flex items-center justify-between">
+					<div onClick={() => setPricingRuntime("monthly")} className={pricingRuntime === "monthly" ? "bg-slate-200 cursor-pointer rounded-full text-sm px-2 py-1 font-bold":"bg-white cursor-pointer rounded-full text-sm px-2 py-1 font-bold"}>
+						Monthly
+					</div>
+					<div onClick={() => setPricingRuntime("yearly")}  className={pricingRuntime === "yearly" ? "bg-slate-200 cursor-pointer rounded-full text-sm px-2 py-1 font-bold":"bg-white cursor-pointer rounded-full text-sm px-2 py-1 font-bold"}>
+						Yearly
+					</div>
+				</div>
+			</div>
 			<div className="grid grid-cols-1 lg:grid-cols-3 mx-auto max-w-6xl w-[86%] gap-6">
 			<div>
 				<div className="bg-white h-full rounded-2xl border border-gray-600/10 text-gray-800 shadow-sm">
