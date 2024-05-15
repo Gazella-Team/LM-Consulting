@@ -13,12 +13,14 @@ export default function Footer() {
                         <img className="w-28" src="/logos/finallogo.svg"></img>
                         <p className="text-gray-500 text-sm max-w-xs font-medium">Helping SaaS developers save time and get a better overview when bulding products.</p>
                     </div>
-                    <div>
-                        <button
+                    <div className="flex">
+                        <Link
+                            target="_blank"
+                            href={"https://app.toolbird.io/auth/register"}
                                 className="bg-gray-800 border-[3px] border-gray-800 font-medium text-xs flex text-white px-6 py-1 rounded-full"
                             >
                                 Get started
-                        </button>
+                        </Link>
                     </div>
                     <div className="flex items-center gap-2 mt-3">
                         <div className="border p-3 rounded-full border-gray-600/10">

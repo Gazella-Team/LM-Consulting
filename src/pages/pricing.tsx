@@ -4,6 +4,7 @@ import SectionIntro from '@/components/SectionIntro'
 import BentoGridComponent from '@/components/bento-grid'
 import CustomerSlider from '@/components/customer-slider'
 import PricingTable from '@/components/pricingtable'
+import Testimonials from '@/components/testimonials'
 
 export default function Pricing() {
 	return (

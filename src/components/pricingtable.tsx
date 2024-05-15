@@ -61,7 +61,7 @@ export default function PricingTable() {
 					<div className="flex flex-col gap-2 pb-12 px-7 pt-10 bg-white rounded-t-2xl">
 						<div className="flex items-center gap-3 bg-white">
 							<div className="bg-main rounded-full h-4 w-4"></div>
-							<h3 className="font-semibold text-2xl text-gray-800">Professional</h3>
+							<h3 className="font-semibold text-2xl text-gray-800">Pro</h3>
 						</div>
 						<p className="text-gray-600">For ambitious SaaS startups</p>
 					</div>

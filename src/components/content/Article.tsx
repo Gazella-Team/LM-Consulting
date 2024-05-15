@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 import { Mdx } from '@/components/content/mdx'
 import { format } from 'date-fns'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, ChevronLeft } from 'lucide-react'
 
 export function Article({ post }: { post: Post }) {
 	const getNameInitials = (name: string) => {
@@ -20,13 +20,17 @@ export function Article({ post }: { post: Post }) {
 	return (
 		<article className="border border-gray-600/10 relative mx-auto flex max-w-3xl p-8 rounded-xl bg-white flex-col gap-8">
 			<div className="grid w-full gap-3">
-				<div className="flex">
+			<div className="flex mb-4">
 					<Link
-						href="/blog"
-						className="flex items-center gap-2 group text-gray-500 hover:text-gray-800"
+						href={`/blog`}
+						className="flex items-center gap-2 text-gray-400 bg-slate-50 px-2 py-1 border-gray-600/10 rounded-xl hover:text-gray-700 transition-all"
 					>
-						<ArrowLeft />
-						<p>Back to all posts</p>
+						<div className="bg-slate-50 rounded-md">
+							<ChevronLeft size={16} />
+						</div>
+						<span className="text-medium font-medium text-sm">
+							back to all posts
+						</span>
 					</Link>
 				</div>
 				<h1 className="font-semibold mb-5 text-3xl">{post.title}</h1>
