@@ -5,15 +5,15 @@ import { Reveal } from "./Animations/Reveal";
 import { useState } from "react";
 
 export default function PricingTable() {
-	const [pricingRuntime, setPricingRuntime] = useState("monthly")
+	const [pricingRuntime, setPricingRuntime] = useState("yearly")
 	return (
 		<section className="mb-24">
 			<div className="flex items-center justify-center pb-14">
-				<div className="rounded-full shadow-sm p-1 relative gap- border bg-white border-gray-600/10 flex items-center justify-between">
-					<div onClick={() => setPricingRuntime("monthly")} className={pricingRuntime === "monthly" ? "bg-slate-200 cursor-pointer rounded-full text-sm px-2 py-1 font-bold":"bg-white cursor-pointer rounded-full text-sm px-2 py-1 font-bold"}>
+				<div className="rounded-full text-gray-600 shadow-sm p-1 relative gap- border bg-white border-gray-600/10 flex items-center justify-between">
+					<div onClick={() => setPricingRuntime("monthly")} className={pricingRuntime === "monthly" ? "bg-main w-20 text-center text-white cursor-pointer rounded-full text-xs px-2 py-1 font-bold":"bg-white w-20 text-center cursor-pointer rounded-full text-xs px-2 py-1 font-bold"}>
 						Monthly
 					</div>
-					<div onClick={() => setPricingRuntime("yearly")}  className={pricingRuntime === "yearly" ? "bg-slate-200 cursor-pointer rounded-full text-sm px-2 py-1 font-bold":"bg-white cursor-pointer rounded-full text-sm px-2 py-1 font-bold"}>
+					<div onClick={() => setPricingRuntime("yearly")}  className={pricingRuntime === "yearly" ? "bg-main w-20 text-center text-white cursor-pointer rounded-full text-xs px-2 py-1 font-bold":"bg-white w-20 text-center cursor-pointer rounded-full text-xs px-2 py-1 font-bold"}>
 						Yearly
 					</div>
 				</div>
@@ -78,7 +78,7 @@ export default function PricingTable() {
 						<p className="text-gray-600">For ambitious SaaS startups</p>
 					</div>
 					<div className="px-7 pb-14 bg-white">
-						<h1 className="text-5xl font-semibold">$29<span className="ml-1 text-base font-medium text-gray-600">/ month</span></h1>
+						<h1 className="text-5xl font-semibold">{pricingRuntime === "monthly" ? "$19":"$15"}<span className="ml-1 text-base font-medium text-gray-600">/ {pricingRuntime === "monthly" ? "month":"month, billed yearly"}</span></h1>
 					</div>
 					<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
 						<button
