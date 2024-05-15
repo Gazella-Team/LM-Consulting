@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import PageIntro from '@/components/PageIntro'
 import SectionIntro from '@/components/SectionIntro'
 import BentoGridComponent from '@/components/bento-grid'
 import DashboardDisplay from '@/components/dashboarddisplay'
@@ -8,7 +9,12 @@ import PricingTable from '@/components/pricingtable'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<Hero />
+			<PageIntro
+				hook="Flexible pricing"
+				highlighted="platform"
+				heading="All SaaS tools collected in one"
+				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
+			/>
 			<DashboardDisplay />
 			<div id="products">
 				<SectionIntro
