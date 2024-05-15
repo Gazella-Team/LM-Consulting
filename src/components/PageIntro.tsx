@@ -10,9 +10,9 @@ interface PageIntroProps {
 
 export default function PageIntro(props: PageIntroProps) {
 	return (
-		<section className="py-[70px] pb-[80px] relative">
+		<section className="py-[50px] pt-[60px] relative">
 			<div className='flex items-center justify-center'>
-				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden" style={{background: "radial-gradient(circle, rgba(94,23,235,0.16552958683473385) 0%, rgba(255,255,255,0) 60%)"}}></div>
+				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden" style={{background: "radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 70%)"}}></div>
 			</div>
 			<div className="w-[96%] mx-auto max-w-[1000px] flex flex-col text-center">
 				<Reveal delayTime={0}>
@@ -21,7 +21,7 @@ export default function PageIntro(props: PageIntroProps) {
 					</p>
 				</Reveal>
 				<Reveal delayTime={0}>
-					<h1 className="text-[40px] mb-4 md:text-[50px] xl:text-[55px] leading-[110%] max-w-[500px] mx-auto font-black text-gray-800">
+					<h1 className="text-[40px] mb-4 md:text-[50px] xl:text-[55px] leading-[120%] max-w-[500px] mx-auto font-black text-gray-800">
 						{props.heading}{' '}
 						{props.highlighted && (
 							<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
@@ -31,7 +31,7 @@ export default function PageIntro(props: PageIntroProps) {
 					</h1>
 				</Reveal>
 				<Reveal delayTime={0.1}>
-					<p className="text-base md:text-lg xl:text-lg font-regular max-w-[400px] mx-auto text-gray-600">
+					<p className="text-base paragraph md:text-lg xl:text-lg font-regular max-w-[400px] mx-auto text-gray-600">
 						{props.paragraph}
 					</p>
 				</Reveal>

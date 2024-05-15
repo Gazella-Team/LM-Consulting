@@ -9,12 +9,7 @@ import PricingTable from '@/components/pricingtable'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<PageIntro
-				hook="Flexible pricing"
-				highlighted="platform"
-				heading="All SaaS tools collected in one"
-				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
-			/>
+			<Hero />
 			<DashboardDisplay />
 			<div id="products">
 				<SectionIntro

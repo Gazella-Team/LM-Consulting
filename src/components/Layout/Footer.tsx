@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col gap-3">
                         <img className="w-28" src="/logos/finallogo.svg"></img>
-                        <p className="text-gray-500 text-sm max-w-xs font-medium">Helping SaaS developers save time and get a better overview when bulding products.</p>
+                        <p className="text-gray-500 paragraph text-sm max-w-xs font-regular">Helping SaaS developers save time and get a better overview when bulding products.</p>
                     </div>
                     <div className="flex">
                         <Link
@@ -34,7 +34,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-4">
+                <div className="grid grid-cols-1 lg:grid-cols-4 paragraph">
                     <div>
                         <h2 className="text-sm mb-5 font-bold text-gray-800">Products</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-medium">
@@ -75,7 +75,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-center pb-6">
-                <p className="text-gray-400 text-sm">© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE 82, 2TH.1358 KØBENHAVN</p>
+                <p className="text-gray-400 text-sm paragraph">© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE 82, 2TH.1358 KØBENHAVN</p>
             </div>
         </footer>
         </>

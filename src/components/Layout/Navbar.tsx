@@ -13,7 +13,7 @@ export default function Navbar({ white }: { white: boolean }) {
 	const path = router.pathname
 	return (
 		<>
-			<nav className="h-[90px] flex items-center bg-transparent">
+			<nav className="h-[70px] flex paragraph items-center bg-transparent">
 				<div className="w-[86%] max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
 						<RefLink href={'/'}>
@@ -23,7 +23,7 @@ export default function Navbar({ white }: { white: boolean }) {
 							></img>
 						</RefLink>
 					</div>
-					<div className="flex-1 hidden md:flex items-center justify-center gap-8 font-semibold text-sm">
+					<div className="flex-1 hidden md:flex items-center justify-center gap-8 font-medium text-sm">
 						<RefLink href={'/analytics'}>
 							Analytics
 						</RefLink>

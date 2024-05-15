@@ -17,7 +17,7 @@ export default function Hero() {
 					</p>
 				</Reveal>
 				<Reveal delayTime={0.1}>
-					<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[800px] mx-auto leading-[110%] font-black text-gray-800 heading">
+					<h1 className="text-4xl md:text-5xl xl:text-8xl max-w-[800px] mx-auto leading-[110%] font-black text-gray-800 heading">
 						The ultimate toolbox for SaaS developers
 					</h1>
 				</Reveal>
