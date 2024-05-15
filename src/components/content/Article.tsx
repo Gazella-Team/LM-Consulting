@@ -1,26 +1,19 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import type { Post } from 'contentlayer/generated'
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-
 import { Mdx } from '@/components/content/mdx'
 import { format } from 'date-fns'
-import { ArrowLeft } from 'lucide-react'
 import { AuthorAvatars } from './blog/AuthorAvatars'
 import { AuthorNames } from './blog/AuthorNames'
+import BlogBadge from './BlogBadge'
 
 export function Article({ post }: { post: Post }) {
 	return (
-		<article className="border border-gray-600/10 relative mx-auto flex max-w-6xl w-[90%] p-8 rounded-xl bg-white flex-col gap-8">
+		<article className="border border-gray-600/10 relative mx-auto flex max-w-3xl w-[90%] p-8 rounded-xl bg-white flex-col gap-8">
 			<div className="grid max-w-3xl mx-auto w-full gap-3">
-				<div className="flex">
-					<Link
-						href="/blog"
-						className="flex items-center gap-2 group text-gray-500 hover:text-gray-800"
-					>
-						<ArrowLeft />
-						<p>Back to Blog</p>
+				<div className="flex items-center gap-2">
+					<Link href={`/blog/category/${post.category}`} passHref>
+						<BlogBadge category={post.category} />
 					</Link>
 				</div>
 				<h1 className="font-semibold text-3xl">{post.title}</h1>

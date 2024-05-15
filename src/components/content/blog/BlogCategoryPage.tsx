@@ -17,7 +17,7 @@ export default function BlogCategoryPage({
 	const category = categories[activeTab]
 	return (
 		<Layout>
-			{/* Create SEO banner from image.social when we have 3 blogs */}
+			{/* TODO: Create SEO banner from image.social when we have 3 blogs */}
 			<Meta
 				title={`Blog | ${category.name} | Toolbird`}
 				description="Latest news and updates from Toolbird aswell as guides."
@@ -31,7 +31,7 @@ export default function BlogCategoryPage({
 						Latest news and updates from Toolbird
 					</h2>
 					<div className="mt-8 mb-10 flex">
-						<div className="bg-white border rounded-full px-3 py-2.5 flex gap-2">
+						<div className="bg-white border rounded-3xl px-3 py-2.5 flex gap-2 flex-wrap">
 							{
 								// Tabs
 								getCategoriesList().map((category) => (
