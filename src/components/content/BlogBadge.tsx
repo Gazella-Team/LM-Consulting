@@ -1,4 +1,6 @@
+import categories from '@/contentlayer/lib/categories'
 import { Post } from 'contentlayer/generated'
+import { cn } from '../Accordion'
 
 type BlogCategory = Post['category']
 
@@ -7,15 +9,14 @@ type BlogBadgeProps = {
 }
 
 export default function BlogBadge({ category }: BlogBadgeProps) {
-	const badgeColor = {
-		guides: 'from-main to-purple-600',
-		engineering: 'from-violet-500 to-fuchsia-500',
-		news: 'from-violet-500 to-purple-500',
-	}
+	const badgeColor = categories[category].activeClass
 
 	return (
 		<span
-			className={`px-2 border border-gray-600/10 text-white py-1.5 rounded-full text-xs font-medium bg-gradient-to-r ${badgeColor[category]}`}
+			className={cn(
+				`px-2 border border-gray-600/10 text-white py-1.5 rounded-full text-xs font-medium bg-gradient-to-r`,
+				badgeColor
+			)}
 		>
 			{category.slice(0, 1).toUpperCase() + category.slice(1)}
 		</span>
