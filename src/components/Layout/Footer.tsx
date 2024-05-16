@@ -17,7 +17,7 @@ export default function Footer() {
                         <Link
                             target="_blank"
                             href={"https://app.toolbird.io/auth/register"}
-                                className="bg-gray-800 border-[3px] border-gray-800 font-medium text-xs flex text-white px-6 py-1 rounded-full"
+                                className="bg-gray-800 border-[3px] border-gray-800 font-medium paragraph text-xs flex text-white px-6 py-1 rounded-full"
                             >
                                 Get started
                         </Link>
