@@ -1,13 +1,16 @@
 import Slider from "react-infinite-logo-slider";
 
-const imageData = ["/users/slack.webp", "/users/slack.webp","/users/slack.webp","/users/slack.webp","/users/slack.webp","/users/slack.webp","/users/slack.webp","/users/slack.webp",]
+const imageData = ["/users/prisma.svg", "/users/prisma.svg","/users/prisma.svg","/users/prisma.svg","/users/prisma.svg","/users/prisma.svg","/users/prisma.svg","/users/prisma.svg",]
 
 export default function CustomerSlider() {
     return (
-      <section className="py-14 bflex items-center overflow-hidden">
+      <section className="pt-24 bflex items-center overflow-hidden">
+        <div className="flex items-center justify-center pb-8">
+          <p className="uppercase paragraph text-xs text-gray-500">TRUSTED BY +50 LEADING COMMUNITY-FOCUSED TEAMS</p>
+        </div>
         <div>
           <Slider
-            width="170px"
+            width="160px"
             duration={40}
             pauseOnHover={false}
             blurBorders={true}
@@ -15,7 +18,7 @@ export default function CustomerSlider() {
           >
             {imageData.map((v) => (
               <Slider.Slide key={v}>
-                <img className="w-[100px]" alt={v} src={v}></img>
+                <img className="w-[130px]" alt={v} src={v}></img>
               </Slider.Slide>
             ))}
           </Slider>

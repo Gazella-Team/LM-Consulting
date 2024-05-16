@@ -15,7 +15,7 @@ export default function Hero() {
 			</div>
 			<div className="w-[86%] mx-auto max-w-6xl flex flex-col gap-5 ">
 				<Reveal delayTime={0.1}>
-					<p className="font-[Caveat] text-main text-3xl">
+					<p className="font-[Caveat] mb-3 text-main text-3xl">
 						#1 toolbox for SaaS developers
 					</p>
 				</Reveal>
