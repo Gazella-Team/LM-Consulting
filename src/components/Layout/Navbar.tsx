@@ -43,7 +43,7 @@ export default function Navbar() {
 						</RefLink>
 						<RefLink href={'/pricing'}>
 							Pricing
-						</Link>
+						</RefLink>
 						<RefLink href="/blog">Blog</RefLink>
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden md:flex">
