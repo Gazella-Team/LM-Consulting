@@ -21,7 +21,7 @@ export default function Navbar() {
 				className={cn(
 					'h-[70px] w-full transition-all flex items-center',
 					scrolled
-						? 'border-b border-gray-200 bg-white/50 backdrop-blur-xl'
+						? 'border-b border-gray-600/10 bg-white/50 backdrop-blur-xl'
 						: 'bg-transparent'
 				)}
 			>
@@ -34,7 +34,7 @@ export default function Navbar() {
 							/>
 						</RefLink>
 					</div>
-					<div className="flex-1 hidden md:flex items-center justify-center gap-8 font-medium text-sm">
+					<div className="flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm">
 						<RefLink href={'/analytics'}>
 							Analytics
 						</RefLink>
@@ -46,9 +46,9 @@ export default function Navbar() {
 						</RefLink>
 						<RefLink href="/blog">Blog</RefLink>
 					</div>
-					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden md:flex">
+					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
 						<RefLink
-							className="hidden font-semibold text-sm sm:flex"
+							className="hidden font-medium text-sm sm:flex"
 							target="_blank"
 							href={'https://app.toolbird.io/auth/login'}
 						>
@@ -58,10 +58,10 @@ export default function Navbar() {
 							onClick={() => NiceModal.show(JoinWaitlistModal)}
 							className="bg-gray-800 border-[3px] border-gray-800 font-medium text-sm text-white px-6 py-1 rounded-full"
 						>
-							Join waitlist
+							Get started
 						</button>
 					</div>
-					<div className="flex md:hidden cursor-pointer">
+					<div className="flex lg:hidden cursor-pointer">
 						{menuClicked ? (
 							<X onClick={() => setMenuClicked(false)} />
 						) : (

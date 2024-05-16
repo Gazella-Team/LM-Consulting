@@ -24,10 +24,10 @@ export default function BlogCategoryPage({
 			/>
 			<div className="mt-12 mb-8">
 				<div className="max-w-6xl w-[90%] mx-auto">
-					<h1 className="text-4xl font-semibold mb-2 text-gray-800">
+					<h1 className="text-4xl font-bold mb-4 text-gray-800">
 						Blog
 					</h1>
-					<h2 className="text-xl text-gray-700">
+					<h2 className="text-xl paragraph font-regular text-gray-600">
 						Latest news and updates from Toolbird
 					</h2>
 					<div className="mt-8 mb-10 flex">
@@ -56,7 +56,7 @@ export default function BlogCategoryPage({
 						</div>
 					</div>
 				</div>
-				<div className="min-h-[800px] py-12 bg-white border-y border-gray-600/10">
+				<div className="py-12 bg-white border-y border-gray-600/10">
 					{posts.length > 0 ? (
 						<div className="max-w-6xl w-[90%] gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 							{posts.map((post) => (
