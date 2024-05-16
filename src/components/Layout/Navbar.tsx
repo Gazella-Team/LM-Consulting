@@ -16,7 +16,7 @@ export default function Navbar() {
 	const scrolled = useScroll(50)
 
 	return (
-		<nav className="top-0 sticky z-50">
+		<nav className="top-0 paragraph sticky z-50">
 			<div
 				className={cn(
 					'h-[70px] w-full transition-all flex items-center',
@@ -25,7 +25,7 @@ export default function Navbar() {
 						: 'bg-transparent'
 				)}
 			>
-				<div className="w-[96%] max-w-7xl mx-auto flex items-center justify-between text-gray-800">
+				<div className="w-[86%] max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
 						<RefLink href={'/'}>
 							<img
