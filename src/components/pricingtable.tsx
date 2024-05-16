@@ -135,7 +135,7 @@ export default function PricingTable() {
 						<p className="text-gray-600">For larger organizations</p>
 					</div>
 					<div className="px-7 pb-14">
-						<h1 className="text-5xl font-semibold">Let's talk</h1>
+						<h1 className="text-5xl font-semibold">Let&apos;s talk</h1>
 					</div>
 					<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
 						<button
