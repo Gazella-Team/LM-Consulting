@@ -39,7 +39,7 @@ export default function PricingTable() {
 						</button>
 					</div>
 					<div className="paragraph">
-						<h3 className="p-7 pb-0 text-gray-500 font-medium">What's included:</h3>
+						<h3 className="p-7 pb-0 text-gray-500 font-medium">What&apos;s included:</h3>
 						<div className="py-10 pt-6 px-7 flex flex-col gap-6 text-gray-600">
 						<div className="flex items-center gap-4">
 								<FaCheckCircle size={18}  />
