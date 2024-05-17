@@ -9,7 +9,6 @@ export default function Home() {
 	return (
 		<Layout white={true}>
 			<Hero />
-			<CustomerSlider />
 			<DashboardDisplay />
 			<div id="products">
 				<SectionIntro

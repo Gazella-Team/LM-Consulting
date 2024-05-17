@@ -66,7 +66,7 @@ export default function PricingTable() {
 				</div>
 			</div>
 				<div style={{background: "linear-gradient(350deg, rgba(243,237,255,1) 0%, rgba(255,255,255,1) 54%)"}} className="bg-white relative rounded-2xl border-2 border-main text-gray-800 shadow-main/30 shadow-clean">
-					<div className="absolutew-full h-[40px] flex items-center justify-center mt-[-20px]">
+					<div className="w-full h-[40px] flex items-center justify-center mt-[-20px]">
 						<p className="bg-main select-none paragraph text-white px-8 rounded-full py-2 text-xs font-semibold">Popular</p>
 					</div>
 					<div className="mt-[-20px]">
@@ -132,12 +132,12 @@ export default function PricingTable() {
 							<div className="bg-gray-800 rounded-full h-4 w-4"></div>
 							<h3 className="font-semibold text-2xl text-gray-800">Enterprise</h3>
 						</div>
-						<p className="text-gray-600">For larger organizations</p>
+						<p className="text-gray-600 paragraph">For larger organizations</p>
 					</div>
 					<div className="px-7 pb-14">
 						<h1 className="text-5xl font-semibold">Let&apos;s talk</h1>
 					</div>
-					<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
+					<div className="bg-slate-50 paragraph border-y py-5 px-7 border-gray-600/10">
 						<button
 							className="bg-gray-800 w-full border-[3px] border-gray-800 text-sm font-medium text-white px-6 py-2 rounded-full"
 						>
@@ -145,8 +145,8 @@ export default function PricingTable() {
 						</button>
 					</div>
 					<div>
-						<h3 className="p-7 pb-0 text-gray-500 font-medium">Everything in professional, plus:</h3>
-						<div className="py-10 pt-6 px-7 flex flex-col gap-6">
+						<h3 className="p-7 pb-0 paragraph text-gray-500 font-medium">Everything in professional, plus:</h3>
+						<div className="py-10 pt-6 px-7 paragraph flex flex-col gap-6">
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
 								<h2 className="text-gray-800">Complete tool access</h2>
