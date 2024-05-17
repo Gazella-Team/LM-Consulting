@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
+import NavigationMenuDemo from './NavDemo'
 
 type LayoutProps = {
 	className?: string

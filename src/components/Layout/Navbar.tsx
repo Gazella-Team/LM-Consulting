@@ -8,6 +8,7 @@ import { Reveal } from '../Animations/Reveal'
 import RefLink from 'next/link'
 import useScroll from '@/hooks/use-scroll'
 import { cn } from '../Accordion'
+import NavigationMenuDemo from './NavDemo'
 
 export default function Navbar() {
 	const [menuClicked, setMenuClicked] = useState(false)
@@ -35,19 +36,7 @@ export default function Navbar() {
 						</RefLink>
 					</div>
 					<div className="flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm">
-						<RefLink href={'/analytics'}>
-							Analytics
-						</RefLink>
-						<RefLink href={'/'}>
-							Products
-						</RefLink>
-						<RefLink href={'/pricing'}>
-							Pricing
-						</RefLink>
-						<RefLink href={'/affiliate'}>
-							Affiliate
-						</RefLink>
-						<RefLink href="/blog">Blog</RefLink>
+						<NavigationMenuDemo />
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
 						<RefLink
