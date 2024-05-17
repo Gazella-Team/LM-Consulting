@@ -29,7 +29,7 @@ export default function PricingTable() {
 						<p className="text-gray-600 paragraph">For hobby & side projects</p>
 					</div>
 					<div className="px-7 mb-14">
-						<h1 className="text-5xl font-semibold">$0<span className="ml-1 paragraph text-base font-light text-gray-600">/ forever</span></h1>
+						<h1 className="text-5xl font-semibold">$0<span className="ml-1 paragraph text-base font-[400] text-gray-600">/ forever</span></h1>
 					</div>
 					<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
 						<button
@@ -78,7 +78,7 @@ export default function PricingTable() {
 						<p className="text-gray-600 paragraph">For ambitious SaaS startups</p>
 					</div>
 					<div className="px-7 pb-14 bg-white">
-						<h1 className="text-5xl font-semibold">{pricingRuntime === "monthly" ? "$19":"$15"}<span className="ml-1 text-base paragraph font-light text-gray-600">/ {pricingRuntime === "monthly" ? "month":"month, billed yearly"}</span></h1>
+						<h1 className="text-5xl font-semibold">{pricingRuntime === "monthly" ? "$19":"$15"}<span className="ml-1 text-base paragraph font-[400] text-gray-600">/ {pricingRuntime === "monthly" ? "month":"month, billed yearly"}</span></h1>
 					</div>
 					<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
 						<button
