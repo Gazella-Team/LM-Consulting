@@ -6,6 +6,7 @@ import BentoGridComponent from '@/components/bento-grid'
 import CustomerSlider from '@/components/customer-slider'
 import PricingTable from '@/components/pricingtable'
 import Testimonials from '@/components/testimonials'
+import Users from '@/components/users'
 
 export default function Pricing() {
 	return (
@@ -20,6 +21,7 @@ export default function Pricing() {
 			<SectionIntro heading='Benefits of using Toolbird' description='' hook='Everything needed'>
 				<Benefits />
 			</SectionIntro>
+			<Users />
 		</Layout>
 	)
 }
