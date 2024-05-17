@@ -1,11 +1,9 @@
 import Layout from '@/components/Layout'
-import PageIntro from '@/components/PageIntro'
 import SectionIntro from '@/components/SectionIntro'
 import BentoGridComponent from '@/components/bento-grid'
 import CustomerSlider from '@/components/customer-slider'
 import DashboardDisplay from '@/components/dashboarddisplay'
 import Hero from '@/components/hero'
-import PricingTable from '@/components/pricingtable'
 
 export default function Home() {
 	return (

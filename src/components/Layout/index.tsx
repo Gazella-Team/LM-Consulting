@@ -15,7 +15,7 @@ export default function Layout({ children }: LayoutProps) {
 				<Navbar />
 				<div className="relative">{children}</div>
 				<div className="relative">
-					<Footer />
+				<Footer />
 				</div>
 			</div>
 		</div>
