@@ -5,13 +5,10 @@ import { Reveal } from './Animations/Reveal'
 import { RevealLight } from './Animations/RevealLight'
 import NiceModal from '@ebay/nice-modal-react'
 import JoinWaitlistModal from './modals/JoinWaitlistModal'
-import { Link as ScrollLink } from 'react-scroll'
-import { CircleCheck } from 'lucide-react'
-import RefLink from 'next/link'
 
 export default function Hero() {
 	return (
-		<section className="py-[100px] pb-[0px] relative text-center">
+		<section className="py-24 relative text-center">
 			<div className='flex items-center justify-center'>
 				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden -z-1" style={{background: "radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 70%)"}}></div>
 			</div>
@@ -31,18 +28,18 @@ export default function Hero() {
 				</Reveal>
 				<RevealLight delayTime={0.4}>
 					<div className="flex items-center paragraph justify-center gap-3 mt-4 font-medium">
-						<button
-							onClick={() => NiceModal.show(JoinWaitlistModal)}
+						<Link
+							href={"/"}
 							className="bg-main border-[3px] border-main text-white text-sm px-6 py-2 rounded-full"
 						>
 							Join waitlist
-						</button>
-						<RefLink
-							className="bg-transparent border-[3px] border-main text-main text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+						</Link>
+						<Link
+							className="border-[3px] bg-gray-800 border-gray-800 text-white text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
 							href={''}
 						>
 							View features
-						</RefLink>
+						</Link>
 					</div>
 				</RevealLight>
 			</div>

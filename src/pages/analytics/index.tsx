@@ -16,8 +16,8 @@ export default function Analytics() {
 				heading="Privacy friendly website analytics of your"
 				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
-			<DashboardDisplay />
-			<SectionIntro heading='Epic feature included' description='Discover, collaborate, and grow, our all-in-one platform empowers you to build and scale your influencer marketing with thousands of verified influencers.' hook='Everything needed'>
+			<DashboardDisplay src={"/showcases/analysis.webp"} />
+			<SectionIntro heading='Epic feature included' description='Discover, collaborate, and grow, our all-in-one platform empowers you to build.' hook='Everything needed'>
 				<Features featureData={[{icon:<ChartBarIcon width={30} />, image: "/web-analytics/sources.webp", heading:"Country-based data", description:"Access insights into more than 300 million influencers and simplify"}, {icon:<ChartBarIcon width={30} />, heading:"Country-based data", image: "/web-analytics/sources.webp", description:"Access insights into more than 300 million influencers and simplify"}, {icon:<ChartBarIcon width={30} />, heading:"Country-based data", image: "/web-analytics/sources.webp", description:"Access insights into more than 300 million influencers and simplify"}]} />
 			</SectionIntro>
 		</Layout>

@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<Layout white={true}>
 			<Hero />
-			<DashboardDisplay />
+			<DashboardDisplay src={"/showcases/analysis.webp"} />
 			<div id="products">
 				<SectionIntro
 					heading="All tools in one place"
