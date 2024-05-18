@@ -5,11 +5,6 @@ import AboutComponent from '@/components/about'
 export default function About() {
 	return (
 		<Layout white={true}>
-			<PageIntro
-				hook="By developers, for developers"
-				highlighted="us"
-				heading="About"
-			/>
 			<AboutComponent />
 		</Layout>
 	)
