@@ -9,7 +9,6 @@ export default function About() {
 				hook="By developers, for developers"
 				highlighted="us"
 				heading="About"
-				paragraph=""
 			/>
 			<AboutComponent />
 		</Layout>

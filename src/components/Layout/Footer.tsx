@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-4 paragraph">
                     <div>
-                        <h2 className="text-sm mb-5 font-bold text-gray-800">Products</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Products</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-medium">
                             <Link href={"/"}>Analytics</Link>
                             <Link href={"/"}>Monitoring</Link>
@@ -46,7 +46,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm mb-5 font-bold text-gray-800">About</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">About</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-medium">
                             <Link href={"/"}>The story</Link>
                             <Link href={"/"}>Career</Link>
@@ -55,7 +55,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm mb-5 font-bold text-gray-800">Customers</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Customers</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-medium">
                             <Link href={"/"}>Analytics</Link>
                             <Link href={"/"}>Analytics</Link>
@@ -64,7 +64,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm mb-5 font-bold text-gray-800">Learning</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Learning</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-medium">
                             <Link href={"/"}>Analytics</Link>
                             <Link href={"/"}>Analytics</Link>

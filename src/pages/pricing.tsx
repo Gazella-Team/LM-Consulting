@@ -18,9 +18,6 @@ export default function Pricing() {
 				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
 			<PricingTable />
-			<SectionIntro heading='Benefits of using Toolbird' description='' hook='Everything needed'>
-				<Benefits />
-			</SectionIntro>
 		</Layout>
 	)
 }
