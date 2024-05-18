@@ -18,7 +18,7 @@ export default function PricingTable() {
 					</div>
 				</div>
 			</div>
-			<div className="grid grid-cols-1 lg:grid-cols-3 mx-auto max-w-6xl w-[86%] gap-6">
+			<div className="grid grid-cols-1 lg:grid-cols-3 mx-auto max-w-6xl w-[86%] gap-14 lg:gap-6">
 			<div className="relative">
 				<div className="bg-white relative h-full rounded-2xl border border-gray-600/10 text-gray-800 shadow-sm">
 					<div className="flex flex-col gap-2 mb-12 px-7 pt-10">

@@ -8,7 +8,17 @@ import { Reveal } from '../Animations/Reveal'
 import RefLink from 'next/link'
 import useScroll from '@/hooks/use-scroll'
 import { cn } from '../Accordion'
-import NavigationMenuDemo from './NavDemo'
+import Flyout from './Flyout'
+import localFont from 'next/font/local'
+
+const ToolbirdFont = localFont({
+	src: [
+	  {
+		path: '../fonts/Gilroy-SemiBold.ttf',
+		style: 'normal',
+	  },
+	]
+  })
 
 export default function Navbar() {
 	const [menuClicked, setMenuClicked] = useState(false)
@@ -17,14 +27,16 @@ export default function Navbar() {
 	const scrolled = useScroll(50)
 
 	return (
-		<nav className="top-0 paragraph sticky z-50">
+		<nav className="top-0  sticky z-50">
 			<div
 				className={cn(
 					'h-[70px] w-full transition-all flex items-center',
 					scrolled
 						? 'border-b border-gray-600/10 bg-white/50 backdrop-blur-xl'
 						: 'bg-transparent'
-				)}
+					,
+				)
+			}
 			>
 				<div className="w-[86%] max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
@@ -35,8 +47,15 @@ export default function Navbar() {
 							/>
 						</RefLink>
 					</div>
-					<div className="flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm">
-						<NavigationMenuDemo />
+					<div className={cn("flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm")}>
+						<Flyout />
+						<RefLink href={'/pricing'}>
+							Pricing
+						</RefLink>
+						<RefLink href={'/affiliate'}>
+							Affiliate
+						</RefLink>
+						<RefLink href="/blog">Blog</RefLink>
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
 						<RefLink
@@ -64,8 +83,8 @@ export default function Navbar() {
 			</div>
 			{menuClicked && (
 				<Reveal delayTime={0}>
-					<div className="bg-white text-left flex flex-col justify-between gap-4 font-semibold text-3xl w-[90%] mx-auto py-8 h-[calc(100vh-70px)] md:hidden">
-						<div className="flex flex-col gap-6">
+					<div className="bg-white text-left flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
+						<div className={cn("flex flex-col gap-6 w-[86%] mx-auto", ToolbirdFont.className)}>
 							<Link smooth={true} to="products" href={'/'}>
 								Products
 							</Link>
@@ -74,7 +93,7 @@ export default function Navbar() {
 							</Link>
 							<Link href="/blog">Blog</Link>
 						</div>
-						<div className="flex flex-col gap-4 text-center">
+						<div className="flex flex-col paragraph gap-4 text-center w-[86%] mx-auto">
 							<RefLink
 								className="bg-transparent border-[3px] w-full border-main text-sm font-semibold text-main px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
 								target="_blank"

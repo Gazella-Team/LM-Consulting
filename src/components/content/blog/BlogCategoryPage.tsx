@@ -24,14 +24,14 @@ export default function BlogCategoryPage({
 			/>
 			<div className="mt-12 mb-8">
 				<div className="max-w-6xl w-[90%] mx-auto">
-					<h1 className="text-4xl font-bold mb-4 text-gray-800">
+					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
 						Blog
 					</h1>
 					<h2 className="text-xl paragraph font-regular text-gray-600">
 						Latest news and updates from Toolbird
 					</h2>
 					<div className="mt-8 mb-10 flex">
-						<div className="bg-white border rounded-3xl px-3 py-2.5 flex gap-2 flex-wrap">
+						<div className="bg-white border paragraph rounded-3xl px-3 py-2.5 flex gap-2 flex-wrap">
 							{
 								// Tabs
 								getCategoriesList().map((category) => (
