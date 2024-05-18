@@ -129,13 +129,6 @@ const config = {
 				}
 			)
 		},
-		plugin(({ matchUtilities }) => {
-			matchUtilities({
-			  perspective: (value) => ({
-				perspective: value,
-			  }),
-			});
-		  }),
 	],
 } satisfies Config
 
