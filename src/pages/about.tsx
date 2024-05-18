@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout'
 import PageIntro from '@/components/PageIntro'
-import Goals from '@/components/goals'
-import Stats from '@/components/stats'
+import AboutComponent from '@/components/about'
 
 export default function About() {
 	return (
@@ -12,7 +11,7 @@ export default function About() {
 				heading="About"
 				paragraph=""
 			/>
-			
+			<AboutComponent />
 		</Layout>
 	)
 }
