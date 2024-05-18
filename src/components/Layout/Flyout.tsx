@@ -12,9 +12,9 @@ import Link from 'next/link'
 
 const solutions = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '/analytics', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+  { name: 'Uptime Monitoring', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'User feedback', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
+  { name: 'Waitlists', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -42,13 +42,13 @@ export default function Flyout() {
           <div className="w-screen max-w-2xl flex-auto overflow-hidden rounded-xl bg-white text-sm leading-6 shadow-clean ring-1 ring-gray-600/10">
             <div className="p-4 grid grid-cols-2">
               {solutions.map((item) => (
-                <Link href={item.href} key={item.name} className="group relative rounded-lg p-4 hover:bg-slate-50">
+                <Link href={item.href} key={item.name} className="group relative rounded-xl p-4 hover:bg-slate-50">
                   <div>
                     <div className="font-semibold flex items-center gap-2 text-gray-800">
-                    <item.icon className="h-5 w-5 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                    <item.icon className="h-5 w-5 text-gray-800 group-hover:text-main" aria-hidden="true" />
                       {item.name}
                     </div>
-                    <p className="mt-1 text-gray-600 paragraph font-regular">{item.description}</p>
+                    <p className="mt-1 text-gray-600 paragraph font-normal">{item.description}</p>
                   </div>
                 </Link>
               ))}

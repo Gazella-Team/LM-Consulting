@@ -21,7 +21,7 @@ export default function PageIntro(props: PageIntroProps) {
 					</p>
 				</Reveal>
 				<Reveal delayTime={0}>
-					<h1 className="text-[40px] heading md:text-[50px] xl:text-[55px] leading-[110%] max-w-[500px] mx-auto font-black text-gray-800">
+					<h1 className="text-[40px] heading md:text-[50px] xl:text-[55px] leading-[110%] max-w-[600px] mx-auto font-black text-gray-800">
 						{props.heading}{' '}
 						{props.highlighted && (
 							<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
@@ -31,7 +31,7 @@ export default function PageIntro(props: PageIntroProps) {
 					</h1>
 				</Reveal>
 				{props.paragraph && 				<Reveal delayTime={0.1}>
-					<p className="text-base paragraph md:text-lg mt-4 xl:text-lg font-regular max-w-[400px] mx-auto text-gray-600">
+					<p className="text-base paragraph md:text-lg mt-4 xl:text-lg font-regular max-w-[350px] mx-auto text-gray-600">
 						{props.paragraph}
 					</p>
 				</Reveal>}

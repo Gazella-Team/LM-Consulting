@@ -36,7 +36,7 @@ export default function SectionIntro(props: SectionIntroProps) {
 				</h1>
 			</Reveal>
 			<Reveal delayTime={0.2}>
-				<p className="text-base md:text-lg xl:text-lg paragraph max-w-[600px] mx-auto text-gray-600">
+				<p className="text-base md:text-lg xl:text-lg paragraph max-w-[350px] mx-auto text-gray-600">
 					{props.description}
 				</p>
 			</Reveal>

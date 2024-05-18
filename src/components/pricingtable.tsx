@@ -41,25 +41,29 @@ export default function PricingTable() {
 					<div className="paragraph">
 						<h3 className="p-7 pb-0 text-gray-500 font-medium">What&apos;s included:</h3>
 						<div className="py-10 pt-6 px-7 flex flex-col gap-6 text-gray-600">
-						<div className="flex items-center gap-4">
+							<div className="flex items-center gap-4">
+									<FaCheckCircle size={18}  />
+									<h2 className="text-gray-600 underline decoration-dotted">2 team seats</h2>
+								</div>
+							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18}  />
-								<h2 className="text-gray-600">Complete tool access</h2>
+								<h2 className="text-gray-600">Access to all tools</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18}  />
-								<h2 className="text-gray-600 underline decoration-dotted">+45 web analytics events</h2>
-							</div>
-							<div className="flex items-center gap-4">
-								<FaCheckCircle size={18}  />
-								<h2 className="text-gray-600 underline decoration-dotted">Unlimited waitlists</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">6 month data retention</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} />
-								<h2 className="text-gray-600">24/7 support</h2>
+								<h2 className="text-gray-600">2.500 page views</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18}  />
-								<h2 className="text-gray-600">Complete tool access</h2>
+								<h2 className="text-gray-600">500 custom events</h2>
+							</div>
+							<div className="flex items-center gap-4">
+								<FaCheckCircle size={18}  />
+								<h2 className="text-gray-600">1 website</h2>
 							</div>
 						</div>
 					</div>
@@ -96,31 +100,23 @@ export default function PricingTable() {
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">+45 web analytics events</h2>
+								<h2 className="text-gray-600">Custom support</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">Unlimited waitlists</h2>
+								<h2 className="text-gray-600">Unlimited data retention</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600 underline decoration-dotted">24/7 support</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">100.000 page views</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600 underline decoration-dotted">Complete tool access</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">10.000 custom events</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600 underline decoration-dotted">+45 web analytics events</h2>
-							</div>
-							<div className="flex items-center gap-4">
-								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">Unlimited waitlists</h2>
-							</div>
-							<div className="flex items-center gap-4">
-								<FaCheckCircle size={18} className="text-main" />
-								<h2 className="text-gray-600">24/7 support</h2>
+								<h2 className="text-gray-600 underline decoration-dotted">10 websites</h2>
 							</div>
 						</div>
 					</div>
@@ -145,19 +141,15 @@ export default function PricingTable() {
 						</button>
 					</div>
 					<div>
-						<h3 className="p-7 pb-0 paragraph text-gray-500 font-medium">Everything in professional, plus:</h3>
+						<h3 className="p-7 pb-0 paragraph text-gray-500 font-medium">Custom specifications:</h3>
 						<div className="py-10 pt-6 px-7 paragraph flex flex-col gap-6">
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800">Complete tool access</h2>
+								<h2 className="text-gray-800">Custom seats</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800">Complete tool access</h2>
-							</div>
-							<div className="flex items-center gap-4">
-								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800 underline decoration-dotted">Complete tool access</h2>
+								<h2 className="text-gray-800">Prioritized support</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
@@ -169,7 +161,7 @@ export default function PricingTable() {
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800">Complete tool access</h2>
+								<h2 className="text-gray-800 underline decoration-dotted">Complete tool access</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />

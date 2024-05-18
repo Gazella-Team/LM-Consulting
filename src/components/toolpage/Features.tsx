@@ -8,7 +8,7 @@ type FeatureCardProps = {
 export default function Features({featureData}:{featureData:any}) {
     return (
         <section>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto w-[86%]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto w-[86%]">
                 {featureData.map((feature:any) => <FeatureCard key={feature} image={feature.image} heading={feature.heading} icon={feature.icon} description={feature.description} />)}
             </div>
         </section>
