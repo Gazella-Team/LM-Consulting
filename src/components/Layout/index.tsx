@@ -2,6 +2,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
 import NavigationMenuDemo from './NavDemo'
+import { TracingBeam } from '../ui/tracing-beam'
 
 type LayoutProps = {
 	className?: string
@@ -25,7 +26,11 @@ export default function Layout({ children }: LayoutProps) {
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 				<Navbar />
 				<div className={ToolbirdFont.className}>
-					<div className="relative">{children}</div>
+					<div className="relative">
+						<TracingBeam>
+							{children}
+						</TracingBeam>
+					</div>
 				</div>
 				<div className="relative">
 				<Footer />
