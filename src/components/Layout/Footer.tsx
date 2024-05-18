@@ -23,15 +23,15 @@ export default function Footer() {
                         </Link>
                     </div>
                     <div className="flex items-center gap-2 mt-3">
-                        <div className="border p-3 rounded-full border-gray-600/10">
+                        <Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
                             <FaLinkedin color="rgb(31 41 55)" />
-                        </div>
-                        <div className="border p-3 rounded-full border-gray-600/10">
+                        </Link>
+                        <Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
                             <FaTwitter color="rgb(31 41 55)" />
-                        </div>
-                        <div className="border p-3 rounded-full border-gray-600/10">
+                        </Link>
+                        <Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
                             <FaYoutube color="rgb(31 41 55)" />
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-4 paragraph">

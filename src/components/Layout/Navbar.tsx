@@ -52,8 +52,8 @@ export default function Navbar() {
 						<RefLink href={'/pricing'}>
 							Pricing
 						</RefLink>
-						<RefLink href={'/affiliate'}>
-							Affiliate
+						<RefLink href={'/about'}>
+							About
 						</RefLink>
 						<RefLink href="/blog">Blog</RefLink>
 					</div>

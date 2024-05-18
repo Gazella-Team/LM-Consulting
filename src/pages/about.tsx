@@ -8,10 +8,11 @@ export default function About() {
 		<Layout white={true}>
 			<PageIntro
 				hook="By developers, for developers"
-				highlighted="startup"
-				heading="From highschool to new"
-				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
+				highlighted="us"
+				heading="About"
+				paragraph=""
 			/>
+			
 		</Layout>
 	)
 }

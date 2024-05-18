@@ -7,6 +7,7 @@ import NiceModal from '@ebay/nice-modal-react'
 import JoinWaitlistModal from './modals/JoinWaitlistModal'
 import { Link as ScrollLink } from 'react-scroll'
 import { CircleCheck } from 'lucide-react'
+import RefLink from 'next/link'
 
 export default function Hero() {
 	return (
@@ -32,18 +33,16 @@ export default function Hero() {
 					<div className="flex items-center paragraph justify-center gap-3 mt-4 font-medium">
 						<button
 							onClick={() => NiceModal.show(JoinWaitlistModal)}
-							className="bg-main font-semibold border-[3px] border-main text-white text-sm px-6 py-2 rounded-full"
+							className="bg-main border-[3px] border-main text-white text-sm px-6 py-2 rounded-full"
 						>
 							Join waitlist
 						</button>
-						<ScrollLink
-							smooth={true}
-							to="products"
-							className="bg-transparent font-semibold border-[3px] border-main text-main text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+						<RefLink
+							className="bg-transparent border-[3px] border-main text-main text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
 							href={''}
 						>
 							View features
-						</ScrollLink>
+						</RefLink>
 					</div>
 				</RevealLight>
 			</div>

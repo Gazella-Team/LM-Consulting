@@ -21,7 +21,6 @@ export default function Pricing() {
 			<SectionIntro heading='Benefits of using Toolbird' description='' hook='Everything needed'>
 				<Benefits />
 			</SectionIntro>
-			<Users />
 		</Layout>
 	)
 }
