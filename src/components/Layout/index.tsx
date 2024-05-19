@@ -27,9 +27,7 @@ export default function Layout({ children }: LayoutProps) {
 				<Navbar />
 				<div className={ToolbirdFont.className}>
 					<div className="relative">
-						<TracingBeam>
-							{children}
-						</TracingBeam>
+						{children}
 					</div>
 				</div>
 				<div className="relative">

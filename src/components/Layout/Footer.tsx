@@ -55,7 +55,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Customers</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Learning</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/"}>Analytics</Link>
                             <Link href={"/"}>Analytics</Link>
@@ -64,10 +64,10 @@ export default function Footer() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Learning</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Compare</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/"}>Analytics</Link>
-                            <Link href={"/"}>Analytics</Link>
+                            <Link href={"/compare/plausible"}>Toolbird Analytics vs Plausible</Link>
+                            <Link href={"/"}>Toolbird monitoring vs Datadog</Link>
                             <Link href={"/"}>Analytics</Link>
                             <Link href={"/"}>Analytics</Link>
                         </div>
