@@ -23,7 +23,7 @@ const callsToAction = [
 
 export default function Flyout() {
   return (
-    <Popover className="relative active:border-none">
+    <Popover className="relative active:border-none focus:border-none">
       <Popover.Button className="inline-flex items-center gap-x-1 text-sm active:border-none font-medium leading-6 text-gray-800">
         <span>Products</span>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />

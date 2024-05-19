@@ -52,9 +52,9 @@ export default function BentoGridComponent() {
 function BentoGridCard(props: any) {
 	return (
 		<Reveal delayTime={0.4}>
-			<div className="bg-white border rounded-xl border-gray-600/10 shadow-sm">
+			<div className="bg-white border rounded-[25px] border-gray-600/10 shadow-sm">
 				<img
-					className="h-[340px] w-full object-cover rounded-t-xl"
+					className="h-[340px] w-full object-cover rounded-t-[25px]"
 					src={props.Obj.image}
 				></img>
 				<div className="p-10 flex flex-col gap-2">

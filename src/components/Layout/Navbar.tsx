@@ -10,6 +10,7 @@ import useScroll from '@/hooks/use-scroll'
 import { cn } from '../Accordion'
 import Flyout from './Flyout'
 import localFont from 'next/font/local'
+import { RevealLight } from '../Animations/RevealLight'
 
 const ToolbirdFont = localFont({
 	src: [
@@ -82,7 +83,7 @@ export default function Navbar() {
 				</div>
 			</div>
 			{menuClicked && (
-				<Reveal delayTime={0}>
+				<RevealLight delayTime={0}>
 					<div className="bg-white text-left flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
 						<div className={cn("flex flex-col gap-6 w-[86%] mx-auto", ToolbirdFont.className)}>
 							<Link smooth={true} to="products" href={'/'}>
@@ -111,7 +112,7 @@ export default function Navbar() {
 							</button>
 						</div>
 					</div>
-				</Reveal>
+				</RevealLight>
 			)}
 		</nav>
 	)

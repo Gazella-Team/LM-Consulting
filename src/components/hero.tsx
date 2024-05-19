@@ -14,8 +14,8 @@ export default function Hero() {
 			</div>
 			<div className="w-[86%] mx-auto max-w-6xl flex flex-col gap-5">
 				<Reveal delayTime={0.1}>
-					<h1 className="text-4xl md:text-5xl xl:text-8xl max-w-[1000px] mx-auto leading-[110%] font-bold text-gray-800 heading">
-					The ultimate toolbox for saas developers
+					<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto leading-[110%] font-bold text-gray-800 heading">
+						Get Web Analytics, Uptime Monitoring and User Feedback, all in 1 place.
 					</h1>
 				</Reveal>
 				<Reveal delayTime={0.2}>
@@ -27,7 +27,7 @@ export default function Hero() {
 					</p>
 				</Reveal>
 				<RevealLight delayTime={0.4}>
-					<div className="flex items-center paragraph justify-center gap-3 mt-4 font-medium">
+					<div className="flex items-center paragraph relative justify-center gap-3 mt-4 font-medium">
 						<Link
 							href={"/"}
 							className="bg-main border-[3px] border-main text-white text-sm px-6 py-2 rounded-full"
@@ -35,7 +35,7 @@ export default function Hero() {
 							Join waitlist
 						</Link>
 						<Link
-							className="border-[3px] bg-gray-800 border-gray-800 text-white text-sm px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+							className="border-[3px] bg-gray-800 border-gray-800 text-white text-sm px-6 py-2 rounded-full hover:bg-main hover:border-main hover:text-white transition-all"
 							href={''}
 						>
 							View features

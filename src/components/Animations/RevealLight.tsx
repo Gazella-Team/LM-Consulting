@@ -26,7 +26,7 @@ export const RevealLight = ({ children, delayTime }: Props) => {
 				initial="hidden"
 				animate={mainControls}
 				transition={{
-					duration: 0.6,
+					duration: 0.2,
 					delay: delayTime,
 					ease: [0.1, 0.1, 0.1, 1],
 				}}

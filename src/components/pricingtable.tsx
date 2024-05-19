@@ -9,7 +9,7 @@ export default function PricingTable() {
 	return (
 		<section className="mb-24">
 			<div className="flex items-center justify-center pb-14">
-				<div className="rounded-full paragraph text-gray-600 shadow-sm p-1 relative gap- border bg-slate-50 border-gray-600/10 flex items-center justify-between">
+				<div className="rounded-full paragraph text-gray-600 shadow-sm p-1 relative gap- border bg-white border-gray-600/10 flex items-center justify-between">
 					<div onClick={() => setPricingRuntime("monthly")} className={pricingRuntime === "monthly" ? "bg-main w-16 text-center text-white cursor-pointer rounded-full text-xs px-2 py-1 font-semibold":"bg-white w-16 text-center cursor-pointer rounded-full text-xs px-2 py-1 font-semibold"}>
 						Monthly
 					</div>
