@@ -12,7 +12,7 @@ export default function Hero() {
 			<div className='flex items-center justify-center'>
 				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden -z-1" style={{background: "radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 70%)"}}></div>
 			</div>
-			<div className="w-[86%] mx-auto max-w-6xl flex flex-col gap-5">
+			<div className="w-[86%] mx-auto max-w-6xl relative flex flex-col gap-5">
 				<Reveal delayTime={0.1}>
 					<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto leading-[110%] font-bold text-gray-800 heading">
 						Get Web Analytics, Uptime Monitoring and User Feedback, all in 1 place.

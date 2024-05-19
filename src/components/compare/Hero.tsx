@@ -12,7 +12,7 @@ export default function CompareHero(props:CompareHeroProps) {
                 <div className='flex items-center justify-center'>
                     <div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden -z-1" style={{background: "radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 62%)"}}></div>
                 </div>
-                <div className="w-[96%] mx-auto max-w-[1000px] flex flex-col text-center">
+                <div className="w-[96%] mx-auto relative max-w-[1000px] flex flex-col text-center">
                     <Reveal delayTime={0}>
                         <p className="font-[Caveat] text-main mb-4 text-3xl">
                             Compare
