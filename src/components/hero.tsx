@@ -20,7 +20,10 @@ export default function Hero() {
 				</Reveal>
 				<Reveal delayTime={0.1}>
 					<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto leading-[110%] font-bold text-gray-800 heading">
-						Get Web Analytics, Uptime Monitoring and User Feedback, all in 1 place.
+						Get Web Analytics, Uptime Monitoring and User Feedback,{" "}
+						<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
+							all in 1 place.
+						</span>
 					</h1>
 				</Reveal>
 				<Reveal delayTime={0.2}>
