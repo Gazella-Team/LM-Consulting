@@ -74,8 +74,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-center pb-6">
-                <p className="text-gray-400 text-sm paragraph">© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE 82, 2TH.1358 KØBENHAVN</p>
+            <div className="text-center pb-6 text-gray-400 text-sm flex items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
+                <p>© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE 82, 2TH.1358 KØBENHAVN</p>
+                <p className="font-[Caveat] text-xl">Built safely and produdly in 🇪🇺</p>
             </div>
         </footer>
         </>

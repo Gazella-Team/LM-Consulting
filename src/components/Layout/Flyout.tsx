@@ -53,18 +53,6 @@ export default function Flyout() {
                 </Link>
               ))}
             </div>
-            <div className="grid grid-cols-2 divide-x divide-gray-600/10 bg-slate-50">
-              {callsToAction.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-600 hover:bg-slate-100"
-                >
-                  <item.icon className="h-5 w-5 flex-none text-gray-600" aria-hidden="true" />
-                  {item.name}
-                </a>
-              ))}
-            </div>
           </div>
         </Popover.Panel>
       </Transition>

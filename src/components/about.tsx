@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Reveal } from "./Animations/Reveal";
 
 export default function About() {
@@ -17,7 +18,7 @@ export default function About() {
 								</span>
 							</h1>
 					</div>
-						<p className="text-base text-gray-600 paragraph mt-4 leading-[168%]">
+						<p className="text-base text-gray-600 mb-14 paragraph mt-4 leading-[168%]">
 							Manage web analytics, cron jobs, monitoring, feature flags,
 							waitlists, client feedback and more within just one platform.
 							Toolbird makes building tech products easier
@@ -45,6 +46,12 @@ export default function About() {
 							waitlists, client feedback and more within just one platform.
 							Toolbird makes building tech products easier
 						</p>
+						<Link
+							className="border-[3px] font-medium paragraph bg-gray-800 border-gray-800 text-white text-sm px-6 py-2 rounded-full hover:bg-main hover:border-main hover:text-white transition-all"
+							href={''}
+							>
+							Visit us on Producthunt
+						</Link>
 				</div>
 			</div>
 		</Reveal>
