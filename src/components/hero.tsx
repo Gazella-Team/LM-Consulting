@@ -15,7 +15,7 @@ export default function Hero() {
 			<div className="w-[86%] mx-auto max-w-6xl relative flex flex-col gap-5">
 				<Reveal delayTime={0}>
 					<p className="font-[Caveat] text-main mb-4 text-3xl">
-						Built safely and produdly in 🇪🇺
+						Proudly built and launched in 🇪🇺
 					</p>
 				</Reveal>
 				<Reveal delayTime={0.1}>

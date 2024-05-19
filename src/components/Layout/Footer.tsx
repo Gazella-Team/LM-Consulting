@@ -38,38 +38,33 @@ export default function Footer() {
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Products</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/"}>Analytics</Link>
-                            <Link href={"/"}>Monitoring</Link>
-                            <Link href={"/"}>User feedback</Link>
-                            <Link href={"/"}>Cron jobs</Link>
-                            <Link href={"/"}>Waitlists</Link>
+                            <Link href={"/analytics"}>Analytics</Link>
+                            <Link href={"/monitoring"}>Monitoring</Link>
+                            <Link href={"/feedback"}>User feedback</Link>
+                            <Link href={"/waitlists"}>Waitlists</Link>
                         </div>
                     </div>
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">About</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/"}>The story</Link>
-                            <Link href={"/"}>Career</Link>
-                            <Link href={"/"}>Analytics</Link>
-                            <Link href={"/"}>Analytics</Link>
+                            <Link href={"/about"}>The story</Link>
+                            <Link href={"/public"}>Public building</Link>
+                            <Link href={"/career"}>Career</Link>
                         </div>
                     </div>
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Learning</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/"}>Analytics</Link>
-                            <Link href={"/"}>Analytics</Link>
-                            <Link href={"/"}>Analytics</Link>
-                            <Link href={"/"}>Analytics</Link>
+                            <Link href={"/blog"}>Blog</Link>
+                            <Link href={"/"}>Socials</Link>
                         </div>
                     </div>
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Compare</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/compare/plausible"}>Toolbird Analytics vs Plausible</Link>
-                            <Link href={"/"}>Toolbird monitoring vs Datadog</Link>
-                            <Link href={"/"}>Analytics</Link>
-                            <Link href={"/"}>Analytics</Link>
+                            <Link href={"/compare/plausible"}>Versus Plausible</Link>
+                            <Link href={"/"}>Versus Datadog</Link>
+                            <Link href={"/"}>Versus WaitForMe</Link>
                         </div>
                     </div>
                 </div>
