@@ -32,7 +32,7 @@ export default function CompareHero(props:CompareHeroProps) {
                         </p>
                     </Reveal>}
                     <RevealLight delayTime={0.4}>
-					<div className="flex items-center paragraph relative justify-center gap-3 mt-8 font-medium">
+					<div className="flex items-center paragraph mb-6 relative justify-center gap-3 mt-8 font-medium">
 						<Link
 							href={"/"}
 							className="bg-main border-[3px] border-main text-white text-sm px-6 py-1 rounded-full"

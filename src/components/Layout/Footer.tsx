@@ -56,7 +56,7 @@ export default function Footer() {
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Learning</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/blog"}>Blog</Link>
-                            <Link href={"/"}>Socials</Link>
+                            <Link href={"/"}>Toolbird Guides</Link>
                         </div>
                     </div>
                     <div>
