@@ -25,10 +25,10 @@ export default function BlogCard({ post }: BlogCardProps) {
 			/>
 			<div className="flex flex-1 flex-col justify-between rounded-b-lg bg-white p-3.5">
 				<div>
-					<h2 className="line-clamp-2 font-display text-xl font-bold text-gray-700">
+					<h2 className="line-clamp-2 font-display text-xl font-bold text-gray-800">
 						{post.title}
 					</h2>
-					<p className="mt-2 paragraph line-clamp-2 text-sm text-gray-500">
+					<p className="mt-2 paragraph line-clamp-2 text-sm text-gray-600">
 						{post.description}
 					</p>
 				</div>

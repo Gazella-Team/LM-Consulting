@@ -23,7 +23,7 @@ export default function BlogCategoryPage({
 				description="Latest news and updates from Toolbird aswell as guides."
 			/>
 			<div className="mt-12 mb-8">
-				<div className="max-w-6xl w-[90%] mx-auto">
+				<div className="max-w-6xl w-[86%] mx-auto">
 					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
 						Blog
 					</h1>
@@ -58,7 +58,7 @@ export default function BlogCategoryPage({
 				</div>
 				<div className="py-12 bg-white border-y border-gray-600/10">
 					{posts.length > 0 ? (
-						<div className="max-w-6xl w-[90%] gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+						<div className="max-w-6xl w-[86%] gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 							{posts.map((post) => (
 								<BlogCard key={post.slug} post={post} />
 							))}
