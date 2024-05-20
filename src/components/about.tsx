@@ -19,14 +19,12 @@ export default function About() {
 							</h1>
 					</div>
 						<p className="text-base text-gray-600 mb-14 paragraph mt-4 leading-[168%]">
-							Manage web analytics, cron jobs, monitoring, feature flags,
-							waitlists, client feedback and more within just one platform.
-							Toolbird makes building tech products easier
+							We&apos;re building Toolbird with a vision of making it easier 
+							for SaaS developers and tech startups to build, launch and scale
+							new products. 
 							<br></br>
 							<br></br>
-							Manage web analytics, cron jobs, monitoring, feature flags,
-							waitlists, client feedback and more within just one platform.
-							Toolbird makes building tech products easier
+							
 							<br></br>
 							<br></br>
 							Manage web analytics, cron jobs, monitoring, feature flags,
