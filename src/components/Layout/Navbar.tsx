@@ -49,7 +49,10 @@ export default function Navbar() {
 						</RefLink>
 					</div>
 					<div className={cn("flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm")}>
-						<Flyout />
+						{/*<Flyout />*/}
+						<RefLink href={'/analytics'}>
+							Analytics
+						</RefLink>
 						<RefLink href={'/pricing'}>
 							Pricing
 						</RefLink>

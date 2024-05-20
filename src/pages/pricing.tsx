@@ -15,7 +15,7 @@ export default function Pricing() {
 				hook="Flexible pricing"
 				highlighted=""
 				heading="Pricing and plans"
-				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
+				paragraph="We offer plans that suit any project. Start for free today, no credit card required."
 			/>
 			<PricingTable />
 		</Layout>

@@ -157,15 +157,15 @@ export default function PricingTable() {
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800 underline decoration-dotted">Complete tool access</h2>
+								<h2 className="text-gray-800">+ 100.000 page views</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800 underline decoration-dotted">Complete tool access</h2>
+								<h2 className="text-gray-800">+ 10.000 custom events</h2>
 							</div>
 							<div className="flex items-center gap-4">
 								<FaCheckCircle size={18} className="text-gray-800" />
-								<h2 className="text-gray-800">Complete tool access</h2>
+								<h2 className="text-gray-800">Unlimited websites</h2>
 							</div>
 						</div>
 					</div>
