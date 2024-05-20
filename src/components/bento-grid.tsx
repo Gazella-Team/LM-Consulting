@@ -3,7 +3,7 @@ import { Reveal } from './Animations/Reveal'
 export default function BentoGridComponent() {
 	return (
 		<section>
-			<div style={{background: "radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 67%)"}} className="max-w-6xl mx-auto flex flex-col gap-6 w-[90%]">
+			<div style={{background: "radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 50%)"}} className="max-w-6xl mx-auto flex flex-col gap-6 w-[90%]">
 				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
 					<BentoGridCard
 						Obj={{
@@ -42,24 +42,6 @@ export default function BentoGridComponent() {
 							heading: 'Collaborate with your team',
 							description:
 								'Share a workspace with your team-members for more productive development',
-						}}
-					/>
-				</div>
-				<div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-					<BentoGridCard
-						Obj={{
-							image: '/showcases/map.webp',
-							heading: 'Geographic Data',
-							description:
-								'Keep track of all traffic going thorugh your website. Analyze visitors, sources, devices and other essential data points',
-						}}
-					/>
-					<BentoGridCard
-						Obj={{
-							image: '/showcases/chart.webp',
-							heading: 'Data visualization',
-							description:
-								'Create, manage and run a custom waitlist in a structured dashboard with only two clicks',
 						}}
 					/>
 				</div>
