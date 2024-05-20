@@ -31,7 +31,7 @@ export default function BlogCategoryPage({
 						Latest news and updates from Toolbird
 					</h2>
 					<div className="mt-8 mb-10 flex">
-						<div className="bg-white border paragraph rounded-3xl px-3 py-2.5 flex gap-2 flex-wrap">
+						<div className="bg-white border border-gray-600/10 paragraph rounded-full px-3 py-2 flex gap-2 flex-wrap">
 							{
 								// Tabs
 								getCategoriesList().map((category) => (
@@ -46,7 +46,7 @@ export default function BlogCategoryPage({
 											'text-sm cursor-pointer font-medium px-3 py-1.5 rounded-full',
 											category.tag == activeTab
 												? category.activeClass
-												: 'text-gray-500 hover:text-gray-800 hover:bg-gray-100'
+												: 'text-gray-500 hover:text-gray-800 hover:bg-slate-50'
 										)}
 									>
 										{category.name}

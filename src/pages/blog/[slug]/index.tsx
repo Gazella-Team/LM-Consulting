@@ -22,7 +22,7 @@ export default function BlogList({
 				banner={post.image}
 				authors={post.authors.map((author) => author.name)}
 			/>
-			<div className="py-8">
+			<div>
 				<Article post={post} />
 			</div>
 		</Layout>

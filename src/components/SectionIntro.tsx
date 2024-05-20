@@ -10,7 +10,7 @@ type SectionIntroProps = {
 
 export default function SectionIntro(props: SectionIntroProps) {
 	return (
-		<div className="text-center text-gray-800 my-14 pt-14 z-1">
+		<div className="text-center text-gray-800 pt-32 z-1">
 			{props.founders ? (
 				<Reveal delayTime={0.1}>
 					<div className="flex items-center justify-center mb-8">
