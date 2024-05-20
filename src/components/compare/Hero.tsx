@@ -1,4 +1,6 @@
+import Link from "next/link"
 import { Reveal } from "../Animations/Reveal"
+import { RevealLight } from "../Animations/RevealLight"
 
 type CompareHeroProps = {
     iconPath: string,
@@ -18,17 +20,33 @@ export default function CompareHero(props:CompareHeroProps) {
                             Compare
                         </p>
                     </Reveal>
-                    <Reveal delayTime={0}>
+                    <Reveal delayTime={0.1}>
                         <h1 className="text-[40px] heading md:text-[50px] xl:text-[55px] leading-[110%] max-w-[600px] mx-auto font-black text-gray-800">
                             Toolbird.io<span> vs </span>{props.company}
                         </h1>
                     </Reveal>
                     {props.paragraph && 
-                    <Reveal delayTime={0.1}>
+                    <Reveal delayTime={0.2}>
                         <p className="text-base paragraph md:text-lg mt-4 xl:text-lg font-regular max-w-[350px] mx-auto text-gray-600">
                             {props.paragraph}
                         </p>
                     </Reveal>}
+                    <RevealLight delayTime={0.4}>
+					<div className="flex items-center paragraph relative justify-center gap-3 mt-8 font-medium">
+						<Link
+							href={"/"}
+							className="bg-main border-[3px] border-main text-white text-sm px-6 py-1 rounded-full"
+						>
+							Start for free
+						</Link>
+						<Link
+							className="border-[3px] bg-gray-800 border-gray-800 text-white text-sm px-6 py-1 rounded-full hover:bg-main hover:border-main hover:text-white transition-all"
+							href={''}
+						>
+							Migrate from {props.company}
+						</Link>
+					</div>
+				</RevealLight>
                 </div>
             </section>
     )
