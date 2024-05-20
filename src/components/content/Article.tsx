@@ -6,20 +6,27 @@ import { format } from 'date-fns'
 import { AuthorAvatars } from './blog/AuthorAvatars'
 import { AuthorNames } from './blog/AuthorNames'
 import BlogBadge from './BlogBadge'
+import { ArrowLeft } from 'lucide-react'
 
 export function Article({ post }: { post: Post }) {
 	return (
-		<article className="border border-gray-600/10 relative mx-auto flex max-w-3xl w-[90%] p-8 my-24 rounded-xl bg-white flex-col gap-8">
+		<article className="border border-gray-600/10 relative mx-auto flex max-w-3xl w-[86%] p-8 my-24 rounded-xl shadow-clean shadow-main/30 bg-white flex-col gap-8">
 			<div className="grid max-w-3xl mx-auto w-full gap-5">
+				<div className="mb-3 paragraph text-gray-400 text-sm gap-2">
+					<Link className='flex gap-2 items-center' href={`/blog`} passHref>
+						<ArrowLeft size={14} />
+						Back to all posts
+					</Link>
+				</div>
 				<div className="flex items-center gap-2">
 					<Link href={`/blog/category/${post.category}`} passHref>
 						<BlogBadge category={post.category} />
 					</Link>
 				</div>
-				<h1 className="font-semibold text-3xl">{post.title}</h1>
-				<h2 className="text-gray-500 paragraph">{post.description}</h2>
+				<h1 className="font-semibold text-gray-800 text-3xl">{post.title}</h1>
+				<h2 className="text-gray-600 paragraph">{post.description}</h2>
 				<div className="flex items-center gap-3 paragraph mb-5">
-					<div className="flex gap-2">
+					<div className="flex gap-4">
 						<AuthorAvatars authors={post.authors} />
 						<div>
 							<AuthorNames authors={post.authors} />

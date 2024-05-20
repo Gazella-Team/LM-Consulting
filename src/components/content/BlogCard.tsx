@@ -10,7 +10,7 @@ type BlogCardProps = {
 export default function BlogCard({ post }: BlogCardProps) {
 	return (
 		<Link
-			className="flex flex-col overflow-hidden rounded-xl border border-gray-600/10 transition-all hover:shadow-sm"
+			className="flex flex-col overflow-hidden rounded-xl border border-gray-600/10 shadow-sm transition-all hover:shadow-md"
 			href={`/blog/${post.slug}`}
 		>
 			<img
@@ -28,11 +28,11 @@ export default function BlogCard({ post }: BlogCardProps) {
 					<h2 className="line-clamp-2 font-display text-xl font-bold text-gray-700">
 						{post.title}
 					</h2>
-					<p className="mt-2 line-clamp-2 text-sm text-gray-500">
+					<p className="mt-2 paragraph line-clamp-2 text-sm text-gray-500">
 						{post.description}
 					</p>
 				</div>
-				<div className="mt-4 flex items-center justify-between">
+				<div className="mt-4 paragraph flex items-center justify-between">
 					<time
 						dateTime={format(
 							new Date(post.publishedAt),
