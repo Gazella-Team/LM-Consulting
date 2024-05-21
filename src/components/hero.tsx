@@ -56,7 +56,7 @@ export default function Hero() {
 					</p>
 				</Reveal>
 
-				<h1 className="text-4xl leading-[200px] md:text-5xl xl:text-6xl max-w-[1300px] mx-auto font-bold text-gray-800">
+				<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto font-bold text-gray-800 xl:leading-[90px]">
 					Get <span id="analytics">Web Analytics</span>,{' '}
 					<span id="uptime">Uptime Monitoring</span> and{' '}
 					<span id="feedback">User Feedback</span>, all in 1 place.
