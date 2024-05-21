@@ -40,7 +40,7 @@ export default function CompareHero(props:CompareHeroProps) {
 							Start for free
 						</Link>
 						<Link
-							className="border-[3px] bg-gray-800 border-gray-800 text-white text-sm px-6 py-1 rounded-full hover:bg-main hover:border-main hover:text-white transition-all"
+							className="border-[3px] bg-transparent border-gray-800 text-gray-800 text-sm px-6 py-1 rounded-full hover:bg-gray-800 hover:border-gray-800 hover:text-white transition-all"
 							href={''}
 						>
 							Migrate from {props.company}

@@ -31,7 +31,7 @@ export default function Navbar() {
 		<nav className="top-0  sticky z-50">
 			<div
 				className={cn(
-					'h-[70px] w-full transition-all flex items-center',
+					'h-[58px] w-full transition-all flex items-center',
 					scrolled
 						? 'border-b border-gray-600/10 bg-white/50 backdrop-blur-xl'
 						: 'bg-transparent'
@@ -49,10 +49,7 @@ export default function Navbar() {
 						</RefLink>
 					</div>
 					<div className={cn("flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm")}>
-						{/*<Flyout />*/}
-						<RefLink href={'/analytics'}>
-							Analytics
-						</RefLink>
+						<Flyout />
 						<RefLink href={'/pricing'}>
 							Pricing
 						</RefLink>

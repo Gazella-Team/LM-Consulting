@@ -22,12 +22,13 @@ export default function Hero() {
 						Proudly built and launched in Europe
 					</p>
 				</Reveal>
-
-				<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto font-bold text-gray-800 xl:leading-[80px]">
-					Get <span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Web Analytics</span>,{' '}
-					<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Uptime Monitoring</span> and{' '}
-					<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>User Feedback</span>, all in 1 place.
-				</h1>
+				<Reveal delayTime={0.1}>
+					<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto font-bold text-gray-800 xl:leading-[80px]">
+						Get <span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Web Analytics</span>,{' '}
+						<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Uptime Monitoring</span> and{' '}
+						<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>User Feedback</span>, all in 1 place.
+					</h1>
+				</Reveal>
 				<Reveal delayTime={0.2}>
 					<p className="text-base md:text-lg mx-auto xl:text-xl font-regular paragraph mb-2 max-w-[800px] w-[85%] text-gray-600">
 						Manage web analytics, cron jobs, monitoring, feature

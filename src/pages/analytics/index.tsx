@@ -6,7 +6,7 @@ import SectionIntro from '@/components/SectionIntro'
 import Features from '@/components/toolpage/Features'
 import { ChartBarIcon } from '@heroicons/react/24/outline'
 import DashboardDisplay from '@/components/dashboarddisplay'
-import BentoGridComponent from '@/components/bento-grid'
+import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
 
 export default function Analytics() {
 	return (

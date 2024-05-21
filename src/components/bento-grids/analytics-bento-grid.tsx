@@ -1,9 +1,9 @@
-import { Reveal } from './Animations/Reveal'
+import { Reveal } from '../Animations/Reveal'
 
 export default function BentoGridComponent() {
 	return (
 		<section>
-			<div style={{background: "radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 50%)"}} className="max-w-6xl mx-auto flex flex-col gap-5 w-[90%]">
+			<div style={{background: "radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 50%)"}} className="max-w-6xl mx-auto flex flex-col gap-5 w-[86%]">
 				<div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
 					<BentoGridCard
 						Obj={{
@@ -22,7 +22,7 @@ export default function BentoGridComponent() {
 						}}
 					/>
 				</div>
-				<div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+				<div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
 					<BentoGridCard
 						Obj={{
 							heading: 'Collaborate with your team',

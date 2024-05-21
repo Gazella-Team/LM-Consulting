@@ -34,35 +34,28 @@ export default function Footer() {
                         </Link>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-4 paragraph">
+                <div className="grid grid-cols-1 lg:grid-cols-3 paragraph gap-16">
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Products</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/analytics"}>Analytics</Link>
-                            <Link href={"/monitoring"}>Monitoring</Link>
-                            <Link href={"/feedback"}>User feedback</Link>
+                            <Link href={"/monitoring"}>Monitoring<br></br>(under developmet)</Link>
+                            <Link href={"/feedback"}>User feedback<br></br>(under developmet)</Link>
                             <Link href={"/waitlists"}>Waitlists</Link>
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm mb-5 font-semibold text-gray-800">About</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Company</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/about"}>The story</Link>
                             <Link href={"/public"}>Public building</Link>
-                            <Link href={"/career"}>Career</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Learning</h2>
-                        <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/blog"}>Blog</Link>
-                            <Link href={"/"}>Toolbird Guides</Link>
                         </div>
                     </div>
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Compare</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/compare/plausible"}>Versus Plausible</Link>
+                            <Link href={"/comparison/toolbird-analytics-vs-plausible"}>Versus Plausible</Link>
                             <Link href={"/"}>Versus Datadog</Link>
                             <Link href={"/"}>Versus WaitForMe</Link>
                         </div>
