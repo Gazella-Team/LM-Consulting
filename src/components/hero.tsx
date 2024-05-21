@@ -5,39 +5,6 @@ import { useEffect } from 'react'
 import { annotate } from 'rough-notation'
 
 export default function Hero() {
-	useEffect(() => {
-		if (typeof window === 'undefined') return
-		const analytics = document.getElementById('analytics')
-		if (!analytics) return
-		annotate(analytics, {
-			type: 'highlight',
-			color: '#E2D3FF',
-			padding: 3,
-			animate: false,
-			multiline: true,
-		}).show()
-
-		const uptime = document.getElementById('uptime')
-		if (!uptime) return
-		annotate(uptime, {
-			type: 'highlight',
-			color: '#DCFCE6',
-			padding: 0,
-			animate: false,
-			multiline: true,
-		}).show()
-
-		const feedback = document.getElementById('feedback')
-		if (!feedback) return
-		annotate(feedback, {
-			type: 'highlight',
-			color: '#E6B2B1',
-			padding: 3,
-			animate: false,
-			multiline: true,
-		}).show()
-	}, [])
-
 	return (
 		<section className="py-24 pt-[60px] relative text-center">
 			<div className="flex items-center justify-center">
@@ -56,10 +23,10 @@ export default function Hero() {
 					</p>
 				</Reveal>
 
-				<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto font-bold text-gray-800 xl:leading-[90px]">
-					Get <span id="analytics">Web Analytics</span>,{' '}
-					<span id="uptime">Uptime Monitoring</span> and{' '}
-					<span id="feedback">User Feedback</span>, all in 1 place.
+				<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto font-bold text-gray-800 xl:leading-[80px]">
+					Get <span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Web Analytics</span>,{' '}
+					<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Uptime Monitoring</span> and{' '}
+					<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>User Feedback</span>, all in 1 place.
 				</h1>
 				<Reveal delayTime={0.2}>
 					<p className="text-base md:text-lg mx-auto xl:text-xl font-regular paragraph mb-2 max-w-[800px] w-[85%] text-gray-600">
