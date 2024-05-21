@@ -18,6 +18,6 @@
       "contentlayer/generated": ["./.contentlayer/generated"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".contentlayer/generated"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".contentlayer/generated", "src/content/posts/toolbird-vs-plausible.mdx"],
   "exclude": ["node_modules"]
 }

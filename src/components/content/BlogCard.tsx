@@ -10,7 +10,7 @@ type BlogCardProps = {
 export default function BlogCard({ post }: BlogCardProps) {
 	return (
 		<Link
-			className="flex flex-col overflow-hidden rounded-xl border border-gray-600/10 shadow-sm transition-all hover:shadow-md"
+			className="flex flex-col overflow-hidden rounded-xl border border-gray-600/10 shadow-md transition-all hover:shadow-lg"
 			href={`/blog/${post.slug}`}
 		>
 			<img

@@ -12,9 +12,9 @@ import Link from 'next/link'
 
 const solutions = [
   { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '/analytics', icon: ChartPieIcon },
-  { name: 'Uptime Monitoring', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'User feedback', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-  { name: 'Waitlists', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+  { name: 'Uptime Monitoring', description: 'Speak directly to your customers', href: '/monitoring', icon: CursorArrowRaysIcon },
+  { name: 'User feedback', description: "Your customers' data will be safe", href: '/feedback', icon: FingerPrintIcon },
+  { name: 'Waitlists', description: 'Connect with third-party tools', href: '/waitlists', icon: SquaresPlusIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
