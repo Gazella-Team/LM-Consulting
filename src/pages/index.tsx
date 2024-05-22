@@ -11,7 +11,6 @@ export default function Home() {
 	return (
 		<Layout white={true}>
 			<Hero02 />
-			<DashboardDisplay src={"/showcases/analysis.webp"} />
 				<SectionIntro
 					heading="The all-in-one cockpit for your SaaS startup"
 					description="With our all-in-one platform we ensure better overview and higher productivity"
