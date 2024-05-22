@@ -53,9 +53,6 @@ export default function Navbar() {
 						<RefLink href={'/pricing'}>
 							Pricing
 						</RefLink>
-						<RefLink href={'/about'}>
-							About
-						</RefLink>
 						<RefLink href="/blog">Blog</RefLink>
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">

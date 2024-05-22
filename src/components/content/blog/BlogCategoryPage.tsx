@@ -22,7 +22,7 @@ export default function BlogCategoryPage({
 				title={`Blog | ${category.name} | Toolbird`}
 				description="Latest news and updates from Toolbird aswell as guides."
 			/>
-			<div className="mt-12 mb-8">
+			<div style={{background: "radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 40%)"}}  className="mt-12 mb-8">
 				<div className="max-w-6xl w-[86%] mx-auto">
 					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
 						Blog
@@ -56,7 +56,7 @@ export default function BlogCategoryPage({
 						</div>
 					</div>
 				</div>
-				<div className="py-12 border-gray-600/10">
+				<div className="py-12">
 					{posts.length > 0 ? (
 						<div className="max-w-6xl w-[86%] gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 							{posts.map((post) => (
