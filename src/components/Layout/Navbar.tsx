@@ -65,7 +65,7 @@ export default function Navbar() {
 						</RefLink>
 						<button
 							onClick={() => NiceModal.show(JoinWaitlistModal)}
-							className="bg-gray-800 border-[3px] border-gray-800 font-medium text-sm text-white px-6 py-1 rounded-full"
+							className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 						>
 							Get started
 						</button>

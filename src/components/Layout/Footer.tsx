@@ -17,7 +17,7 @@ export default function Footer() {
                         <Link
                             target="_blank"
                             href={"https://app.toolbird.io/auth/register"}
-                                className="bg-gray-800 border-[3px] border-gray-800 font-medium paragraph text-xs flex text-white px-6 py-1 rounded-full"
+                                className="bg-gray-800 border-[3px] border-gray-800 font-normal paragraph text-xs flex text-white px-6 py-1 rounded-full"
                             >
                                 Get started
                         </Link>
@@ -48,7 +48,6 @@ export default function Footer() {
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Company</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/about"}>The story</Link>
-                            <Link href={"/public"}>Public building</Link>
                             <Link href={"/blog"}>Blog</Link>
                         </div>
                     </div>
@@ -56,8 +55,6 @@ export default function Footer() {
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Compare</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/comparison/toolbird-analytics-vs-plausible"}>Versus Plausible</Link>
-                            <Link href={"/"}>Versus Datadog</Link>
-                            <Link href={"/"}>Versus WaitForMe</Link>
                         </div>
                     </div>
                 </div>

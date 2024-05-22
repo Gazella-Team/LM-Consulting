@@ -52,7 +52,6 @@ export default function BentoGridComponent() {
 
 function BentoGridCard(props: any) {
 	return (
-		<Reveal delayTime={0.4}>
 			<div className="bg-white border paragraph text-center rounded-[25px] border-gray-600/10 shadow-clean">
 				{props.Obj.image &&
 				<div className='relative'>
@@ -70,6 +69,5 @@ function BentoGridCard(props: any) {
 					<p className="text-gray-600 font-normal text-sm mx-auto max-w-[400px]">{props.Obj.description}</p>
 				</div>
 			</div>
-		</Reveal>
 	)
 }
