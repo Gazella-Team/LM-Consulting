@@ -11,6 +11,7 @@ export default function Home() {
 	return (
 		<Layout white={true}>
 			<Hero02 />
+			<div className='mt-[-50px]'>
 				<SectionIntro
 					heading="The all-in-one cockpit for your SaaS startup"
 					description="With our all-in-one platform we ensure better overview and higher productivity"
@@ -18,6 +19,7 @@ export default function Home() {
 				>
 					<BentoGridComponent />
 				</SectionIntro>
+			</div>
 			<SectionIntro
 					bottomMargin={true}
 					heading="Get all answers"
