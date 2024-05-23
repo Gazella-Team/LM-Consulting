@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<Layout white={true}>
 			<Hero02 />
-			<div className='mt-[-50px]'>
+			<div className='mt-[-40px]'>
 				<SectionIntro
 					heading="The all-in-one cockpit for your SaaS startup"
 					description="With our all-in-one platform we ensure better overview and higher productivity"

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Reveal } from './Animations/Reveal'
 import { RevealLight } from './Animations/RevealLight'
+import CustomerSlider from './customer-slider'
 
 export default function Hero02() {
 	return (
@@ -54,8 +55,8 @@ export default function Hero02() {
                         </RevealLight>
                     </div>
                 </section>
-                <div style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(255,255,255,0) 100%)"}} className='min-h-[50px]'>
-
+                <CustomerSlider />
+                <div style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(255,255,255,0) 100%)"}} className='min-h-[100px]'>
                 </div>
             </div>
         </Reveal>
