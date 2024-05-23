@@ -47,9 +47,9 @@ export default function Hero02() {
                                     Get started
                                 </button>
                                 <button
-                                    className="bg-transparent border-[3px] border-gray-800 font-normal text-sm text-gray-800  px-4 py-1 rounded-full"
+                                    className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white  px-4 py-1 rounded-full"
                                 >
-                                    Get started
+                                    View features
                                 </button>
                             </div>
                         </RevealLight>
