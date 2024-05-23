@@ -21,15 +21,13 @@ export default function Home() {
 					<BentoGridComponent />
 				</SectionIntro>
 			</div>
-			<SectionIntro
+			<BlurSection
 					bottomMargin={true}
 					heading="Get all answers"
 					hook="Frequently Asked Questions"
 			>
-				<BlurSection>
 					<FAQ />			
-				</BlurSection>
-			</SectionIntro>
+			</BlurSection>
 		</Layout>
 	)
 }

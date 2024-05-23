@@ -41,13 +41,13 @@ export default function FAQ() {
 	const currentPath = router.pathname.slice(0, 3)
 	return (
 		<div className="w-[90%] mx-auto max-w-4xl heroOne:w-sectionMain">
-			<Accordion type="single" collapsible className="mt-8rounded-lg">
+			<Accordion type="single" collapsible>
 				{questions.map((question, index) => (
 					<Reveal key={index} delayTime={0.3}>
 						<AccordionItem
 							key={index}
 							value={`item-${index}`}
-							className="px-4 py-2 rounded-xl mb-[20px]"
+							className="px-4 rounded-xl"
 						>
 							<AccordionTrigger>
 								{question.question}
