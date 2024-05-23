@@ -4,6 +4,7 @@ import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
 import BlurSection from '@/components/blur-section'
 import CustomerSlider from '@/components/customer-slider'
 import DashboardDisplay from '@/components/dashboarddisplay'
+import FAQ from '@/components/faq'
 import Hero from '@/components/hero'
 import Hero02 from '@/components/hero-02'
 
@@ -25,7 +26,9 @@ export default function Home() {
 					heading="Get all answers"
 					hook="Frequently Asked Questions"
 			>
-				<BentoGridComponent />
+				<BlurSection>
+					<FAQ />			
+				</BlurSection>
 			</SectionIntro>
 		</Layout>
 	)
