@@ -56,7 +56,7 @@ export default function BlogCategoryPage({
 						</div>
 					</div>
 				</div>
-				<div className="py-12 pt-4">
+				<div className="py-12 bg-white border-y border-gray-600/10">
 					{posts.length > 0 ? (
 						<div className="max-w-6xl w-[86%] gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 							{posts.map((post) => (

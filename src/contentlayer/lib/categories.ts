@@ -1,20 +1,20 @@
 const categories = {
 	all: {
 		name: 'All',
-		activeClass: 'text-white bg-gradient-to-r from-cyan-500 to-blue-500',
+		activeClass: 'text-white bg-gray-800',
 	},
 	guides: {
 		name: 'Guides',
-		activeClass: 'text-white bg-gradient-to-r from-green-500 to-lime-500',
+		activeClass: 'text-white bg-gray-800',
 	},
 	engineering: {
 		name: 'Engineering',
 		activeClass:
-			'text-white bg-gradient-to-r from-violet-500 to-fuchsia-500',
+			'text-white bg-gray-800',
 	},
 	news: {
 		name: 'Company News',
-		activeClass: 'text-white bg-gradient-to-r from-cyan-500 to-blue-500',
+		activeClass: 'text-white bg-gray-800',
 	},
 }
 

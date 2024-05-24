@@ -10,7 +10,7 @@ type BlogCardProps = {
 export default function BlogCard({ post }: BlogCardProps) {
 	return (
 		<Link
-			className="flex flex-col overflow-hidden rounded-3xl border border-gray-600/10 shadow-md transition-all hover:shadow-lg"
+			className="flex flex-col overflow-hidden rounded-3xl border border-gray-600/10  transition-all hover:shadow-lg"
 			href={`/blog/${post.slug}`}
 		>
 			<img
@@ -23,7 +23,7 @@ export default function BlogCard({ post }: BlogCardProps) {
 				src={post.image}
 				style={{ color: 'transparent' }}
 			/>
-			<div className="flex flex-1 flex-col justify-between rounded-b-lg bg-white p-3.5">
+			<div className="flex flex-1 flex-col justify-between rounded-b-lg bg-white p-6 px-8">
 				<div>
 					<h2 className="line-clamp-2 font-display text-xl font-bold text-gray-800">
 						{post.title}
@@ -32,7 +32,7 @@ export default function BlogCard({ post }: BlogCardProps) {
 						{post.description}
 					</p>
 				</div>
-				<div className="mt-4 paragraph flex items-center justify-between">
+				<div className="mt-8 paragraph flex items-center justify-between">
 					<time
 						dateTime={format(
 							new Date(post.publishedAt),
