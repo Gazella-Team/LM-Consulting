@@ -8,6 +8,7 @@ type LayoutProps = {
 	className?: string
 	children?: React.ReactNode
 	white?: boolean
+	footerFullWidth?:boolean
 }
 
 const ToolbirdFont = localFont({
@@ -19,7 +20,7 @@ const ToolbirdFont = localFont({
 	]
   })
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout(props:LayoutProps) {
 	return (
 		<div className="flex flex-col justify-between min-h-screen">
 			<div className="w-full bg-white bg-grid-black/[0.04] relative">
@@ -27,11 +28,11 @@ export default function Layout({ children }: LayoutProps) {
 				<Navbar />
 				<div className={ToolbirdFont.className}>
 					<div className="relative">
-						{children}
+						{props.children}
 					</div>
 				</div>
 				<div className="relative">
-				<Footer />
+				<Footer fullWidth={props.footerFullWidth} />
 				</div>
 			</div>
 		</div>
