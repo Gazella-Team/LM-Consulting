@@ -22,6 +22,7 @@ export default function Home() {
 				</SectionIntro>
 			</div>
 			<BlurSection
+					founders={true}
 					bottomMargin={true}
 					heading="Get all answers"
 					hook="Frequently Asked Questions"
