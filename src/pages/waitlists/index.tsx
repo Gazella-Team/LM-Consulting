@@ -7,6 +7,8 @@ import Features from '@/components/toolpage/Features'
 import { ChartBarIcon } from '@heroicons/react/24/outline'
 import DashboardDisplay from '@/components/dashboarddisplay'
 import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
+import BlurSection from '@/components/blur-section'
+import BlurDashboard from '@/components/blur-dashboard'
 
 export default function Waitlists() {
 	return (
@@ -17,7 +19,7 @@ export default function Waitlists() {
 				heading="Collect waitlists signups through our"
 				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
-			<DashboardDisplay src={"/showcases/analysis.webp"} />
+			<BlurDashboard image='/showcases/analysis.webp' />
 			<SectionIntro bottomMargin={true} heading='Powerful insights' description='Discover, collaborate, and grow, our all-in-one platform empowers you to build.' hook='Features Included'>
 				<BentoGridComponent />
 			</SectionIntro>

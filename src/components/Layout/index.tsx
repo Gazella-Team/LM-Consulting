@@ -3,6 +3,7 @@ import Footer from './Footer'
 import localFont from 'next/font/local'
 import NavigationMenuDemo from './NavDemo'
 import { TracingBeam } from '../ui/tracing-beam'
+import { cn } from 'utils/cs'
 
 type LayoutProps = {
 	className?: string
@@ -31,7 +32,7 @@ export default function Layout(props:LayoutProps) {
 						{props.children}
 					</div>
 				</div>
-				<div className="relative">
+				<div className={cn(ToolbirdFont.className, "relative")}>
 				<Footer fullWidth={props.footerFullWidth} />
 				</div>
 			</div>

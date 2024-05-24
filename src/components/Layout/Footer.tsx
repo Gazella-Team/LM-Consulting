@@ -3,6 +3,7 @@ import { FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { cn } from "utils/cs";
+import Cta from "./Cta";
 
 type FooterProps = {
     fullWidth?: boolean,
@@ -11,6 +12,7 @@ type FooterProps = {
 export default function Footer(props:FooterProps) {
     return (
         <>
+        <Cta />
          <footer style={{background: "radial-gradient(circle, rgba(247,243,255,1) 0%, rgba(255,255,255,1) 50%)"}} className={props.fullWidth ? "py-[10px] mx-auto border-t border-t-gray-600/10 bg-white":"py-[10px] mx-auto max-w-7xl border-t rounded-t-[100px] border-t-gray-600/10 bg-white"}>
             <div className="w-[86%] mx-auto min-h-[370px] max-w-6xl grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
                 <div className="flex flex-col gap-6">
