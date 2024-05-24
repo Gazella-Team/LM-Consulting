@@ -18,7 +18,7 @@ export default function Waitlists() {
 				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
 			<DashboardDisplay src={"/showcases/analysis.webp"} />
-			<SectionIntro heading='Powerful insights' description='Discover, collaborate, and grow, our all-in-one platform empowers you to build.' hook='Features Included'>
+			<SectionIntro bottomMargin={true} heading='Powerful insights' description='Discover, collaborate, and grow, our all-in-one platform empowers you to build.' hook='Features Included'>
 				<BentoGridComponent />
 			</SectionIntro>
 		</Layout>

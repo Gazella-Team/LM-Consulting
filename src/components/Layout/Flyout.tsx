@@ -11,10 +11,10 @@ import {
 import Link from 'next/link'
 
 const solutions = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '/analytics', icon: ChartPieIcon },
+  { name: 'Analytics', description: 'Privacy-friendly analytics of your website data', href: '/analytics', icon: ChartPieIcon },
   { name: 'Uptime Monitoring', description: 'Speak directly to your customers', href: '/coming-soon', icon: CursorArrowRaysIcon },
-  { name: 'User feedback', description: "Your customers' data will be safe", href: '/coming-soon', icon: FingerPrintIcon },
-  { name: 'Waitlists', description: 'Connect with third-party tools', href: '/waitlists', icon: SquaresPlusIcon },
+  { name: 'User feedback', description: "Collect all your user-feedback in one place", href: '/coming-soon', icon: FingerPrintIcon },
+  { name: 'Waitlists', description: 'Collect signups for your next big launch', href: '/waitlists', icon: SquaresPlusIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -48,7 +48,7 @@ export default function Flyout() {
                     <item.icon className="h-5 w-5 text-gray-800 group-hover:text-main" aria-hidden="true" />
                       {item.name}
                     </div>
-                    <p className="mt-1 text-gray-600 paragraph font-normal">{item.description}</p>
+                    <p className="mt-1 text-gray-600 paragraph font-normal">{item.description.slice(0, 40)}...</p>
                   </div>
                 </Link>
               ))}

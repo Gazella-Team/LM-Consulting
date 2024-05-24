@@ -1,6 +1,44 @@
+import Link from "next/link";
 import Slider from "react-infinite-logo-slider";
 
-const imageData = ["/users/burst.png","/users/burst.png","/users/burst.png","/users/burst.png","/users/burst.png","/users/burst.png","/users/burst.png","/users/burst.png",]
+const imageData = [
+  {
+    path: "/users/burst.png",
+    website: "https://burstcreators.com/",
+    size: "w-[70px]",
+  },
+  {
+    path: "/users/burst.png",
+    website: "https://burstcreators.com/",
+    size: "w-[70px]",
+  },
+  {
+    path: "/users/burst.png",
+    website: "https://burstcreators.com/",
+    size: "w-[70px]",
+  },
+  {
+    path: "/users/burst.png",
+    website: "https://burstcreators.com/",
+    size: "w-[70px]",
+  },
+  {
+    path: "/users/burst.png",
+    website: "https://burstcreators.com/",
+    size: "w-[70px]",
+  },
+  {
+    path: "/users/burst.png",
+    website: "https://burstcreators.com/",
+    size: "w-[70px]",
+  },
+  {
+    path: "/users/matematiktutor.png",
+    website: "https://burstcreators.com/",
+    size: "w-[150px]",
+  },
+
+]
 
 export default function CustomerSlider() {
     return (
@@ -18,7 +56,9 @@ export default function CustomerSlider() {
           >
             {imageData.map((v) => (
               <Slider.Slide key={v}>
-                <img className="w-[70px]" alt={v} src={v}></img>
+                <Link href={v.website}>
+                  <img className={v.size} src={v.path}></img>
+                </Link>
               </Slider.Slide>
             ))}
           </Slider>
