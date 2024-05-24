@@ -10,7 +10,7 @@ import { ArrowLeft } from 'lucide-react'
 
 export function Article({ post }: { post: Post }) {
 	return (
-		<article className="border border-gray-600/10 relative mx-auto flex max-w-3xl w-[86%] p-8 pb-24 pt-12 my-14 rounded-xl shadow-clean shadow-main/30 bg-white flex-col gap-8">
+		<article className="border border-gray-600/10 relative mx-auto flex max-w-3xl w-[86%] p-8 py-12 my-24 rounded-3xl shadow-clean shadow-main/10 bg-white flex-col gap-8">
 			<div className="grid max-w-2xl mx-auto w-full gap-5">
 				<div className="mb-3 paragraph text-gray-400 text-sm gap-2">
 					<Link className='flex gap-2 items-center' href={`/blog`} passHref>
