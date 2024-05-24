@@ -66,13 +66,12 @@ export default function FAQ() {
 	const currentPath = router.pathname.slice(0, 3)
 	return (
 		<div className="">
-			<Accordion type="single" collapsible>
+			<Accordion className='paragraph' type="single" collapsible>
 				{questions.map((question, index) => (
-					<Reveal key={index} delayTime={0.3}>
 						<AccordionItem
 							key={index}
 							value={`item-${index}`}
-							className="rounded-xl"
+							className={index === 0 ? "border-none":"border-t"}
 						>
 							<AccordionTrigger>
 								{question.question}
@@ -81,7 +80,6 @@ export default function FAQ() {
 								{question.answer}
 							</AccordionContent>
 						</AccordionItem>
-					</Reveal>
 				))}
 			</Accordion>
 		</div>

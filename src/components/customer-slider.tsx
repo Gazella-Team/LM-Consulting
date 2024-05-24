@@ -3,37 +3,37 @@ import Slider from "react-infinite-logo-slider";
 
 const imageData = [
   {
-    path: "/users/burst.png",
+    path: "/users/burst.svg",
     website: "https://burstcreators.com/",
-    size: "w-[70px]",
+    size: "w-[150px]",
   },
   {
-    path: "/users/burst.png",
+    path: "/users/burst.svg",
     website: "https://burstcreators.com/",
-    size: "w-[70px]",
+    size: "w-[150px]",
   },
   {
-    path: "/users/burst.png",
+    path: "/users/burst.svg",
     website: "https://burstcreators.com/",
-    size: "w-[70px]",
+    size: "w-[150px]",
   },
   {
-    path: "/users/burst.png",
+    path: "/users/burst.svg",
     website: "https://burstcreators.com/",
-    size: "w-[70px]",
+    size: "w-[150px]",
   },
   {
-    path: "/users/burst.png",
+    path: "/users/burst.svg",
     website: "https://burstcreators.com/",
-    size: "w-[70px]",
+    size: "w-[150px]",
   },
   {
-    path: "/users/burst.png",
+    path: "/users/burst.svg",
     website: "https://burstcreators.com/",
-    size: "w-[70px]",
+    size: "w-[150px]",
   },
   {
-    path: "/users/matematiktutor.png",
+    path: "/users/matematiktutor.svg",
     website: "https://burstcreators.com/",
     size: "w-[150px]",
   },
