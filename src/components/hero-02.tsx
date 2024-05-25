@@ -55,7 +55,6 @@ export default function Hero02() {
                         </RevealLight>
                     </div>
                 </section>
-                <CustomerSlider />
                 <div style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(255,255,255,0) 100%)"}} className='min-h-[100px]'>
                 </div>
             </div>
