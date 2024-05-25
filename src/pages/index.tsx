@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import SectionIntro from '@/components/SectionIntro'
 import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
+import BlurDashboard from '@/components/blur-dashboard'
 import BlurSection from '@/components/blur-section'
 import CustomerSlider from '@/components/customer-slider'
 import DashboardDisplay from '@/components/dashboarddisplay'
@@ -13,6 +14,7 @@ export default function Home() {
 	return (
 		<Layout white={true}>
 			<Hero />
+			<BlurDashboard image='/showcases/analysis.webp' />
 			<div className='mt-[-40px]'>
 				<SectionIntro
 					heading="The all-in-one cockpit for your SaaS startup"
