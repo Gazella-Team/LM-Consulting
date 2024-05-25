@@ -56,7 +56,7 @@ export default function BlogCategoryPage({
 						</div>
 					</div>
 				</div>
-				<div style={{background: "linear-gradient(180deg, rgba(255,255,255,1) 91%, rgba(255,255,255,0) 100%)"}} className="py-12 border-t border-gray-600/10">
+				<div className="py-12 border-y border-gray-600/10 bg-white">
 					{posts.length > 0 ? (
 						<div className="max-w-6xl w-[86%] gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 							{posts.map((post) => (

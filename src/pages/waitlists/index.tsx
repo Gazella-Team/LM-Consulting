@@ -14,6 +14,7 @@ export default function Waitlists() {
 	return (
 		<Layout white={true}>
 			<PageIntro
+				buttons={[{text: "Get started", path: "/"}, {text:"Live demo", path: "/"}]}
 				hook="Waitlists"
 				highlighted="built-in system"
 				heading="Collect waitlists signups through our"

@@ -14,6 +14,7 @@ export default function Analytics() {
 	return (
 		<Layout white={true}>
 			<PageIntro
+				buttons={[{text: "Get started", path: "/"}, {text:"Live demo", path: "/"}]}
 				hook="Analytics"
 				highlighted="website data"
 				heading="Privacy-friendly analysis of all your"
