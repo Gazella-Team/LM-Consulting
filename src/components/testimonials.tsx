@@ -22,7 +22,7 @@ function ReviewCard(props:any) {
     return (
         <div className="rounded-3xl border border-gray-600/10 paragraph w-[360px] p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-20 min-h-[200px]">
             <div>
-                <p className="text-base text-gray-600 font-normal leading-[170%]">"{props.Obj.review}"</p>
+                <p className="text-base text-gray-600 font-normal leading-[170%]">&quot;{props.Obj.review}&quot;</p>
             </div>
             <div className="flex items-center justify-between">
                 <div>
