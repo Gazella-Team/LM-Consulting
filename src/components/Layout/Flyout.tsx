@@ -3,18 +3,23 @@ import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import {
   ArrowPathIcon,
+  ArrowPathRoundedSquareIcon,
+  ChartBarIcon,
   ChartPieIcon,
+  ChatBubbleLeftRightIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
   SquaresPlusIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { ChatBubbleIcon } from '@radix-ui/react-icons'
+import { ListBulletIcon } from '@radix-ui/react-icons'
 
 const solutions = [
-  { name: 'Analytics', description: 'Privacy-friendly analytics of your website data', href: '/analytics', icon: ChartPieIcon },
-  { name: 'Uptime Monitoring', description: 'Speak directly to your customers', href: '/coming-soon', icon: CursorArrowRaysIcon },
-  { name: 'User feedback', description: "Collect all your user-feedback in one place", href: '/coming-soon', icon: FingerPrintIcon },
-  { name: 'Waitlists', description: 'Collect signups for your next big launch', href: '/waitlists', icon: SquaresPlusIcon },
+  { name: 'Analytics', description: 'Privacy-friendly analytics of your website data', href: '/analytics', icon: ChartBarIcon },
+  { name: 'Uptime Monitoring', description: 'Speak directly to your customers', href: '/coming-soon', icon: ArrowPathRoundedSquareIcon },
+  { name: 'User feedback', description: "Collect all your user-feedback in one place", href: '/coming-soon', icon: ChatBubbleLeftRightIcon },
+  { name: 'Waitlists', description: 'Collect signups for your next big launch', href: '/waitlists', icon: ListBulletIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },

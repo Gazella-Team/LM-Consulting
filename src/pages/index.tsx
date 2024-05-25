@@ -7,6 +7,7 @@ import DashboardDisplay from '@/components/dashboarddisplay'
 import FAQ from '@/components/faq'
 import Hero from '@/components/hero'
 import Hero02 from '@/components/hero-02'
+import Testimonials from '@/components/testimonials'
 
 export default function Home() {
 	return (
@@ -26,7 +27,7 @@ export default function Home() {
 					heading="Used by rapidly growing startups worldwide"
 					hook="Testimonials"
 			>
-					<FAQ />			
+					<Testimonials />			
 			</BlurSection>
 		</Layout>
 	)
