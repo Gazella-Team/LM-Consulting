@@ -12,7 +12,7 @@ type BlurSectionProps = {
 
 export default function BlurSection(props:BlurSectionProps) {
     return (
-        <section style={{background: "linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)"}} className={cn("my-24 max-w-7xl mx-auto rounded-[100px] backdrop:blur-3xl border-y border-gray-600/10", props.marginBottom && "mb-24")}>
+        <section style={{background: "linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)"}} className={cn("my-24 max-w-7xl mx-auto lg:rounded-[100px] backdrop:blur-3xl border-y border-gray-600/10", props.marginBottom && "mb-24")}>
             <div className="w-[86%] mx-auto max-w-6xl">
                 <div className="text-center text-gray-800 py-24 pb-0 z-1">
                     {props.founders ? (
