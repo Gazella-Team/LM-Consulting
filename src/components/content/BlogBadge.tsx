@@ -14,7 +14,7 @@ export default function BlogBadge({ category }: BlogBadgeProps) {
 	return (
 		<span
 			className={cn(
-				`px-2 border border-gray-600/10 text-white py-1.5 rounded-full text-xs font-medium bg-gradient-to-r`,
+				`px-2 border border-gray-600/10 paragraph text-white py-1.5 rounded-full text-xs font-medium bg-gradient-to-r`,
 				badgeColor
 			)}
 		>
