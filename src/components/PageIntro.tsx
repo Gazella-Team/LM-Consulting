@@ -40,28 +40,28 @@ export default function PageIntro(props: PageIntroProps) {
 				{props.buttons ?
 					props.buttons.length === 1 ? 
 					<RevealLight delayTime={0.4}>
-					<div className="flex items-center paragraph relative justify-center gap-3 mt-6 font-medium">
+					<div className="flex items-center paragraph relative justify-center gap-3 mt-6 mb-4 font-medium">
 						<Link
 							href={"/"}
 							className="bg-main border-[3px] border-main text-white text-xs px-4 py-1 rounded-full"
 						>
-							Join waitlist
+							{props.buttons[0].text}
 						</Link>
 					</div>
 		</RevealLight>:
 									<RevealLight delayTime={0.4}>
-									<div className="flex items-center paragraph relative justify-center gap-3 mt-6 font-medium">
+									<div className="flex items-center paragraph relative justify-center gap-3 mt-6 mb-4 font-medium">
 										<Link
-											href={"/"}
+											href={props.buttons[0].path}
 											className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
 										>
-											Join waitlist
+											{props.buttons[0].text}
 										</Link>
 										<Link
 											className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
-											href={''}
+											href={props.buttons[1].path}
 										>
-											View features
+											{props.buttons[1].text}
 										</Link>
 									</div>
 						</RevealLight>

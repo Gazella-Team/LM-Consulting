@@ -12,7 +12,7 @@ import Testimonials from '@/components/testimonials'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<Hero02 />
+			<Hero />
 			<div className='mt-[-40px]'>
 				<SectionIntro
 					heading="The all-in-one cockpit for your SaaS startup"
