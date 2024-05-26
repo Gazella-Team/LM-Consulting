@@ -12,8 +12,8 @@ type FooterProps = {
 export default function Footer(props:FooterProps) {
     return (
         <>
-        <Cta />
-         <footer style={{background: "radial-gradient(circle, rgba(247,243,255,1) 0%, rgba(255,255,255,1) 50%)"}} className={props.fullWidth ? "py-[10px] mx-auto border-t relative border-t-gray-600/10 bg-white":"py-[10px] mx-auto max-w-7xl border-t rounded-t-[100px] relative border-t-gray-600/10 bg-white"}>
+         <Cta />
+         <footer style={{background: "radial-gradient(circle, rgba(247,243,255,1) 0%, rgba(255,255,255,1) 50%)"}} className={props.fullWidth ? "py-[10px] mx-auto border-t relative border-t-gray-600/10 bg-white":"py-[10px] mx-auto max-w-7xl border-t md:rounded-t-[100px] relative border-t-gray-600/10 bg-white"}>
             <div className="w-[86%] mx-auto min-h-[370px] max-w-6xl grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col gap-3">
@@ -41,7 +41,7 @@ export default function Footer(props:FooterProps) {
                         </Link>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-3 paragraph gap-16">
+                <div className="grid grid-cols-2 mb-24 lg:grid-cols-3 paragraph gap-16">
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Products</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
@@ -66,7 +66,7 @@ export default function Footer(props:FooterProps) {
                     </div>
                 </div>
             </div>
-            <div className="text-center pb-6 text-gray-400 text-sm flex items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
+            <div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
                 <p>© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE 82, 2TH.1358 KØBENHAVN</p>
                 <p className="font-[Caveat] text-xl">Built safely and produdly in 🇪🇺</p>
             </div>
