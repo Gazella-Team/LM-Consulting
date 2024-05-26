@@ -10,7 +10,7 @@ const testimonialsData = [
 export default function Testimonials() {
     return (
         <section>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
                 {testimonialsData.map((testimonial, index) => <ReviewCard count={index} Obj={testimonial} key={index}/>)}
             </div>
         </section>
@@ -20,7 +20,7 @@ export default function Testimonials() {
 function ReviewCard(props:any) {
     return (
         props.count % 2 === 0 ? 
-        <div className="rounded-3xl border bg-white border-gray-600/10 paragraph w-[360px] p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-20 min-h-[200px]">
+        <div className="rounded-3xl w-full border bg-white border-gray-600/10 paragraph p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-20 min-h-[200px]">
         <div>
             <p className="text-base text-gray-600 font-normal leading-[170%]">&quot;{props.Obj.review}&quot;</p>
         </div>
@@ -33,7 +33,7 @@ function ReviewCard(props:any) {
         </div>
     </div>
     :
-    <div style={{background: "linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)"}} className="rounded-3xl border border-gray-600/10 paragraph w-[360px] p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-20 min-h-[200px]">
+    <div style={{background: "linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)"}} className="rounded-3xl border w-full border-gray-600/10 paragraph p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-20 min-h-[200px]">
     <div>
         <p className="text-base text-gray-600 font-normal leading-[170%]">&quot;{props.Obj.review}&quot;</p>
     </div>
