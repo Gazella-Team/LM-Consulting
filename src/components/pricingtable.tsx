@@ -20,7 +20,7 @@ export default function PricingTable() {
 			</div>
 			<div className="grid grid-cols-1 lg:grid-cols-3 mx-auto max-w-6xl w-[86%] gap-14 lg:gap-6">
 			<div className="relative">
-				<div className="bg-white relative h-full rounded-2xl border border-gray-600/10 text-gray-800 shadow-sm">
+				<div className="bg-white relative h-full rounded-3xl border border-gray-600/10 text-gray-800 shadow-sm">
 					<div className="flex flex-col gap-2 mb-12 px-7 pt-10">
 						<div className="flex items-center gap-3">
 							<div className="bg-gray-600 rounded-full h-4 w-4"></div>
@@ -69,12 +69,12 @@ export default function PricingTable() {
 					</div>
 				</div>
 			</div>
-				<div style={{background: "linear-gradient(350deg, rgba(243,237,255,1) 0%, rgba(255,255,255,1) 54%)"}} className="bg-white relative rounded-2xl border-2 border-main text-gray-800 shadow-main/30 shadow-clean">
+				<div style={{background: "linear-gradient(350deg, rgba(243,237,255,1) 0%, rgba(255,255,255,1) 54%)"}} className="bg-white relative rounded-3xl border-2 border-main text-gray-800 shadow-main/30 shadow-clean">
 					<div className="w-full h-[40px] flex items-center justify-center mt-[-20px]">
 						<p className="bg-main select-none paragraph text-white px-8 rounded-full py-2 text-xs font-semibold">Popular</p>
 					</div>
 					<div className="mt-[-20px]">
-					<div className="flex flex-col gap-2 pb-12 px-7 pt-10 bg-white rounded-t-2xl">
+					<div className="flex flex-col gap-2 pb-12 px-7 pt-10 bg-white rounded-t-3xl">
 						<div className="flex items-center gap-3 bg-white">
 							<div className="bg-main rounded-full h-4 w-4"></div>
 							<h3 className="font-semibold text-2xl text-gray-800">Pro</h3>
@@ -122,7 +122,7 @@ export default function PricingTable() {
 					</div>
 					</div>
 				</div>
-				<div className="bg-white relative rounded-2xl border border-gray-600/10 text-gray-800 shadow-sm">
+				<div className="bg-white relative rounded-3xl border border-gray-600/10 text-gray-800 shadow-sm">
 					<div className="flex relative flex-col gap-2 pb-12 px-7 pt-10">
 						<div className="flex items-center gap-3">
 							<div className="bg-gray-800 rounded-full h-4 w-4"></div>
