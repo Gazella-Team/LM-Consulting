@@ -39,18 +39,18 @@ export default function Hero() {
 				</Reveal>
 				<RevealLight delayTime={0.4}>
 					<div className="flex items-center paragraph relative justify-center gap-3 mt-4 font-medium">
-						<Link
-							href={'/'}
-							className="bg-main border-[3px] border-main text-white text-sm px-6 py-2 rounded-full"
-						>
-							Join waitlist
-						</Link>
-						<Link
-							className="border-[3px] bg-gray-800 border-gray-800 text-white text-sm px-6 py-2 rounded-full hover:bg-main hover:border-main hover:text-white transition-all"
-							href={''}
-						>
-							View features
-						</Link>
+					<Link
+											href="/"
+											className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
+										>
+											Get started
+										</Link>
+										<Link
+											className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
+											href="/"
+										>
+											View features
+										</Link>
 					</div>
 				</RevealLight>
 			</div>
