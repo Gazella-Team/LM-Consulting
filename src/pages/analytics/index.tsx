@@ -14,7 +14,7 @@ export default function Analytics() {
 	return (
 		<Layout white={true}>
 			<PageIntro
-				buttons={[{text: "Get started", path: "/"}, {text:"Live demo", path: "/"}]}
+				buttons={[{text: "Get started", path: "/"}, {text:"Live demo", path: "https://app.toolbird.io/share/minecraft-list.gg", target:"_blank"}]}
 				hook="Analytics"
 				highlighted="website data"
 				heading="Privacy-friendly analysis of all your"

@@ -42,6 +42,7 @@ export default function PageIntro(props: PageIntroProps) {
 					<RevealLight delayTime={0.4}>
 					<div className="flex items-center paragraph relative justify-center gap-3 mt-6 mb-4 font-medium">
 						<Link
+							target={props.buttons[0].target}
 							href={"/"}
 							className="bg-main border-[3px] border-main text-white text-xs px-4 py-1 rounded-full"
 						>
@@ -52,12 +53,14 @@ export default function PageIntro(props: PageIntroProps) {
 									<RevealLight delayTime={0.4}>
 									<div className="flex items-center paragraph relative justify-center gap-3 mt-6 mb-4 font-medium">
 										<Link
+											target={props.buttons[0].target}
 											href={props.buttons[0].path}
 											className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
 										>
 											{props.buttons[0].text}
 										</Link>
 										<Link
+											target={props.buttons[1].target}
 											className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 											href={props.buttons[1].path}
 										>
