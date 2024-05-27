@@ -21,7 +21,7 @@ export default function Analytics() {
 				paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere."
 			/>
 			<BlurDashboard image='/showcases/analysis.webp' />
-			<SectionIntro bottomMargin={true} heading='Powerful insights' description='Discover, collaborate, and grow, our all-in-one platform empowers you to build.' hook='Features Included'>
+			<SectionIntro bottomMargin={true} heading='Powerful insights' description='Track where your visitors come from, what device they are using and where in the world they are located.' hook='Features Included'>
 				<BentoGridComponent />
 			</SectionIntro>
 		</Layout>

@@ -3,7 +3,7 @@ import CustomerSlider from '../customer-slider'
 
 export default function Cta() {
 	return (
-		<section className='py-16 pb-0 relative'>
+		<section className='py-16 mt-24 pb-0 relative'>
 			<div className='flex items-center justify-center'>
 				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden -z-1" style={{background: "radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 62%)"}}></div>
 			</div>

@@ -20,13 +20,15 @@ export default function Pricing() {
 				paragraph="We offer plans that suit any project. Start for free today, no credit card required."
 			/>
 			<PricingTable />
-			<BlurSection
+			{/*
+		<BlurSection
 					bottomMargin={true}
 					heading="Get all answers"
 					hook="Frequently Asked Questions"
 			>
 					<FAQ />			
 			</BlurSection>
+			*/}
 		</Layout>
 	)
 }

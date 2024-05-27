@@ -24,13 +24,6 @@ export default function Home() {
 					<BentoGridComponent />
 				</SectionIntro>
 			</div>
-			<BlurSection
-					bottomMargin={true}
-					heading="Used by rapidly growing startups worldwide"
-					hook="Testimonials"
-			>
-					<Testimonials />			
-			</BlurSection>
 		</Layout>
 	)
 }
