@@ -63,7 +63,7 @@ function BentoGridCard(props: any) {
 				</div>
 				}
 				<div className="p-10 flex flex-col gap-2">
-					<h2 className="font-semibold text-gray-800">
+					<h2 className="font-semibold text-lg text-gray-800">
 						{props.Obj.heading}
 					</h2>
 					<p className="text-gray-600 font-normal text-sm mx-auto max-w-[400px]">{props.Obj.description}</p>
