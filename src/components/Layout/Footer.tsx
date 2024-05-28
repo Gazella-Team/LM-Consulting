@@ -47,22 +47,23 @@ export default function Footer(props:FooterProps) {
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Products</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/analytics"}>Analytics</Link>
-                            <Link href={"/monitoring"}>Monitoring<br></br>(under developmet)</Link>
-                            <Link href={"/feedback"}>User feedback<br></br>(under developmet)</Link>
+                            <Link href={"/coming-soon"}>Monitoring<br></br>(under developmet)</Link>
+                            <Link href={"/coming-soon"}>User feedback<br></br>(under developmet)</Link>
                             <Link href={"/waitlists"}>Waitlists</Link>
                         </div>
                     </div>
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Company</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/about"}>The story</Link>
+                            <Link href={"/blog/introducing-toolbird"}>About</Link>
                             <Link href={"/blog"}>Blog</Link>
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Compare</h2>
+                        <h2 className="text-sm mb-5 font-semibold text-gray-800">Contact</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/comparison/toolbird-analytics-vs-plausible"}>Versus Plausible</Link>
+                            <Link href={"/about"}>General</Link>
+                            <Link href={"/blog"}>Enterprise</Link>
                         </div>
                     </div>
                 </div>

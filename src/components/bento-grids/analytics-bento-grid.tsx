@@ -25,21 +25,21 @@ export default function BentoGridComponent() {
 				<div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
 					<BentoGridCard
 						Obj={{
-							heading: 'Collaborate with your team',
+							heading: 'Device Data',
 							description:
 								'Share a workspace with your team-members for more productive development',
 						}}
 					/>
 					<BentoGridCard
 						Obj={{
-							heading: 'Collaborate with your team',
+							heading: 'Refferer Data',
 							description:
 								'Share a workspace with your team-members for more productive development',
 						}}
 					/>
 					<BentoGridCard
 						Obj={{
-							heading: 'Collaborate with your team',
+							heading: 'Page Data',
 							description:
 								'Share a workspace with your team-members for more productive development',
 						}}
