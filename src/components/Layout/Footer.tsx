@@ -62,8 +62,8 @@ export default function Footer(props:FooterProps) {
                     <div>
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Contact</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-                            <Link href={"/about"}>General</Link>
-                            <Link href={"/blog"}>Enterprise</Link>
+                            <Link href={"/contact"}>General</Link>
+                            <Link href={"/enterprise"}>Enterprise</Link>
                         </div>
                     </div>
                 </div>

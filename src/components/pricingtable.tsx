@@ -134,11 +134,14 @@ export default function PricingTable() {
 						<h1 className="text-5xl font-semibold">Let&apos;s talk</h1>
 					</div>
 					<div className="bg-slate-50 paragraph border-y py-5 px-7 border-gray-600/10">
-						<button
-							className="bg-gray-800 w-full border-[3px] border-gray-800 text-sm font-medium text-white px-6 py-2 rounded-full"
-						>
-							Contact sales
-						</button>
+						<div className="flex">
+							<Link
+							href={"/enterprise"}
+								className="bg-gray-800 text-center w-full border-[3px] border-gray-800 text-sm font-medium text-white px-6 py-2 rounded-full"
+							>
+								Contact sales
+							</Link>
+						</div>
 					</div>
 					<div>
 						<h3 className="p-7 pb-0 paragraph text-gray-500 font-medium">Custom specifications:</h3>
