@@ -31,10 +31,7 @@ export default function Hero() {
 				</Reveal>
 				<Reveal delayTime={0.2}>
 					<p className="text-base md:text-lg mx-auto xl:text-xl font-regular paragraph mb-2 max-w-[800px] w-[85%] text-gray-600">
-						Manage web analytics, cron jobs, monitoring, feature
-						flags, waitlists, client feedback and more within just
-						one platform. Toolbird makes building tech products
-						easier
+						As a SaaS developer you no longer need to subscribe to various pricy tool-providers to have the essential tools needed to get an overview of your project.
 					</p>
 				</Reveal>
 				<RevealLight delayTime={0.4}>
@@ -43,7 +40,7 @@ export default function Hero() {
 											href="/"
 											className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
 										>
-											Get started
+											Get started for free
 										</Link>
 										<Link
 											className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"

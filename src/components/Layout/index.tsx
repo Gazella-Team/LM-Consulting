@@ -10,6 +10,7 @@ type LayoutProps = {
 	children?: React.ReactNode
 	white?: boolean
 	footerFullWidth?:boolean
+	noCta?:boolean
 }
 
 const ToolbirdFont = localFont({
@@ -33,7 +34,7 @@ export default function Layout(props:LayoutProps) {
 					</div>
 				</div>
 				<div className={cn(ToolbirdFont.className, "relative")}>
-				<Footer fullWidth={props.footerFullWidth} />
+				<Footer noCta={props.noCta} fullWidth={props.footerFullWidth} />
 				</div>
 			</div>
 		</div>

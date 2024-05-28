@@ -10,9 +10,9 @@ export default function Cta() {
 			<div className='w-[86%] relative mx-auto max-w-6xl mb-20 text-center'>
 				<h2 className='text-[40px] md:text-[50px] xl:text-[55px] leading-[110%] max-w-[600px] mb-4 mx-auto font-black text-gray-800'><span className='bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text'>Supercharge </span> your SaaS development today</h2>
 				<p className="text-base md:text-lg xl:text-lg paragraph max-w-[350px] mx-auto text-gray-600">
-				We offer plans that suit any project. Start for free today, no credit card required.
+					Increase your project overview today with the ultimate toolbox for SaaS developers. 
 				</p>
-				<div className="flex items-center paragraph relative justify-center gap-3 mt-6 font-medium">
+				<div className="flex items-center paragraph relative justify-center gap-3 mt-8 font-medium">
 						<Link
 							href={'/'}
 							className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
