@@ -13,9 +13,8 @@ import Testimonials from '@/components/testimonials'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<Hero />
-			<BlurDashboard image='/showcases/analysis.webp' />
-			<div className='mt-[-40px]'>
+			<Hero02 />
+			<div className='mt-[-100px]'>
 				<SectionIntro
 					heading="The all-in-one cockpit for your SaaS startup"
 					description="With our all-in-one platform we ensure better overview and higher productivity"
