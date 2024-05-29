@@ -23,8 +23,9 @@ export default function BentoGridComponent() {
 					/>
 				</div>
 				<div className="">
-					<BentoGridCard
+					<BentoGridLong
 						Obj={{
+							image: '/showcases/chart.webp',
 							heading: 'Set a signup goal',
 							description:
 								'Share a workspace with your team-members for more productive development',
@@ -54,6 +55,28 @@ function BentoGridCard(props: any) {
 					</h2>
 					<p className="text-gray-600 font-normal text-sm mx-auto max-w-[400px]">{props.Obj.description}</p>
 				</div>
+			</div>
+	)
+}
+
+function BentoGridLong(props: any) {
+	return (
+			<div className="bg-white border paragraph flex items-center rounded-[25px] border-gray-600/10 shadow-clean">
+				<div className="p-10 flex flex-col gap-2">
+					<h2 className="font-semibold text-lg text-gray-800">
+						{props.Obj.heading}
+					</h2>
+					<p className="text-gray-600 font-normal text-sm mx-auto max-w-[400px]">{props.Obj.description}</p>
+				</div>
+				{props.Obj.image &&
+				<div className='relative flex justify-end w-full'>
+					<img
+						className="h-[270px] w-full object-cover rounded-t-[25px]"
+						src={props.Obj.image}
+					></img>
+  					<div className='absolute inset-0 h-full rounded-t-[25px]' style={{background: "linear-gradient(0deg, rgba(255,255,255,0.8225884103641457) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.7441570378151261) 100%)"}}></div>
+				</div>
+				}
 			</div>
 	)
 }
