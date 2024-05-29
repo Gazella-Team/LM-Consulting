@@ -1,6 +1,6 @@
 import Layout from '@/components/Layout'
 import SectionIntro from '@/components/SectionIntro'
-import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
+import BentoGridComponent from '@/components/bento-grids/landing-bento-grid'
 import BlurDashboard from '@/components/blur-dashboard'
 import BlurSection from '@/components/blur-section'
 import CustomerSlider from '@/components/customer-slider'

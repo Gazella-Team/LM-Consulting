@@ -43,7 +43,7 @@ export function Article({ post }: { post: Post }) {
 						</div>
 					</div>
 				</div>
-				<div className="border border-gray-600/10 relative h-full w-full overflow-hidden rounded-2xl">
+				<div className="border border-gray-600/10 relative h-full w-full overflow-hidden rounded-3xl">
 					<img src={post.image} alt={post.title} />
 				</div>
 			</div>

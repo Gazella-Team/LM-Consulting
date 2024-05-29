@@ -8,7 +8,7 @@ export default function BentoGridComponent() {
 					<BentoGridCard
 						Obj={{
 							image: '/showcases/map.webp',
-							heading: 'Geographic Data',
+							heading: 'One toolbar for all tools',
 							description:
 								'Keep track of all traffic going thorugh your website. Analyze visitors, sources, devices and other essential data points',
 						}}
@@ -16,7 +16,7 @@ export default function BentoGridComponent() {
 					<BentoGridCard
 						Obj={{
 							image: '/showcases/chart.webp',
-							heading: 'Data visualization',
+							heading: 'Collaborate with your team',
 							description:
 								'Create, manage and run a custom waitlist in a structured dashboard with only two clicks',
 						}}
