@@ -35,8 +35,7 @@ export default function Hero02() {
                         </Reveal>
                         <Reveal delayTime={0.2}>
                             <p className="text-base md:text-lg xl:text-xl font-regular paragraph mb-2 max-w-[500px] w-[85%] text-gray-600">
-                                Manage web analytics, cron jobs, monitoring, feature
-                                flags, waitlists, client feedback and more
+                                As a SaaS developer you no longer need to subscribe to various pricy tool-providers to have the essential tools needed to get an overview of your project.
                             </p>
                         </Reveal>
                         <RevealLight delayTime={0.4}>

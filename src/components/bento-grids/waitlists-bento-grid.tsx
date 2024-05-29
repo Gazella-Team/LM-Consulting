@@ -16,30 +16,16 @@ export default function BentoGridComponent() {
 					<BentoGridCard
 						Obj={{
 							image: '/showcases/chart.webp',
-							heading: 'Data visualization',
+							heading: 'Manage all signups',
 							description:
 								'Create, manage and run a custom waitlist in a structured dashboard with only two clicks',
 						}}
 					/>
 				</div>
-				<div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+				<div className="">
 					<BentoGridCard
 						Obj={{
-							heading: 'Collaborate with your team',
-							description:
-								'Share a workspace with your team-members for more productive development',
-						}}
-					/>
-					<BentoGridCard
-						Obj={{
-							heading: 'Collaborate with your team',
-							description:
-								'Share a workspace with your team-members for more productive development',
-						}}
-					/>
-					<BentoGridCard
-						Obj={{
-							heading: 'Collaborate with your team',
+							heading: 'Set a signup goal',
 							description:
 								'Share a workspace with your team-members for more productive development',
 						}}

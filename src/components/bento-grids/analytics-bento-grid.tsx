@@ -10,7 +10,7 @@ export default function BentoGridComponent() {
 							image: '/showcases/map.webp',
 							heading: 'Geographic Data',
 							description:
-								'Keep track of all traffic going thorugh your website. Analyze visitors, sources, devices and other essential data points',
+								'Track what countries, regions and cities your visitors visit you from, to get better insights on your audiences locations.'
 						}}
 					/>
 					<BentoGridCard
@@ -18,7 +18,7 @@ export default function BentoGridComponent() {
 							image: '/showcases/chart.webp',
 							heading: 'Data visualization',
 							description:
-								'Create, manage and run a custom waitlist in a structured dashboard with only two clicks',
+								'All data is selectively displayed on a intuitive chart, to ensure as good an overview of your website as possible.',
 						}}
 					/>
 				</div>
@@ -27,21 +27,21 @@ export default function BentoGridComponent() {
 						Obj={{
 							heading: 'Device Data',
 							description:
-								'Share a workspace with your team-members for more productive development',
+								'Track what browser, operating system and physical device your visitors use.',
 						}}
 					/>
 					<BentoGridCard
 						Obj={{
 							heading: 'Refferer Data',
 							description:
-								'Share a workspace with your team-members for more productive development',
+								'Track exactly where your visitors are referred to your website from.',
 						}}
 					/>
 					<BentoGridCard
 						Obj={{
 							heading: 'Page Data',
 							description:
-								'Share a workspace with your team-members for more productive development',
+								'Get to know what pages your visitors visit the most, and how much tine they spend ',
 						}}
 					/>
 				</div>
