@@ -43,8 +43,7 @@ export default function Flyout() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-          <div className="w-screen max-w-2xl flex overflow-hidden rounded-xl bg-white text-sm leading-6 shadow-clean ring-1 ring-gray-600/10">
-            <img className='w-[240px] object-cover' src='/flyout.webp'></img>
+          <div className="w-screen max-w-md flex overflow-hidden rounded-xl bg-white text-sm leading-6 shadow-clean ring-1 ring-gray-600/10">
             <div className="p-4 grid grid-cols-1 w-full">
               {solutions.map((item) => (
                 <Link href={item.href} key={item.name} className="group relative rounded-xl w-full p-4 hover:bg-slate-50">
@@ -53,7 +52,7 @@ export default function Flyout() {
                     <item.icon className="h-5 w-5 text-gray-800 group-hover:text-main" aria-hidden="true" />
                       {item.name}
                     </div>
-                    <p className="mt-1 text-gray-600 paragraph font-normal">{item.description.slice(0, 80)}...</p>
+                    <p className="mt-1 text-gray-600 paragraph font-normal">{item.description.slice(0, 100)}...</p>
                   </div>
                 </Link>
               ))}

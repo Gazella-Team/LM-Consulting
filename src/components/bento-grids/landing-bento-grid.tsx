@@ -73,6 +73,7 @@ function BentoGridCard(props: any) {
 
 function BentoGridLong(props: any) {
 	return (
+		<Reveal delayTime={0.4}>
 			<div className="bg-white border paragraph flex items-center rounded-[25px] border-gray-600/10 shadow-clean">
 				<div className="p-10 flex flex-col gap-2 max-w-md">
 					<h2 className="font-semibold text-lg text-gray-800">
@@ -92,5 +93,6 @@ function BentoGridLong(props: any) {
 					}
 				</div>
 			</div>
+		</Reveal>
 	)
 }
