@@ -12,11 +12,8 @@ interface PageIntroProps {
 
 export default function PageIntro(props: PageIntroProps) {
 	return (
-		<section className="py-[50px] pt-[60px] relative">
-			<div className='flex items-center justify-center'>
-				<div className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden -z-1" style={{background: "radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 62%)"}}></div>
-			</div>
-			<div className="w-[86%] mx-auto max-w-6xl relative flex flex-col text-center">
+		<section className="py-[50px] pt-[60px]">
+			<div className="w-[86%] mx-auto max-w-6xl flex flex-col text-center">
 				<Reveal delayTime={0}>
 					<p className="font-[Caveat] text-main mb-4 text-3xl">
 						{props.hook}

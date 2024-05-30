@@ -28,7 +28,7 @@ export default function Layout(props:LayoutProps) {
 			<div className="w-full bg-white bg-grid-black/[0.04] relative">
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 				<Navbar />
-				<div className={ToolbirdFont.className}>
+				<div>
 					<div className="relative">
 						{props.children}
 					</div>
