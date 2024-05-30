@@ -49,7 +49,6 @@ export default function Footer(props:FooterProps) {
                             <Link href={"/analytics"}>Analytics</Link>
                             <Link href={"/coming-soon"}>Monitoring<br></br>(under developmet)</Link>
                             <Link href={"/coming-soon"}>User feedback<br></br>(under developmet)</Link>
-                            <Link href={"/waitlists"}>Waitlists</Link>
                         </div>
                     </div>
                     <div>

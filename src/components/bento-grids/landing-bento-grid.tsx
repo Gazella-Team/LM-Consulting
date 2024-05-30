@@ -10,7 +10,7 @@ export default function BentoGridComponent() {
 							image: '/showcases/toolbar.webp',
 							heading: 'One toolbar for all tools',
 							description:
-								'Keep track of all traffic going thorugh your website. Analyze visitors, sources, devices and other essential data points',
+								'Quit having mulitple subscriptions for each tool. Our all-in-one solution allows you to save time and money.',
 						}}
 					/>
 					<BentoGridCard
@@ -18,16 +18,27 @@ export default function BentoGridComponent() {
 							image: '/showcases/team.webp',
 							heading: 'Collaborate with your team',
 							description:
-								'Create, manage and run a custom waitlist in a structured dashboard with only two clicks',
+								"Toolbird allows you to manage tools and workspaces alone and in teams, depending on your needs.",
 						}}
 					/>
 				</div>
-				<div className="">
+				<div className="hidden lg:block">
 					<BentoGridLong
 						Obj={{
+							image: "showcases/code-snippet.webp",
 							heading: 'No advanced onboardings or setups. Configure every tool within five minutes',
 							description:
-								'Share a workspace with your team-members for more productive development',
+								'80% of users only use 20% of the features these tools provide, we have collected those 20% for you, and simplified the setup as much as possible.',
+						}}
+					/>
+				</div>
+				<div className="lg:hidden">
+					<BentoGridCard
+						Obj={{
+							image: "showcases/code-snippet.webp",
+							heading: 'No advanced onboardings or setups. Configure every tool within five minutes',
+							description:
+								'80% of users only use 20% of the features these tools provide, we have collected those 20% for you, and simplified the setup as much as possible.',
 						}}
 					/>
 				</div>
@@ -68,6 +79,17 @@ function BentoGridLong(props: any) {
 						{props.Obj.heading}
 					</h2>
 					<p className="text-gray-600 font-normal text-sm max-w-[400px]">{props.Obj.description}</p>
+				</div>
+				<div className='w-full rounded-3xl'>
+					{props.Obj.image &&
+					<div className='relative'>
+						<img
+							className="h-[270px] w-full rounded-3xl object-cover rounded-t-[25px]"
+							src={props.Obj.image}
+						></img>
+						<div className='absolute rounded-3xl inset-0 h-full rounded-t-[25px]' style={{background: "linear-gradient(0deg, rgba(255,255,255,0.8225884103641457) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.7441570378151261) 100%)"}}></div>
+					</div>
+					}
 				</div>
 			</div>
 	)
