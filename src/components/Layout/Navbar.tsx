@@ -81,36 +81,34 @@ export default function Navbar() {
 				</div>
 			</div>
 			{menuClicked && (
-				<RevealLight delayTime={0}>
-					<div className="bg-white text-left flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
+					<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
 						<div className={cn("flex flex-col gap-6 w-[86%] mx-auto", ToolbirdFont.className)}>
-							<Link smooth={true} to="products" href={'/'}>
-								Products
-							</Link>
-							<Link smooth={true} to="pricing" href={'/'}>
-								Pricing
-							</Link>
-							<Link href="/blog">Blog</Link>
+							<div className='flex flex-col gap-6 border-b border-b-gray-600/10 pb-4'>
+								<RefLink onClick={() => setMenuClicked(false)} href="/analytics">Web analytics</RefLink>
+								<RefLink onClick={() => setMenuClicked(false)} href="/coming-soon">Monitoring</RefLink>
+								<RefLink onClick={() => setMenuClicked(false)} href="/coming-soon">User feedback</RefLink>
+							</div>
+							<RefLink onClick={() => setMenuClicked(false)} href="/pricing">Pricing</RefLink>
+							<RefLink onClick={() => setMenuClicked(false)} href="/blog/introducing-toolbird">About</RefLink>
+							<RefLink onClick={() => setMenuClicked(false)} href="/blog">Blog</RefLink>
 						</div>
 						<div className="flex flex-col paragraph gap-4 text-center w-[86%] mx-auto">
 							<RefLink
-								className="bg-transparent border-[3px] w-full border-main text-sm font-semibold text-main px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+								className="bg-main border-[3px] w-full border-main text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
 								target="_blank"
 								href={'https://app.toolbird.io/auth/login'}
 							>
 								Log in
 							</RefLink>
-							<button
-								onClick={() =>
-									NiceModal.show(JoinWaitlistModal)
-								}
-								className="bg-main border-[3px] w-full border-main text-sm font-semibold text-white px-6 py-2 rounded-full"
+							<RefLink
+								className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+								target="_blank"
+								href={'https://app.toolbird.io/auth/login'}
 							>
-								Join waitlist
-							</button>
+								Get started
+							</RefLink>
 						</div>
 					</div>
-				</RevealLight>
 			)}
 		</nav>
 	)
