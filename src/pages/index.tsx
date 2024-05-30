@@ -13,7 +13,8 @@ import Testimonials from '@/components/testimonials'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<Hero02 />
+			<Hero />
+			<DashboardDisplay src='/showcases/platform.webp'  />
 			<div className='mt-[-100px]'>
 				<SectionIntro
 					heading="The all-in-one cockpit for your SaaS startup"

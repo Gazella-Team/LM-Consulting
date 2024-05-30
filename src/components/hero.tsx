@@ -12,7 +12,7 @@ export default function Hero() {
 					className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden -z-1"
 					style={{
 						background:
-							'radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 70%)',
+							'radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 60%)',
 					}}
 				></div>
 			</div>
