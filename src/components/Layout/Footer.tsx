@@ -24,10 +24,10 @@ export default function Footer(props:FooterProps) {
                     <div className="flex">
                         <Link
                             target="_blank"
-                            href={"https://app.toolbird.io/auth/register"}
+                            href={"https://cal.com/lasseosmann/toolbird-demo"}
                                 className="bg-gray-800 border-[3px] border-gray-800 font-normal paragraph text-xs flex text-white px-6 py-1 rounded-full"
                             >
-                                Get started
+                                Book a free demo
                         </Link>
                     </div>
                     <div className="flex items-center gap-2 mt-3">
@@ -62,7 +62,7 @@ export default function Footer(props:FooterProps) {
                         <h2 className="text-sm mb-5 font-semibold text-gray-800">Contact</h2>
                         <div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
                             <Link href={"/contact"}>General</Link>
-                            <Link href={"/enterprise"}>Enterprise</Link>
+                            <Link target="_blank" href={"https://cal.com/lasseosmann/toolbird-demo"}>Demo</Link>
                         </div>
                     </div>
                 </div>

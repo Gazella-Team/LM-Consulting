@@ -14,10 +14,11 @@ export default function Cta() {
 				</p>
 				<div className="flex items-center paragraph relative justify-center gap-3 mt-8 font-medium">
 						<Link
-							href={'/'}
+							target='_blank'
+							href={'https://cal.com/lasseosmann/toolbird-demo'}
 							className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
 						>
-							Join waitlist
+							Book a free demo
 						</Link>
 						<Link
 							className=" bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"

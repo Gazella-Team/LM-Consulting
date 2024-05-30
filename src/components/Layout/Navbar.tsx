@@ -64,12 +64,13 @@ export default function Navbar() {
 						>
 							Log in
 						</RefLink>
-						<button
-							onClick={() => NiceModal.show(JoinWaitlistModal)}
+						<RefLink
+							target='_blank'
+							href={"https://cal.com/lasseosmann/toolbird-demo"}
 							className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 						>
-							Get started
-						</button>
+							Book a free demo
+						</RefLink>
 					</div>
 					<div className="flex lg:hidden cursor-pointer">
 						{menuClicked ? (
@@ -105,7 +106,7 @@ export default function Navbar() {
 								target="_blank"
 								href={'https://app.toolbird.io/auth/login'}
 							>
-								Get started
+								Book a free demo
 							</RefLink>
 						</div>
 					</div>

@@ -37,10 +37,11 @@ export default function Hero() {
 				<RevealLight delayTime={0.4}>
 					<div className="flex items-center paragraph relative justify-center gap-3 mt-4 font-medium">
 					<Link
-											href="/"
+											href="https://cal.com/lasseosmann/toolbird-demo"
+											target='_blank'
 											className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
 										>
-											Get started for free
+											Book a free demo
 										</Link>
 										<Link
 											className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
