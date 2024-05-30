@@ -33,7 +33,7 @@ export default function Layout(props:LayoutProps) {
 						{props.children}
 					</div>
 				</div>
-				<div className={cn(ToolbirdFont.className, "relative")}>
+				<div>
 				<Footer noCta={props.noCta} fullWidth={props.footerFullWidth} />
 				</div>
 			</div>

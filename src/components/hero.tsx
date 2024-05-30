@@ -36,7 +36,7 @@ export default function Hero() {
 										</Link>
 										<Link
 											className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
-											href="/"
+											href="/analytics"
 										>
 											View features
 										</Link>
