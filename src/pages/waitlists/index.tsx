@@ -18,10 +18,10 @@ export default function Waitlists() {
 				hook="Waitlists"
 				highlighted="built-in system"
 				heading="Collect waitlists signups through our"
-				paragraph="Toolbird Waitlists allows you to instantly start, manage and track the waitlist for your next launching feature"
+				paragraph="Toolbird Waitlists allows you to instantly start, manage and track the waitlist for your next launching feature."
 			/>
 			<BlurDashboard image='/showcases/waitlists.webp' />
-			<SectionIntro bottomMargin={true} heading='One system to to collect and manage signups' description='Our prebuilt waitlist system allows you to start collecting signups in less than a minute through a simple embed code' hook='Features Included'>
+			<SectionIntro bottomMargin={true} heading='One system to to collect and manage signups' description='Our prebuilt waitlist system allows you to start collecting signups in less than a minute through a simple embed code.' hook='Features Included'>
 				<BentoGridComponent />
 			</SectionIntro>
 		</Layout>

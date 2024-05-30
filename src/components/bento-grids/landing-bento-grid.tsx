@@ -7,7 +7,7 @@ export default function BentoGridComponent() {
 				<div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
 					<BentoGridCard
 						Obj={{
-							image: '/showcases/map.webp',
+							image: '/showcases/toolbar.webp',
 							heading: 'One toolbar for all tools',
 							description:
 								'Keep track of all traffic going thorugh your website. Analyze visitors, sources, devices and other essential data points',
@@ -15,31 +15,17 @@ export default function BentoGridComponent() {
 					/>
 					<BentoGridCard
 						Obj={{
-							image: '/showcases/chart.webp',
+							image: '/showcases/team.webp',
 							heading: 'Collaborate with your team',
 							description:
 								'Create, manage and run a custom waitlist in a structured dashboard with only two clicks',
 						}}
 					/>
 				</div>
-				<div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
-					<BentoGridCard
+				<div className="">
+					<BentoGridLong
 						Obj={{
-							heading: 'Collaborate with your team',
-							description:
-								'Share a workspace with your team-members for more productive development',
-						}}
-					/>
-					<BentoGridCard
-						Obj={{
-							heading: 'Collaborate with your team',
-							description:
-								'Share a workspace with your team-members for more productive development',
-						}}
-					/>
-					<BentoGridCard
-						Obj={{
-							heading: 'Collaborate with your team',
+							heading: 'No advanced onboardings or setups. Configure every tool within five minutes',
 							description:
 								'Share a workspace with your team-members for more productive development',
 						}}
@@ -71,5 +57,18 @@ function BentoGridCard(props: any) {
 				</div>
 			</div>
 		</Reveal>
+	)
+}
+
+function BentoGridLong(props: any) {
+	return (
+			<div className="bg-white border paragraph flex items-center rounded-[25px] border-gray-600/10 shadow-clean">
+				<div className="p-10 flex flex-col gap-2 max-w-md">
+					<h2 className="font-semibold text-lg text-gray-800">
+						{props.Obj.heading}
+					</h2>
+					<p className="text-gray-600 font-normal text-sm max-w-[400px]">{props.Obj.description}</p>
+				</div>
+			</div>
 	)
 }
