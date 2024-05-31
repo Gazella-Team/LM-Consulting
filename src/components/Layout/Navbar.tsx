@@ -28,7 +28,7 @@ export default function Navbar() {
 	const scrolled = useScroll(50)
 
 	return (
-		<nav className="top-0  sticky z-50">
+		<nav className="top-0 paragraph sticky z-50">
 			<div
 				className={cn(
 					'h-[58px] w-full transition-all flex items-center',
