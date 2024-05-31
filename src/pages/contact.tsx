@@ -27,20 +27,17 @@ export default function Contact() {
 						<h2 className='font-semibold mb-3'>Phone</h2>
 						<div className='text-gray-600'>
 							<p>+45 50695272</p>
-							<p>+45 50695272</p>
+							<p>+45 51253371</p>
 						</div>
 					</div>
 					<div>
 						<h2 className='font-semibold mb-6'>Socials</h2>
 						<div className="flex flex-col items-center gap-6 mt-3">
-							<Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
+							<Link href={"https://www.linkedin.com/company/toolbird-io/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
 								<FaLinkedin color="rgb(31 41 55)" />
 							</Link>
-							<Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
+							<Link href={"https://x.com/lasse_osmann"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
 								<FaTwitter color="rgb(31 41 55)" />
-							</Link>
-							<Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
-								<FaYoutube color="rgb(31 41 55)" />
 							</Link>
                     </div>
 					</div>

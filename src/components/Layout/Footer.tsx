@@ -31,14 +31,11 @@ export default function Footer(props:FooterProps) {
                         </Link>
                     </div>
                     <div className="flex items-center gap-2 mt-3">
-                        <Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
+                        <Link href={"/https://www.linkedin.com/company/toolbird-io/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
                             <FaLinkedin color="rgb(31 41 55)" />
                         </Link>
-                        <Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
+                        <Link href={"https://x.com/lasse_osmann"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
                             <FaTwitter color="rgb(31 41 55)" />
-                        </Link>
-                        <Link href={"/"} className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all">
-                            <FaYoutube color="rgb(31 41 55)" />
                         </Link>
                     </div>
                 </div>
