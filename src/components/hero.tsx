@@ -14,7 +14,7 @@ export default function Hero() {
 					</p>
 				</Reveal>
 				<Reveal delayTime={0.1}>
-					<h1 className="text-4xl md:text-5xl xl:text-6xl max-w-[1300px] mx-auto font-bold text-gray-800 xl:leading-[80px]">
+					<h1 className="text-3xl md:text-4xl xl:text-5xl max-w-[1300px] mx-auto font-extrabold text-gray-800 xl:leading-[80px]">
 						Get <span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Web Analytics</span>,{' '}
 						<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Uptime Monitoring</span> and{' '}
 						<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>User Feedback</span>, all in 1 place.
