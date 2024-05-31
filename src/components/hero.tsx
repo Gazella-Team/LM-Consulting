@@ -14,10 +14,10 @@ export default function Hero() {
 					</p>
 				</Reveal>
 				<Reveal delayTime={0.1}>
-					<h1 className="text-3xl md:text-4xl xl:text-5xl max-w-[1300px] mx-auto font-extrabold text-gray-800 xl:leading-[80px]">
-						Get <span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Web Analytics</span>,{' '}
-						<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>Uptime Monitoring</span> and{' '}
-						<span className='bg-main/10 text-gray-800 p-2 py-1 rounded-xl'>User Feedback</span>, all in 1 place.
+					<h1 className="text-3xl md:text-4xl xl:text-5xl max-w-[1300px] mx-auto font-extrabold text-gray-800 xl:leading-[60px]">
+						Get <span className='bg-main/10 text-gray-800 mb-2 md:mb-0 block md:inline-block p-2 py-1 rounded-xl'>Web Analytics,</span>{' '}
+						<span className='bg-main/10 text-gray-800 block mb-2 md:mb-0 md:inline-block p-2 py-1 rounded-xl'>Uptime Monitoring</span> <span className='hidden md:inline-block'>and</span>{' '}
+						<span className='bg-main/10 text-gray-800 block mb-2 md:mb-0 md:inline-block p-2 py-1 rounded-xl'>User Feedback,</span> all in 1 place.
 					</h1>
 				</Reveal>
 				<Reveal delayTime={0.2}>
