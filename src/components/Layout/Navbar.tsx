@@ -28,7 +28,7 @@ export default function Navbar() {
 	const scrolled = useScroll(50)
 
 	return (
-		<nav className="top-0 paragraph sticky z-50">
+		<nav className="top-0 sticky z-50">
 			<div
 				className={cn(
 					'h-[58px] w-full transition-all flex items-center',
@@ -39,7 +39,7 @@ export default function Navbar() {
 				)
 			}
 			>
-				<div className="w-[86%] max-w-6xl mx-auto flex items-center justify-between text-gray-800">
+				<div className="w-[86%] paragraph max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
 						<RefLink href={'/'}>
 							<img
@@ -83,7 +83,7 @@ export default function Navbar() {
 			</div>
 			{menuClicked && (
 					<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
-						<div className={cn("flex flex-col gap-6 w-[86%] mx-auto", ToolbirdFont.className)}>
+						<div className={cn("flex font-bold flex-col gap-6 w-[86%] mx-auto")}>
 							<div className='flex flex-col gap-6 border-b border-b-gray-600/10 pb-4'>
 								<RefLink onClick={() => setMenuClicked(false)} href="/analytics">Web analytics</RefLink>
 								<RefLink onClick={() => setMenuClicked(false)} href="/coming-soon">Monitoring</RefLink>
@@ -93,7 +93,7 @@ export default function Navbar() {
 							<RefLink onClick={() => setMenuClicked(false)} href="/blog/introducing-toolbird">About</RefLink>
 							<RefLink onClick={() => setMenuClicked(false)} href="/blog">Blog</RefLink>
 						</div>
-						<div className="flex flex-col paragraph gap-4 text-center w-[86%] mx-auto">
+						<div className="flex flex-col paragraph gap-2 text-center w-[86%] mx-auto">
 							<RefLink
 								className="bg-main border-[3px] w-full border-main text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
 								target="_blank"
