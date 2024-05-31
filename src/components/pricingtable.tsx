@@ -32,11 +32,15 @@ export default function PricingTable() {
 						<h1 className="text-5xl font-extrabold">$0<span className="ml-1 paragraph text-base font-[400] text-gray-600">/ forever</span></h1>
 					</div>
 					<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
-						<button
-							className="bg-gray-600 paragraph w-full border-[3px] border-gray-600 text-sm font-medium text-white px-6 py-2 rounded-full"
-						>
-							Get started
-						</button>
+						<div className="flex">
+							<Link
+								target="_blank"
+								href="https://cal.com/lasseosmann/toolbird-demo"
+								className="bg-gray-600 text-center paragraph w-full border-[3px] border-gray-600 text-sm font-medium text-white px-6 py-2 rounded-full"
+							>
+								Get started
+							</Link>
+						</div>
 					</div>
 					<div className="paragraph">
 						<h3 className="p-7 pb-0 text-gray-500 font-medium">What&apos;s included:</h3>
@@ -85,11 +89,16 @@ export default function PricingTable() {
 						<h1 className="text-5xl font-extrabold">{pricingRuntime === "monthly" ? "$19":"$15"}<span className="ml-1 text-base paragraph font-[400] text-gray-600">/ {pricingRuntime === "monthly" ? "month":"month, billed yearly"}</span></h1>
 					</div>
 					<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
-						<button
-							className="bg-main paragraph w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
-						>
-							Get started
-						</button>
+						<div className="flex">
+							<Link
+															target="_blank"
+
+								href="https://cal.com/lasseosmann/toolbird-demo"
+								className="bg-main text-center paragraph w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
+							>
+								Get started
+							</Link>
+						</div>
 					</div>
 					<div className="paragraph">
 						<h3 className="pt-7 px-8 pb-0 text-gray-500 font-medium">Everything in free, plus:</h3>
@@ -136,7 +145,9 @@ export default function PricingTable() {
 					<div className="bg-slate-50 paragraph border-y py-5 px-7 border-gray-600/10">
 						<div className="flex">
 							<Link
-							href={"/enterprise"}
+															target="_blank"
+
+							href="https://cal.com/lasseosmann/toolbird-demo"
 								className="bg-gray-800 text-center w-full border-[3px] border-gray-800 text-sm font-medium text-white px-6 py-2 rounded-full"
 							>
 								Contact sales
