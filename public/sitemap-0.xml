@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://toolbird.io</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/about</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/affiliate</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/analytics</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/blog</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/comparison/toolbird-analytics-vs-plausible</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/contact</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/guides</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/pricing</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/public</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/waitlists</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/blog/category/all</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/blog/category/guides</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/blog/category/engineering</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/blog/category/news</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/blog/introducing-toolbird</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://toolbird.io/blog/toolbird-vs-plausible</loc><lastmod>2024-05-21T17:56:16.429Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

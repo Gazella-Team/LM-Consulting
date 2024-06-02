@@ -1,15 +1,34 @@
-import Layout from "@/components/Layout";
-import Landing from "@/components/landing";
-import Prices from "@/components/prices";
-import Meta from "@/components/Layout/Meta";
-import MainHero from "@/components/Ui/MainHero";
+import Layout from '@/components/Layout'
+import PageIntro from '@/components/PageIntro'
+import SectionIntro from '@/components/SectionIntro'
+import Benefits from '@/components/benefits'
+import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
+import BlurSection from '@/components/blur-section'
+import CustomerSlider from '@/components/customer-slider'
+import FAQ from '@/components/faq'
+import PricingTable from '@/components/pricingtable'
+import Testimonials from '@/components/testimonials'
+import Users from '@/components/users'
 
 export default function Pricing() {
-  return (
-    <Layout mode="">
-      <Meta title="Pricing | ToolBird" />
-      <MainHero heading="Pricing for everyone" paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy." />
-      <Prices />
-    </Layout>
-  );
+	return (
+		<Layout white={true}>
+			<PageIntro
+				hook="Flexible pricing"
+				highlighted=""
+				heading="Pricing and plans"
+				paragraph="We offer plans that suit any project. Start for free today, no credit card required."
+			/>
+			<PricingTable />
+			{/*
+		<BlurSection
+					bottomMargin={true}
+					heading="Get all answers"
+					hook="Frequently Asked Questions"
+			>
+					<FAQ />			
+			</BlurSection>
+			*/}
+		</Layout>
+	)
 }

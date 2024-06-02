@@ -1,81 +1,118 @@
-import Link from "next/link"
-import { FaTiktok } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import Cta from "./Cta";
+import Link from 'next/link'
+import { FaTiktok, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { cn } from 'utils/cs'
+import Cta from './Cta'
 
-export default function Footer() {
-    return (
-        <>
-        <Cta />
-         <footer className="pt-[40px] pb-[10px] border-t-[1px]">
-            <div className="w-[94%] mx-auto max-w-[1200px] flex flex-col">
-                <div className="py-[50px] flex justify-between font-[300] text-gray-800">
-                    <div>
-                        <h1 className="mb-[14px] text-[18px]">Platform</h1>
-                        <div className="flex flex-col gap-[6px] font-[200] text-[14px]">
-                            <Link className="text-gray-600" href={"/"}>Waitlits</Link>
-                            <Link className="text-gray-600" href={"/"}>Workflow Analytics</Link>
-                            <Link className="text-gray-600" href={"/"}>Cron Jobs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Chat Embed</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Blogs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Integrations</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="mb-[14px] text-[18px]">Usecases</h1>
-                        <div className="flex flex-col gap-[6px] text-[14px]">
-                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="mb-[14px] text-[18px]">Company</h1>
-                        <div className="flex flex-col gap-[6px] text-[14px]">
-                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Chat Embed</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="mb-[14px] text-[18px]">Work with us</h1>
-                        <div className="flex flex-col gap-[6px] text-[14px]">
-                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Testimonials</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Chat Embed</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Blogs</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Integrations</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="mb-[14px] text-[18px]">Legal</h1>
-                        <div className="flex flex-col gap-[6px] text-[14px]">
-                            <Link className="font-[200] text-gray-600" href={"/"}>Waitlits</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Workflow Analytics</Link>
-                            <Link className="font-[200] text-gray-600" href={"/"}>Cron Jobs</Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full border-t-[1px] py-[30px] flex items-center justify-between">
-                    <div className="flex items-center gap-[20px] text-gray-800">
-                        <Link href={"/"} className="font-[400] text-[22px] flex flex-col leading-0">toolbird<span className="text-[8px] font-[200] leading-0 mt-[-6px]">by Gazella Team</span></Link>
-                        <p className="text-[14px] font-[200] text-gray-600">&copy; Copyright {new Date().getFullYear()} toolbird. All rights reserved</p>
-                    </div>
-                    <div className="flex items-center gap-[16px]">
-                        <FaTiktok size={26} color="rgb(75 85 99)" />
-                        <FaInstagram size={28} color="rgb(75 85 99)" />
-                        <FaLinkedin size={28} color="rgb(75 85 99)" />
-                    </div>
-                </div>
-            </div>
-        </footer>
-        </>
-    )
+type FooterProps = {
+	fullWidth?: boolean
+	noCta?: boolean
+}
+
+export default function Footer(props: FooterProps) {
+	return (
+		<>
+			{!props.noCta && <Cta />}
+			<footer
+				style={{
+					background:
+						'radial-gradient(circle, rgba(247,243,255,1) 0%, rgba(255,255,255,1) 50%)',
+				}}
+				className={
+					props.fullWidth
+						? 'py-[10px] mx-auto border-t relative border-t-gray-600/10 bg-white'
+						: 'py-[10px] mx-auto max-w-7xl border-t md:rounded-t-[100px] relative border-t-gray-600/10 bg-white'
+				}
+			>
+				<div className="w-[86%] mx-auto min-h-[370px] max-w-6xl grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
+					<div className="flex flex-col gap-6">
+						<div className="flex flex-col gap-3">
+							<img className="w-28" src="/logos/finallogo.svg" />
+							<p className="text-gray-500 paragraph text-sm max-w-xs font-regular">
+								Get Web Analytics, Uptime Monitoring and User
+								Feedback, all collected in one place.
+							</p>
+						</div>
+						<div className="flex">
+							<Link
+								href={'https://app.toolbird.io/auth/register'}
+								className="bg-gray-800 border-[3px] border-gray-800 font-normal paragraph text-xs flex text-white px-6 py-1 rounded-full"
+							>
+								Get started for free
+							</Link>
+						</div>
+						<div className="flex items-center gap-2 mt-3">
+							<Link
+								href={
+									'/https://www.linkedin.com/company/toolbird-io/'
+								}
+								className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all"
+							>
+								<FaLinkedin color="rgb(31 41 55)" />
+							</Link>
+							<Link
+								href={'https://x.com/lasse_osmann'}
+								className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all"
+							>
+								<FaTwitter color="rgb(31 41 55)" />
+							</Link>
+						</div>
+					</div>
+					<div className="grid grid-cols-2 mb-24 lg:grid-cols-3 paragraph gap-16">
+						<div>
+							<h2 className="text-sm mb-5 font-semibold text-gray-800">
+								Products
+							</h2>
+							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
+								<Link href={'/analytics'}>Analytics</Link>
+								<Link href={'/coming-soon'}>
+									Monitoring<br></br>(under developmet)
+								</Link>
+								<Link href={'/coming-soon'}>
+									User feedback<br></br>(under developmet)
+								</Link>
+							</div>
+						</div>
+						<div>
+							<h2 className="text-sm mb-5 font-semibold text-gray-800">
+								Company
+							</h2>
+							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
+								<Link href={'/blog/introducing-toolbird'}>
+									About
+								</Link>
+								<Link href={'/blog'}>Blog</Link>
+							</div>
+						</div>
+						<div>
+							<h2 className="text-sm mb-5 font-semibold text-gray-800">
+								Contact
+							</h2>
+							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
+								<Link href={'/contact'}>General</Link>
+								<Link
+									target="_blank"
+									href={
+										'https://cal.com/lasseosmann/toolbird-demo'
+									}
+								>
+									Demo
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
+					<p>
+						© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE
+						82, 2TH.1358 KØBENHAVN
+					</p>
+					<p className="font-[Caveat] text-xl">
+						Built safely and produdly in 🇪🇺
+					</p>
+				</div>
+			</footer>
+		</>
+	)
 }

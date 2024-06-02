@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://toolbird.io
+
+# Sitemaps
+Sitemap: https://toolbird.io/sitemap.xml

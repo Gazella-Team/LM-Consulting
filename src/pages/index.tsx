@@ -1,20 +1,29 @@
-import { RevealLight } from "@/components/Animations/RevealLight";
-import Layout from "@/components/Layout";
-import MainHero from "@/components/Ui/MainHero";
-import Comparison from "@/components/comparison";
+import Layout from '@/components/Layout'
+import SectionIntro from '@/components/SectionIntro'
+import BentoGridComponent from '@/components/bento-grids/landing-bento-grid'
+import BlurDashboard from '@/components/blur-dashboard'
+import BlurSection from '@/components/blur-section'
+import CustomerSlider from '@/components/customer-slider'
+import DashboardDisplay from '@/components/dashboarddisplay'
+import FAQ from '@/components/faq'
+import Hero from '@/components/hero'
+import Hero02 from '@/components/hero-02'
+import Testimonials from '@/components/testimonials'
 
 export default function Home() {
-  return (
-    <Layout mode="">
-      <MainHero heading="All the tools your SaaS needs to start, scale and run" paragraph="Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy." />
-      <section>
-        <RevealLight delayTime={0.2}>
-          <div className="w-[90%] mx-auto max-w-[1200px] mt-[-400px]">
-            <img className="w-full shadow-clean rounded-[14px]" src="/showcases/waitlists.svg"></img>
-          </div>
-        </RevealLight>
-      </section>
-      <Comparison />
-    </Layout>
-  );
+	return (
+		<Layout white={true}>
+			<Hero />
+			<DashboardDisplay src='/showcases/platform.webp'  />
+			<div className='mt-[-100px]'>
+				<SectionIntro
+					heading="The all-in-one cockpit for your SaaS startup"
+					description="With our all-in-one platform we ensure better overview and higher productivity"
+					hook="Save time and get better overview"
+				>
+					<BentoGridComponent />
+				</SectionIntro>
+			</div>
+		</Layout>
+	)
 }
