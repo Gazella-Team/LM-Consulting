@@ -14,12 +14,12 @@ import { RevealLight } from '../Animations/RevealLight'
 
 const ToolbirdFont = localFont({
 	src: [
-	  {
-		path: '../fonts/Gilroy-SemiBold.ttf',
-		style: 'normal',
-	  },
-	]
-  })
+		{
+			path: '../fonts/Gilroy-SemiBold.ttf',
+			style: 'normal',
+		},
+	],
+})
 
 export default function Navbar() {
 	const [menuClicked, setMenuClicked] = useState(false)
@@ -35,9 +35,7 @@ export default function Navbar() {
 					scrolled
 						? 'border-b border-gray-600/10 bg-white/50 backdrop-blur-xl'
 						: 'bg-transparent'
-					,
-				)
-			}
+				)}
 			>
 				<div className="w-[86%] paragraph max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
@@ -48,28 +46,30 @@ export default function Navbar() {
 							/>
 						</RefLink>
 					</div>
-					<div className={cn("flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm")}>
+					<div
+						className={cn(
+							'flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm'
+						)}
+					>
 						<Flyout />
-						<RefLink href={'/pricing'}>
-							Pricing
+						<RefLink href={'/pricing'}>Pricing</RefLink>
+						<RefLink href="/blog/introducing-toolbird">
+							About
 						</RefLink>
-						<RefLink href="/blog/introducing-toolbird">About</RefLink>
 						<RefLink href="/blog">Blog</RefLink>
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
 						<RefLink
 							className="hidden font-medium text-sm sm:flex"
-							target="_blank"
 							href={'https://app.toolbird.io/auth/login'}
 						>
 							Log in
 						</RefLink>
 						<RefLink
-							target='_blank'
-							href={"https://cal.com/lasseosmann/toolbird-demo"}
+							href={'https://app.toolbird.io/auth/register'}
 							className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 						>
-							Book a free demo
+							Get started for free
 						</RefLink>
 					</div>
 					<div className="flex lg:hidden cursor-pointer">
@@ -82,34 +82,66 @@ export default function Navbar() {
 				</div>
 			</div>
 			{menuClicked && (
-					<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
-						<div className={cn("flex font-bold flex-col gap-6 w-[86%] mx-auto")}>
-							<div className='flex flex-col gap-6 border-b border-b-gray-600/10 pb-4'>
-								<RefLink onClick={() => setMenuClicked(false)} href="/analytics">Web analytics</RefLink>
-								<RefLink onClick={() => setMenuClicked(false)} href="/coming-soon">Monitoring</RefLink>
-								<RefLink onClick={() => setMenuClicked(false)} href="/coming-soon">User feedback</RefLink>
-							</div>
-							<RefLink onClick={() => setMenuClicked(false)} href="/pricing">Pricing</RefLink>
-							<RefLink onClick={() => setMenuClicked(false)} href="/blog/introducing-toolbird">About</RefLink>
-							<RefLink onClick={() => setMenuClicked(false)} href="/blog">Blog</RefLink>
-						</div>
-						<div className="flex flex-col paragraph gap-2 text-center w-[86%] mx-auto">
+				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
+					<div
+						className={cn(
+							'flex font-bold flex-col gap-6 w-[86%] mx-auto'
+						)}
+					>
+						<div className="flex flex-col gap-6 border-b border-b-gray-600/10 pb-4">
 							<RefLink
-								className="bg-main border-[3px] w-full border-main text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
-								target="_blank"
-								href={'https://app.toolbird.io/auth/login'}
+								onClick={() => setMenuClicked(false)}
+								href="/analytics"
 							>
-								Log in
+								Web analytics
 							</RefLink>
 							<RefLink
-								className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
-								target="_blank"
-								href={'https://app.toolbird.io/auth/login'}
+								onClick={() => setMenuClicked(false)}
+								href="/coming-soon"
 							>
-								Book a free demo
+								Monitoring
+							</RefLink>
+							<RefLink
+								onClick={() => setMenuClicked(false)}
+								href="/coming-soon"
+							>
+								User feedback
 							</RefLink>
 						</div>
+						<RefLink
+							onClick={() => setMenuClicked(false)}
+							href="/pricing"
+						>
+							Pricing
+						</RefLink>
+						<RefLink
+							onClick={() => setMenuClicked(false)}
+							href="/blog/introducing-toolbird"
+						>
+							About
+						</RefLink>
+						<RefLink
+							onClick={() => setMenuClicked(false)}
+							href="/blog"
+						>
+							Blog
+						</RefLink>
 					</div>
+					<div className="flex flex-col paragraph gap-2 text-center w-[86%] mx-auto">
+						<RefLink
+							className="bg-main border-[3px] w-full border-main text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+							href={'https://app.toolbird.io/auth/login'}
+						>
+							Log in
+						</RefLink>
+						<RefLink
+							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+							href={'https://app.toolbird.io/auth/register'}
+						>
+							Get started for free
+						</RefLink>
+					</div>
+				</div>
 			)}
 		</nav>
 	)
