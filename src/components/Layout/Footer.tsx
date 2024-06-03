@@ -83,6 +83,9 @@ export default function Footer(props: FooterProps) {
 									About
 								</Link>
 								<Link href={'/blog'}>Blog</Link>
+								<Link href={"https://app.toolbird.io/share/toolbird.io"}>
+									Public building
+								</Link>
 							</div>
 							<h2 className="text-sm mt-10 mb-5 font-semibold text-gray-800">
 								Legal
