@@ -87,7 +87,9 @@ export default function Footer(props: FooterProps) {
 									Public building
 								</Link>
 							</div>
-							<h2 className="text-sm mt-10 mb-5 font-semibold text-gray-800">
+
+							{/*
+														<h2 className="text-sm mt-10 mb-5 font-semibold text-gray-800">
 								Legal
 							</h2>
 							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
@@ -96,6 +98,7 @@ export default function Footer(props: FooterProps) {
 								</Link>
 								<Link href={'/legal/privacy'}>Privacy</Link>
 							</div>
+							*/}
 						</div>
 						<div>
 							<h2 className="text-sm mb-5 font-semibold text-gray-800">
