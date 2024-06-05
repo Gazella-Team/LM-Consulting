@@ -10,7 +10,6 @@ const categories = {
 	engineering: {
 		name: 'Engineering',
 		activeClass: 'text-white bg-gradient-to-r from-gray-800 to-gray-700',
-
 	},
 	news: {
 		name: 'Company News',
