@@ -26,7 +26,14 @@ export default function Tooltip({
 				<TooltipTrigger>{children}</TooltipTrigger>
 				<TooltipContent className={cn(className)} style={style}>
 					{content && (
-						<p className={cn(className, "font-medium max-w-[300px]")}>{content}</p>
+						<p
+							className={cn(
+								className,
+								'font-medium max-w-[300px]'
+							)}
+						>
+							{content}
+						</p>
 					)}
 					{jsx && jsx}
 				</TooltipContent>

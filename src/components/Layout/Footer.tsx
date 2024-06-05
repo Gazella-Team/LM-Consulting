@@ -45,7 +45,7 @@ export default function Footer(props: FooterProps) {
 						<div className="flex items-center gap-2 mt-3">
 							<Link
 								href={
-									'/https://www.linkedin.com/company/toolbird-io/'
+									'https://linkedin.com/company/toolbird-io'
 								}
 								className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all"
 							>

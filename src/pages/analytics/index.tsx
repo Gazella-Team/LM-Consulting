@@ -16,9 +16,8 @@ export default function Analytics() {
 			<PageIntro
 				buttons={[
 					{
-						text: 'Book a ',
-						path: 'https://cal.com/lasseosmann/toolbird-demo',
-						target: '_blank',
+						text: 'Get started for free',
+						path: 'https://app.toolbird.io/auth/register',
 					},
 					{
 						text: 'Live demo',

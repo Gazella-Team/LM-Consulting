@@ -13,7 +13,11 @@ export function Article({ post }: { post: Post }) {
 		<article className="border border-gray-600/10 relative mx-auto flex max-w-3xl md:w-[86%] p-8 py-12 my-6 md:my-24 rounded-3xl shadow-clean shadow-main/10 bg-white flex-col gap-8">
 			<div className="grid md:max-w-2xl mx-auto w-full gap-5">
 				<div className="mb-3 paragraph text-gray-400 text-sm gap-2">
-					<Link className='flex gap-2 items-center' href={`/blog`} passHref>
+					<Link
+						className="flex gap-2 items-center"
+						href={`/blog`}
+						passHref
+					>
 						<ArrowLeft size={14} />
 						Back to all posts
 					</Link>
@@ -23,7 +27,9 @@ export function Article({ post }: { post: Post }) {
 						<BlogBadge category={post.category} />
 					</Link>
 				</div>
-				<h1 className="font-extrabold text-gray-800 text-3xl">{post.title}</h1>
+				<h1 className="font-extrabold text-gray-800 text-3xl">
+					{post.title}
+				</h1>
 				<h2 className="text-gray-600 paragraph">{post.description}</h2>
 				<div className="flex items-center gap-3 paragraph mb-5">
 					<div className="flex gap-4">
