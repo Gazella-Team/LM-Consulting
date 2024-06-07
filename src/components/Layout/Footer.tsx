@@ -52,7 +52,7 @@ export default function Footer(props: FooterProps) {
 								<FaLinkedin color="rgb(31 41 55)" />
 							</Link>
 							<Link
-								href={'https://x.com/lasse_osmann'}
+								href={'https://x.com/toolbirdapp'}
 								className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all"
 							>
 								<FaTwitter color="rgb(31 41 55)" />
@@ -120,12 +120,16 @@ export default function Footer(props: FooterProps) {
 				</div>
 				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
 					<p>
-						© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE
-						82, 2TH.1358 KØBENHAVN
+						© {new Date().getFullYear()} Toolbird - Part of{' '}
+						<a
+							href="https://gazellateam.com"
+							className="underline"
+							target="_blank"
+						>
+							Gazella Team
+						</a>
 					</p>
-					<p className="font-[Caveat] text-xl">
-						Built safely and produdly in 🇪🇺
-					</p>
+					<p className="font-[Caveat] text-xl">Built proudly in 🇪🇺</p>
 				</div>
 			</footer>
 		</>
