@@ -21,7 +21,7 @@ export default function Terms() {
 			>
 				<div className="mx-auto max-w-2xl flex flex-col gap-16 leading-8 text-gray-600">
 						<p className='leading-[220%]'>
-						Subject to these Terms of Service (this &quot;Agreement&quot;), Toolbird.io (&quot;Toolbird&quot;, &quot;we&quot;, &quot;us&quot; and/or &quot;our&quot;) provides access to Toolbird's cloud platform as a service (collectively, the &quot;Services&quot;). By using or accessing the Services, you acknowledge that you have read, understand, and agree to be bound by this Agreement.
+						Subject to these Terms of Service (this &quot;Agreement&quot;), Toolbird.io (&quot;Toolbird&quot;, &quot;we&quot;, &quot;us&quot; and/or &quot;our&quot;) provides access to Toolbird&apos;s cloud platform as a service (collectively, the &quot;Services&quot;). By using or accessing the Services, you acknowledge that you have read, understand, and agree to be bound by this Agreement.
 <br></br><br></br>
 If you are entering into this Agreement on behalf of a company, business or other legal entity, you represent that you have the authority to bind such entity to this Agreement, in which case the term &quot;you&quot; shall refer to such entity. If you do not have such authority, or if you do not agree with this Agreement, you must not accept this Agreement and may not use the Services.						</p>
 						<div className='flex flex-col gap-5'>
