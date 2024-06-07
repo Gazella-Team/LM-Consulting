@@ -175,7 +175,7 @@ export default function PricingTable() {
 										}
 									>
 										<h2 className="text-gray-600 underline decoration-dotted hover:cursor-help">
-											2 team seats
+											3 team seats
 										</h2>
 									</Tooltip>
 								</div>
