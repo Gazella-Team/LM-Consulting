@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import { Reveal } from './Animations/Reveal'
 import { RevealLight } from './Animations/RevealLight'
-import CustomerSlider from './customer-slider'
+import useMediaQuery from '@/hooks/use-media-query'
 
 export default function Hero02() {
+	const { device } = useMediaQuery()
 	return (
 		<Reveal delayTime={0.1}>
 			<div>
-				<section className="py-24 pt-[60px] min-h-[600px] relative bg-[url(/bgs/hero.svg)] bg-center bg-cover">
+				<section className="py-24 pt-[60px] min-h-[600px] relative md:bg-[url(/bgs/hero.svg)] bg-center bg-cover">
 					{/* Transparent white linear gradient overlay */}
 					<div
 						style={{
@@ -33,21 +34,42 @@ export default function Hero02() {
 							</p>
 						</Reveal>
 						<Reveal delayTime={0.1}>
-							<h1 className="text-4xl md:text-5xl xl:text-5xl max-w-[600px] font-bold text-gray-800 xl:leading-[82px]">
-								Get{' '}
-								<span className="bg-main/10 text-gray-800 p-2 rounded-xl">
-									Web Analytics
-								</span>
-								,{' '}
-								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									Feedback Hub
-								</span>{' '}
-								and{' '}
-								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									User Surveys
-								</span>
-								, all collected in 1 place.
-							</h1>
+							{(!device ||
+								device == 'desktop' ||
+								device == 'tablet') && (
+								<h1 className="text-5xl md:max-w-[600px] font-bold text-gray-800 leading-[1.4]">
+									Get{' '}
+									<span className="bg-main/10 whitespace-nowrap text-gray-800 px-2 rounded-xl">
+										Web Analytics
+									</span>
+									,{' '}
+									<span className="bg-main/10 whitespace-nowrap text-gray-800 px-2 rounded-xl">
+										Feedback Hub
+									</span>{' '}
+									and{' '}
+									<span className="bg-main/10 whitespace-nowrap text-gray-800 px-2 rounded-xl ">
+										User Surveys
+									</span>
+									, all collected in 1 place.
+								</h1>
+							)}
+							{device == 'mobile' && (
+								<h1 className="text-5xl md:max-w-[600px] font-bold text-gray-800 leading-[1.4]">
+									Get{' '}
+									<div className="flex flex-wrap gap-2">
+										<span className="bg-main/10 whitespace-nowrap text-gray-800 px-2 rounded-xl">
+											Web Analytics
+										</span>
+										<span className="bg-main/10 whitespace-nowrap text-gray-800 px-2 rounded-xl">
+											Feedback Hub
+										</span>
+										<span className="bg-main/10 whitespace-nowrap text-gray-800 px-2 rounded-xl ">
+											User Surveys
+										</span>
+									</div>
+									All in 1 place.
+								</h1>
+							)}
 						</Reveal>
 						<Reveal delayTime={0.2}>
 							<p className="text-base md:text-lg xl:text-xl font-regular paragraph mb-2 max-w-[500px] w-[85%] text-gray-600">
