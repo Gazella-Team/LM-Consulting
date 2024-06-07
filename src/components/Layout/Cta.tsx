@@ -9,7 +9,7 @@ export default function Cta() {
 					<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
 						Supercharge{' '}
 					</span>{' '}
-					your SaaS development today
+					your user-driven SaaS development today
 				</h2>
 				<p className="text-base md:text-lg xl:text-lg paragraph max-w-[350px] mx-auto text-gray-600">
 					Increase your project overview today with the ultimate
