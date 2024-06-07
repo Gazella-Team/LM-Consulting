@@ -33,18 +33,18 @@ export default function Hero02() {
 							</p>
 						</Reveal>
 						<Reveal delayTime={0.1}>
-							<h1 className="text-4xl md:text-5xl xl:text-5xl max-w-[600px] font-bold text-gray-800 xl:leading-[68px]">
+							<h1 className="text-4xl md:text-5xl xl:text-5xl max-w-[600px] font-bold text-gray-800 xl:leading-[82px]">
 								Get{' '}
-								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
+								<span className="bg-main/10 text-gray-800 p-2 rounded-xl">
 									Web Analytics
 								</span>
 								,{' '}
 								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									Uptime Monitoring
+									feedback surveys
 								</span>{' '}
 								and{' '}
 								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									User Feedback
+									feedback panels
 								</span>
 								, all collected in 1 place.
 							</h1>
