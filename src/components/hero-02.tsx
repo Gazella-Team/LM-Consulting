@@ -40,11 +40,11 @@ export default function Hero02() {
 								</span>
 								,{' '}
 								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									feedback surveys
+									feedback boards
 								</span>{' '}
 								and{' '}
 								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									feedback panels
+									suveys
 								</span>
 								, all collected in 1 place.
 							</h1>
