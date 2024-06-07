@@ -67,7 +67,7 @@ export default function Footer(props: FooterProps) {
 							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
 								<Link href={'/analytics'}>Web Analytics</Link>
 								<Link href={'/coming-soon'}>
-									Feedback Boards<br></br>(under developmet)
+									Feedback Hub<br></br>(under developmet)
 								</Link>
 								<Link href={'/coming-soon'}>
 									User Surveys<br></br>(under developmet)
