@@ -44,7 +44,7 @@ export default function Hero02() {
 								</span>{' '}
 								and{' '}
 								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									suveys
+									surveys
 								</span>
 								, all collected in 1 place.
 							</h1>
