@@ -21,7 +21,7 @@ export default function Privacy() {
 			>
 				<div className="mx-auto max-w-2xl flex flex-col gap-16 leading-8 text-gray-600">
 						<p className='leading-[220%]'>
-						Welcome to Toolbird.io (the "Site"), hosted by Toolbird ("Toolbird", "we", "us", and/or "our"). Toolbird provides a platform for managing web analytics, uptime monitoring, user feedback and a list of other tools (the "Services")​1​. We value your privacy and are dedicated to protecting your personal data. This Privacy Policy covers how we collect, handle, and disclose personal data on our Platform.<br></br><br></br>If you have any questions, comments, or concerns regarding this Privacy Policy, our data practices, or would like to exercise your rights, do not hesitate to contact us.
+						Welcome to Toolbird.io (the &quot;Site&quot;), hosted by Toolbird (&quot;Toolbird&quot;, &quot;we&quot;, &quot;us&quot;, and/or &quot;our&quot;). Toolbird provides a platform for managing web analytics, uptime monitoring, user feedback and a list of other tools (the &quot;Services&quot;) ​1​. We value your privacy and are dedicated to protecting your personal data. This Privacy Policy covers how we collect, handle, and disclose personal data on our Platform.<br></br><br></br>If you have any questions, comments, or concerns regarding this Privacy Policy, our data practices, or would like to exercise your rights, do not hesitate to contact us.
 						</p>
 						<div className='flex flex-col gap-5'>
 							<h2 className='text-xl font-semibold text-gray-800'>To Whom Does This Policy Apply</h2>

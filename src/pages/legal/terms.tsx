@@ -21,16 +21,16 @@ export default function Terms() {
 			>
 				<div className="mx-auto max-w-2xl flex flex-col gap-16 leading-8 text-gray-600">
 						<p className='leading-[220%]'>
-						Subject to these Terms of Service (this "Agreement"), Toolbird.io ("Toolbird", "we", "us" and/or "our") provides access to Toolbird's cloud platform as a service (collectively, the "Services"). By using or accessing the Services, you acknowledge that you have read, understand, and agree to be bound by this Agreement.
+						Subject to these Terms of Service (this &quot;Agreement&quot;), Toolbird.io (&quot;Toolbird&quot;, &quot;we&quot;, &quot;us&quot; and/or &quot;our&quot;) provides access to Toolbird's cloud platform as a service (collectively, the &quot;Services&quot;). By using or accessing the Services, you acknowledge that you have read, understand, and agree to be bound by this Agreement.
 <br></br><br></br>
-If you are entering into this Agreement on behalf of a company, business or other legal entity, you represent that you have the authority to bind such entity to this Agreement, in which case the term "you" shall refer to such entity. If you do not have such authority, or if you do not agree with this Agreement, you must not accept this Agreement and may not use the Services.						</p>
+If you are entering into this Agreement on behalf of a company, business or other legal entity, you represent that you have the authority to bind such entity to this Agreement, in which case the term &quot;you&quot; shall refer to such entity. If you do not have such authority, or if you do not agree with this Agreement, you must not accept this Agreement and may not use the Services.						</p>
 						<div className='flex flex-col gap-5'>
 							<h2 className='text-xl font-semibold text-gray-800'>1. Acceptance of Terms</h2>
-							<p>By signing up and using the services provided by Toolbird (referred to as the "Service"), you are agreeing to be bound by the following terms and conditions ("Terms of Service"). The Service is owned and operated by Toolbird ("Us", "We", or "Our").</p>
+							<p>By signing up and using the services provided by Toolbird (referred to as the &quot;Service&quot;), you are agreeing to be bound by the following terms and conditions (&quot;Terms of Service&quot;). The Service is owned and operated by Toolbird (&quot;Us&quot;, &quot;We&quot;, or &quot;Our&quot;).</p>
 						</div>
 						<div className='flex flex-col gap-5'>
 							<h2 className='text-xl font-semibold text-gray-800'>2. Description of Service</h2>
-							<p>Toolbird provides an open-source link management tool for modern marketing teams to create, share, and track short links ("the Product"). The Product is accessible at toolbird.io and other domains and subdomains controlled by Us (collectively, "the Website").</p>
+							<p>Toolbird provides an open-source link management tool for modern marketing teams to create, share, and track short links (&quot;the Product&quot;). The Product is accessible at toolbird.io and other domains and subdomains controlled by Us (collectively, &quot;the Website&quot;).</p>
 						</div>
 						<div className='flex flex-col gap-5'>
 							<h2 className='text-xl font-semibold text-gray-800'>3. Intellectual Property Rights</h2>
@@ -46,7 +46,7 @@ If you are entering into this Agreement on behalf of a company, business or othe
 						</div>
 						<div className='flex flex-col gap-5'>
 							<h2 className='text-xl font-semibold text-gray-800'>6. Disclaimer of Warranties</h2>
-							<p>THE SERVICE AND ITS CONTENT ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT ANY WARRANTIES OF ANY KIND. WE DISCLAIM ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE WARRANTY OF TITLE, MERCHANTABILITY, NON-INFRINGEMENT OF THIRD PARTIES’ RIGHTS, AND FITNESS FOR PARTICULAR PURPOSE.</p>
+							<p>THE SERVICE AND ITS CONTENT ARE PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS WITHOUT ANY WARRANTIES OF ANY KIND. WE DISCLAIM ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE WARRANTY OF TITLE, MERCHANTABILITY, NON-INFRINGEMENT OF THIRD PARTIES&apos; RIGHTS, AND FITNESS FOR PARTICULAR PURPOSE.</p>
 						</div>
 						<div className='flex flex-col gap-5'>
 							<h2 className='text-xl font-semibold text-gray-800'>7. Limitation of Liability							</h2>
