@@ -1,9 +1,14 @@
 import Layout from '@/components/Layout'
+import Meta from '@/components/Layout/Meta'
 import Link from 'next/link'
 
 export default function ComingSoon() {
 	return (
 		<Layout noCta={true} white={true}>
+			<Meta
+				title={`Coming soon - Toolbird.io`}
+				description="Latest news and updates from Toolbird aswell as guides."
+			/>
 			<div
 				style={{
 					background:
