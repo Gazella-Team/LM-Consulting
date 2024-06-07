@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
 const Meta = ({
-	title = 'Toolbird',
-	keywords = 'Toolbox SaaS Web Analytics Cron Jobs Monitoring Feature Flags Waitlists Client Feedback Platform Tech Products',
-	description = 'All the tools your SaaS startup needs to start, scale and run, in one platform only',
+	title = 'Toolbird: Unified Analytics, Feedback & User Insights',
+	keywords = 'Toolbox, SaaS, Privacy-First Web Analytics, Feedback Boards, User Surveys, Tech Products',
+	description = 'Supercharge your user-driven SaaS development today with Web Analytics, Feedback Boards, User Surveys. All in one place.',
 	icon = '/seo/favicon.png',
 	banner = '/seo/banner.jpg',
 	url = '',

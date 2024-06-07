@@ -15,8 +15,7 @@ export default function Analytics() {
 	return (
 		<Layout white={true}>
 			<Meta
-				title={`Privacy-friendly analysis of all your website data - Toolbird.io`}
-				description="Latest news and updates from Toolbird aswell as guides."
+				title={`Privacy-friendly analysis of all your website data - Toolbird Analytics`}
 			/>
 			<PageIntro
 				buttons={[
