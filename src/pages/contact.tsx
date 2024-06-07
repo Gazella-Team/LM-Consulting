@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Meta from '@/components/Layout/Meta'
 import PageIntro from '@/components/PageIntro'
 import Goals from '@/components/goals'
 import Stats from '@/components/stats'
@@ -8,6 +9,10 @@ import { FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 export default function Contact() {
 	return (
 		<Layout white={true}>
+			<Meta
+				title={`Contact - Toolbird.io`}
+				description="Latest news and updates from Toolbird aswell as guides."
+			/>
 			<PageIntro
 				hook="Get in touch today"
 				highlighted=""

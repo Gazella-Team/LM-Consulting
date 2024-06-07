@@ -9,10 +9,15 @@ import DashboardDisplay from '@/components/dashboarddisplay'
 import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
 import BlurSection from '@/components/blur-section'
 import BlurDashboard from '@/components/blur-dashboard'
+import Meta from '@/components/Layout/Meta'
 
 export default function Analytics() {
 	return (
 		<Layout white={true}>
+			<Meta
+				title={`Privacy-friendly analysis of all your website data - Toolbird.io`}
+				description="Latest news and updates from Toolbird aswell as guides."
+			/>
 			<PageIntro
 				buttons={[
 					{

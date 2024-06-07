@@ -3,10 +3,15 @@ import PageIntro from '@/components/PageIntro'
 import BlurSection from '@/components/blur-section'
 import PricingTable from '@/components/pricingtable'
 import PricingFAQ from '@/components/FAQ/PricingFAQ'
+import Meta from '@/components/Layout/Meta'
 
 export default function Pricing() {
 	return (
 		<Layout white={true}>
+			<Meta
+				title={`Pricing - Toolbird.io`}
+				description="Latest news and updates from Toolbird aswell as guides."
+			/>
 			<PageIntro
 				hook="Flexible pricing"
 				highlighted=""

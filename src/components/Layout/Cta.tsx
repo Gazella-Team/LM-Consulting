@@ -18,7 +18,7 @@ export default function Cta() {
 				<div className="flex items-center paragraph relative justify-center gap-3 mt-8 font-medium">
 					<Link
 						href={'https://app.toolbird.io/auth/register'}
-						className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
+						className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 					>
 						Get started for free
 					</Link>
