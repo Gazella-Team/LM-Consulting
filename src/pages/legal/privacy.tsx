@@ -22,8 +22,8 @@ export default function Privacy() {
 						Welcome to Toolbird.io (the &quot;Site&quot;), hosted by
 						Toolbird (&quot;Toolbird&quot;, &quot;we&quot;,
 						&quot;us&quot;, and/or &quot;our&quot;). Toolbird
-						provides a platform for managing web analytics, uptime
-						monitoring, user feedback and a list of other tools (the
+						provides a platform for managing web analytics, feedback
+						boards, user surveys and a list of other tools (the
 						&quot;Services&quot;) ​1​. We value your privacy and are
 						dedicated to protecting your personal data. This Privacy
 						Policy covers how we collect, handle, and disclose

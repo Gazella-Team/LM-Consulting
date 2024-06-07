@@ -99,13 +99,13 @@ export default function Navbar() {
 								onClick={() => setMenuClicked(false)}
 								href="/coming-soon"
 							>
-								Monitoring
+								Feedback Boards
 							</RefLink>
 							<RefLink
 								onClick={() => setMenuClicked(false)}
 								href="/coming-soon"
 							>
-								User feedback
+								User Surveys
 							</RefLink>
 						</div>
 						<RefLink
