@@ -83,7 +83,11 @@ export default function Footer(props: FooterProps) {
 									About
 								</Link>
 								<Link href={'/blog'}>Blog</Link>
-								<Link href={"https://app.toolbird.io/share/toolbird.io"}>
+								<Link
+									href={
+										'https://app.toolbird.io/share/toolbird.io'
+									}
+								>
 									Public building
 								</Link>
 							</div>
@@ -92,9 +96,7 @@ export default function Footer(props: FooterProps) {
 								Legal
 							</h2>
 							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-								<Link href={'/legal/terms'}>
-									Terms
-								</Link>
+								<Link href={'/legal/terms'}>Terms</Link>
 								<Link href={'/legal/privacy'}>Privacy</Link>
 							</div>
 						</div>
