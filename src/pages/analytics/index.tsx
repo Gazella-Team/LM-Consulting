@@ -16,6 +16,7 @@ export default function Analytics() {
 		<Layout white={true}>
 			<Meta
 				title={`Privacy-friendly analysis of all your website data - Toolbird Analytics`}
+				description="Toolbird Analytics is a simple privacy-first web analytics tool. Track where your users come from, what device they are using and where in the world they are located. All completely anonymous."
 			/>
 			<PageIntro
 				buttons={[
