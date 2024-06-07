@@ -106,14 +106,6 @@ export default function Footer(props: FooterProps) {
 							</h2>
 							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
 								<Link href={'/contact'}>General</Link>
-								<Link
-									target="_blank"
-									href={
-										'https://cal.com/lasseosmann/toolbird-demo'
-									}
-								>
-									Demo
-								</Link>
 							</div>
 						</div>
 					</div>
