@@ -18,7 +18,7 @@ export default function FeatureBox() {
                         <h2 className="text-3xl font-semibold text-gray-800 max-w-lg">Analyze all the traffic going through your website with one intuitive dashboard</h2>
                     </div>
                     <div className="flex flex-col justify-center gap-6 paragraph">
-                        <p className="text-gray-600">Track what pages your visitors use, where they're located, what device they're using and from where they are referred</p>
+                        <p className="text-gray-600">Track what pages your visitors use, where they&apos;re located, what device they&apos;re using and from where they are referred</p>
                         <div className="flex">
 							<Link
 								href={'https://app.toolbird.io/auth/register'}
