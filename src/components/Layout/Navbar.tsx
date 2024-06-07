@@ -99,7 +99,7 @@ export default function Navbar() {
 								onClick={() => setMenuClicked(false)}
 								href="/coming-soon"
 							>
-								Feedback Boards
+								Feedback Hub
 							</RefLink>
 							<RefLink
 								onClick={() => setMenuClicked(false)}
