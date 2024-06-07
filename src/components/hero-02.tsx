@@ -40,11 +40,11 @@ export default function Hero02() {
 								</span>
 								,{' '}
 								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									feedback surveys
+									feedback boards
 								</span>{' '}
 								and{' '}
 								<span className="bg-main/10 text-gray-800 p-2 py-1 rounded-xl">
-									feedback panels
+									suveys
 								</span>
 								, all collected in 1 place.
 							</h1>
@@ -59,12 +59,13 @@ export default function Hero02() {
 						</Reveal>
 						<RevealLight delayTime={0.4}>
 							<div className="flex items-center paragraph relative gap-3 mt-4 font-medium">
-								<button className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full">
-									Get started
-								</button>
-								<button className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white  px-4 py-1 rounded-full">
-									View features
-								</button>
+								<Link
+									href={`https://app.toolbird.io/auth/register`}
+								>
+									<button className="bg-main border-[3px] h-12 font-medium border-main text-base text-white px-8 py-1 rounded-full">
+										Get started for free
+									</button>
+								</Link>
 							</div>
 						</RevealLight>
 					</div>
