@@ -52,7 +52,7 @@ export default function Footer(props: FooterProps) {
 								<FaLinkedin color="rgb(31 41 55)" />
 							</Link>
 							<Link
-								href={'https://x.com/lasse_osmann'}
+								href={'https://x.com/toolbirdapp'}
 								className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all"
 							>
 								<FaTwitter color="rgb(31 41 55)" />
@@ -65,7 +65,7 @@ export default function Footer(props: FooterProps) {
 								Products
 							</h2>
 							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-								<Link href={'/analytics'}>Analytics</Link>
+								<Link href={'/analytics'}>Web Analytics</Link>
 								<Link href={'/coming-soon'}>
 									Feedback Boards<br></br>(under developmet)
 								</Link>
@@ -106,26 +106,22 @@ export default function Footer(props: FooterProps) {
 							</h2>
 							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
 								<Link href={'/contact'}>General</Link>
-								<Link
-									target="_blank"
-									href={
-										'https://cal.com/lasseosmann/toolbird-demo'
-									}
-								>
-									Demo
-								</Link>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
 					<p>
-						© {new Date().getFullYear()} Toolbird, NØRRE VOLDGADE
-						82, 2TH.1358 KØBENHAVN
+						© {new Date().getFullYear()} Toolbird - Part of{' '}
+						<a
+							href="https://gazellateam.com"
+							className="underline"
+							target="_blank"
+						>
+							Gazella Team
+						</a>
 					</p>
-					<p className="font-[Caveat] text-xl">
-						Built safely and produdly in 🇪🇺
-					</p>
+					<p className="font-[Caveat] text-xl">Built proudly in 🇪🇺</p>
 				</div>
 			</footer>
 		</>

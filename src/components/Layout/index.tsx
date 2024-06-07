@@ -1,9 +1,6 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
-import NavigationMenuDemo from './NavDemo'
-import { TracingBeam } from '../ui/tracing-beam'
-import { cn } from 'utils/cs'
 
 type LayoutProps = {
 	className?: string

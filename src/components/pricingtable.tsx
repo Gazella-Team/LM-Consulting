@@ -58,7 +58,7 @@ export default function PricingTable() {
 							<div className="flex">
 								<Link
 									target="_blank"
-									href="https://cal.com/lasseosmann/toolbird-demo"
+									href="https://app.toolbird.io/auth/register"
 									className="bg-gray-600 text-center paragraph w-full border-[3px] border-gray-600 text-sm font-medium text-white px-6 py-2 rounded-full"
 								>
 									Get started
@@ -150,7 +150,7 @@ export default function PricingTable() {
 							<div className="flex">
 								<Link
 									target="_blank"
-									href="https://cal.com/lasseosmann/toolbird-demo"
+									href="https://app.toolbird.io/auth/register"
 									className="bg-main text-center paragraph w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
 								>
 									Get started
