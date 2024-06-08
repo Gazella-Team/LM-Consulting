@@ -20,11 +20,11 @@ export default function Hero() {
 							Web Analytics,
 						</span>{' '}
 						<span className="bg-main/10 text-gray-800 block mb-2 md:mb-0 md:inline-block p-2 py-1 rounded-xl">
-							Uptime Monitoring
+							Feedback Hub
 						</span>{' '}
 						<span className="hidden md:inline-block">and</span>{' '}
 						<span className="bg-main/10 text-gray-800 block mb-2 md:mb-0 md:inline-block p-2 py-1 rounded-xl">
-							User Feedback,
+							User Surveys,
 						</span>{' '}
 						all in 1 place.
 					</h1>

@@ -30,7 +30,7 @@ export default function FeatureBox() {
 						</p>
 						<div className="flex">
 							<Link
-								href={'https://app.toolbird.io/auth/register'}
+								href={'/analytics'}
 								className="bg-main border-[3px] border-main font-medium paragraph text-xs flex text-white px-6 py-1 rounded-full"
 							>
 								View features
