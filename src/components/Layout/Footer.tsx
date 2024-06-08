@@ -30,8 +30,8 @@ export default function Footer(props: FooterProps) {
 						<div className="flex flex-col gap-3">
 							<img className="w-28" src="/logos/finallogo.svg" />
 							<p className="text-gray-500 paragraph text-sm max-w-xs font-regular">
-								Get Web Analytics, Uptime Monitoring and User
-								Feedback, all collected in one place.
+								Get Web Analytics, Feedback Hub and User
+								Surveys, all collected in one place.
 							</p>
 						</div>
 						<div className="flex">
