@@ -1,85 +1,148 @@
-import Link from "next/link";
-import Flyout from "./Flyout";
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import {
-  ArrowPathIcon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-} from '@heroicons/react/24/outline'
+import NiceModal from '@ebay/nice-modal-react'
+import { useRouter } from 'next/router'
+import JoinWaitlistModal from '../modals/JoinWaitlistModal'
+import { Link } from 'react-scroll'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import { Reveal } from '../Animations/Reveal'
+import RefLink from 'next/link'
+import useScroll from '@/hooks/use-scroll'
+import { cn } from '../Accordion'
+import Flyout from './Flyout'
+import localFont from 'next/font/local'
+import { RevealLight } from '../Animations/RevealLight'
 
-export default function Navbar(props:any) {
-    return (
-        props.white ?         <div>
-        <nav className="h-[80px] bg-white text-main absolute w-full flex items-center border-b-[1px]">
-        <div className="w-[94%] max-w-[1470px] mx-auto text-gray-800 flex items-center justify-start">
-            <div className="w-[25%]">
-                <Link href={"/"} className="font-[400] text-[22px] flex flex-col leading-0">toolbird<span className="text-[8px] font-[200] leading-0 mt-[-6px]">by Gazella Team</span></Link>
-            </div>
-            <div className="flex-1 flex items-center text-[15px] justify-center gap-[30px] font-[200]">
-            <Flyout headingIcon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(31 41 55)" className="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
-</svg>
-} heading="All tools you need" triggerName="Platform" links={[
-        { name: 'Waitlists', description: 'Get a better understanding', href: '/waitlists', icon: ChartPieIcon },
-        { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-      ]} />
-                    <Flyout heading="Getting you started" triggerName="Resources" links={[
-        { name: 'Templates', description: 'Get a better understanding', href: '#', icon: ChartPieIcon },
-        { name: 'Usecases', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-      ]} />
-                    <Link href={"/pricing"}>Pricing</Link>
-                    <Link href={"/blog"}>Blog</Link>
-                    <Link href={"/guides"}>Guides</Link>
-            </div>
-            <div className="w-[25%] flex items-center gap-[16px] justify-end">
-                <Link target="_blank" className="text-gray-800 font-[300] px-[6px] py-[10px] text-[15px] rounded-full" href={"/login"}>Log In</Link>
-                <Link className="bg-main text-white text-center px-[24px] py-[10px] text-[15px] rounded-full font-[300]" href={"/"}>Join Waitlist</Link>
-            </div>
-            
-        </div>
-    </nav>
-    </div>:        <div>
-            <nav className="h-[80px] bg-transparent absolute w-full flex items-center">
-            <div className="w-[94%] max-w-[1470px] mx-auto text-white flex items-center justify-start">
-                <div className="w-[25%]">
-                    <Link href={"/"} className="font-[400] text-[22px] flex flex-col leading-0">toolbird<span className="text-[8px] font-[200] leading-0 mt-[-6px]">by Gazella Team</span></Link>
-                </div>
-                <div className="flex-1 flex items-center text-[15px] justify-center gap-[30px] font-[200]">
-                    <Flyout headingIcon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(31 41 55)" className="w-7 h-7">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
-</svg>} heading="All tools you need" triggerName="Platform" links={[
-        { name: 'Waitlists', description: 'Get a better understanding', href: '/waitlists', icon: ChartPieIcon },
-        { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-        { name: 'Security', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-        { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-      ]} />
-                    <Flyout heading="Getting you started" triggerName="Resources" links={[
-        { name: 'Templates', description: 'Get a better understanding', href: '#', icon: ChartPieIcon },
-        { name: 'Usecases', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-        { name: 'Guides', description: "Your customers' data will be safe", href: '#', icon: FingerPrintIcon },
-      ]} />
-                    <Link href={"/pricing"}>Pricing</Link>
-                    <Link href={"/blog"}>Blog</Link>
-                    <Link href={"/guides"}>Guides</Link>
-                </div>
-                <div className="w-[25%] flex items-center gap-[16px] justify-end">
-                    <Link target="_blank" className="text-white font-[300] px-[6px] py-[10px] text-[15px] rounded-full" href={"/login"}>Log In</Link>
-                    <Link className="bg-white text-main text-center px-[24px] py-[10px] text-[15px] rounded-full font-[300]" href={"/"}>Join Waitlist</Link>
-                </div>
-                
-            </div>
-        </nav>
-        </div>
-    )
+const ToolbirdFont = localFont({
+	src: [
+		{
+			path: '../fonts/Gilroy-SemiBold.ttf',
+			style: 'normal',
+		},
+	],
+})
+
+export default function Navbar() {
+	const [menuClicked, setMenuClicked] = useState(false)
+	const router = useRouter()
+
+	const scrolled = useScroll(50)
+
+	return (
+		<nav className="top-0 sticky z-50">
+			<div
+				className={cn(
+					'h-[58px] w-full transition-all flex items-center',
+					scrolled
+						? 'border-b border-gray-600/10 bg-white/50 backdrop-blur-xl'
+						: 'bg-transparent'
+				)}
+			>
+				<div className="w-[86%] paragraph max-w-6xl mx-auto flex items-center justify-between text-gray-800">
+					<div className="w-[250px] flex items-center justify-start">
+						<RefLink href={'/'}>
+							<img
+								className="w-[110px]"
+								src="/logos/finallogo.svg"
+							/>
+						</RefLink>
+					</div>
+					<div
+						className={cn(
+							'flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm'
+						)}
+					>
+						<Flyout />
+						<RefLink href={'/pricing'}>Pricing</RefLink>
+						<RefLink href="/blog/introducing-toolbird">
+							About
+						</RefLink>
+						<RefLink href="/blog">Blog</RefLink>
+					</div>
+					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
+						<RefLink
+							className="hidden font-medium text-sm sm:flex"
+							href={'https://app.toolbird.io/auth/login'}
+						>
+							Log in
+						</RefLink>
+						<RefLink
+							href={'https://app.toolbird.io/auth/register'}
+							className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
+						>
+							Get started for free
+						</RefLink>
+					</div>
+					<div className="flex lg:hidden cursor-pointer">
+						{menuClicked ? (
+							<X onClick={() => setMenuClicked(false)} />
+						) : (
+							<Menu onClick={() => setMenuClicked(true)} />
+						)}
+					</div>
+				</div>
+			</div>
+			{menuClicked && (
+				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
+					<div
+						className={cn(
+							'flex font-bold flex-col gap-6 w-[86%] mx-auto'
+						)}
+					>
+						<div className="flex flex-col gap-6 border-b border-b-gray-600/10 pb-4">
+							<RefLink
+								onClick={() => setMenuClicked(false)}
+								href="/analytics"
+							>
+								Web analytics
+							</RefLink>
+							<RefLink
+								onClick={() => setMenuClicked(false)}
+								href="/coming-soon"
+							>
+								Feedback Hub
+							</RefLink>
+							<RefLink
+								onClick={() => setMenuClicked(false)}
+								href="/coming-soon"
+							>
+								User Surveys
+							</RefLink>
+						</div>
+						<RefLink
+							onClick={() => setMenuClicked(false)}
+							href="/pricing"
+						>
+							Pricing
+						</RefLink>
+						<RefLink
+							onClick={() => setMenuClicked(false)}
+							href="/blog/introducing-toolbird"
+						>
+							About
+						</RefLink>
+						<RefLink
+							onClick={() => setMenuClicked(false)}
+							href="/blog"
+						>
+							Blog
+						</RefLink>
+					</div>
+					<div className="flex flex-col paragraph gap-2 text-center w-[86%] mx-auto">
+						<RefLink
+							className="bg-main border-[3px] w-full border-main text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+							href={'https://app.toolbird.io/auth/login'}
+						>
+							Log in
+						</RefLink>
+						<RefLink
+							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+							href={'https://app.toolbird.io/auth/register'}
+						>
+							Get started for free
+						</RefLink>
+					</div>
+				</div>
+			)}
+		</nav>
+	)
 }

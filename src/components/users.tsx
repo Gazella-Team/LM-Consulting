@@ -1,66 +1,79 @@
-import { Reveal } from "./Animations/Reveal"
-
-const userData = [
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-    {userName: "Slack", imagePath:"/users/slack.webp", userWebsite: "https://slack.com/"},
-]
-
 export default function Users() {
-    return (
-        <section className="pb-[100px]">
-            <Reveal delayTime={0}>
-                <div className="bg-white shadow-clean rounded-[14px] w-[90%] max-w-[1200px] mx-auto p-[40px] mt-[-400px] grid grid-cols-5 gap-[24px]">
-                    {userData.map((v, index) => <UserCard key={v.userName} Obj={v} />)}
-                </div>
-            </Reveal>
-        </section>
-    )
-}
-
-const UserCard = (props:any) => {
-    return (
-        <Reveal delayTime={0}>
-            <div className="py-[30px] rounded-[14px] bg-gray-50">
-                <img alt={props.Obj.userName} className="w-[100px] mx-auto" src={props.Obj.imagePath}></img>
-            </div>
-        </Reveal>
-    )
+	return (
+		<section
+			style={{
+				background:
+					'linear-gradient(350deg, rgba(247,243,255,1) 0%, rgba(255,255,255,1) 50%, rgba(247,243,255,1) 100%)',
+			}}
+			className="py-16 mb-16 border-y border-gray-600/10 bg-white/50 paragraph backdrop-blur-xl"
+		>
+			<div className="mx-auto max-w-5xl w-[86%] text-center flex flex-col gap-10">
+				<h1 className="uppercase text-gray-600 text-sm">
+					used by rapidly growing startups worldwide
+				</h1>
+				<div className="grid grid-cols-6 gap-y-4">
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+					<img
+						className="w-[150px]"
+						src="/users/prisma.svg"
+						alt="Prisma"
+					></img>
+				</div>
+			</div>
+		</section>
+	)
 }

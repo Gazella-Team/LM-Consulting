@@ -1,20 +1,29 @@
-import { Reveal } from "../Animations/Reveal";
-import Link from "next/link";
+import Link from 'next/link'
+import CustomerSlider from '../customer-slider'
 
 export default function Cta() {
-    return (
-        <section className="py-[100px] bg-gradient-to-r from-[#6228D6] via-[#8548FF] via-[#661DFA] via-[#793CF4] via-main via-[#8548FF] via-[#793CF4] to-[#6228D6]">
-            <div className="w-[90%] mx-auto text-center max-w-[1000px]">
-                <Reveal delayTime={0.3}>
-                    <h1 className="font-[300] text-white text-[40px] mb-[14px]">Are you ready to cut expenses and scale?</h1>
-                </Reveal>
-                <Reveal delayTime={0.3}>
-                    <p className="font-[200] text-[18px] w-[80%] mx-auto text-gray-200 mb-[50px]">Wake up to an inbox full of new testimonial alerts. Share them everywhere in seconds. Get more visits, convert more, and close more deals. Senja makes it easy.</p>
-                </Reveal>
-                <Reveal delayTime={0.3}>
-                    <Link className="bg-white text-main text-center px-[40px] py-[14px] text-[15px] rounded-full font-[300]" href={"/"}>Join Waitlist</Link>
-                </Reveal>
-            </div>
-        </section>
-    )
+	return (
+		<section className="py-16 mt-24 pb-0 relative">
+			<div className="w-[86%] relative mx-auto max-w-6xl mb-20 text-center">
+				<h2 className="text-[35px] md:text-[45px] xl:text-[50px] leading-[110%] max-w-[600px] mb-4 mx-auto font-extrabold text-gray-800">
+					<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
+						Supercharge{' '}
+					</span>{' '}
+					your user-driven SaaS development today
+				</h2>
+				<p className="text-base md:text-lg xl:text-lg paragraph max-w-[350px] mx-auto text-gray-600">
+					Increase your project overview today with the ultimate
+					toolbox for SaaS developers.
+				</p>
+				<div className="flex items-center paragraph relative justify-center gap-3 mt-8 font-medium">
+					<Link
+						href={'https://app.toolbird.io/auth/register'}
+						className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
+					>
+						Get started for free
+					</Link>
+				</div>
+			</div>
+		</section>
+	)
 }
