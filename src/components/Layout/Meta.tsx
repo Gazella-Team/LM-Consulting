@@ -3,7 +3,7 @@ import Head from 'next/head'
 const Meta = ({
 	title = 'Toolbird: Unified Analytics, Feedback & User Insights',
 	keywords = 'Toolbox, SaaS, Privacy-First Web Analytics, Feedback Hub, User Surveys, Tech Products',
-	description = 'Supercharge your user-driven SaaS development today with Web Analytics, Feedback Hub, User Surveys. All in one place.',
+	description = 'Supercharge your user-driven SaaS development today with web analytics, feedback hub, user surveys - All in one place.',
 	icon = '/seo/favicon.png',
 	banner = '/seo/banner.jpg',
 	url = '',
