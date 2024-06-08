@@ -26,7 +26,7 @@ export default function FeatureBox() {
 						<p className="text-gray-600 max-w-sm lg:max-w-lg">
 							Track what pages your visitors use, where
 							they&apos;re located, what device they&apos;re using
-							and from where they are referred
+							and from where they are referred.
 						</p>
 						<div className="flex">
 							<Link
