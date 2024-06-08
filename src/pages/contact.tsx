@@ -11,7 +11,8 @@ export default function Contact() {
 		<Layout white={true}>
 			<Meta
 				title={`Contact - Toolbird.io`}
-				description="Latest news and updates from Toolbird aswell as guides."
+				description="Get in touch with the team behind Toolbird today."
+				keywords='Contact, Mail, Phone, Team'
 			/>
 			<PageIntro
 				hook="Get in touch today"

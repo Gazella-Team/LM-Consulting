@@ -7,7 +7,7 @@ export default function ComingSoon() {
 		<Layout noCta={true} white={true}>
 			<Meta
 				title={`Coming soon - Toolbird.io`}
-				description="Latest news and updates from Toolbird aswell as guides."
+				description="The page you are looking for is under development"
 			/>
 			<div
 				style={{
