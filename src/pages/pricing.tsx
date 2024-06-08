@@ -10,6 +10,7 @@ export default function Pricing() {
 		<Layout white={true}>
 			<Meta
 				title={`Pricing - Toolbird.io`}
+				keywords=''
 			/>
 			<PageIntro
 				hook="Flexible pricing"

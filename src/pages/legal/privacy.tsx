@@ -6,7 +6,7 @@ export default function Privacy() {
 		<Layout white={true}>
 			<Meta title={`Privacy policy - Toolbird.io`} />
 			<div className="w-[86%] mx-auto max-w-6xl py-24 text-center">
-				<h1 className="text-gray-800 text-6xl font-semibold">
+				<h1 className="text-gray-800 text-4xl md:text-5xl lg:text-6xl font-semibold">
 					Privacy policy
 				</h1>
 			</div>
@@ -17,7 +17,7 @@ export default function Privacy() {
 						'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
 				}}
 			>
-				<div className="mx-auto max-w-2xl flex flex-col gap-16 leading-8 text-gray-600">
+				<div className="mx-auto w-[86%] max-w-2xl flex flex-col gap-16 leading-8 text-gray-600">
 					<p className="leading-[220%]">
 						Welcome to Toolbird.io (the &quot;Site&quot;), hosted by
 						Toolbird (&quot;Toolbird&quot;, &quot;we&quot;,
@@ -77,7 +77,7 @@ export default function Privacy() {
 						</p>
 					</div>
 					<div className="border-t border-gray-600/20 pt-5 text-gray-500 text-center">
-						<p>Last updated: May 29, 2023</p>
+						<p>Last updated: Jun 07, 2024</p>
 					</div>
 				</div>
 			</section>

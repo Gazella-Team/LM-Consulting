@@ -203,7 +203,7 @@ export default function PricingTable() {
 										className="text-main"
 									/>
 									<h2 className="text-gray-600">
-										100.000 page views
+										100.000 page views*
 									</h2>
 								</div>
 								<div className="flex items-center gap-4">
@@ -212,7 +212,7 @@ export default function PricingTable() {
 										className="text-main"
 									/>
 									<h2 className="text-gray-600">
-										10.000 custom events
+										10.000 custom events*
 									</h2>
 								</div>
 								<div className="flex items-center gap-4">
@@ -224,6 +224,9 @@ export default function PricingTable() {
 										10 websites
 									</h2>
 								</div>
+								<p className="text-gray-700 text-sm">
+									* Unlimited while Toolbird is in Beta.
+								</p>
 							</div>
 						</div>
 					</div>
