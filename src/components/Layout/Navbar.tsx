@@ -30,7 +30,7 @@ export default function Navbar() {
 	return (
 		<nav className="top-0 sticky z-50">
 			<div className='bg-[#ff6154] hidden text-white lg:flex items-center justify-center h-12 text-sm paragraph'>
-				<p>We're live on producthunt 🚀 <span><RefLink className='underline' target='_blank' href={"https://www.producthunt.com/posts/toolbird-3"}>Show your support with an upvote or a comment.</RefLink></span></p>
+				<p>We&apos;re live on producthunt 🚀 <span><RefLink className='underline' target='_blank' href={"https://www.producthunt.com/posts/toolbird-3"}>Show your support with an upvote or a comment.</RefLink></span></p>
 			</div>
 			<div
 				className={cn(
