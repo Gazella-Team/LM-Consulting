@@ -1,5 +1,6 @@
 import Layout from '@/components/Layout'
-import FeatureBox from '@/components/feature-box'
+import AnalyticsFeatureBox from '@/components/feature-boxes/analytics-feature-box'
+import WorkspaceFeatureBox from '@/components/feature-boxes/workspace-feature-box'
 import Hero02 from '@/components/hero-02'
 
 export default function Home() {
@@ -7,8 +8,9 @@ export default function Home() {
 		<Layout white={true}>
 			<Hero02 />
 			<div className="mt-[-130px]">
-				<FeatureBox />
+				<AnalyticsFeatureBox />
 			</div>
+			<WorkspaceFeatureBox />
 		</Layout>
 	)
 }

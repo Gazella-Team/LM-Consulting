@@ -2,7 +2,7 @@ import { CheckCheckIcon, CheckCircle2, CheckCircleIcon } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from 'utils/cs'
 
-export default function FeatureBox() {
+export default function AnalyticsFeatureBox() {
 	return (
 		<section
 			style={{
