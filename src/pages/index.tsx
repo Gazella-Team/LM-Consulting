@@ -10,7 +10,6 @@ export default function Home() {
 			<div className="mt-[-130px]">
 				<AnalyticsFeatureBox />
 			</div>
-			<WorkspaceFeatureBox />
 		</Layout>
 	)
 }
