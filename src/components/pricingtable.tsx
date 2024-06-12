@@ -95,7 +95,7 @@ export default function PricingTable() {
 					className="bg-white relative rounded-3xl border-2 border-main text-gray-800 shadow-main/30 shadow-clean"
 				>
 					<div className="w-full h-[40px] flex items-center justify-center mt-[-20px]">
-						<p className="bg-main select-none paragraph text-white px-8 rounded-full py-2 text-xs font-semibold">
+						<p className="bg-main select-none heading text-white px-8 rounded-full py-2 text-xs font-semibold">
 							Popular
 						</p>
 					</div>
@@ -113,12 +113,9 @@ export default function PricingTable() {
 						</div>
 						<div className="px-7 pb-14 bg-white">
 							<h1 className="text-5xl font-extrabold">
-								{pricingRuntime === 'monthly' ? '$19' : '$15'}
+								$19
 								<span className="ml-1 text-base paragraph font-[400] text-gray-600">
-									/{' '}
-									{pricingRuntime === 'monthly'
-										? 'month'
-										: 'month, billed yearly'}
+									/{' '}month
 								</span>
 							</h1>
 						</div>
