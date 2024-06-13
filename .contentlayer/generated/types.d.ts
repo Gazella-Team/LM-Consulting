@@ -18,7 +18,7 @@ export type Post = {
   image: string
   publishedAt: IsoDateTimeString
   authors: Author[]
-  category: 'all' | 'guides' | 'engineering' | 'news'
+  category: 'all' | 'guides' | 'education' | 'engineering' | 'news'
   /** MDX file body */
   body: MDX
   slug: string
