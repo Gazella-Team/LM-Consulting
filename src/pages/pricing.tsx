@@ -8,10 +8,7 @@ import Meta from '@/components/Layout/Meta'
 export default function Pricing() {
 	return (
 		<Layout white={true}>
-			<Meta
-				title={`Pricing - Toolbird.io`}
-				keywords='Pricing, Plans, SaaS, Pro, Free'
-			/>
+			<Meta title={`Pricing - Toolbird.io`} />
 			<PageIntro
 				hook="Flexible pricing"
 				highlighted=""
