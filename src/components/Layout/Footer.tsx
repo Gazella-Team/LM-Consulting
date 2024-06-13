@@ -91,21 +91,14 @@ export default function Footer(props: FooterProps) {
 									Public building
 								</Link>
 							</div>
-
-							<h2 className="text-sm mt-10 mb-5 font-semibold text-gray-800">
+						</div>
+						<div>
+							<h2 className="text-sm mb-5 font-semibold text-gray-800">
 								Legal
 							</h2>
 							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
 								<Link href={'/legal/terms'}>Terms</Link>
 								<Link href={'/legal/privacy'}>Privacy</Link>
-							</div>
-						</div>
-						<div>
-							<h2 className="text-sm mb-5 font-semibold text-gray-800">
-								Contact
-							</h2>
-							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-								<Link href={'/contact'}>General</Link>
 							</div>
 						</div>
 					</div>
@@ -121,7 +114,10 @@ export default function Footer(props: FooterProps) {
 							Gazella Team
 						</a>
 					</p>
-					<p className="font-[Caveat] text-xl">Built proudly in 🇪🇺</p>
+					<div className='flex items-center gap-4'>
+						<p>lasse@toolbird.io</p>
+						<p className="font-[Caveat] text-xl">Built proudly in 🇪🇺</p>
+					</div>
 				</div>
 			</footer>
 		</>

@@ -7,6 +7,10 @@ const categories = {
 		name: 'Guides',
 		activeClass: 'text-white bg-gradient-to-r from-gray-800 to-gray-700',
 	},
+	education: {
+		name: 'Education',
+		activeClass: 'text-white bg-gradient-to-r from-gray-800 to-gray-700',
+	},
 	engineering: {
 		name: 'Engineering',
 		activeClass: 'text-white bg-gradient-to-r from-gray-800 to-gray-700',

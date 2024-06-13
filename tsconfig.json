@@ -23,7 +23,7 @@
 		"**/*.ts",
 		"**/*.tsx",
 		".contentlayer/generated",
-		"src/content/drafts/many-saas-tools-vs-one-mega-tool.mdx"
+		"src/content/posts/many-saas-tools-vs-one-collective-toolbox.mdx"
 	],
 	"exclude": ["node_modules"]
 }
