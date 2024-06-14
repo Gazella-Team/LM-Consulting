@@ -78,13 +78,19 @@ export default function Hero02() {
 						</Reveal>
 						<RevealLight delayTime={0.4}>
 							<div className="flex items-center paragraph relative gap-3 mt-4 font-medium">
-								<Link
+								<a
 									href={`https://app.toolbird.io/auth/register`}
+									onClick={() => {
+										// @ts-ignore
+										window.toolbird.track('cta_clicked', {
+											position: 'hero',
+										})
+									}}
 								>
 									<button className="bg-main border-[3px] h-12 font-medium border-main text-base text-white px-8 py-1 rounded-full">
 										Get started for free
 									</button>
-								</Link>
+								</a>
 							</div>
 						</RevealLight>
 					</div>
