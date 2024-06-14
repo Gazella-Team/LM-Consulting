@@ -29,11 +29,9 @@ export default function Navbar() {
 
 	return (
 		<nav className="top-0 sticky z-50">
-			{/*
-			<div className='bg-[#ff6154] hidden text-white lg:flex items-center justify-center h-12 text-sm paragraph'>
-				<p>We&apos;re live on producthunt 🚀 <span><RefLink className='underline' target='_blank' href={"https://www.producthunt.com/posts/toolbird-3"}>Show your support with an upvote or a comment.</RefLink></span></p>
+			<div className='bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph'>
+				<p>The first version of Toolbird is officially live for all users 🎉</p>
 			</div>
-			*/}
 			<div
 				className={cn(
 					'h-[58px] w-full transition-all flex items-center',
@@ -87,7 +85,7 @@ export default function Navbar() {
 				</div>
 			</div>
 			{menuClicked && (
-				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
+				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-40px)] lg:hidden">
 					<div
 						className={cn(
 							'flex font-bold flex-col gap-6 w-[86%] mx-auto'
@@ -140,7 +138,7 @@ export default function Navbar() {
 							Log in
 						</RefLink>
 						<RefLink
-							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full "
 							href={'https://app.toolbird.io/auth/register'}
 						>
 							Get started for free
