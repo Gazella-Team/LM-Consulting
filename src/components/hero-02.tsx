@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Reveal } from './Animations/Reveal'
 import { RevealLight } from './Animations/RevealLight'
 import useMediaQuery from '@/hooks/use-media-query'
+import CustomerSlider from './customer-slider'
 
 export default function Hero02() {
 	const { device } = useMediaQuery()

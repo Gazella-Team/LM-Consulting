@@ -34,24 +34,146 @@ const imageData = [
 		size: 'w-[150px]',
 	},
 	{
-		path: '/users/matematiktutor.svg',
+		path: '/users/burst.svg',
 		website: 'https://burstcreators.com/',
 		size: 'w-[150px]',
 	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+	{
+		path: '/users/burst.svg',
+		website: 'https://burstcreators.com/',
+		size: 'w-[150px]',
+	},
+
 ]
 
 export default function CustomerSlider() {
 	return (
 		<section
-			style={{
-				background:
-					'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
-			}}
-			className="my-24 max-w-7xl mx-auto lg:rounded-[100px] backdrop:blur-3xl border-y border-gray-600/10"
+			className=" bg-white max-w-7xl mx-auto lg:rounded-[100px] backdrop:blur-3xl"
 		>
 			<div>
 				<Slider
-					width="380px"
+					width="300px"
 					duration={70}
 					pauseOnHover={false}
 					blurBorders={true}
@@ -59,9 +181,7 @@ export default function CustomerSlider() {
 				>
 					{imageData.map((v) => (
 						<Slider.Slide key={v}>
-							<div className="bg-white paragraph w-[360px] select-none border border-gray-600/10 p-8 rounded-3xl shadow-sm">
-								<h2>Villads Leth</h2>
-							</div>
+							<img className='w-[200px]' src={v.path}></img>
 						</Slider.Slide>
 					))}
 				</Slider>
