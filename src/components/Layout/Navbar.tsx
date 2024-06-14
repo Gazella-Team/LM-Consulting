@@ -29,12 +29,9 @@ export default function Navbar() {
 
 	return (
 		<nav className="top-0 sticky z-50">
-<<<<<<< Updated upstream
-=======
 			<div className='bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph'>
 				<p>Claim your 14-day free trial today<span><Link></Link></span> 🎉</p>
 			</div>
->>>>>>> Stashed changes
 			<div
 				className={cn(
 					'h-[58px] w-full transition-all flex items-center',
