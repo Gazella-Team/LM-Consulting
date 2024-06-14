@@ -1,8 +1,7 @@
-import { CheckCheckIcon, CheckCircle2, CheckCircleIcon } from 'lucide-react'
+import { CheckCircle2 } from 'lucide-react'
 import Link from 'next/link'
-import { cn } from 'utils/cs'
 
-export default function FeatureBox() {
+export default function AnalyticsFeatureBox() {
 	return (
 		<section
 			style={{
@@ -41,7 +40,7 @@ export default function FeatureBox() {
 				<img
 					className="border rounded-2xl border-gray-600/10"
 					src="/showcases/platform.webp"
-				></img>
+				/>
 				<div className="grid grid-cols-1 lg:grid-cols-2 paragraph gap-x-32 gap-y-16 w-[90%] mx-auto">
 					<div className="flex gap-4">
 						<div className="w-10">

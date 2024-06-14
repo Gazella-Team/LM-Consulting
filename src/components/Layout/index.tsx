@@ -1,6 +1,7 @@
 import Navbar from './Navbar'
 import Footer from './Footer'
 import localFont from 'next/font/local'
+import Meta from './Meta'
 
 type LayoutProps = {
 	className?: string
@@ -22,6 +23,7 @@ const ToolbirdFont = localFont({
 export default function Layout(props: LayoutProps) {
 	return (
 		<div className="flex flex-col justify-between min-h-screen">
+			<Meta />
 			<div className="w-full bg-white bg-grid-black/[0.04] relative">
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 				<Navbar />

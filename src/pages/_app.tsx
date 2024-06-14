@@ -8,6 +8,7 @@ import { Toaster } from 'react-hot-toast'
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<NiceModal.Provider>
+			<Meta />
 			<Component {...pageProps} />
 			<Toaster />
 			<Script
@@ -15,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				strategy="lazyOnload"
 				data-domain="toolbird.io"
 			/>
-			<Meta />
 		</NiceModal.Provider>
 	)
 }
+

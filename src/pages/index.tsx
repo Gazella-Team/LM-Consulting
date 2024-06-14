@@ -8,7 +8,7 @@ export default function Home() {
 		<Layout white={true}>
 			<Hero />
 			<div className="mt-[-130px]">
-				<FeatureBox />
+				<AnalyticsFeatureBox />
 			</div>
 		</Layout>
 	)

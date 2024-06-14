@@ -15,12 +15,12 @@ export default function Hero02() {
 							background:
 								'linear-gradient(0deg, rgba(255,255,255,1) 16%, rgba(255,255,255,0.29037552521008403) 47%)',
 						}}
-						className="absolute inset-0"
+						className="absolute inset-0 hidden md:block"
 					></div>
 
 					<div className="flex items-center">
 						<div
-							className="absolute top-[100px] h-[500px] w-[700px] overflow-hidden -z-1"
+							className="absolute hidden md:block top-[100px] h-[500px] w-[700px] overflow-hidden -z-1"
 							style={{
 								background:
 									'radial-gradient(circle, rgba(94,23,235,0.12552958683473385) 0%, rgba(255,255,255,0) 60%)',
@@ -81,13 +81,19 @@ export default function Hero02() {
 						</Reveal>
 						<RevealLight delayTime={0.4}>
 							<div className="flex items-center paragraph relative gap-3 mt-4 font-medium">
-								<Link
+								<a
 									href={`https://app.toolbird.io/auth/register`}
+									onClick={() => {
+										// @ts-ignore
+										window.toolbird.track('cta_clicked', {
+											position: 'hero',
+										})
+									}}
 								>
 									<button className="bg-main border-[3px] h-12 font-medium border-main text-base text-white px-8 py-1 rounded-full">
 										Start 14-day free trial
 									</button>
-								</Link>
+								</a>
 							</div>
 						</RevealLight>
 					</div>

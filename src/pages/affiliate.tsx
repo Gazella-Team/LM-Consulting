@@ -6,7 +6,7 @@ import Stats from '@/components/stats'
 import Link from 'next/link'
 import { FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 
-export default function Contact() {
+export default function Affiliate() {
 	return (
 		<Layout white={true}>
 			<Meta
@@ -15,10 +15,10 @@ export default function Contact() {
 				keywords='Contact, Mail, Phone, Team'
 			/>
 			<PageIntro
-				hook="Get in touch today"
+				hook="Work with us"
 				highlighted=""
-				heading="Contact us"
-				paragraph="We'd love to hear from you. Our team will respond to you as fast as possible."
+				heading="Become an affiliate. Earn 30% recurring commission."
+				paragraph="Promote Toolbird, and earn commissions as you refer people to our paid plans."
 			/>
 			<section className="relative">
 				<div
