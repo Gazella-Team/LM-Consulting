@@ -6,7 +6,7 @@ import Hero02 from '@/components/hero-02'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<Hero />
+			<Hero02 />
 			<div className="mt-[-130px]">
 				<AnalyticsFeatureBox />
 			</div>
