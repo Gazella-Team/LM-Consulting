@@ -39,7 +39,7 @@ export default function Footer(props: FooterProps) {
 								href={'https://app.toolbird.io/auth/register'}
 								className="bg-gray-800 border-[3px] border-gray-800 font-normal paragraph text-xs flex text-white px-6 py-1 rounded-full"
 							>
-								Get started for free
+								Start 14-day free trial
 							</Link>
 						</div>
 						<div className="flex items-center gap-2 mt-3">

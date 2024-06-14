@@ -20,7 +20,7 @@ export default function Cta() {
 						href={'https://app.toolbird.io/auth/register'}
 						className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 					>
-						Get started for free
+						Start 14-day free trial
 					</Link>
 				</div>
 			</div>

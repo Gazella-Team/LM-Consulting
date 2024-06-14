@@ -29,6 +29,12 @@ export default function Navbar() {
 
 	return (
 		<nav className="top-0 sticky z-50">
+<<<<<<< Updated upstream
+=======
+			<div className='bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph'>
+				<p>Claim your 14-day free trial today<span><Link></Link></span> 🎉</p>
+			</div>
+>>>>>>> Stashed changes
 			<div
 				className={cn(
 					'h-[58px] w-full transition-all flex items-center',
@@ -69,7 +75,7 @@ export default function Navbar() {
 							href={'https://app.toolbird.io/auth/register'}
 							className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 						>
-							Get started for free
+							Start 14-day free trial
 						</RefLink>
 					</div>
 					<div className="flex lg:hidden cursor-pointer">
@@ -138,7 +144,7 @@ export default function Navbar() {
 							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
 							href={'https://app.toolbird.io/auth/register'}
 						>
-							Get started for free
+							Start 14-day free trial
 						</RefLink>
 					</div>
 				</div>

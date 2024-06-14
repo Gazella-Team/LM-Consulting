@@ -85,7 +85,7 @@ export default function Hero02() {
 									href={`https://app.toolbird.io/auth/register`}
 								>
 									<button className="bg-main border-[3px] h-12 font-medium border-main text-base text-white px-8 py-1 rounded-full">
-										Get started for free
+										Start 14-day free trial
 									</button>
 								</Link>
 							</div>

@@ -119,7 +119,7 @@ export default function PricingTable() {
 					className="bg-white relative rounded-3xl border-2 border-main text-gray-800 shadow-main/30 shadow-clean"
 				>
 					<div className="w-full h-[40px] flex items-center justify-center mt-[-20px]">
-						<p className="bg-main select-none paragraph text-white px-8 rounded-full py-2 text-xs font-semibold">
+						<p className="bg-main select-none heading text-white px-8 rounded-full py-2 text-xs font-semibold">
 							Popular
 						</p>
 					</div>
@@ -153,7 +153,7 @@ export default function PricingTable() {
 									href="https://app.toolbird.io/auth/register"
 									className="bg-main text-center paragraph w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
 								>
-									Get started
+									Start 14-day free trial
 								</Link>
 							</div>
 						</div>

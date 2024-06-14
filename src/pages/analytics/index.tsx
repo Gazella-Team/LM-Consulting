@@ -21,7 +21,7 @@ export default function Analytics() {
 			<PageIntro
 				buttons={[
 					{
-						text: 'Get started for free',
+						text: 'Start 14-day free trial',
 						path: 'https://app.toolbird.io/auth/register',
 					},
 					{
