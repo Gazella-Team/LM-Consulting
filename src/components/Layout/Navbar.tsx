@@ -30,7 +30,11 @@ export default function Navbar() {
 	return (
 		<nav className="top-0 sticky z-50">
 			<div className='bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph'>
+<<<<<<< Updated upstream
 				<p>Claim your 14-day free trial today<span><Link></Link></span> 🎉</p>
+=======
+				<RefLink className='underline' href={'https://app.toolbird.io/auth/register'}>Start your 14-day free trial today 🎉</RefLink>
+>>>>>>> Stashed changes
 			</div>
 			<div
 				className={cn(

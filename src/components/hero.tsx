@@ -42,7 +42,7 @@ export default function Hero() {
 							href="https://app.toolbird.io/auth/register"
 							className="bg-main border-[3px] border-main font-medium text-base text-white px-4 py-2 rounded-full"
 						>
-							Get started for free
+Start 14-day free trial
 						</Link>
 					</div>
 				</RevealLight>
