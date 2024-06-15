@@ -29,8 +29,13 @@ export default function Navbar() {
 
 	return (
 		<nav className="top-0 sticky z-50">
-			<div className='bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph'>
-				<RefLink className='underline' href={'https://app.toolbird.io/auth/register'}>Start your 14-day free trial today 🎉</RefLink>
+			<div className="bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph">
+				<RefLink
+					className="underline"
+					href={'https://app.toolbird.io/auth/register'}
+				>
+					Start your 14-day free trial today 🎉
+				</RefLink>
 			</div>
 			<div
 				className={cn(
@@ -85,7 +90,7 @@ export default function Navbar() {
 				</div>
 			</div>
 			{menuClicked && (
-				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-70px)] lg:hidden">
+				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-40px)] lg:hidden">
 					<div
 						className={cn(
 							'flex font-bold flex-col gap-6 w-[86%] mx-auto'
@@ -138,7 +143,7 @@ export default function Navbar() {
 							Log in
 						</RefLink>
 						<RefLink
-							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
+							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full "
 							href={'https://app.toolbird.io/auth/register'}
 						>
 							Start 14-day free trial

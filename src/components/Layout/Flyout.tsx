@@ -3,13 +3,14 @@ import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { ChartBarIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { PieChart } from 'lucide-react'
 
 const solutions = [
 	{
 		name: 'Web Analytics',
 		description: 'Privacy-first web analytics of your visitors',
 		href: '/analytics',
-		icon: ChartBarIcon,
+		icon: <PieChart className='text-gray-800 h-[18px] w-[18px]' />,
 	},
 	//{ name: 'Uptime Monitoring', description: 'Monitor all your systems, servers and environments', href: '/coming-soon', icon: ArrowPathRoundedSquareIcon },
 	//{ name: 'User feedback', description: "Collect all your user-feedback in one place, to better your platform", href: '/coming-soon', icon: ChatBubbleLeftRightIcon },
@@ -42,11 +43,8 @@ export default function Flyout() {
 									className="group relative rounded-xl w-full p-4 hover:bg-slate-50"
 								>
 									<div>
-										<div className="font-semibold flex items-center gap-2 text-gray-800">
-											<item.icon
-												className="h-5 w-5 text-gray-800 group-hover:text-main"
-												aria-hidden="true"
-											/>
+										<div className="font-semibold font-[Sora] flex items-center gap-2 text-gray-800">
+											{item.icon}
 											{item.name}
 										</div>
 										<p className="mt-1 text-gray-600 paragraph font-normal">
