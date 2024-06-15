@@ -3,6 +3,7 @@ import { Reveal } from './Animations/Reveal'
 import { RevealLight } from './Animations/RevealLight'
 import useMediaQuery from '@/hooks/use-media-query'
 import CustomerSlider from './customer-slider'
+import toolbird from '@toolbird/web'
 
 export default function Hero02() {
 	const { device } = useMediaQuery()
@@ -74,7 +75,8 @@ export default function Hero02() {
 						</Reveal>
 						<Reveal delayTime={0.2}>
 							<p className="text-base md:text-lg xl:text-xl font-regular paragraph mb-2 md:max-w-[500px] w-[85%] text-gray-600">
-								Achieve better user insights with Toolbird, and build better products based on your users needs.
+								Achieve better user insights with Toolbird, and
+								build better products based on your users needs.
 							</p>
 						</Reveal>
 						<RevealLight delayTime={0.4}>
@@ -89,7 +91,7 @@ export default function Hero02() {
 									}}
 								>
 									<button className="bg-main border-[3px] h-12 font-medium border-main text-base text-white px-8 py-1 rounded-full">
-										Get started for free
+										Start 14-day free trial
 									</button>
 								</a>
 							</div>

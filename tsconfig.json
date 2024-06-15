@@ -22,8 +22,7 @@
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		".contentlayer/generated",
-		"src/content/posts/many-saas-tools-vs-one-collective-toolbox.mdx"
+		".contentlayer/generated"
 	],
 	"exclude": ["node_modules"]
 }

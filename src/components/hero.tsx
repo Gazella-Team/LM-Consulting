@@ -6,7 +6,7 @@ import { annotate } from 'rough-notation'
 
 export default function Hero() {
 	return (
-		<section className="py-24 pt-[60px] relative text-center">
+		<section className="py-24 pt-[60px] min-h-[900px] relative text-center">
 			<div className="w-[86%] mx-auto max-w-6xl relative flex flex-col gap-5">
 				<Reveal delayTime={0}>
 					<p className="font-[Caveat] text-main mb-4 text-2xl md:text-3xl">
@@ -14,7 +14,7 @@ export default function Hero() {
 					</p>
 				</Reveal>
 				<Reveal delayTime={0.1}>
-					<h1 className="text-3xl md:text-4xl xl:text-5xl max-w-[1300px] mx-auto font-extrabold text-gray-800 xl:leading-[60px]">
+					<h1 className="text-3xl md:text-4xl xl:text-6xl max-w-[1300px] mx-auto font-extrabold text-gray-800 xl:leading-[60px]">
 						Get{' '}
 						<span className="bg-main/10 text-gray-800 mb-2 md:mb-0 block md:inline-block p-2 py-1 rounded-xl">
 							Web Analytics,
@@ -40,9 +40,9 @@ export default function Hero() {
 					<div className="flex items-center paragraph relative justify-center gap-3 mt-4 font-medium">
 						<Link
 							href="https://app.toolbird.io/auth/register"
-							className="bg-main border-[3px] border-main font-normal text-sm text-white px-4 py-1 rounded-full"
+							className="bg-main border-[3px] border-main font-medium text-base text-white px-4 py-2 rounded-full"
 						>
-							Get started for free
+Start 14-day free trial
 						</Link>
 					</div>
 				</RevealLight>

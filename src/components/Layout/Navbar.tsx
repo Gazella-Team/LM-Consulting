@@ -29,8 +29,13 @@ export default function Navbar() {
 
 	return (
 		<nav className="top-0 sticky z-50">
-			<div className='bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph'>
-				<p>The first version of Toolbird is officially live for all users 🎉</p>
+			<div className="bg-white border-b border-gray-600/10 hidden text-gray-600 lg:flex items-center justify-center h-10 text-sm paragraph">
+				<RefLink
+					className="underline"
+					href={'https://app.toolbird.io/auth/register'}
+				>
+					Start your 14-day free trial today 🎉
+				</RefLink>
 			</div>
 			<div
 				className={cn(
@@ -60,6 +65,7 @@ export default function Navbar() {
 							About
 						</RefLink>
 						<RefLink href="/blog">Blog</RefLink>
+						<RefLink href="https://docstoolbird.io">Docs</RefLink>
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
 						<RefLink
@@ -72,7 +78,7 @@ export default function Navbar() {
 							href={'https://app.toolbird.io/auth/register'}
 							className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 						>
-							Get started for free
+							Start 14-day free trial
 						</RefLink>
 					</div>
 					<div className="flex lg:hidden cursor-pointer">
@@ -141,7 +147,7 @@ export default function Navbar() {
 							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full "
 							href={'https://app.toolbird.io/auth/register'}
 						>
-							Get started for free
+							Start 14-day free trial
 						</RefLink>
 					</div>
 				</div>

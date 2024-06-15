@@ -1,5 +1,4 @@
 import Layout from '@/components/Layout'
-import CustomerSlider from '@/components/customer-slider'
 import AnalyticsFeatureBox from '@/components/feature-boxes/analytics-feature-box'
 import Hero02 from '@/components/hero-02'
 
