@@ -18,7 +18,12 @@ export const getStaticProps: GetStaticProps<{
 }> = async (context: GetStaticPropsContext) => {
 	return {
 		props: {
-			posts: allPosts,
+			posts: allPosts.sort((a, b) => {
+				return (
+					new Date(b.publishedAt).getTime() -
+					new Date(a.publishedAt).getTime()
+				)
+			}),
 		},
 	}
 }

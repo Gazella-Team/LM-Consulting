@@ -45,7 +45,14 @@ export const getStaticProps: GetStaticProps<{
 	return {
 		props: {
 			category: tag,
-			posts: allPosts.filter((post) => post.category === tag),
+			posts: allPosts
+				.filter((post) => post.category === tag)
+				.sort((a, b) => {
+					return (
+						new Date(b.publishedAt).getTime() -
+						new Date(a.publishedAt).getTime()
+					)
+				}),
 		},
 	}
 }
