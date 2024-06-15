@@ -24,6 +24,6 @@
 		"**/*.tsx",
 		".contentlayer/generated",
 		"src/content/posts/many-saas-tools-vs-one-collective-toolbox.mdx"
-	],
+, "src/content/posts/introducing-toolbird-analytics.mdx"	],
 	"exclude": ["node_modules"]
 }

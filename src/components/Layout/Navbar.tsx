@@ -65,6 +65,7 @@ export default function Navbar() {
 							About
 						</RefLink>
 						<RefLink href="/blog">Blog</RefLink>
+						<RefLink href="/blog">Docs</RefLink>
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
 						<RefLink
