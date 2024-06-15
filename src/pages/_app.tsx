@@ -4,6 +4,12 @@ import NiceModal from '@ebay/nice-modal-react'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'
 import { Toaster } from 'react-hot-toast'
+import toolbird from '@toolbird/web'
+
+toolbird.init({
+	domain: 'toolbird.io',
+})
+toolbird.setTrackingEnabled(true)
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
@@ -11,12 +17,11 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Meta />
 			<Component {...pageProps} />
 			<Toaster />
-			<Script
+			{/*<Script
 				src="https://api.toolbird.io/js/script.js"
 				strategy="lazyOnload"
 				data-domain="toolbird.io"
-			/>
+			/>*/}
 		</NiceModal.Provider>
 	)
 }
-
