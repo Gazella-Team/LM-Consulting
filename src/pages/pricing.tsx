@@ -4,6 +4,7 @@ import BlurSection from '@/components/blur-section'
 import PricingTable from '@/components/pricingtable'
 import PricingFAQ from '@/components/FAQ/PricingFAQ'
 import Meta from '@/components/Layout/Meta'
+import CustomerSlider from '@/components/customer-slider'
 
 export default function Pricing() {
 	return (

@@ -167,25 +167,34 @@ const imageData = [
 ]
 
 export default function CustomerSlider() {
-	return (
-		<section
-			className=" bg-white max-w-7xl mx-auto lg:rounded-[100px] backdrop:blur-3xl"
-		>
-			<div>
-				<Slider
-					width="300px"
-					duration={70}
-					pauseOnHover={false}
-					blurBorders={true}
-					blurBoderColor={'#fff'}
-				>
-					{imageData.map((v) => (
-						<Slider.Slide key={v}>
-							<img className='w-[200px]' src={v.path}></img>
-						</Slider.Slide>
-					))}
-				</Slider>
-			</div>
-		</section>
-	)
-}
+    return (
+      <section className="flex items-center overflow-hidden">
+        <div className='flex items-center'>
+          <Slider
+            width="400px"
+            duration={200}
+            pauseOnHover={false}
+            blurBorders={true}
+            blurBoderColor={"#fff"}
+          >
+            {imageData.map((v) => (
+              <Slider.Slide key={v}>
+				<div className='flex shadow-clean mb-14 shadow-main/10 flex-col gap-10 w-[500px] text-gray-800 paragraph bg-white mr-10 border rounded-2xl border-gray-600/10 p-10 py-8'>
+					<p className='text-gray-600'>
+					"Dub.co has been a game-changer for our marketing campaigns – our links get hundreds of thousands of clicks monthly and with Dub, we are able..."
+					</p>
+					<div className='flex items-center justify-between'>
+						<div className='flex flex-col gap-[2px]'>
+							<h3 className="font-semibold">Andreas Pedersen</h3>
+							<p className='text-gray-600 font-normal text-sm'>Founder, Upboost.ai</p>
+						</div>
+						<img className='w-11 border border-gray-600/10 h-11 rounded-full' src='/users/user-headshots/andreas-pedersen.webp'></img>
+					</div>
+				</div>
+              </Slider.Slide>
+            ))}
+          </Slider>
+        </div>
+      </section>
+    );
+  }
