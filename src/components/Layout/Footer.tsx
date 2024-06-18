@@ -25,6 +25,10 @@ const FOOTER_LINKS: {
 		title: 'Free Tools',
 		links: [
 			{
+				label: 'All tools',
+				href: '/tools',
+			},
+			{
 				label: 'UTM Link Generator',
 				href: '/tools/utm-generator',
 			},
