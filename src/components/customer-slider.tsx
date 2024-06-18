@@ -181,7 +181,7 @@ export default function CustomerSlider() {
               <Slider.Slide key={v}>
 				<div className='flex shadow-clean mb-14 shadow-main/10 flex-col gap-10 w-[500px] text-gray-800 paragraph bg-white mr-10 border rounded-2xl border-gray-600/10 p-10 py-8'>
 					<p className='text-gray-600'>
-					"Dub.co has been a game-changer for our marketing campaigns – our links get hundreds of thousands of clicks monthly and with Dub, we are able..."
+					&quot;Dub.co has been a game-changer for our marketing campaigns – our links get hundreds of thousands of clicks monthly and with Dub, we are able...&quot;
 					</p>
 					<div className='flex items-center justify-between'>
 						<div className='flex flex-col gap-[2px]'>
