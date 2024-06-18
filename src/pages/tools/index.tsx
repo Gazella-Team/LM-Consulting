@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Meta from '@/components/Layout/Meta'
 import { Link as LinkIcon } from 'lucide-react'
 import Link from 'next/link'
 
@@ -19,6 +20,10 @@ const TOOLS = [
 export default function Tools() {
 	return (
 		<Layout>
+			<Meta
+				title="Free to use Tools | Toolbird.io"
+				description="Free to use tools for web analytics, feedback, surveys, SEO, and more."
+			/>
 			<div className="bg-white border border-gray-600/10 p-10 mt-10 mx-auto max-w-6xl rounded-3xl">
 				<h1 className="text-3xl text-center text-gray-800 font-bold">
 					Free to use Tools
