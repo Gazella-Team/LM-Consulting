@@ -19,7 +19,7 @@ const TOOLS = [
 export default function Tools() {
 	return (
 		<Layout>
-			<div className="bg-white shadow border border-gray-600/10 p-10 mt-10 mx-auto max-w-6xl rounded-3xl">
+			<div className="bg-white border border-gray-600/10 p-10 mt-10 mx-auto max-w-6xl rounded-3xl">
 				<h1 className="text-3xl text-center text-gray-800 font-bold">
 					Free to use Tools
 				</h1>
