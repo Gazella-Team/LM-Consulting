@@ -263,8 +263,8 @@ export default function UTMGeneratorTool() {
 												Clear fields
 											</button>
 										</div>
-										<div className="w-full flex rounded-xl bg-white items-center justify-between p-2 border">
-											<p className="text-sm text-main">
+										<div className="w-full flex rounded-xl gap-4 bg-white items-center justify-between p-2 border">
+											<p className="text-sm flex-grow flex-1 text-main overflow-hidden whitespace-wrap break-all">
 												{url}
 											</p>
 											<Tooltip content="Copy to clipboard">
