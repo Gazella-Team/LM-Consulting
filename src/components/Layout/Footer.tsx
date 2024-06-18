@@ -22,6 +22,19 @@ const FOOTER_LINKS: {
 		],
 	},
 	{
+		title: 'Free Tools',
+		links: [
+			{
+				label: 'All tools',
+				href: '/tools',
+			},
+			{
+				label: 'UTM Link Generator',
+				href: '/tools/utm-generator',
+			},
+		],
+	},
+	{
 		title: 'Company',
 		links: [
 			{
@@ -109,7 +122,11 @@ export default function Footer(props: FooterProps) {
 								</h2>
 								<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
 									{group.links.map((link) => (
-										<Link href={link.href} key={link.href}>
+										<Link
+											href={link.href}
+											key={link.href}
+											className="hover:text-gray-800 transition-all"
+										>
 											{link.label}
 										</Link>
 									))}

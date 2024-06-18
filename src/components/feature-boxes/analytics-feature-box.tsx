@@ -40,6 +40,7 @@ export default function AnalyticsFeatureBox() {
 				<img
 					className="border rounded-2xl border-gray-600/10"
 					src="/showcases/platform.webp"
+					alt="Web Analytics Overview"
 				/>
 				<div className="grid grid-cols-1 lg:grid-cols-2 paragraph gap-x-32 gap-y-16 w-[90%] mx-auto">
 					<div className="flex gap-4">
