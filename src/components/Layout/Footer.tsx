@@ -1,14 +1,52 @@
 import Link from 'next/link'
-import { FaTiktok, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { FaInstagram } from 'react-icons/fa'
+import { FaTwitter } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
-import { cn } from 'utils/cs'
 import Cta from './Cta'
 
 type FooterProps = {
 	fullWidth?: boolean
 	noCta?: boolean
 }
+
+const FOOTER_LINKS: {
+	title: string
+	links: { label: string; href: string; target?: string }[]
+}[] = [
+	{
+		title: 'Products',
+		links: [
+			{
+				label: 'Web Analytics',
+				href: '/analytics',
+			},
+		],
+	},
+	{
+		title: 'Company',
+		links: [
+			{
+				label: 'About us',
+				href: '/blog/introducing-toolbird',
+			},
+			{
+				label: 'Blog Posts',
+				href: '/blog',
+			},
+			{
+				label: 'Open Startup',
+				href: 'https://app.toolbird.io/share/toolbird.io',
+			},
+			{
+				label: 'Terms & Conditions',
+				href: '/legal/terms',
+			},
+			{
+				label: 'Privacy Policy',
+				href: '/legal/privacy',
+			},
+		],
+	},
+]
 
 export default function Footer(props: FooterProps) {
 	return (
@@ -28,7 +66,11 @@ export default function Footer(props: FooterProps) {
 				<div className="w-[86%] mx-auto min-h-[370px] max-w-6xl grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
 					<div className="flex flex-col gap-6">
 						<div className="flex flex-col gap-3">
-							<img className="w-28" src="/logos/finallogo.svg" />
+							<img
+								className="w-28"
+								src="/logos/finallogo.svg"
+								alt="Toolbird Logo"
+							/>
 							<p className="text-gray-500 paragraph text-sm max-w-xs font-regular">
 								Get Web Analytics, Feedback Hub and User
 								Surveys, all collected in one place.
@@ -60,47 +102,20 @@ export default function Footer(props: FooterProps) {
 						</div>
 					</div>
 					<div className="grid grid-cols-2 mb-24 lg:grid-cols-3 paragraph gap-16">
-						<div>
-							<h2 className="text-sm mb-5 font-semibold text-gray-800">
-								Products
-							</h2>
-							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-								<Link href={'/analytics'}>Web Analytics</Link>
-								<Link href={'/coming-soon'}>
-									Feedback Hub<br></br>(under developmet)
-								</Link>
-								<Link href={'/coming-soon'}>
-									User Surveys<br></br>(under developmet)
-								</Link>
+						{FOOTER_LINKS.map((group) => (
+							<div key={group.title}>
+								<h2 className="text-sm mb-5 font-semibold text-gray-800">
+									{group.title}
+								</h2>
+								<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
+									{group.links.map((link) => (
+										<Link href={link.href} key={link.href}>
+											{link.label}
+										</Link>
+									))}
+								</div>
 							</div>
-						</div>
-						<div>
-							<h2 className="text-sm mb-5 font-semibold text-gray-800">
-								Company
-							</h2>
-							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-								<Link href={'/blog/introducing-toolbird'}>
-									About
-								</Link>
-								<Link href={'/blog'}>Blog</Link>
-								<Link
-									href={
-										'https://app.toolbird.io/share/toolbird.io'
-									}
-								>
-									Public building
-								</Link>
-							</div>
-						</div>
-						<div>
-							<h2 className="text-sm mb-5 font-semibold text-gray-800">
-								Legal
-							</h2>
-							<div className="text-gray-500 text-sm flex flex-col gap-5 font-regular">
-								<Link href={'/legal/terms'}>Terms</Link>
-								<Link href={'/legal/privacy'}>Privacy</Link>
-							</div>
-						</div>
+						))}
 					</div>
 				</div>
 				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
@@ -114,9 +129,11 @@ export default function Footer(props: FooterProps) {
 							Gazella Team
 						</a>
 					</p>
-					<div className='flex items-center gap-4'>
+					<div className="flex items-center gap-4">
 						<p>lasse@toolbird.io</p>
-						<p className="font-[Caveat] text-xl">Built proudly in 🇪🇺</p>
+						<p className="font-[Caveat] text-xl">
+							Built proudly in 🇪🇺
+						</p>
 					</div>
 				</div>
 			</footer>
