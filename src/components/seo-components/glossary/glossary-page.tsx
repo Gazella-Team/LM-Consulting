@@ -57,7 +57,7 @@ export default function GlossaryPage() {
 					className="py-12 min-h-[490px] flex items-center justify-center border-y border-gray-600/10"
 				>
 						<div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] mx-auto">
-                            {glossaryData.map((v) => <GlossaryCard link={v.link} term={v.term} description={v.description} />)}
+                            {glossaryData.map((v) => <GlossaryCard key={v.term} link={v.link} term={v.term} description={v.description} />)}
 						</div>
 				</div>
 			</div>
