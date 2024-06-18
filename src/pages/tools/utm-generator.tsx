@@ -77,7 +77,7 @@ export default function UTMGeneratorTool() {
 						background:
 							'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
 					}}
-					className="mt-14 py-24 px-12 max-w-7xl mx-auto rounded-3xl lg:rounded-[100px] backdrop:blur-3xl border-y border-gray-600/10"
+					className="mt-14 py-24 p-2 md:px-12 max-w-7xl mx-auto rounded-3xl lg:rounded-[100px] backdrop:blur-3xl border-y border-gray-600/10"
 				>
 					<div className="flex flex-col gap-12 mx-auto max-w-4xl">
 						<div className="flex flex-col gap-4">
@@ -263,8 +263,8 @@ export default function UTMGeneratorTool() {
 												Clear fields
 											</button>
 										</div>
-										<div className="w-full flex rounded-xl bg-white items-center justify-between p-2 border">
-											<p className="text-sm text-main">
+										<div className="w-full flex rounded-xl gap-4 bg-white items-center justify-between p-2 border">
+											<p className="text-sm flex-grow flex-1 text-main overflow-hidden whitespace-wrap break-all">
 												{url}
 											</p>
 											<Tooltip content="Copy to clipboard">
