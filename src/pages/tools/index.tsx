@@ -3,7 +3,7 @@ import { Link as LinkIcon } from 'lucide-react'
 import Link from 'next/link'
 
 const CATEGORIES = {
-	analytics: 'Web Analytics',
+	analytics: 'Web Analytics Tools',
 }
 
 const TOOLS = [
@@ -19,7 +19,7 @@ const TOOLS = [
 export default function Tools() {
 	return (
 		<Layout>
-			<div className="bg-white shadow border border-gray-600/10 p-8 mt-10 mx-auto max-w-6xl rounded-xl">
+			<div className="bg-white shadow border border-gray-600/10 p-10 mt-10 mx-auto max-w-6xl rounded-3xl">
 				<h1 className="text-3xl text-center text-gray-800 font-bold">
 					Free to use Tools
 				</h1>
@@ -53,7 +53,7 @@ export default function Tools() {
 											</h3>
 											<p className="text-xs text-gray-700">
 												Generate unique UTM parameters
-												for your campaign
+												for tracking your campaign
 											</p>
 										</div>
 									</Link>
