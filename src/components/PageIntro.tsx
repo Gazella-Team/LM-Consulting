@@ -43,7 +43,7 @@ export default function PageIntro(props: PageIntroProps) {
 								<Link
 									target={props.buttons[0].target}
 									href={'/'}
-									className="bg-main border-[3px] border-main text-white text-xs px-4 py-1 rounded-full"
+									className="bg-gray-800 border-[3px] border-gray-800 text-white text-xs px-4 py-1 rounded-full"
 								>
 									{props.buttons[0].text}
 								</Link>
