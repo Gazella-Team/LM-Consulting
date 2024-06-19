@@ -28,7 +28,7 @@ export default function Tools() {
 				<h1 className="text-3xl text-center text-gray-800 font-bold">
 					Free to use Tools
 				</h1>
-				<div className="flex flex-col gap-8">
+				<div className="flex flex-col gap-8 mt-10">
 					{Object.keys(CATEGORIES).map((category) => (
 						<div key={category}>
 							<h2 className="text-lg font-semibold text-gray-800">
@@ -48,10 +48,10 @@ export default function Tools() {
 										href={tool.link}
 										className="hover:bg-gray-50 cursor-pointer rounded-xl p-2 flex items-center gap-2"
 									>
-										<div className="text-gray-700 rounded-full p-2 bg-gray-200">
+										<div className="text-gray-700 rounded-full p-2 bg-slate-50 border border-gray-600/10">
 											{tool.icon}
 										</div>
-										<div className="flex flex-col gap-1">
+										<div className="flex paragraph flex-col gap-1">
 											<h3 className="text-sm text-gray-800 font-medium">
 												UTM Generator for Campaign
 												Tracking
