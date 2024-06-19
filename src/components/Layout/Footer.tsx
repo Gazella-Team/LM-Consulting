@@ -42,12 +42,12 @@ const FOOTER_LINKS: {
 				href: '/blog/introducing-toolbird',
 			},
 			{
-				label: 'Blog Posts',
-				href: '/blog',
-			},
-			{
 				label: 'Open Startup',
 				href: 'https://app.toolbird.io/share/toolbird.io',
+			},
+			{
+				label: 'Partners',
+				href: '/partners',
 			},
 			{
 				label: 'Terms & Conditions',
@@ -56,6 +56,15 @@ const FOOTER_LINKS: {
 			{
 				label: 'Privacy Policy',
 				href: '/legal/privacy',
+			},
+		],
+	},
+	{
+		title: 'Resources',
+		links: [
+			{
+				label: 'Blog Posts',
+				href: '/blog',
 			},
 		],
 	},

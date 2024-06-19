@@ -30,7 +30,7 @@ export default function Partners() {
 				hook="Who we work with"
 				highlighted="Partners"
 				heading="Toolbird"
-				paragraph="Learn more about who we work with on a day-to-day basis, to "
+				paragraph="Learn more about the companies we work with on a day-to-day basis to provide as much value for our users as possible"
 			/>
 		</Layout>
 	)
