@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Meta from '@/components/Layout/Meta'
 import PageIntro from '@/components/PageIntro'
+import AffiliateProcess from '@/components/affiliate/process'
 import Goals from '@/components/goals'
 import Stats from '@/components/stats'
 import Link from 'next/link'
@@ -10,59 +11,24 @@ export default function Affiliate() {
 	return (
 		<Layout white={true}>
 			<Meta
-				title={`Contact - Toolbird.io`}
+				title={`Become an affiliate - Toolbird.io`}
 				description="Get in touch with the team behind Toolbird today."
 				keywords='Contact, Mail, Phone, Team'
 			/>
 			<PageIntro
+			buttons={[
+								{
+									text: 'Become an affiliate',
+									path: 'https://app.toolbird.io/share/toolbird.io',
+									target: '_blank',
+								},
+							]}
 				hook="Work with us"
 				highlighted=""
 				heading="Become an affiliate. Earn 30% recurring commission."
 				paragraph="Promote Toolbird, and earn commissions as you refer people to our paid plans."
 			/>
-			<section className="relative">
-				<div
-					style={{
-						background:
-							'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
-					}}
-					className="w-[86%] text-center flex flex-col gap-14 paragraph p-14 mx-auto max-w-lg shadow-sm text-gray-800 rounded-3xl border border-gray-600/10"
-				>
-					<div>
-						<h2 className="font-semibold mb-3">Email</h2>
-						<div className="text-gray-600">
-							<p>lasse@toolbird.io</p>
-							<p>simon@toolbird.io</p>
-						</div>
-					</div>
-					<div>
-						<h2 className="font-semibold mb-3">Phone</h2>
-						<div className="text-gray-600">
-							<p>+45 50695272</p>
-							<p>+45 51253371</p>
-						</div>
-					</div>
-					<div>
-						<h2 className="font-semibold mb-6">Socials</h2>
-						<div className="flex flex-col items-center gap-6 mt-3">
-							<Link
-								href={
-									'https://www.linkedin.com/company/toolbird-io/'
-								}
-								className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all"
-							>
-								<FaLinkedin color="rgb(31 41 55)" />
-							</Link>
-							<Link
-								href={'https://x.com/lasse_osmann'}
-								className="border p-3 rounded-full border-gray-600/10 hover:bg-slate-50 transition-all"
-							>
-								<FaTwitter color="rgb(31 41 55)" />
-							</Link>
-						</div>
-					</div>
-				</div>
-			</section>
+			<AffiliateProcess />
 		</Layout>
 	)
 }
