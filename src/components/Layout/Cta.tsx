@@ -31,6 +31,7 @@ export default function Cta() {
 				</div>
 			</div>
 		</section>
+		{/*<CustomerSlider />*/}
 		</>
 	)
 }
