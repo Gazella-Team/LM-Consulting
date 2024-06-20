@@ -46,10 +46,6 @@ const FOOTER_LINKS: {
 				href: 'https://app.toolbird.io/share/toolbird.io',
 			},
 			{
-				label: 'Partners',
-				href: '/partners',
-			},
-			{
 				label: 'Terms & Conditions',
 				href: '/legal/terms',
 			},
