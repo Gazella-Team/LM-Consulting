@@ -154,7 +154,7 @@ export default function Footer(props: FooterProps) {
 					<div className="flex items-center gap-4">
 						<p>lasse@toolbird.io</p>
 						<p className="font-[Caveat] text-xl">
-							Built proudly in 🇪🇺
+							Made and hosted in the EU 🇪🇺
 						</p>
 					</div>
 				</div>

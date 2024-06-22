@@ -11,7 +11,7 @@ const TOOLS = [
 	{
 		title: 'UTM Generator for Campaign Tracking',
 		description: 'Generate unique UTM parameters for your campaign',
-		category: 'analytics',
+		category: 'Web Analytics',
 		link: '/tools/utm-generator',
 		icon: <LinkIcon size={20} strokeWidth={2.5} />,
 	},
@@ -20,54 +20,52 @@ const TOOLS = [
 export default function Tools() {
 	return (
 		<Layout>
+			{/* TODO: Create SEO banner from image.social when we have 3 blogs */}
 			<Meta
-				title="Free to use Tools | Toolbird.io"
-				description="Free to use tools for web analytics, feedback, surveys, SEO, and more."
+				title={`Free to use tools - Toolbird`}
+				description="Latest news and updates from Toolbird aswell as guides."
 			/>
-			<div className="bg-white border border-gray-600/10 p-10 mt-10 mx-auto max-w-6xl rounded-3xl">
-				<h1 className="text-3xl text-center text-gray-800 font-bold">
-					Free to use Tools
-				</h1>
-				<div className="flex flex-col gap-8 mt-10">
-					{Object.keys(CATEGORIES).map((category) => (
-						<div key={category}>
-							<h2 className="text-lg font-semibold text-gray-800">
-								{
-									CATEGORIES[
-										category as keyof typeof CATEGORIES
-									]
-								}
-							</h2>
-							<hr className="my-2" />
-							<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-								{TOOLS.filter(
-									(tool) => tool.category === category
-								).map((tool) => (
-									<Link
-										key={tool.link}
-										href={tool.link}
-										className="hover:bg-gray-50 cursor-pointer rounded-xl p-2 flex items-center gap-2"
-									>
-										<div className="text-gray-700 rounded-full p-2 bg-slate-50 border border-gray-600/10">
-											{tool.icon}
-										</div>
-										<div className="flex paragraph flex-col gap-1">
-											<h3 className="text-sm text-gray-800 font-medium">
-												UTM Generator for Campaign
-												Tracking
-											</h3>
-											<p className="text-xs text-gray-700">
-												Generate unique UTM parameters
-												for tracking your campaign
-											</p>
-										</div>
-									</Link>
-								))}
-							</div>
+			<div
+				style={{
+					background:
+						'radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 40%)',
+				}}
+				className="mt-12"
+			>
+				<div className="max-w-6xl w-[86%] mx-auto mb-10">
+					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
+						Free to use tools
+					</h1>
+					<h2 className="text-xl paragraph font-regular text-gray-600">
+						Dive into the variours supplementary tools provided by Toolbird.
+					</h2>
+				</div>
+				<div
+					style={{
+						background:
+							'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
+					}}
+					className="py-12 flex items-center justify-center border-y border-gray-600/10"
+				>
+						<div className="max-w-6xl w-[86%] gap-8 md:gap-6 mx-auto grid grid-cols-1 md:grid-cols-2">
+							{TOOLS.map((tool) => (
+								<ToolCard tool={tool} />
+							))}
 						</div>
-					))}
 				</div>
 			</div>
 		</Layout>
+	)
+}
+
+const ToolCard = ({tool}:{tool:any}) => {
+	return (
+		<Link href={tool.link} className='bg-white rounded-2xl border flex flex-col gap-6 text-gray-800 border-gray-600/10 p-10 hover:bg-slate-50 transition all'>
+			<p className='flex items-center gap-1 paragraph font-semibold text-sm text-main'><div className='w-2 h-2 rounded-full bg-main text-sm'></div> {tool.category}</p>
+			<div className='flex flex-col gap-1'>
+				<h2 className='font-semibold'>{tool.title}</h2>
+				<p className='text-gray-600 font-normal paragraph text-sm'>{tool.description}</p>
+			</div>
+		</Link>
 	)
 }
