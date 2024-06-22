@@ -11,16 +11,7 @@ type GlossaryPageProps = {
 }
 
 const glossaryData = [
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page. The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
-    {term: "Bounce Rate", description: "The percentage of visitors who navigate away from a website after viewing only one page.", link:"/glossary/glossary-single"},
+    {term: "Bounce Rate", description: "Bounce rate in web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page. It measures the effectiveness of a website in engaging visitors and encouraging them to explore more content. A high bounce rate often indicates that the landing page was not compelling enough for users to continue browsing, while a low bounce rate suggests that users are finding the website engaging and are likely exploring further.", link:"/glossary/glossary-single"},
 ]
 
 export default function GlossaryPage() {
@@ -54,7 +45,7 @@ export default function GlossaryPage() {
 						background:
 							'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
 					}}
-					className="py-12 min-h-[490px] flex items-center justify-center border-y border-gray-600/10"
+					className="py-12 flex items-center justify-center border-y border-gray-600/10"
 				>
 						<div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] mx-auto">
                             {glossaryData.map((v) => <GlossaryCard key={v.term} link={v.link} term={v.term} description={v.description} />)}

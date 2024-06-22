@@ -24,11 +24,7 @@ export default function GlossarySite() {
                     <div className="w-[100px] my-6 mb-14 h-1 bg-main"></div>
                     <div>
                         <p className="text-gray-600 paragraph">
-                        Accelerated Mobile Pages (AMP) is an open source framework originally developed by Google for creating fast-loading web pages that optimize the user experience on mobile devices. AMP achieves its speed by simplifying HTML code and using the extensive caching provided by Google&apos;s servers to deliver content quickly.
-<br></br><br></br>
-For example, a news site can use AMP for its articles so that they load almost instantly on mobile devices. This is especially useful for users in areas with slower internet connections. AMP pages are stripped-down versions of regular web pages, but include essential content such as text, images, and video, while omitting elements that could slow load times, such as certain scripts and third-party JavaScript.
-<br></br><br></br>
-Adopting AMP can significantly improve mobile browsing speeds, reduce page load times, and potentially increase traffic and engagement by providing a better user experience and higher visibility in mobile search results.
+						Bounce rate in web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page. It measures the effectiveness of a website in engaging visitors and encouraging them to explore more content.<br></br><br></br>A high bounce rate often indicates that the landing page was not compelling enough for users to continue browsing, while a low bounce rate suggests that users are finding the website engaging and are likely exploring further.
                         </p>
                     </div>
 				</div>
