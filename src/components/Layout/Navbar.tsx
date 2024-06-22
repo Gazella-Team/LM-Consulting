@@ -8,9 +8,10 @@ import { Reveal } from '../Animations/Reveal'
 import RefLink from 'next/link'
 import useScroll from '@/hooks/use-scroll'
 import { cn } from '../Accordion'
-import Flyout from './Flyout'
+import Flyout from './Flyouts/Flyout'
 import localFont from 'next/font/local'
 import { RevealLight } from '../Animations/RevealLight'
+import Resources from './Flyouts/Resources'
 
 const ToolbirdFont = localFont({
 	src: [
@@ -64,8 +65,7 @@ export default function Navbar() {
 						<RefLink href="/blog/introducing-toolbird">
 							About
 						</RefLink>
-						<RefLink href="/blog">Blog</RefLink>
-						<RefLink href="https://docs.toolbird.io">Docs</RefLink>
+						<Resources />
 					</div>
 					<div className="w-[250px] items-center justify-end gap-5 font-medium text-gray-800 hidden lg:flex">
 						<RefLink
