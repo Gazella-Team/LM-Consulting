@@ -49,7 +49,7 @@ export default function Tools() {
 				>
 						<div className="max-w-6xl w-[86%] gap-8 md:gap-6 mx-auto grid grid-cols-1 md:grid-cols-2">
 							{TOOLS.map((tool) => (
-								<ToolCard tool={tool} />
+								<ToolCard key={tool.title} tool={tool} />
 							))}
 						</div>
 				</div>
