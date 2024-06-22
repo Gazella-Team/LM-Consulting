@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { BookOpenIcon, ChartBarIcon, DocumentTextIcon } from '@heroicons/react/24/outline'
+import { BookOpenIcon, ChartBarIcon, DocumentTextIcon, GlobeAltIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { PieChart } from 'lucide-react'
 
@@ -17,6 +17,18 @@ const resources = [
 		description: 'Privacy-first web analytics of your visitors',
 		href: 'https://docs.toolbird.io/',
 		icon: <DocumentTextIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
+	},
+	{
+		name: 'Extra tools',
+		description: 'Privacy-first web analytics of your visitors',
+		href: '/tools',
+		icon: <WrenchScrewdriverIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
+	},
+    {
+		name: 'Glossary',
+		description: 'Privacy-first web analytics of your visitors',
+		href: '/glossary',
+		icon: <GlobeAltIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
 	},
 ]
 

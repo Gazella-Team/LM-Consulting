@@ -19,11 +19,11 @@ export default function GlossaryPage() {
 		<Layout>
 			{/* TODO: Create SEO banner from image.social when we have 3 blogs */}
 			<Meta
-				title={`Glossary | Toolbird`}
+				title={`User Insights Glossary - Learn and compare the most essential terms in SaaS user-insights | Toolbird`}
 				description="Latest news and updates from Toolbird aswell as guides."
 			/>
             <div className='hidden lg:flex justify-end z-0'>
-                <img className='w-[400px] mt-8 absolute' src='/logos/birdlogo.png'></img>
+                <img className='w-[300px] mt-16 mr-20 absolute' src='/logos/birdlogo.png'></img>
             </div>
 			<div
 				style={{
