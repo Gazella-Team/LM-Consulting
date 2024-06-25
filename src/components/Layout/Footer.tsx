@@ -59,8 +59,20 @@ const FOOTER_LINKS: {
 		title: 'Resources',
 		links: [
 			{
-				label: 'Blog Posts',
+				label: 'Blog',
 				href: '/blog',
+			},
+			{
+				label: 'Docs',
+				href: 'https://docs.toolbird.io/',
+			},
+			{
+				label: 'Extra tools',
+				href: '/tools',
+			},
+			{
+				label: 'Glossary',
+				href: '/glossary',
 			},
 		],
 	},

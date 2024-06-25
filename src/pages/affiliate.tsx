@@ -3,6 +3,7 @@ import PricingFAQ from '@/components/FAQ/PricingFAQ'
 import Layout from '@/components/Layout'
 import Meta from '@/components/Layout/Meta'
 import PageIntro from '@/components/PageIntro'
+import SectionIntro from '@/components/SectionIntro'
 import AffiliateProcess from '@/components/affiliate/process'
 import BlurSection from '@/components/blur-section'
 import Goals from '@/components/goals'
@@ -32,6 +33,16 @@ export default function Affiliate() {
 				paragraph="Promote Toolbird, and earn commissions as you refer people to our paid plans."
 			/>
 			<AffiliateProcess />
+			<div className='mt-[-60px]'>
+				<SectionIntro
+					bottomMargin={true}
+					heading="Earn as we grow"
+					description="Track where your visitors come from, what device they are using and where in the world they are located."
+					hook="Program Benefits"
+				>
+					<p></p>
+				</SectionIntro>
+			</div>
 			<BlurSection
 					bottomMargin={true}
 					heading="Get all your answers"

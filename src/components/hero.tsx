@@ -6,7 +6,7 @@ import { annotate } from 'rough-notation'
 
 export default function Hero() {
 	return (
-		<section className="py-24 pt-[60px] min-h-[900px] relative text-center">
+		<section className="py-24 relative text-center">
 			<div className="w-[86%] mx-auto max-w-6xl relative flex flex-col gap-5">
 				<Reveal delayTime={0}>
 					<p className="font-[Caveat] text-main mb-1 text-2xl md:text-3xl">
@@ -35,9 +35,8 @@ export default function Hero() {
 					 */}
 				</Reveal>
 				<Reveal delayTime={0.2}>
-					<p className="text-base md:text-lg mx-auto xl:text-xl font-regular paragraph mb-2 max-w-[500px] w-[85%] text-gray-600">
-						As a SaaS developer you no longer need to subscribe to
-						various pricy tool-providers to have the essential tools.
+					<p className="text-base md:text-lg mx-auto xl:text-xl font-regular paragraph mb-2 max-w-[600px] w-[85%] text-gray-600">
+						Toolbird provides web analytics, feedback hub and user surveys, all in one place. Get better overview and save money today.
 					</p>
 				</Reveal>
 				<RevealLight delayTime={0.4}>
