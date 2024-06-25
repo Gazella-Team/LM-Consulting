@@ -10,9 +10,9 @@ export default function Home() {
 		<Layout white={true}>
 			<Hero02 />
 			<div className="mt-[-130px]">
-				<AnalyticsFeatureBox />
+				<Mission />
 			</div>
-			<Mission />
+			<AnalyticsFeatureBox />
 		</Layout>
 	)
 }
