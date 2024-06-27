@@ -8,7 +8,7 @@ import Mission from '@/components/mission'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<Hero />
+			<Hero02 />
 			<div className="mt-[-130px]">
 				<Mission />
 			</div>
