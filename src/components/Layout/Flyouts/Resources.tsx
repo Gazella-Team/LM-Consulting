@@ -8,25 +8,25 @@ import { PieChart } from 'lucide-react'
 const resources = [
 	{
 		name: 'Blog',
-		description: 'Privacy-first web analytics of your visitors',
+		description: 'Read our latest insights',
 		href: '/blog',
 		icon: <BookOpenIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
 	},
     {
 		name: 'Docs',
-		description: 'Privacy-first web analytics of your visitors',
+		description: 'Documentation for seting up and using each tool',
 		href: 'https://docs.toolbird.io/',
 		icon: <DocumentTextIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
 	},
 	{
 		name: 'Extra tools',
-		description: 'Privacy-first web analytics of your visitors',
+		description: 'Dive into our supplementary free-to-use tools',
 		href: '/tools',
 		icon: <WrenchScrewdriverIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
 	},
     {
 		name: 'Glossary',
-		description: 'Privacy-first web analytics of your visitors',
+		description: 'Stay up to date with the most important terms from SaaS user-insights',
 		href: '/glossary',
 		icon: <GlobeAltIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
 	},
