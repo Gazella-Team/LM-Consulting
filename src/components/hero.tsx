@@ -6,7 +6,7 @@ import { annotate } from 'rough-notation'
 
 export default function Hero() {
 	return (
-		<section className="py-24 relative text-center">
+		<section className="py-24 pt-[60px] relative text-center">
 			<div className="w-[86%] mx-auto max-w-6xl relative flex flex-col gap-5">
 				<Reveal delayTime={0}>
 					<p className="font-[Caveat] text-main mb-1 text-2xl md:text-3xl">
