@@ -15,7 +15,7 @@ export default function Hero() {
 				</Reveal>
 				<Reveal delayTime={0.1}>
 					<h1 className="text-5xl md:text-6xl xl:text-7xl max-w-[800px] mx-auto font-extrabold text-gray-800 xl:leading-[110%]">
-						Manage all user-insights in one place
+						Collect and manage all user-insights in one place
 					</h1>
 					{/*
 					 					<h1 className="text-3xl md:text-4xl xl:text-6xl max-w-[1300px] mx-auto font-extrabold text-gray-800 xl:leading-[60px]">

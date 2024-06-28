@@ -1,3 +1,4 @@
+import HeroDashboard from '@/components/HeroDashboard'
 import Layout from '@/components/Layout'
 import CustomerSlider from '@/components/customer-slider'
 import AnalyticsFeatureBox from '@/components/feature-boxes/analytics-feature-box'
@@ -8,10 +9,9 @@ import Mission from '@/components/mission'
 export default function Home() {
 	return (
 		<Layout white={true}>
-			<Hero02 />
-			<div className="mt-[-130px]">
-				<Mission />
-			</div>
+			<Hero />
+			<HeroDashboard />
+			<Mission />
 			<AnalyticsFeatureBox />
 		</Layout>
 	)
