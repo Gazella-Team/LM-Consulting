@@ -22,19 +22,16 @@ export default function GlossaryPage() {
 				title={`User Insights Glossary - Learn and compare the most essential terms in SaaS user-insights | Toolbird`}
 				description="Latest news and updates from Toolbird aswell as guides."
 			/>
-            <div className='hidden lg:flex justify-end z-0'>
-                <img className='w-[300px] mt-16 mr-20 absolute' src='/logos/birdlogo.png'></img>
-            </div>
 			<div
 				style={{
 					background:
 						'radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 40%)',
 				}}
-				className="mt-20 z-10 relative"
+				className="mt-12 z-10 relative"
 			>
-				<div className="max-w-6xl mb-20 w-[86%] mx-auto">
+				<div className="max-w-6xl mb-12 w-[86%] mx-auto">
 					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
-						User Insights Glossary
+						Toolbird <span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">Glossary</span>
 					</h1>
 					<h2 className="text-xl max-w-md paragraph font-regular text-gray-600">
 						Stay updated on the most important and popular terms in the industry of digital user insights.
