@@ -10,7 +10,10 @@ export default function PricingTable() {
 		<section className="mb-24 mt-6">
 			<div className="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-6xl w-[86%] gap-14 lg:gap-6">
 				<div
-style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)', }}
+					style={{
+						background:
+							'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
+					}}
 					className="bg-white relative rounded-3xl border-2 border-main text-gray-800 shadow-main/30 shadow-clean"
 				>
 					<div>
@@ -29,7 +32,7 @@ style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,2
 							<h1 className="text-5xl font-extrabold">
 								$19
 								<span className="ml-1 text-base paragraph font-[400] text-gray-600">
-									/{' '}month
+									/ month
 								</span>
 							</h1>
 						</div>

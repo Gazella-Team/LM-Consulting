@@ -17,7 +17,7 @@ export default function Partners() {
 			<Meta
 				title={`Partners - Toolbird.io`}
 				description="Toolbird Analytics is a simple privacy-first web analytics tool. Track where your users come from, what device they are using and where in the world they are located. All completely anonymous."
-				keywords='Privacy, Analytics, Web, Traffic, Web Analytics'
+				keywords="Privacy, Analytics, Web, Traffic, Web Analytics"
 			/>
 			<PageIntro
 				buttons={[

@@ -36,7 +36,9 @@ export default function Hero() {
 				</Reveal>
 				<Reveal delayTime={0.2}>
 					<p className="text-base md:text-lg mx-auto xl:text-xl font-regular paragraph mb-2 max-w-[600px] w-[85%] text-gray-600">
-						Toolbird provides web analytics, feedback hub and user surveys, all in one place. Get better overview and save money today.
+						Toolbird provides web analytics, feedback hub and user
+						surveys, all in one place. Get better overview and save
+						money today.
 					</p>
 				</Reveal>
 				<RevealLight delayTime={0.4}>
@@ -45,7 +47,7 @@ export default function Hero() {
 							href="https://app.toolbird.io/auth/register"
 							className="bg-main border-[3px] border-main font-medium text-sm text-white px-4 py-2 rounded-full"
 						>
-Start 14-day free trial
+							Start 14-day free trial
 						</Link>
 					</div>
 				</RevealLight>

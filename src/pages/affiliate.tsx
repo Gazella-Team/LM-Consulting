@@ -17,23 +17,23 @@ export default function Affiliate() {
 			<Meta
 				title={`Become an affiliate - Toolbird.io`}
 				description="Get in touch with the team behind Toolbird today."
-				keywords='Contact, Mail, Phone, Team'
+				keywords="Contact, Mail, Phone, Team"
 			/>
 			<PageIntro
-			buttons={[
-								{
-									text: 'Become an affiliate',
-									path: 'https://app.toolbird.io/share/toolbird.io',
-									target: '_blank',
-								},
-							]}
+				buttons={[
+					{
+						text: 'Become an affiliate',
+						path: 'https://app.toolbird.io/share/toolbird.io',
+						target: '_blank',
+					},
+				]}
 				hook="Work with us"
 				highlighted=""
 				heading="Become an affiliate. Earn 30% recurring commission."
 				paragraph="Promote Toolbird, and earn commissions as you refer people to our paid plans."
 			/>
 			<AffiliateProcess />
-			<div className='mt-[-60px]'>
+			<div className="mt-[-60px]">
 				<SectionIntro
 					bottomMargin={true}
 					heading="Earn as we grow"
@@ -44,11 +44,11 @@ export default function Affiliate() {
 				</SectionIntro>
 			</div>
 			<BlurSection
-					bottomMargin={true}
-					heading="Get all your answers"
-					hook="Frequently Asked Questions"
-				>
-					<AffiliateFAQ/>
+				bottomMargin={true}
+				heading="Get all your answers"
+				hook="Frequently Asked Questions"
+			>
+				<AffiliateFAQ />
 			</BlurSection>
 		</Layout>
 	)

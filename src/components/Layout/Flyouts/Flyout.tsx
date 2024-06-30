@@ -10,7 +10,7 @@ const solutions = [
 		name: 'Web Analytics',
 		description: 'Privacy-first web analytics of your visitors',
 		href: '/analytics',
-		icon: <PieChart className='text-gray-800 h-[18px] w-[18px]' />,
+		icon: <PieChart className="text-gray-800 h-[18px] w-[18px]" />,
 	},
 	//{ name: 'Uptime Monitoring', description: 'Monitor all your systems, servers and environments', href: '/coming-soon', icon: ArrowPathRoundedSquareIcon },
 	//{ name: 'User feedback', description: "Collect all your user-feedback in one place, to better your platform", href: '/coming-soon', icon: ChatBubbleLeftRightIcon },

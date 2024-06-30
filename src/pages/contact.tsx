@@ -12,7 +12,7 @@ export default function Contact() {
 			<Meta
 				title={`Contact - Toolbird.io`}
 				description="Get in touch with the team behind Toolbird today."
-				keywords='Contact, Mail, Phone, Team'
+				keywords="Contact, Mail, Phone, Team"
 			/>
 			<PageIntro
 				hook="Get in touch today"
