@@ -1,5 +1,6 @@
 import HeroDashboard from '@/components/HeroDashboard'
 import Layout from '@/components/Layout'
+import SectionIntro from '@/components/SectionIntro'
 import CustomerSlider from '@/components/customer-slider'
 import AnalyticsFeatureBox from '@/components/feature-boxes/analytics-feature-box'
 import Hero from '@/components/hero'
@@ -13,6 +14,11 @@ export default function Home() {
 			<HeroDashboard />
 			<Mission />
 			<AnalyticsFeatureBox />
+			{/*
+			<SectionIntro hook='The all-in-one solution' heading='Quit paying for several providers. We have all you need'>
+				<p>hey</p>
+			</SectionIntro>
+			 */}
 		</Layout>
 	)
 }
