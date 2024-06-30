@@ -11,7 +11,12 @@ type GlossaryPageProps = {
 }
 
 const glossaryData = [
-    {term: "Bounce Rate", description: "Bounce rate in web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page. It measures the effectiveness of a website in engaging visitors and encouraging them to explore more content. A high bounce rate often indicates that the landing page was not compelling enough for users to continue browsing, while a low bounce rate suggests that users are finding the website engaging and are likely exploring further.", link:"/glossary/glossary-single"},
+	{
+		term: 'Bounce Rate',
+		description:
+			'Bounce rate in web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page. It measures the effectiveness of a website in engaging visitors and encouraging them to explore more content. A high bounce rate often indicates that the landing page was not compelling enough for users to continue browsing, while a low bounce rate suggests that users are finding the website engaging and are likely exploring further.',
+		link: '/glossary/glossary-single',
+	},
 ]
 
 export default function GlossaryPage() {
@@ -31,10 +36,14 @@ export default function GlossaryPage() {
 			>
 				<div className="max-w-6xl mb-12 w-[86%] mx-auto">
 					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
-						Toolbird <span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">Glossary</span>
+						Toolbird{' '}
+						<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
+							Glossary
+						</span>
 					</h1>
 					<h2 className="text-xl max-w-md paragraph font-regular text-gray-600">
-						Stay updated on the most important and popular terms in the industry of digital user insights.
+						Stay updated on the most important and popular terms in
+						the industry of digital user insights.
 					</h2>
 				</div>
 				<div
@@ -44,9 +53,16 @@ export default function GlossaryPage() {
 					}}
 					className="py-12 flex items-center justify-center border-y border-gray-600/10"
 				>
-						<div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] mx-auto">
-                            {glossaryData.map((v) => <GlossaryCard key={v.term} link={v.link} term={v.term} description={v.description} />)}
-						</div>
+					<div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] mx-auto">
+						{glossaryData.map((v) => (
+							<GlossaryCard
+								key={v.term}
+								link={v.link}
+								term={v.term}
+								description={v.description}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</Layout>

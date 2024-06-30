@@ -1,7 +1,13 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { BookOpenIcon, ChartBarIcon, DocumentTextIcon, GlobeAltIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline'
+import {
+	BookOpenIcon,
+	ChartBarIcon,
+	DocumentTextIcon,
+	GlobeAltIcon,
+	WrenchScrewdriverIcon,
+} from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { PieChart } from 'lucide-react'
 
@@ -10,25 +16,46 @@ const resources = [
 		name: 'Blog',
 		description: 'Read our latest insights',
 		href: '/blog',
-		icon: <BookOpenIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
+		icon: (
+			<BookOpenIcon
+				strokeWidth={2}
+				className="text-gray-800 h-[18px] w-[18px]"
+			/>
+		),
 	},
-    {
+	{
 		name: 'Docs',
 		description: 'Documentation for seting up and using each tool',
 		href: 'https://docs.toolbird.io/',
-		icon: <DocumentTextIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
+		icon: (
+			<DocumentTextIcon
+				strokeWidth={2}
+				className="text-gray-800 h-[18px] w-[18px]"
+			/>
+		),
 	},
 	{
 		name: 'Extra tools',
 		description: 'Dive into our supplementary free-to-use tools',
 		href: '/tools',
-		icon: <WrenchScrewdriverIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
+		icon: (
+			<WrenchScrewdriverIcon
+				strokeWidth={2}
+				className="text-gray-800 h-[18px] w-[18px]"
+			/>
+		),
 	},
-    {
+	{
 		name: 'Glossary',
-		description: 'Stay up to date with the most important terms from SaaS user-insights',
+		description:
+			'Stay up to date with the most important terms from SaaS user-insights',
 		href: '/glossary',
-		icon: <GlobeAltIcon strokeWidth={2} className='text-gray-800 h-[18px] w-[18px]' />,
+		icon: (
+			<GlobeAltIcon
+				strokeWidth={2}
+				className="text-gray-800 h-[18px] w-[18px]"
+			/>
+		),
 	},
 ]
 

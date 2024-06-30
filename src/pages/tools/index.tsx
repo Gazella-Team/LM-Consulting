@@ -37,7 +37,8 @@ export default function Tools() {
 						Free to use tools
 					</h1>
 					<h2 className="text-xl paragraph font-regular text-gray-600">
-						Dive into the variours supplementary tools provided by Toolbird.
+						Dive into the variours supplementary tools provided by
+						Toolbird.
 					</h2>
 				</div>
 				<div
@@ -47,24 +48,32 @@ export default function Tools() {
 					}}
 					className="py-12 flex items-center justify-center border-y border-gray-600/10"
 				>
-						<div className="max-w-6xl w-[86%] gap-8 md:gap-6 mx-auto grid grid-cols-1 md:grid-cols-2">
-							{TOOLS.map((tool) => (
-								<ToolCard key={tool.title} tool={tool} />
-							))}
-						</div>
+					<div className="max-w-6xl w-[86%] gap-8 md:gap-6 mx-auto grid grid-cols-1 md:grid-cols-2">
+						{TOOLS.map((tool) => (
+							<ToolCard key={tool.title} tool={tool} />
+						))}
+					</div>
 				</div>
 			</div>
 		</Layout>
 	)
 }
 
-const ToolCard = ({tool}:{tool:any}) => {
+const ToolCard = ({ tool }: { tool: any }) => {
 	return (
-		<Link href={tool.link} className='bg-white rounded-2xl border flex flex-col gap-6 text-gray-800 border-gray-600/10 p-10 hover:bg-slate-50 transition all'>
-			<p className='flex items-center gap-1 paragraph font-semibold text-sm text-main'><div className='w-2 h-2 rounded-full bg-main text-sm'></div> {tool.category}</p>
-			<div className='flex flex-col gap-1'>
-				<h2 className='font-semibold'>{tool.title}</h2>
-				<p className='text-gray-600 font-normal paragraph text-sm'>{tool.description}</p>
+		<Link
+			href={tool.link}
+			className="bg-white rounded-2xl border flex flex-col gap-6 text-gray-800 border-gray-600/10 p-10 hover:bg-slate-50 transition all"
+		>
+			<p className="flex items-center gap-1 paragraph font-semibold text-sm text-main">
+				<div className="w-2 h-2 rounded-full bg-main text-sm"></div>{' '}
+				{tool.category}
+			</p>
+			<div className="flex flex-col gap-1">
+				<h2 className="font-semibold">{tool.title}</h2>
+				<p className="text-gray-600 font-normal paragraph text-sm">
+					{tool.description}
+				</p>
 			</div>
 		</Link>
 	)

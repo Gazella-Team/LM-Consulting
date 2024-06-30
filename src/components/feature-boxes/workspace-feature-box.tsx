@@ -18,7 +18,8 @@ export default function WorkspaceFeatureBox() {
 							your personal tool cockpit
 						</p>
 						<h2 className="text-3xl font-semibold text-gray-800">
-                            Manage all your tools in one workspace, alone or in teams.
+							Manage all your tools in one workspace, alone or in
+							teams.
 						</h2>
 					</div>
 					<div className="flex flex-col justify-center gap-6 paragraph">
