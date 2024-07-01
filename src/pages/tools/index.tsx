@@ -39,9 +39,9 @@ export default function Tools() {
 							tools
 						</span>
 					</h1>
-					<h2 className="text-xl paragraph font-regular text-gray-600">
-						Dive into the variours supplementary tools provided by
-						Toolbird.
+					<h2 className="text-xl mx-auto max-w-md paragraph font-regular text-gray-600">
+						Dive into the various supplementary tools provided by
+						Toolbird, with unlimited free use.
 					</h2>
 				</div>
 				<div
