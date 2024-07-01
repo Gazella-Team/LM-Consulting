@@ -3,71 +3,61 @@
         "glose": "Bounce Rate",
         "explanation": "Bounce rate in web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page. It measures the effectiveness of a website in engaging visitors and encouraging them to explore more content. A high bounce rate often indicates that the landing page was not compelling enough for users to continue browsing, while a low bounce rate suggests that users are finding the website engaging and are likely exploring further.",
         "meta-title": "What is a Bounce Rate?",
-        "meta-description": "What is a bounce rate? In web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page.",
-        "path": "/glossary/bounce-rate"
+        "meta-description": "What is a bounce rate? In web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page."
     },
     {
         "glose": "Cookie",
         "explanation": "A cookie is a small data file sent by a website and saved on the user's computer by their web browser while they are browsing. Cookies serve as a reliable method for websites to remember status information (like items added to a shopping cart in an online store) or to log the user's browsing activities (such as clicking specific buttons, logging in, or noting which pages have been visited). They can also store information previously entered by the user into form fields, like names, addresses, passwords, and credit card details. Cookies are categorized as either session or persistent cookies. Session cookies are erased from your computer when you close your browser, whereas persistent cookies stay on your computer until you remove them or they expire. This feature enables websites to provide a personalized experience and is crucial for functionalities such as maintaining login status. Due to their role in tracking user behavior, cookies have sparked debates regarding privacy and security on the Internet, prompting regulations that require websites to obtain user consent before employing them.",
         "meta-title": "What is a Cookie?",
-        "meta-description": "What is a cookie? A cookie is a small data file sent by a website and saved on the user's computer by their web browser while they are browsing.",
-        "path": "/glossary/cookie"
+        "meta-description": "What is a cookie? A cookie is a small data file sent by a website and saved on the user's computer by their web browser while they are browsing."
     },
     {
         "glose": "Device",
         "explanation": "In web analytics, a device refers to the hardware a visitor uses to access a website or application, such as a desktop computer, laptop, tablet, or smartphone. Identifying users by device type is crucial for understanding how they interact with your website from different platforms and optimizing the user experience accordingly. For instance, if Toolbird Analytics indicates that a significant amount of traffic is coming from mobile devices, a website owner might prioritize mobile-friendly design features such as responsive layouts and touch-friendly navigation. This is essential because user behavior can vary significantly by device. For example, mobile users might prefer faster, more concise content or interact with different features than those on desktop. Tracking and analyzing website traffic by device type enables businesses to customize their content and design to meet the specific needs and preferences of their target audience, leading to increased engagement and conversions.",
         "meta-title": "What is a Device?",
-        "meta-description": "What is a device? A device refers to the hardware a visitor uses to access a website or application, such as a desktop computer, laptop, tablet, or smartphone.",
-        "path": "/glossary/device"
+        "meta-description": "What is a device? A device refers to the hardware a visitor uses to access a website or application, such as a desktop computer, laptop, tablet, or smartphone."
     },
     {
         "glose": "404 Not Found Error",
         "explanation": "The 404 Not Found error is an HTTP status code indicating that the server is unable to locate the requested resource. This error generally happens when a user attempts to reach a webpage or file that does not exist on the server. It can occur due to a mistyped URL, a file that has been moved or deleted, or a broken link on the website. For instance, if a visitor clicks on a link to an article that has been removed or relocated without a proper redirect, the server will display a 404 Not Found error. This error acts as an indication that the intended path does not lead to an existing webpage. Addressing and managing 404 errors is crucial for website upkeep and user satisfaction. Regularly repairing broken links, setting up redirects for moved content, and designing an informative 404 error page can enhance site navigation and retain user engagement even when they encounter an error.",
         "meta-title": "What is the 404 Not Found error?",
-        "meta-description": "What is error 404? The 404 Not Found error is an HTTP status code indicating that the server is unable to locate the requested resource.",
-        "path": "/glossary/404-error"
+        "meta-description": "What is error 404? The 404 Not Found error is an HTTP status code indicating that the server is unable to locate the requested resource."
     },
     {
         "glose": "Funnel",
         "explanation": "In web analytics, a funnel is a framework designed to visualize the sequential steps users take to accomplish a specific goal on a website or in an application. This concept is crucial for understanding the progression of user interactions from their initial contact through various engagement stages, culminating in the completion of an action such as purchasing a product, signing up for a service, or downloading a file. For instance, an e-commerce funnel might encompass stages like visit homepage, view product page, add to cart, and complete purchase. By analyzing the number of users advancing through each funnel stage, site owners can identify where users are dropping off or converting. This understanding allows for targeted enhancements at the points where users exit the funnel, thereby optimizing the entire conversion path. Funnels enable businesses to refine user interactions and enhance the conversion process's efficiency by concentrating on user behavior and eliminating potential obstacles to completing the desired action.",
         "meta-title": "What is a Funnel?",
-        "meta-description": "What is a funnel? A funnel is a framework designed to visualize the sequential steps users take to accomplish a specific goal on a website or in an application.",
-        "path": "/glossary/funnel"
+        "meta-description": "What is a funnel? A funnel is a framework designed to visualize the sequential steps users take to accomplish a specific goal on a website or in an application."
     },
     {
         "glose": "Referral Traffic",
         "explanation": "In web analytics, referral traffic refers to visitors who arrive at a site through direct links from other websites, rather than arriving directly or via search engines. This type of traffic is significant because it indicates that other sites find the content valuable enough to link to. Analyzing referral traffic helps companies identify which external sites are driving their web traffic, thereby informing partnership and content strategies. For instance, if a popular blog links to an article on your site and users visit your site through this link, these visits are classified as referral traffic. Analytics tools like Toolbird Analytics can track these visits, indicating the originating site and often the specific page from which the traffic came. With this data, marketers can assess the success of their content distribution efforts. Understanding the sources of referral traffic allows companies to build relationships with key influencers and websites in their industry. This insight helps optimize their external link-building strategy to attract more high-quality traffic.",
         "meta-title": "What is Referral Traffic?",
-        "meta-description": "What is a referral traffic? Referral traffic refers to visitors who arrive at a site through direct links from other websites, rather than arriving directly or via search engines.",
-        "path": "/glossary/referral-traffic"
+        "meta-description": "What is a referral traffic? Referral traffic refers to visitors who arrive at a site through direct links from other websites, rather than arriving directly or via search engines."
     },
     {
         "glose": "Session",
         "explanation": "In web analytics, a session represents a single visit by a user to your website, encompassing all interactions made during that visit, such as page views, clicks, and transactions. A session starts when a user enters the site and ends either when they leave or after a period of inactivity, typically set at 30 minutes. This time limit can reset if the user continues interacting with the website. For instance, if someone uses Toolbird Analytics to monitor their website, they might observe that a user had a session during which they visited three different pages within 20 minutes. Pirsch would record this as one session, grouping all actions within that period under that single session. Sessions provide valuable insights into user behavior and the effectiveness of website content or interface. Website owners can analyze metrics such as the number of sessions per day, average session length, or pages per session to make informed decisions about their site.",
         "meta-title": "What is a Session?",
-        "meta-description": "What is a session? A session represents a single visit by a user to your website, encompassing all interactions made during that visit, such as page views, clicks, and transactions.",
-        "path": "/glossary/session"
+        "meta-description": "What is a session? A session represents a single visit by a user to your website, encompassing all interactions made during that visit, such as page views, clicks, and transactions."
     },
     {
         "glose": "GDPR",
         "explanation": "The General Data Protection Regulation (GDPR) is a thorough data protection law that came into effect in the European Union on May 25, 2018. It aims to give individuals control over their personal data and to streamline the regulatory environment for international companies by standardizing regulations across the EU. The GDPR applies to all companies that process and store the personal data of individuals residing in the European Union, regardless of the company's location. The GDPR mandates that companies protect the personal data and privacy of EU citizens in transactions within EU member states and regulates the export of personal data to countries outside the EU. Key requirements include obtaining consent for data processing, notifying data breaches, anonymizing data to protect privacy, integrating data protection safeguards into data processing activities, and providing individuals with rights related to their personal data, such as the right to access, rectify, erase, or transfer their data. Compliance with the GDPR is crucial for companies to avoid substantial fines and to build trust with their customers by ensuring their data is handled securely and transparently.",
         "meta-title": "What is GDPR?",
-        "meta-description": "What is GDPR? The General Data Protection Regulation (GDPR) is a thorough data protection law that came into effect in the European Union on May 25, 2018.",
-        "path": "/glossary/gdpr"
+        "meta-description": "What is GDPR? The General Data Protection Regulation (GDPR) is a thorough data protection law that came into effect in the European Union on May 25, 2018."
     },
     {
         "glose": "Keyword",
         "explanation": "In web analytics and search engine optimization (SEO), a keyword is a term or phrase that users enter into search engines to find specific information. Keywords are essential to SEO because they help determine how relevant a website's content is to users' search queries, which in turn affects the site's ranking on search engine results pages (SERPs). For instance, a website selling garden tools might target keywords such as garden tools, buy garden tools, or garden supplies online. By optimizing the website's content, meta tags, and URLs with these keywords, the site can enhance its visibility and ranking in search results related to garden tools. Analyzing keyword performance also allows marketers to understand user intent, refine content, and attract more targeted traffic to their website.",
         "meta-title": "What is a Keyword?",
-        "meta-description": "What is a keyword? A keyword is a term or phrase that users enter into search engines to find specific information.",
-        "path": "/glossary/keyword"
+        "meta-description": "What is a keyword? A keyword is a term or phrase that users enter into search engines to find specific information."
     },
     {
-        "glose": "IP Adress",
+        "glose": "IP Address",
         "explanation": "An IP address, or Internet Protocol address, is a unique numerical identifier separated by periods (IPv4) or colons (IPv6) that identifies each computer using the Internet Protocol to communicate over a network. It acts like a digital address, enabling data to be directed to the correct location, similar to how a home address allows mail to reach the right destination. For instance, when you visit a website, your computer sends a request to the server hosting the website using your IP address. The server then sends the requested data back to your IP address. IP addresses can be static, meaning they remain constant, or dynamic, meaning they are temporarily assigned by a network and can change over time. In web analytics, IP addresses are used to determine the geographical location of website visitors, track their activity on the site, and manage access rights. They are also essential for network diagnostics and managing network security, enabling administrators to block or allow traffic based on IP addresses.",
         "meta-title": "What is an IP Address?",
-        "meta-description": "An IP address, or Internet Protocol address, is a unique numerical identifier separated by periods (IPv4) or colons (IPv6) that identifies each computer using the Internet Protocol to communicate over a network.",
-        "path": "/glossary/ip-adress"
+        "meta-description": "An IP address, or Internet Protocol address, is a unique numerical identifier separated by periods (IPv4) or colons (IPv6) that identifies each computer using the Internet Protocol to communicate over a network."
     }
 ]
 
