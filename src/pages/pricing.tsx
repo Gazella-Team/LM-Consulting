@@ -13,7 +13,7 @@ export default function Pricing() {
 			<PageIntro
 				hook="Flexible pricing"
 				highlighted=""
-				heading="Pricing and plans"
+				heading="Usage based pricing"
 				paragraph="We offer plans that suit any project. Start for free today, no credit card required."
 			/>
 			<PricingTable />
