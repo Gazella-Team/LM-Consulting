@@ -32,6 +32,7 @@ export default function Analytics() {
 			/>
 			<BlurDashboard image="/showcases/analysis.webp" />
 			<SectionIntro
+				topMargin={true}
 				heading="Powerful insights"
 				description="Track where your visitors come from, what device they are using and where in the world they are located."
 				hook="Features Included"

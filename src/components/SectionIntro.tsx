@@ -8,11 +8,12 @@ type SectionIntroProps = {
 	children: React.ReactNode
 	founders?: boolean
 	bottomMargin?: boolean
+	topMargin?: boolean,
 }
 
 export default function SectionIntro(props: SectionIntroProps) {
 	return (
-		<div className="text-center w-[86%] mx-auto max-w-6xl text-gray-800 pt-32 z-1">
+		<div className={cn("text-center w-[86%] mx-auto max-w-6xl text-gray-800 z-1", props.topMargin && "pt-32")}>
 			{props.founders ? (
 				<div className="flex items-center justify-center mb-8">
 					<img
