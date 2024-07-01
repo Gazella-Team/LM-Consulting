@@ -1,13 +1,7 @@
 import Layout from '@/components/Layout'
 import PageIntro from '@/components/PageIntro'
-import ToolHero from '@/components/toolpage/ToolHero'
-import PricingTable from '@/components/pricingtable'
 import SectionIntro from '@/components/SectionIntro'
-import Features from '@/components/toolpage/Features'
-import { ChartBarIcon } from '@heroicons/react/24/outline'
-import DashboardDisplay from '@/components/dashboarddisplay'
 import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
-import BlurSection from '@/components/blur-section'
 import BlurDashboard from '@/components/blur-dashboard'
 import Meta from '@/components/Layout/Meta'
 
@@ -38,13 +32,22 @@ export default function Analytics() {
 			/>
 			<BlurDashboard image="/showcases/analysis.webp" />
 			<SectionIntro
-				bottomMargin={true}
 				heading="Powerful insights"
 				description="Track where your visitors come from, what device they are using and where in the world they are located."
 				hook="Features Included"
 			>
 				<BentoGridComponent />
 			</SectionIntro>
+			{/*
+			<SectionIntro
+				bottomMargin={true}
+				heading="Data for every element"
+				description="Our custom event tracking allows you to track engagement and user-behaviour on every component on your website."
+				hook="Custom Event Tracking"
+			>
+				<BentoGridComponent />
+			</SectionIntro>
+			 */}
 		</Layout>
 	)
 }
