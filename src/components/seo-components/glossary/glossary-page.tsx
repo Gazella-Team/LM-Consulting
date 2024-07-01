@@ -5,19 +5,8 @@ import categories, { getCategoriesList } from '@/contentlayer/lib/categories'
 import { cn } from '@/helpers/utils'
 import Link from 'next/link'
 import GlossaryCard from './GlossaryCard'
-type GlossaryPageProps = {
-	activeTab: keyof typeof categories
-	posts: Post[]
-}
+import glossaryData from "./glossary-data.json"
 
-const glossaryData = [
-	{
-		term: 'Bounce Rate',
-		description:
-			'Bounce rate in web analytics refers to the percentage of visitors who navigate away from a website after viewing only one page. It measures the effectiveness of a website in engaging visitors and encouraging them to explore more content. A high bounce rate often indicates that the landing page was not compelling enough for users to continue browsing, while a low bounce rate suggests that users are finding the website engaging and are likely exploring further.',
-		link: '/glossary/glossary-single',
-	},
-]
 
 export default function GlossaryPage() {
 	return (
@@ -56,10 +45,10 @@ export default function GlossaryPage() {
 					<div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 w-[90%] mx-auto">
 						{glossaryData.map((v) => (
 							<GlossaryCard
-								key={v.term}
-								link={v.link}
-								term={v.term}
-								description={v.description}
+								key={v.glose}
+								term={v.glose}
+								link='/'
+								description={v.explanation}
 							/>
 						))}
 					</div>
