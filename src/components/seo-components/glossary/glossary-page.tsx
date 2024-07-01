@@ -21,16 +21,16 @@ export default function GlossaryPage() {
 					background:
 						'radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 40%)',
 				}}
-				className="mt-12 z-10 relative"
+				className="z-10 relative"
 			>
-				<div className="max-w-6xl mb-12 w-[86%] mx-auto">
+				<div className="max-w-6xl py-16 text-center w-[86%] mx-auto">
 					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
 						Toolbird{' '}
 						<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
 							Glossary
 						</span>
 					</h1>
-					<h2 className="text-xl max-w-md paragraph font-regular text-gray-600">
+					<h2 className="text-xl mx-auto max-w-md paragraph font-regular text-gray-600">
 						Stay updated on the most important and popular terms in
 						the industry of digital user insights.
 					</h2>
