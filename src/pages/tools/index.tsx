@@ -30,11 +30,14 @@ export default function Tools() {
 					background:
 						'radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 40%)',
 				}}
-				className="mt-12"
+				className="z-10 relative"
 			>
-				<div className="max-w-6xl w-[86%] mx-auto mb-10">
-					<h1 className="text-4xl font-bold  mb-4 text-gray-800">
-						Free to use tools
+				<div className="max-w-6xl py-24 w-[86%] text-center mx-auto">
+					<h1 className="text-4xl md:text-5xl font-bold  mb-4 text-gray-800">
+						Free to use{" "}
+						<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
+							tools
+						</span>
 					</h1>
 					<h2 className="text-xl paragraph font-regular text-gray-600">
 						Dive into the variours supplementary tools provided by
