@@ -19,7 +19,7 @@ export default function GlossarySite() {
 				}}
 				className="z-10 relative"
 			>
-				<div className="max-w-6xl py-16 text-center w-[86%] mx-auto">
+				<div className="max-w-6xl py-24 text-center w-[86%] mx-auto">
 					<h1 className="text-5xl font-bold  mb-4 text-gray-800">
 						Bounce Rate
 					</h1>
