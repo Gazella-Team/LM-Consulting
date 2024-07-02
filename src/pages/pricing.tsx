@@ -7,7 +7,7 @@ import CurvePageIntro from '@/components/CurvePageIntro'
 
 export default function Pricing() {
 	return (
-		<Layout white={true}>
+		<Layout whiteBeforeScroll={true} white={true}>
 			<Meta title={`Pricing - Toolbird.io`} />
 			<CurvePageIntro
 				hook="Flexible pricing"

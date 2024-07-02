@@ -10,7 +10,7 @@ import Mission from '@/components/mission'
 
 export default function Home() {
 	return (
-		<Layout white={true}>
+		<Layout whiteBeforeScroll={true} white={true}>
 			<div className='hidden md:block'>
 				<Hero03>
 					<HeroDashboard />

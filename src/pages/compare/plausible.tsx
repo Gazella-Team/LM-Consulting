@@ -16,7 +16,7 @@ import { CheckCircle2 } from 'lucide-react'
 
 export default function ComparePlausible() {
 	return (
-		<Layout noCta={true} white={true}>
+		<Layout whiteBeforeScroll={true} noCta={true} white={true}>
 			<Meta title={`Toolbird vs Plausible: The #1 Plausible Alternative`} />
 			<CurvePageIntro
 				hook="The #1 Plausible Alternative"

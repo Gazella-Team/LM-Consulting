@@ -11,6 +11,7 @@ type LayoutProps = {
 	white?: boolean
 	footerFullWidth?: boolean
 	noCta?: boolean
+	whiteBeforeScroll?: boolean
 }
 
 const ToolbirdFont = localFont({
@@ -30,7 +31,7 @@ export default function Layout(props: LayoutProps) {
 				<CrispChat />
 				<CookiePopup />
 				<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-				<Navbar />
+				<Navbar whiteBeforeScroll={props.whiteBeforeScroll} />
 				<div>
 					<div className="relative">{props.children}</div>
 				</div>

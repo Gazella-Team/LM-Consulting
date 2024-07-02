@@ -35,6 +35,7 @@ export default function Affiliate() {
 			<AffiliateProcess />
 			<div className="mt-[-60px]">
 				<SectionIntro
+					topMargin={true}
 					bottomMargin={true}
 					heading="Earn as we grow"
 					description="Track where your visitors come from, what device they are using and where in the world they are located."
