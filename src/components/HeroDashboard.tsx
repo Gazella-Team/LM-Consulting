@@ -3,7 +3,7 @@ export default function HeroDashboard() {
 		<section className="">
 			<div className="w-[86%] mx-auto max-w-6xl">
 				<img
-					className="w-full shadow-clean shadow-main/20 rounded-3xl"
+					className="w-full bg-white shadow-clean shadow-main/40 rounded-3xl"
 					src="/showcases/platform.webp"
 				></img>
 			</div>
