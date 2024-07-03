@@ -76,6 +76,17 @@ const FOOTER_LINKS: {
 			},
 		],
 	},
+	/*
+	{
+		title: 'Privacy',
+		links: [
+			{
+				label: 'Analytics',
+				href: '/privacy-friendly-analytics',
+			},
+		],
+	},
+	*/
 ]
 
 export default function Footer(props: FooterProps) {
