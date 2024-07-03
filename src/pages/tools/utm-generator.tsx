@@ -70,6 +70,7 @@ export default function UTMGeneratorTool() {
 			<Meta
 				title="UTM Builder | Generate UTM links to Track Campaigns - Toolbird.io"
 				description="Gain deeper and better insights into your marketing campaigns by adding UTM parameters to inbound links with this free campaign URL generator, designed to enhance your tracking and analysis capabilities."
+				keywords="UTM gen, click calculator, UTM builder, UTM generator, UTM link generator, UTM tracking, UTM parameters, UTM campaign, UTM campaign tracking, UTM link builder, UTM link generator tool, UTM link tracking, UTM link tracking tool, UTM link"
 			/>
 			<div className="mx-auto px-2 paragraph">
 				<section
