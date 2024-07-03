@@ -7,12 +7,13 @@ import Meta from '@/components/Layout/Meta'
 import CustomerSlider from '@/components/customer-slider'
 import CurvePageIntro from '@/components/CurvePageIntro'
 import Link from 'next/link'
-import { FaCheckCircle } from 'react-icons/fa'
+import { FaCheckCircle, FaExclamationCircle } from 'react-icons/fa'
 import Tooltip from '@/components/ui/Tooltip'
 import SectionIntro from '@/components/SectionIntro'
 import BentoGridComponent from '@/components/bento-grids/analytics-bento-grid'
 import Cta from '@/components/Layout/Cta'
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle2, X, XCircle } from 'lucide-react'
+import { XCircleIcon } from '@heroicons/react/24/outline'
 
 export default function ComparePlausible() {
 	return (
@@ -87,7 +88,7 @@ export default function ComparePlausible() {
 										className="text-gray-800"
 									/>
 									<h2 className="text-gray-800">
-										Unlimited custom events
+										Lightweight script
 									</h2>
 								</div>
 								<div className="flex items-center gap-4">
@@ -96,18 +97,27 @@ export default function ComparePlausible() {
 										className="text-gray-800"
 									/>
 									<h2 className="text-gray-800">
-										Unlimited websites
+										Beautiful, intuitive UI
+									</h2>
+								</div>
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">
+										2 minute setup
 									</h2>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className='flex lg:mt-20 justify-center'>
+					<div className='flex lg:mt-16 justify-center'>
 						<div className='bg-main flex items-center justify-center rounded-full right-0 w-20 h-20'>
-							<p className='text-white font-[Caveat] font-bold text-3xl'>VS</p>
+							<p className='text-white font-[Caveat] font-bold text-3xl ml-[-6px]'>VS</p>
 						</div>
 					</div>
-					<div className="bg-white relative rounded-3xl border border-gray-600/10 text-gray-800 shadow-sm">
+					<div className="bg-white relative rounded-3xl border border-gray-600/10 text-gray-800 shadow-clean">
 						<div className="flex relative flex-col gap-2 pb-12 px-7 pt-10">
 							<div className="flex items-center h-12 gap-3">
 								<Link href={'/'}> <img className="w-[140px]" src="/compare/plausible.svg" /> </Link>
@@ -168,16 +178,25 @@ export default function ComparePlausible() {
 										className="text-gray-800"
 									/>
 									<h2 className="text-gray-800">
-										Unlimited custom events
+										Lightweight script
 									</h2>
 								</div>
-								<div className="flex items-center gap-4">
-									<FaCheckCircle
+								<div className="flex text-gray-500 items-center gap-4">
+									<X
 										size={18}
-										className="text-gray-800"
+										className=""
 									/>
-									<h2 className="text-gray-800">
-										Unlimited websites
+									<h2 className="">
+										Beautiful, intuitive UI
+									</h2>
+								</div>
+								<div className="flex text-gray-500 items-center gap-4">
+									<X
+										size={18}
+										className=""
+									/>
+									<h2 className="">
+										2 minute setup
 									</h2>
 								</div>
 							</div>
