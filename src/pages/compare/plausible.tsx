@@ -25,19 +25,14 @@ export default function ComparePlausible() {
 				paragraph="Looking for the best Plausible Alternative? See why others prefer using Toolbird."
 			>
 			<section className="mt-6">
-				<div className="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-6xl w-[86%] gap-14 lg:gap-6">
-					<div
-						style={{
-							background:
-								'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)',
-						}}
-						className="bg-white relative rounded-3xl border-2 border-main text-gray-800 shadow-main/30 shadow-clean"
-					>
-						<div>
-							<div className="flex flex-col gap-2 pb-12 px-7 pt-10 bg-white rounded-t-3xl">
+				<div className="grid grid-cols-1 lg:grid-cols-[42%_1fr_42%] mx-auto max-w-6xl w-[86%] gap-14 lg:gap-6">
+					<div style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)', }} className="relative rounded-3xl border-2 border-main text-gray-800 shadow-clean shadow-main/30">
+						<div className="flex relative flex-col gap-2 pb-12 px-7 pt-10">
+							<div className="flex items-center h-12 gap-3">
 								<Link href={'/'}> <img className="w-[140px]" src="/logos/finallogo.svg" /> </Link>
 							</div>
-							<div className="px-7 pb-14 bg-white">
+						</div>
+						<div className="px-7 pb-14">
 								<h1 className="text-5xl font-extrabold">
 									$19
 									<span className="ml-1 text-base paragraph font-[400] text-gray-600">
@@ -45,83 +40,77 @@ export default function ComparePlausible() {
 									</span>
 								</h1>
 							</div>
-							<div className="bg-slate-50 border-y py-5 px-7 border-gray-600/10">
-								<div className="flex">
-									<Link
-										target="_blank"
-										href="https://app.toolbird.io/auth/register"
-										className="bg-main text-center paragraph w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
-									>
-										Start 14-day free trial
-									</Link>
-								</div>
+						<div className="bg-slate-50 paragraph border-y py-5 px-7 border-gray-600/10">
+							<div className="flex">
+								<Link
+									target="_blank"
+									href="https://cal.com/lasseosmann/toolbird-demo"
+									className="bg-main text-center w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
+								>
+									Start 14-day free trial
+								</Link>
 							</div>
-							<div className="paragraph">
-								<h3 className="pt-7 px-8 pb-0 text-gray-500 font-medium">
-									Everything in free, plus:
-								</h3>
-								<div className="py-10 pt-6 px-8 flex flex-col gap-6 font-regular">
-									<div className="flex items-center gap-4">
-										<FaCheckCircle
-											size={18}
-											className="text-main"
-										/>
-										<Tooltip
-											jsx={
-												<span>
-													$10 per additional user{' '}
-												</span>
-											}
-										>
-											<h2 className="text-gray-600 underline decoration-dotted hover:cursor-help">
-												3 team seats
-											</h2>
-										</Tooltip>
-									</div>
-									<div className="flex items-center gap-4">
-										<FaCheckCircle
-											size={18}
-											className="text-main"
-										/>
-										<h2 className="text-gray-600">
-											Custom support
-										</h2>
-									</div>
-									<div className="flex items-center gap-4">
-										<FaCheckCircle
-											size={18}
-											className="text-main"
-										/>
-										<h2 className="text-gray-600">
-											Unlimited data retention
-										</h2>
-									</div>
-									<div className="flex items-center gap-4">
-										<FaCheckCircle
-											size={18}
-											className="text-main"
-										/>
-										<h2 className="text-gray-600">
-											100.000 page views*
-										</h2>
-									</div>
-									<div className="flex items-center gap-4">
-										<FaCheckCircle
-											size={18}
-											className="text-main"
-										/>
-										<h2 className="text-gray-600">
-											10.000 custom events*
-										</h2>
-									</div>
+						</div>
+						<div>
+							<h3 className="p-7 pb-0 paragraph text-gray-500 font-medium">
+								Custom specifications:
+							</h3>
+							<div className="py-10 pt-6 px-7 paragraph flex flex-col gap-6">
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">Custom seats</h2>
+								</div>
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">
+										Prioritized support
+									</h2>
+								</div>
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">
+										Unlimited page views
+									</h2>
+								</div>
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">
+										Unlimited custom events
+									</h2>
+								</div>
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">
+										Unlimited websites
+									</h2>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div className='flex lg:mt-20 justify-center'>
+						<div className='bg-main flex items-center justify-center rounded-full right-0 w-20 h-20'>
+							<p className='text-white font-[Caveat] font-bold text-3xl'>VS</p>
+						</div>
+					</div>
 					<div className="bg-white relative rounded-3xl border border-gray-600/10 text-gray-800 shadow-sm">
 						<div className="flex relative flex-col gap-2 pb-12 px-7 pt-10">
-							<div className="flex items-center gap-3">
-								<Link href={'/'}> <img className="w-[140px]" src="/logos/finallogo.svg" /> </Link>
+							<div className="flex items-center h-12 gap-3">
+								<Link href={'/'}> <img className="w-[140px]" src="/compare/plausible.svg" /> </Link>
 							</div>
 						</div>
 						<div className="px-7 pb-14 bg-white">
