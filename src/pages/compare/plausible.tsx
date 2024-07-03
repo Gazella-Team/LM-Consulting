@@ -37,7 +37,7 @@ export default function ComparePlausible() {
 								<h1 className="text-5xl font-extrabold">
 									$19
 									<span className="ml-1 text-base paragraph font-[400] text-gray-600">
-										/ month
+										/ for 100k pageviews
 									</span>
 								</h1>
 							</div>
@@ -62,7 +62,7 @@ export default function ComparePlausible() {
 										size={18}
 										className="text-gray-800"
 									/>
-									<h2 className="text-gray-800">Custom seats</h2>
+									<h2 className="text-gray-800">Custom events</h2>
 								</div>
 								<div className="flex items-center gap-4">
 									<FaCheckCircle
@@ -70,16 +70,7 @@ export default function ComparePlausible() {
 										className="text-gray-800"
 									/>
 									<h2 className="text-gray-800">
-										Prioritized support
-									</h2>
-								</div>
-								<div className="flex items-center gap-4">
-									<FaCheckCircle
-										size={18}
-										className="text-gray-800"
-									/>
-									<h2 className="text-gray-800">
-										Unlimited page views
+										Privacy-friendly
 									</h2>
 								</div>
 								<div className="flex items-center gap-4">
@@ -89,6 +80,24 @@ export default function ComparePlausible() {
 									/>
 									<h2 className="text-gray-800">
 										Lightweight script
+									</h2>
+								</div>
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">
+										Custom seats
+									</h2>
+								</div>
+								<div className="flex items-center gap-4">
+									<FaCheckCircle
+										size={18}
+										className="text-gray-800"
+									/>
+									<h2 className="text-gray-800">
+										Unlimited data retention
 									</h2>
 								</div>
 								<div className="flex items-center gap-4">
@@ -112,7 +121,7 @@ export default function ComparePlausible() {
 							</div>
 						</div>
 					</div>
-					<div className='flex lg:mt-16 justify-center'>
+					<div className='flex select-none lg:mt-16 justify-center'>
 						<div className='bg-main flex items-center justify-center rounded-full right-0 w-20 h-20'>
 							<p className='text-white font-[Caveat] font-bold text-3xl ml-[-6px]'>VS</p>
 						</div>
@@ -127,7 +136,7 @@ export default function ComparePlausible() {
 								<h1 className="text-5xl font-extrabold">
 									$19
 									<span className="ml-1 text-base paragraph font-[400] text-gray-600">
-										/ month
+										/ for 100k pageviews
 									</span>
 								</h1>
 							</div>
@@ -152,7 +161,7 @@ export default function ComparePlausible() {
 										size={18}
 										className="text-gray-800"
 									/>
-									<h2 className="text-gray-800">Custom seats</h2>
+									<h2 className="text-gray-800">Custom events</h2>
 								</div>
 								<div className="flex items-center gap-4">
 									<FaCheckCircle
@@ -160,16 +169,7 @@ export default function ComparePlausible() {
 										className="text-gray-800"
 									/>
 									<h2 className="text-gray-800">
-										Prioritized support
-									</h2>
-								</div>
-								<div className="flex items-center gap-4">
-									<FaCheckCircle
-										size={18}
-										className="text-gray-800"
-									/>
-									<h2 className="text-gray-800">
-										Unlimited page views
+										Privacy-friendly
 									</h2>
 								</div>
 								<div className="flex items-center gap-4">
@@ -179,6 +179,24 @@ export default function ComparePlausible() {
 									/>
 									<h2 className="text-gray-800">
 										Lightweight script
+									</h2>
+								</div>
+								<div className="flex text-gray-500 items-center gap-4">
+									<X
+										size={18}
+										className=""
+									/>
+									<h2 className="">
+										Limited seats
+									</h2>
+								</div>
+								<div className="flex text-gray-500 items-center gap-4">
+									<X
+										size={18}
+										className=""
+									/>
+									<h2 className="">
+										Unlimited data retention
 									</h2>
 								</div>
 								<div className="flex text-gray-500 items-center gap-4">
@@ -208,7 +226,7 @@ export default function ComparePlausible() {
 			<BlurSection
 					bottomMargin={true}
 					heading="Toolbird provides the best experience"
-					hook="Frequently Asked Questions"
+					hook="More than just Analytics"
 				>
 				<div className="grid grid-cols-1 lg:grid-cols-2 paragraph gap-x-32 gap-y-16 w-[90%] mt-12 mx-auto">
 					<div className="flex gap-4">
@@ -241,7 +259,7 @@ export default function ComparePlausible() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Realtime data
+								Data ownership
 							</h2>
 							<p className="text-gray-600">
 								We offer realtime insights with live visitors.
@@ -260,7 +278,7 @@ export default function ComparePlausible() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Geographic data
+								Fast and intuitive
 							</h2>
 							<p className="text-gray-600">
 								Track exactly what country, city and region your
@@ -278,7 +296,43 @@ export default function ComparePlausible() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Referer data
+								All features
+							</h2>
+							<p className="text-gray-600">
+								Track exactly where your visitors are referred
+								to your website from.
+							</p>
+						</div>
+					</div>
+					<div className="flex gap-4">
+						<div className="w-10">
+							<CheckCircle2
+								fill="rgb(40 40 51)"
+								className="text-white"
+								size={30}
+							/>
+						</div>
+						<div className="flex flex-col gap-2">
+							<h2 className="font-semibold text-xl text-gray-800">
+								Custom tracking
+							</h2>
+							<p className="text-gray-600">
+								Track exactly what country, city and region your
+								visitors visit you from.
+							</p>
+						</div>
+					</div>
+					<div className="flex gap-4">
+						<div className="w-10">
+							<CheckCircle2
+								fill="rgb(40 40 51)"
+								className="text-white"
+								size={30}
+							/>
+						</div>
+						<div className="flex flex-col gap-2">
+							<h2 className="font-semibold text-xl text-gray-800">
+								Prioritized support
 							</h2>
 							<p className="text-gray-600">
 								Track exactly where your visitors are referred
@@ -290,27 +344,27 @@ export default function ComparePlausible() {
 			</BlurSection>
 			<SectionIntro
 				heading="Dive into the best Plausible Alternatives"
-				hook="The Best Competitors"
+				hook="Explore the market of Web Analytics"
 			>
 				<section className='max-w-3xl flex flex-col gap-6 mx-auto'>
 					<div style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)', }} className='rounded-[25px] border-main shadow-clean p-10 border-2 flex flex-col gap-6'>
-						<h1 className='text-xl font-semibold text-gray-800'>1. Piwik Pro</h1>
+						<Link href={"/"} className='text-xl underline text-main font-semibold '>1. Vercel Analytics</Link>
 						<p className='paragraph text-gray-600'>UserEcho is a tool to deal with your clients, their wishes, ideas and requirements. UserEcho is feedback and request system for websites and products. It captures user feedback and requests which can be used by developers to improve their products.<br></br><br></br>UserEcho allows sharing of the information with other people in an organization who might not otherwise have access to it. This makes it easier for project managers, product managers and marketers to see what customers want.</p>
 					</div>
 					<div className='bg-white rounded-[25px] border-gray-600/10 shadow-clean p-10 border flex flex-col gap-6'>
-						<h1 className='text-xl font-semibold text-gray-800'>1. Piwik Pro</h1>
+						<Link href={"/"} className='text-xl underline text-main font-semibold '>2. Toolbird Analytics</Link>
 						<p className='paragraph text-gray-600'>UserEcho is a tool to deal with your clients, their wishes, ideas and requirements. UserEcho is feedback and request system for websites and products. It captures user feedback and requests which can be used by developers to improve their products.</p>
 					</div>
 					<div className='bg-white rounded-[25px] border-gray-600/10 shadow-clean p-10 border flex flex-col gap-6'>
-						<h1 className='text-xl font-semibold text-gray-800'>1. Piwik Pro</h1>
+						<Link href={"/"} className='text-xl underline text-main font-semibold '>3. Pirsch</Link>
 						<p className='paragraph text-gray-600'>UserEcho is a tool to deal with your clients, their wishes, ideas and requirements. UserEcho is feedback and request system for websites and products. It captures user feedback and requests which can be used by developers to improve their products.</p>
 					</div>
 					<div className='bg-white rounded-[25px] border-gray-600/10 shadow-clean p-10 border flex flex-col gap-6'>
-						<h1 className='text-xl font-semibold text-gray-800'>1. Piwik Pro</h1>
+						<Link href={"/"} className='text-xl underline text-main font-semibold '>4. Fathom</Link>
 						<p className='paragraph text-gray-600'>UserEcho is a tool to deal with your clients, their wishes, ideas and requirements. UserEcho is feedback and request system for websites and products. It captures user feedback and requests which can be used by developers to improve their products.</p>
 					</div>
 					<div className='bg-white rounded-[25px] border-gray-600/10 shadow-clean p-10 border flex flex-col gap-6'>
-						<h1 className='text-xl font-semibold text-gray-800'>1. Piwik Pro</h1>
+						<Link href={"/"} className='text-xl underline text-main font-semibold '>5. Matomo</Link>
 						<p className='paragraph text-gray-600'>UserEcho is a tool to deal with your clients, their wishes, ideas and requirements. UserEcho is feedback and request system for websites and products. It captures user feedback and requests which can be used by developers to improve their products.</p>
 					</div>
 				</section>
@@ -329,11 +383,10 @@ export default function ComparePlausible() {
 						<span className="bg-gradient-to-r from-main via-violet-700 to-main text-transparent bg-clip-text">
 							Make the switch{' '}
 						</span>{' '}
-						from Plausbile in 2 clicks
+						from Plausbile in 1 minute
 					</h2>
 					<p className="text-base md:text-lg xl:text-lg paragraph max-w-[350px] mx-auto text-gray-600">
-						Increase your project overview today with the ultimate
-						toolbox for SaaS developers.
+						Ready to switch to Toolbird and experience world class analytics? Get started for free.
 					</p>
 					<div className="flex items-center paragraph relative justify-center gap-3 mt-8 font-medium">
 						<Link
