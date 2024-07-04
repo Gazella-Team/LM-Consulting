@@ -22,6 +22,11 @@ export default function App({ Component, pageProps }: AppProps) {
 				strategy="lazyOnload"
 				data-domain="toolbird.io"
 			/>*/}
+			<Script
+				async
+				src="https://cdn.tolt.io/tolt.js"
+				data-tolt={process.env.NEXT_PUBLIC_TOLT_PUBLIC_KEY}
+			/>
 		</NiceModal.Provider>
 	)
 }
