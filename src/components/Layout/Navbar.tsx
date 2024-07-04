@@ -38,7 +38,7 @@ export default function Navbar(props:NavbarProps) {
 					'h-[58px] w-full transition-all flex items-center',
 					scrolled
 						? 'border-b border-gray-600/10 bg-white/50 backdrop-blur-xl'
-						: props.whiteBeforeScroll ? 'bg-white':'bg-transparent'
+						: props.whiteBeforeScroll || menuClicked ? 'bg-white':'bg-transparent'
 				)}
 			>
 				<div className="w-[86%] paragraph max-w-6xl mx-auto flex items-center justify-between text-gray-800">
