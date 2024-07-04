@@ -328,7 +328,7 @@ export default function ComparePlausible() {
 								Prioritized support
 							</h2>
 							<p className="text-gray-600">
-								We're online 24/7 to answer any questions or fix any issues you might stumble into in regards to Toolbird.
+								We&apos;re online 24/7 to answer any questions or fix any issues you might stumble into in regards to Toolbird.
 							</p>
 						</div>
 					</div>
