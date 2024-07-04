@@ -76,6 +76,15 @@ const FOOTER_LINKS: {
 			},
 		],
 	},
+	{
+		title: 'Compare',
+		links: [
+			{
+				label: 'Plausible',
+				href: '/compare/plausible',
+			},
+		],
+	},
 	/*
 	{
 		title: 'Privacy',

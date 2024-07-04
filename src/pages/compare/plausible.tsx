@@ -243,9 +243,7 @@ export default function ComparePlausible() {
 							</h2>
 							<p className="text-gray-600">
 								Your data is stored securely in Europe. We never
-								share your data or sell it to a third-party. All
-								tracked personal data is anonymised and can not
-								be traced back. All data is aggregated.
+								share your data or sell it to a third-party.
 							</p>
 						</div>
 					</div>
@@ -262,9 +260,7 @@ export default function ComparePlausible() {
 								Data ownership
 							</h2>
 							<p className="text-gray-600">
-								We offer realtime insights with live visitors.
-								See exactly where visitors come from and what
-								pages they visit when they do.
+								You have 100% ownership of your data, with fully control over the stats we collect.
 							</p>
 						</div>
 					</div>
@@ -281,8 +277,7 @@ export default function ComparePlausible() {
 								Fast and intuitive
 							</h2>
 							<p className="text-gray-600">
-								Track exactly what country, city and region your
-								visitors visit you from.
+								Our fast systems and user-friendly experience allows you to navigate your analytics as easy as possible.
 							</p>
 						</div>
 					</div>
@@ -299,8 +294,7 @@ export default function ComparePlausible() {
 								All features
 							</h2>
 							<p className="text-gray-600">
-								Track exactly where your visitors are referred
-								to your website from.
+								Track page data, referral data, geographic data and device data, and many other live data points.
 							</p>
 						</div>
 					</div>
@@ -317,8 +311,7 @@ export default function ComparePlausible() {
 								Custom tracking
 							</h2>
 							<p className="text-gray-600">
-								Track exactly what country, city and region your
-								visitors visit you from.
+								Track advanced analytics of specific buttons, links, sections and more with custom event tracking.
 							</p>
 						</div>
 					</div>
@@ -335,13 +328,14 @@ export default function ComparePlausible() {
 								Prioritized support
 							</h2>
 							<p className="text-gray-600">
-								Track exactly where your visitors are referred
-								to your website from.
+								We're online 24/7 to answer any questions or fix any issues you might stumble into in regards to Toolbird.
 							</p>
 						</div>
 					</div>
 				</div>
+				<img className='w-full rounded-3xl mt-24 border border-gray-600/10' src="/showcases/analysis.webp"></img>
 			</BlurSection>
+			{/*
 			<SectionIntro
 				heading="Dive into the best Plausible Alternatives"
 				hook="Explore the market of Web Analytics"
@@ -349,7 +343,7 @@ export default function ComparePlausible() {
 				<section className='max-w-3xl flex flex-col gap-6 mx-auto'>
 					<div style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)', }} className='rounded-[25px] border-main shadow-clean p-10 border-2 flex flex-col gap-6'>
 						<Link href={"/"} className='text-xl underline text-main font-semibold '>1. Vercel Analytics</Link>
-						<p className='paragraph text-gray-600'>UserEcho is a tool to deal with your clients, their wishes, ideas and requirements. UserEcho is feedback and request system for websites and products. It captures user feedback and requests which can be used by developers to improve their products.<br></br><br></br>UserEcho allows sharing of the information with other people in an organization who might not otherwise have access to it. This makes it easier for project managers, product managers and marketers to see what customers want.</p>
+						<p className='paragraph text-gray-600'>Vercel Web Analytics is a lightweight, privacy-focused analytics tool designed to help developers and website owners gain insights into their web traffic.<br></br><br></br>Unlike traditional analytics tools, Vercel Web Analytics prioritizes user privacy by not tracking personal data, cookies, or IP addresses. It offers real-time data on visitor counts, page views, and referrer sources, all presented in a simple and easy-to-understand dashboard.<br></br><br></br>This makes it an excellent choice for those who want to understand their website performance without compromising user privacy.</p>
 					</div>
 					<div className='bg-white rounded-[25px] border-gray-600/10 shadow-clean p-10 border flex flex-col gap-6'>
 						<Link href={"/"} className='text-xl underline text-main font-semibold '>2. Toolbird Analytics</Link>
@@ -369,6 +363,7 @@ export default function ComparePlausible() {
 					</div>
 				</section>
 			</SectionIntro>
+			 */}
 			<section className="py-16 mt-24 pb-0 relative">
 				<div className="w-[86%] relative mx-auto max-w-6xl mb-20 text-center">
 					<div className="flex items-center justify-center mb-10">
