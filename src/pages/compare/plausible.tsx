@@ -45,7 +45,7 @@ export default function ComparePlausible() {
 							<div className="flex">
 								<Link
 									target="_blank"
-									href="https://cal.com/lasseosmann/toolbird-demo"
+									href="https://app.toolbird.io/auth/login"
 									className="bg-main text-center w-full border-[3px] border-main text-sm font-medium text-white px-6 py-2 rounded-full"
 								>
 									Start 14-day free trial
@@ -144,7 +144,7 @@ export default function ComparePlausible() {
 							<div className="flex">
 								<Link
 									target="_blank"
-									href="https://cal.com/lasseosmann/toolbird-demo"
+									href="https://app.toolbird.io/auth/login"
 									className="bg-gray-800 text-center w-full border-[3px] border-gray-800 text-sm font-medium text-white px-6 py-2 rounded-full"
 								>
 									Migrate from Plausible
