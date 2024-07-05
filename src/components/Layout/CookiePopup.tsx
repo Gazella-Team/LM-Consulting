@@ -40,7 +40,7 @@ export default function CookiePopup() {
 						onClick={handleAccept}
 						className="bg-gray-800 border-2 border-gray-800 font-medium text-xs text-white px-4 py-1 rounded-full"
 					>
-						Continue
+						Accept
 					</button>
 					<button
 						onClick={handleReject}
