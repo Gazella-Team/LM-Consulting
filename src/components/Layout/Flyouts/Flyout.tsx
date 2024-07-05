@@ -3,7 +3,7 @@ import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { ChartBarIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-import { PieChart } from 'lucide-react'
+import { MessageSquare, MessagesSquare, PieChart } from 'lucide-react'
 
 const solutions = [
 	{
@@ -12,8 +12,14 @@ const solutions = [
 		href: '/analytics',
 		icon: <PieChart className="text-gray-800 h-[18px] w-[18px]" />,
 	},
-	//{ name: 'Uptime Monitoring', description: 'Monitor all your systems, servers and environments', href: '/coming-soon', icon: ArrowPathRoundedSquareIcon },
-	//{ name: 'User feedback', description: "Collect all your user-feedback in one place, to better your platform", href: '/coming-soon', icon: ChatBubbleLeftRightIcon },
+	/*
+	{
+		name: 'Feedback Hub',
+		description: 'Easily collect user-feedback in a structured way',
+		href: '/feedback',
+		icon: <MessagesSquare className="text-gray-800 h-[18px] w-[18px]" />,
+	},
+	 */
 ]
 
 export default function Flyout() {
