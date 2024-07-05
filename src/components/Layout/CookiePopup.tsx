@@ -23,7 +23,10 @@ export default function CookiePopup() {
 
 	return (
 		popupVisible && (
-			<div className="border bottom-6 flex flex-col gap-6 left-6 shadow-clean p-6 z-[100] bg-white fixed shadow-main/20 border-gray-600/10 rounded-2xl text-gray-600">
+			<div
+				id="cookie-banner"
+				className="border bottom-6 flex flex-col gap-6 left-6 shadow-clean p-6 z-[100] bg-white fixed shadow-main/20 border-gray-600/10 rounded-2xl text-gray-600"
+			>
 				<p className="w-[200px] paragraph text-sm">
 					We use cookies to improve your experience. You can opt out
 					of certain cookies. Find out more in our{' '}
