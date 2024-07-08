@@ -1,0 +1,208 @@
+---
+title: 'Adding Webhooks to your SaaS Platform for your users'
+description: 'This blog post provides a practical guide on implementing webhooks in a forum builder SaaS like Centox.io, using JavaScript and Express.js. It follows the Standard Webhook Specifications and includes code examples for key components such as webhook management endpoints, webhook sending functions, and event triggering logic.'
+authors:
+    - name: Simon Maribo
+      url: https://twitter.com/steilgaard
+      avatar: https://simonmaribo.dk/simonmaribo.png
+publishedAt: 2024-07-09
+image: /blog-images/one-tool-vs-collective-toolbox.webp
+category: engineering
+---
+
+
+# Implementing Webhooks in Your Forum Builder SaaS: A Step-by-Step Guide
+
+One of the products using Toolbird is our forum builder [Centox](https://centox.io). 
+Yesterday I wrote about the [Standard Webhook Specifications](http://localhost:3000/blog/standard-webhook-specifications) and about the best practices for implementing webhooks in your SaaS platform.
+
+Today I will show you how to implement webhooks in a forum builder SaaS like [Centox](https://centox.io), using JavaScript and Express.js.
+
+## Step 1: Setting Up the Webhook Model
+
+First, I created a mongoose model to store webhook configurations, which the users can create on the Centox platform.
+
+```javascript
+const mongoose = require('mongoose');
+
+const WebhookSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  url: { type: String, required: true },
+  events: [{ type: String, enum: ['post.created', 'post.comment'] }],
+  secretKey: { type: String, required: true }
+});
+
+module.exports = mongoose.model('Webhook', WebhookSchema);
+```
+
+## Step 2: Creating Webhook Management Endpoints
+Next, I added Express routes for users to manage their webhooks. This include creating, listing, and deleting webhook listeners.
+
+```javascript
+const express = require('express');
+const router = express.Router();
+const Webhook = require('./models/Webhook');
+const crypto = require('crypto');
+
+// Create a new webhook
+router.post('/webhooks', async (req, res) => {
+  try {
+    const { url, events } = req.body;
+    const secretKey = crypto.randomBytes(32).toString('hex');
+
+    const webhook = await Webhook.create({
+      userId: req.user._id, // Assuming auth middleware sets req.user
+      url,
+      events,
+      secretKey
+    });
+
+    res.status(201).json({
+      id: webhook._id,
+      url: webhook.url,
+      events: webhook.events,
+      secretKey: webhook.secretKey
+    });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
+// List webhooks for a user
+router.get('/webhooks', async (req, res) => {
+  try {
+    const webhooks = await Webhook.find({ userId: req.user._id });
+    res.json(webhooks);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Delete a webhook
+router.delete('/webhooks/:id', async (req, res) => {
+  try {
+    await Webhook.findOneAndDelete({ _id: req.params.id, userId: req.user._id });
+    res.status(204).send();
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
+module.exports = router;
+```
+
+## Step 3: Implementing Webhook Sending
+Now, let's create a function to send webhooks following the Standard Webhook Specifications:
+```javascript
+
+const axios = require('axios');
+const crypto = require('crypto');
+
+async function sendWebhook(webhook, eventType, eventData) {
+  const payload = {
+    id: `evt_${Date.now()}`,
+    type: eventType,
+    timestamp: new Date().toISOString(),
+    data: eventData
+  };
+
+  const timestamp = Math.floor(Date.now() / 1000);
+  const signature = generateSignature(webhook.secretKey, webhook.id, timestamp, payload);
+
+  try {
+    await axios.post(webhook.url, payload, {
+      headers: {
+        'Content-Type': 'application/json',
+        'webhook-id': webhook._id.toString(),
+        'webhook-timestamp': timestamp.toString(),
+        'webhook-signature': `v1,${signature}`
+      }
+    });
+    console.log(`Webhook sent successfully to ${webhook.url}`);
+  } catch (error) {
+    console.error(`Failed to send webhook to ${webhook.url}:`, error.message);
+  }
+}
+
+function generateSignature(secretKey, webhookId, timestamp, payload) {
+  const signaturePayload = `${webhookId}.${timestamp}.${JSON.stringify(payload)}`;
+  return crypto.createHmac('sha256', secretKey)
+    .update(signaturePayload)
+    .digest('base64');
+}
+```
+
+## Step 4: Triggering Webhooks on Events
+Now, let's integrate webhook sending into our forum operations. Here's an example for creating a new post:
+
+```javascript
+const Post = require('./models/Post');
+const Webhook = require('./models/Webhook');
+
+async function createPost(userId, forumId, content) {
+  // Create the post
+  const newPost = await Post.create({ userId, forumId, content });
+
+  // Prepare webhook payload
+  const eventData = {
+    postId: newPost._id,
+    userId: newPost.userId,
+    forumId: newPost.forumId,
+    content: newPost.content
+  };
+
+  // Find relevant webhooks and send them
+  const webhooks = await Webhook.find({ 
+    userId: userId, 
+    events: 'post.created' 
+  });
+  
+  webhooks.forEach(webhook => sendWebhook(webhook, 'post.created', eventData));
+
+  return newPost;
+}
+```
+And here's a similar function for adding a comment:
+```javascript
+async function addComment(userId, postId, content) {
+  // Add the comment
+  const updatedPost = await Post.findByIdAndUpdate(
+    postId,
+    { $push: { comments: { userId, content } } },
+    { new: true }
+  );
+
+  // Prepare webhook payload
+  const eventData = {
+    postId: updatedPost._id,
+    commentId: updatedPost.comments[updatedPost.comments.length - 1]._id,
+    userId: userId,
+    content: content
+  };
+
+  // Find relevant webhooks and send them
+  const webhooks = await Webhook.find({ 
+    userId: updatedPost.userId, 
+    events: 'post.comment' 
+  });
+  
+  webhooks.forEach(webhook => sendWebhook(webhook, 'post.comment', eventData));
+
+  return updatedPost;
+}
+```
+
+## Conclusion
+
+With these pieces in place, [Centox](https://centox.io) now supports webhooks for `post.created` and `post.comment` events. 
+Users can register webhook endpoints through our API, and they'll receive real-time notifications when these events occur in their forums.
+
+Remember, this is a basic implementation. 
+In a production environment, you'd want to add features like:
+* Webhook verification on the receiver's end
+* Retry logic for failed webhook deliveries
+* Rate limiting to prevent abuse
+* Webhook logs for monitoring and debugging
+
+By implementing webhooks, we've significantly enhanced the integration capabilities of our forum builder SaaS. 
+This allows our users to build more complex and responsive systems around their forums, ultimately providing more value and flexibility.
