@@ -1,0 +1,395 @@
+---
+title: 'How to implement Standard Webhook Specifications in your projects'
+description: 'Learn how to implement Standard Webhook Specifications in your projects to improve security, reliability, and interoperability.'
+authors:
+    - name: Simon Maribo
+      url: https://twitter.com/steilgaard
+      avatar: https://simonmaribo.dk/simonmaribo.png
+publishedAt: 2024-07-08
+image: /blog-images/one-tool-vs-collective-toolbox.webp
+category: education
+---
+
+As a developer, I've worked with numerous APIs and webhook implementations over the years. 
+One thing that's always frustrated me is the lack of consistency in how different services handle webhooks. 
+It's a pain to relearn verification methods, payload structures, and error handling for each new integration. 
+That's why I was excited to come across the [Standard Webhooks specification](https://github.com/standard-webhooks/standard-webhooks).
+In this post, I'll break down what Standard Webhooks are, why they're important, and how to implement them in your projects.
+
+## The Problem with Webhooks Today
+
+Before we dive into Standard Webhooks, let's talk about why they're needed. Webhooks are a crucial part of modern APIs, allowing services to send real-time notifications about events to client applications. However, the current ecosystem is fragmented, with each provider implementing webhooks differently. This fragmentation causes several issues:
+
+1. **Inconsistent implementations**: Developers have to learn new patterns for each webhook provider.
+2. **Security concerns**: Not all webhook implementations prioritize security, leading to potential vulnerabilities.
+3. **Reliability issues**: Some webhook systems lack proper retry mechanisms or delivery guarantees.
+4. **Lack of interoperability**: Tools and libraries often can't be reused across different webhook providers.
+
+These problems make working with webhooks more challenging than it needs to be, both for webhook providers and consumers.
+
+## Enter Standard Webhooks
+
+Standard Webhooks aims to solve these issues by providing a set of open-source tools and guidelines for sending webhooks securely, consistently, and reliably. Think of it as the JWT of webhooks – a common protocol that can be adopted across the industry to improve interoperability and enable new innovations in the webhook ecosystem.
+
+The specification is designed with several key goals in mind:
+
+- **Security**: Making it easy to implement secure webhooks and hard to create insecure ones.
+- **Reliability**: Ensuring webhook delivery can be depended upon.
+- **Interoperability**: Enabling compatibility across different providers, consumers, and utilities.
+- **Simplicity**: Avoiding unnecessary complexity in existing systems.
+- **Compatibility**: Supporting both existing and future webhook implementations.
+
+Now, let's dive into the key aspects of the Standard Webhooks specification and how to implement them.
+
+## Payload Structure
+
+The payload is the heart of any webhook. It contains the actual data being sent about an event. While Standard Webhooks doesn't strictly dictate the payload structure, it does provide some recommendations:
+
+1. The payload should be in the HTTP body.
+2. JSON formatting is recommended for maximum compatibility.
+3. A consistent structure should be used across event types.
+
+Here's an example of a recommended payload structure:
+
+```javascript
+const payload = {
+  type: "user.created",
+  timestamp: "2023-07-08T15:30:45.123Z",
+  data: {
+    id: "usr_123456",
+    name: "John Doe",
+    email: "john@example.com"
+  }
+};
+```
+
+This structure includes:
+* **type**: A dot-delimited string indicating the event type.
+* **timestamp**: An ISO 8601 timestamp of when the event occurred. (not necessarily when it was sent)
+* **data**: The actual event data, which can vary based on the event type.
+
+I find this structure clear and easy to work with.
+the **type** field makes it simple to route events to the appropriate handler, 
+while the **timestamp** is crucial for understanding the sequence of events.
+
+## Thin vs. Full Payloads
+An interesting aspect of the Standard Webhooks specification is the discussion of "thin" versus "full" payloads. 
+This is something I've grappled with in my own webhook designs.
+
+A thin payload might look like this:
+```javascript
+const thinPayload = {
+  type: "user.updated",
+  timestamp: "2023-07-08T16:45:30.789Z",
+  data: {
+    id: "usr_123456"
+  }
+}
+```
+While a full payload could be:
+```javascript
+const fullPayload = {
+  type: "user.updated",
+  timestamp: "2023-07-08T16:45:30.789Z",
+  data: {
+    id: "usr_123456",
+    name: "John Doe",
+    email: "john@example.com",
+    plan: "pro",
+    lastLogin: "2023-07-08T14:30:00.000Z"
+  }
+};
+```
+There are pros and cons to each approach:
+* **Thin payloads** are more performant and flexible but may require additional API calls to get full information.
+* **Full payloads** provide more immediate data but can be larger and less future-proof.
+
+In my experience, a hybrid approach often works well. 
+Include the most commonly needed fields in the payload, 
+but keep it relatively slim. This balances performance with usability.
+
+## Verifying Webhook Authenticity
+Security is a critical aspect of any webhook system. 
+Standard Webhooks provides a robust signature scheme to ensure the authenticity of incoming webhooks. 
+This is something I always implement in my webhook systems, 
+and I'm glad to see it formalized in the specification.
+
+The signature scheme involves signing a combination of the webhook's ID, timestamp, and payload. Here's how you might implement this in JavaScript:
+```javascript
+const crypto = require('crypto');
+
+function generateSignature(id, timestamp, payload, secretKey) {
+  const signaturePayload = `${id}.${timestamp}.${JSON.stringify(payload)}`;
+  return crypto.createHmac('sha256', secretKey)
+    .update(signaturePayload)
+    .digest('base64');
+}
+
+// Example usage
+const webhookId = 'msg_123456';
+const timestamp = Math.floor(Date.now() / 1000);
+const payload = { 
+    type: 'user.created', 
+    data: { 
+        id: 'usr_789' 
+    } 
+};
+const secretKey = 'your_secret_key';
+
+const signature = generateSignature(webhookId, timestamp, payload, secretKey);
+```
+
+On the receiving end, you'd verify the signature like this:
+```javascript
+function verifySignature(id, timestamp, payload, signature, secretKey) {
+  const expectedSignature = generateSignature(id, timestamp, payload, secretKey);
+  return crypto.timingSafeEqual(
+    Buffer.from(signature),
+    Buffer.from(expectedSignature)
+  );
+}
+
+// Example usage
+const receivedSignature = 'ABC123...'; // The signature received in the webhook
+const isValid = verifySignature(webhookId, timestamp, payload, receivedSignature.split(',')[1], secretKey);
+console.log(`Signature is ${isValid ? 'valid' : 'invalid'}`);
+```
+
+Note the use of **crypto.timingSafeEqual()**. 
+This is crucial to prevent timing attacks that could potentially leak information about the secret key.
+
+## Webhook Headers
+
+Standard Webhooks specifies a set of headers that should be included with each webhook request. 
+These headers provide important metadata about the webhook. 
+Here's how you might set these headers when sending a webhook:
+
+```javascript
+const axios = require('axios');
+
+async function sendWebhook(url, payload, id, timestamp, signature) {
+  try {
+    const response = await axios.post(url, payload, {
+      headers: {
+        'Content-Type': 'application/json',
+        'webhook-id': id,
+        'webhook-timestamp': timestamp,
+        'webhook-signature': signature
+      }
+    });
+    console.log('Webhook sent successfully');
+    return response;
+  } catch (error) {
+    console.error('Error sending webhook:', error);
+    throw error;
+  }
+}
+
+// Example usage
+const webhookUrl = 'https://api.toolbird.io/webhook';
+const webhookId = 'msg_123456';
+const timestamp = Math.floor(Date.now() / 1000);
+const payload = { type: 'user.created', data: { id: 'usr_789' } };
+const signature = generateSignature(webhookId, timestamp, payload, secretKey);
+
+sendWebhook(webhookUrl, payload, webhookId, timestamp, `${signature}`);
+```
+
+When receiving a webhook, you'd extract these headers and use them to verify the webhook:
+```javascript
+function handleWebhook(req, res) {
+  const webhookId = req.headers['webhook-id'];
+  const timestamp = parseInt(req.headers['webhook-timestamp'], 10);
+  const signature = req.headers['webhook-signature'];
+  const payload = req.body;
+
+  // Verify the webhook is not too old (e.g., within 5 minutes)
+  const currentTime = Math.floor(Date.now() / 1000);
+  if (currentTime - timestamp > 300) {
+    return res.status(400).send('Webhook too old');
+  }
+
+  // Verify the signature
+  if (!verifySignature(webhookId, timestamp, payload, signature.split(',')[1], secretKey)) {
+    return res.status(401).send('Invalid signature');
+  }
+
+  // Process the webhook
+  console.log('Received valid webhook:', payload);
+  res.status(200).send('Webhook received');
+}
+```
+
+This example includes a check for the age of the webhook, which is an important security measure to prevent replay attacks.
+
+## Reliability and Retries
+
+One aspect of Standard Webhooks that I particularly appreciate is its emphasis on reliability. 
+The specification recommends implementing a retry mechanism with exponential backoff for failed webhook deliveries. 
+Here's a simple implementation of this concept:
+
+```javascript
+const backoffSchedule = [
+  0,      // Immediate retry
+  5000,   // 5 seconds
+  30000,  // 30 seconds
+  300000, // 5 minutes
+  3600000 // 1 hour
+];
+
+async function sendWebhookWithRetries(url, payload, maxRetries = 5) {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      await sendWebhook(url, payload);
+      console.log('Webhook sent successfully');
+      return;
+    } catch (error) {
+      if (attempt === maxRetries) {
+        console.error('Max retries reached. Webhook delivery failed.');
+        // Here you might want to log this failure or notify the user
+        return;
+      }
+
+      const delay = backoffSchedule[attempt] || backoffSchedule[backoffSchedule.length - 1];
+      console.log(`Webhook delivery failed. Retrying in ${delay / 1000} seconds...`);
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+}
+
+// Example usage
+const webhookUrl = 'https://api.toolbird.io/webhook';
+const payload = { type: 'user.created', data: { id: 'usr_789' } };
+sendWebhookWithRetries(webhookUrl, payload);
+```
+
+This implementation attempts to send the webhook immediately, and if it fails, it retries with increasing delays between attempts.
+This approach helps to avoid overwhelming the receiving server while still ensuring eventual delivery in most cases.
+
+## Event Types and Filtering
+
+Another recommendation from the Standard Webhooks specification that I find valuable is the use of hierarchical, dot-delimited event types. 
+This allows for easy filtering and routing of webhooks. 
+Here's how you might implement a simple event filtering system:
+
+```javascript
+
+class WebhookHandler {
+  constructor() {
+    this.handlers = {};
+  }
+
+  on(eventType, handler) {
+    if (!this.handlers[eventType]) {
+      this.handlers[eventType] = [];
+    }
+    this.handlers[eventType].push(handler);
+  }
+
+  handleWebhook(payload) {
+    const { type } = payload;
+    const parts = type.split('.');
+
+    for (let i = parts.length; i > 0; i--) {
+      const partialType = parts.slice(0, i).join('.');
+      const handlers = this.handlers[partialType];
+      if (handlers) {
+        handlers.forEach(handler => handler(payload));
+      }
+    }
+  }
+}
+
+// Example usage
+const handler = new WebhookHandler();
+
+handler.on('user', payload => {
+  console.log('Received user event:', payload);
+});
+
+handler.on('user.created', payload => {
+  console.log('User created:', payload.data.id);
+});
+
+handler.on('user.updated', payload => {
+  console.log('User updated:', payload.data.id);
+});
+
+// Simulate receiving webhooks
+handler.handleWebhook({ type: 'user.created', data: { id: 'usr_123' } });
+handler.handleWebhook({ type: 'user.updated', data: { id: 'usr_456' } });
+handler.handleWebhook({ type: 'order.created', data: { id: 'ord_789' } });
+```
+
+This system allows you to register handlers for specific event types or for broader categories of events.
+For example, a handler registered for 'user' would receive all user-related events, while a handler for 'user.created' would only receive user creation events.
+
+## Migrating to Standard Webhooks
+
+One of the great things about the Standard Webhooks specification is that it's designed to be easily adopted alongside existing webhook implementations. This means you can gradually migrate your system without disrupting current integrations.
+Here's a simple example of how you might implement a dual-mode webhook sender that supports both your legacy system and Standard Webhooks:
+```javascript
+async function sendDualModeWebhook(url, payload, secretKey) {
+  const webhookId = generateUniqueId();
+  const timestamp = Math.floor(Date.now() / 1000);
+  const standardSignature = generateSignature(webhookId, timestamp, payload, secretKey);
+  const legacySignature = generateLegacySignature(payload, secretKey);
+
+  try {
+    const response = await axios.post(url, payload, {
+      headers: {
+        'Content-Type': 'application/json',
+        // Standard Webhooks headers
+        'webhook-id': webhookId,
+        'webhook-timestamp': timestamp,
+        'webhook-signature': `v1,${standardSignature}`,
+        // Legacy headers
+        'X-Legacy-Signature': legacySignature
+      }
+    });
+    console.log('Dual-mode webhook sent successfully');
+    return response;
+  } catch (error) {
+    console.error('Error sending dual-mode webhook:', error);
+    throw error;
+  }
+}
+
+function generateUniqueId() {
+  return 'msg_' + Math.random().toString(36).substr(2, 9);
+}
+
+function generateLegacySignature(payload, secretKey) {
+  // Implement your legacy signature generation here
+  // This is just a placeholder implementation
+  return crypto.createHmac('sha256', secretKey)
+    .update(JSON.stringify(payload))
+    .digest('hex');
+}
+
+// Example usage
+const webhookUrl = 'https://api.toolbird.io/webhook';
+const payload = { type: 'user.created', data: { id: 'usr_789' } };
+const secretKey = 'your_secret_key';
+
+sendDualModeWebhook(webhookUrl, payload, secretKey);
+```
+
+This approach allows you to send webhooks that are compatible with both your legacy system and Standard Webhooks. Consumers of your webhooks can then choose which verification method to use, allowing for a gradual migration.
+
+## Conclusion
+Standard Webhooks represents a significant step forward in the webhook ecosystem. By providing a consistent, secure, and reliable framework for webhook implementation, it addresses many of the pain points I've encountered when working with webhooks.
+
+Key takeaways from the Standard Webhooks specification include:
+1. A consistent payload structure that includes event type and timestamp.
+2. A robust signature scheme for verifying webhook authenticity.
+3. Standardized headers for important webhook metadata.
+4. Recommendations for reliability and retry mechanisms.
+5. Guidelines for event types and filtering.
+6. A path for easy migration from existing webhook systems.
+
+Implementing Standard Webhooks in your projects can lead to more secure, reliable, and interoperable webhook systems. It can also make your life as a developer easier by providing a consistent pattern to follow across different services and integrations.
+
+As the adoption of Standard Webhooks grows, I'm excited to see how it will shape the future of real-time event notifications in web applications. Whether you're building a new webhook system from scratch or looking to improve an existing one, I highly recommend giving Standard Webhooks a closer look.
+
+Remember, the web development ecosystem thrives on standards and interoperability. By adopting and promoting specifications like Standard Webhooks, we can all contribute to a more cohesive and developer-friendly web. Happy coding!
