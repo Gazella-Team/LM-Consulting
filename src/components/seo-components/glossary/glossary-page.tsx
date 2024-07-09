@@ -1,12 +1,8 @@
-import { Post } from 'contentlayer/generated'
 import Layout from '@/components/Layout'
 import Meta from '@/components/Layout/Meta'
-import categories, { getCategoriesList } from '@/contentlayer/lib/categories'
-import { cn } from '@/helpers/utils'
-import Link from 'next/link'
 import GlossaryCard from './GlossaryCard'
-import glossaryData from "./glossary-data.json"
-
+import glossaryData from './glossary-data.json'
+import slugify from 'slugify'
 
 export default function GlossaryPage() {
 	return (
@@ -47,7 +43,9 @@ export default function GlossaryPage() {
 							<GlossaryCard
 								key={v.glose}
 								term={v.glose}
-								link='/'
+								link={`/glossary/${slugify(v.glose, {
+									lower: true,
+								})}`}
 								description={v.explanation}
 							/>
 						))}
