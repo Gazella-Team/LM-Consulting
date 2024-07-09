@@ -3,6 +3,7 @@ import Layout from '@/components/Layout'
 import Meta from '@/components/Layout/Meta'
 import PageIntro from '@/components/PageIntro'
 import SectionIntro from '@/components/SectionIntro'
+import AffiliateTestimonials from '@/components/affiliate-testimonials'
 import AffiliateProcess from '@/components/affiliate/process'
 import BlurSection from '@/components/blur-section'
 import { CheckCircle2 } from 'lucide-react'
@@ -174,9 +175,17 @@ export default function Affiliate() {
 					</div>
 				</div>
 			</BlurSection>
+			<SectionIntro
+				topMargin={false}
+				heading="What others say"
+				description="All you need to collect and manage user feedback in a structured way."
+				hook="Affiliate Testimonials"
+			>
+				<AffiliateTestimonials />
+			</SectionIntro>
 			<BlurSection
 				bottomMargin={true}
-				heading="Get all your answers"
+				heading="Affiliate FAQ"
 				hook="Frequently Asked Questions"
 			>
 				<AffiliateFAQ />
