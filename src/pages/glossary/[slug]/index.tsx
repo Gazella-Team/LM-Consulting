@@ -30,7 +30,7 @@ export default function GloseList({
 					background:
 						'radial-gradient(circle, rgba(103,27,255,0.06908700980392157) 0%, rgba(255,255,255,0) 40%)',
 				}}
-				className="z-10 relative"
+				className="z-10 relative mb-24"
 			>
 				<div className="max-w-6xl py-24 text-center w-[86%] mx-auto">
 					<h1 className="text-5xl font-bold  mb-4 text-gray-800">
