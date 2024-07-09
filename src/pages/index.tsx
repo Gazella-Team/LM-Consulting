@@ -7,6 +7,7 @@ import Hero from '@/components/hero'
 import Hero02 from '@/components/hero-02'
 import Hero03 from '@/components/hero-03'
 import Mission from '@/components/mission'
+import { Webhook } from 'lucide-react'
 
 export default function Home() {
 	return (
