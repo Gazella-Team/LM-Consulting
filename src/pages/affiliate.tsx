@@ -33,7 +33,7 @@ export default function Affiliate() {
 			<BlurSection
 					bottomMargin={true}
 					heading="Reasons to become a Toolbird Affiliate"
-					hook="More than just Analytics"
+					hook="Supercharge Your Earnings"
 				>
 				<div className="grid grid-cols-1 lg:grid-cols-2 paragraph gap-x-32 gap-y-16 w-[90%] mt-12 mx-auto">
 					<div className="flex gap-4">
@@ -46,11 +46,10 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Privacy friendly (GDPR)
+								High Commission Structure
 							</h2>
 							<p className="text-gray-600">
-								Your data is stored securely in Europe. We never
-								share your data or sell it to a third-party.
+							For every paid customer you refer, you earn one of the best percentages in the industry of the sale.
 							</p>
 						</div>
 					</div>
@@ -64,10 +63,10 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Data ownership
+								Reliable Monthly Payouts
 							</h2>
 							<p className="text-gray-600">
-								You have 100% ownership of your data, with fully control over the stats we collect.
+								We offer reliable monthly payouts through PayPal and Wire to ensure timely payments.					
 							</p>
 						</div>
 					</div>
@@ -81,10 +80,10 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Fast and intuitive
+								Ready-to-use resources
 							</h2>
 							<p className="text-gray-600">
-								Our fast systems and user-friendly experience allows you to navigate your analytics as easy as possible.
+								Our program comes with ready-to-use templates and scripts to get you started the best way possbile.					
 							</p>
 						</div>
 					</div>
@@ -98,10 +97,10 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								All features
+								User-friendly dashboard
 							</h2>
 							<p className="text-gray-600">
-								Track page data, referral data, geographic data and device data, and many other live data points.
+								Track your clicks, conversions, and commissions with ease thorugh our intuitive dashboard.						
 							</p>
 						</div>
 					</div>
@@ -115,10 +114,10 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Custom tracking
+								Lifetime income
 							</h2>
 							<p className="text-gray-600">
-								Track advanced analytics of specific buttons, links, sections and more with custom event tracking.
+								Our commisions are lifetime recurring, meaning your earnings stay with you monthly and forever.
 							</p>
 						</div>
 					</div>
@@ -132,10 +131,10 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Prioritized support
+								Affiliate community
 							</h2>
 							<p className="text-gray-600">
-								We&apos;re online 24/7 to answer any questions or fix any issues you might stumble into in regards to Toolbird.
+								Get access to an affiliate community providing instant help and resources to any question.
 							</p>
 						</div>
 					</div>
@@ -149,11 +148,10 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Custom tracking
+								Dedicated support
 							</h2>
 							<p className="text-gray-600">
-								Track advanced analytics of specific buttons, links, sections and more with custom event tracking.
-							</p>
+							Our team will help you through every step. They&apos;ll help you understand the product to promote it well.							</p>
 						</div>
 					</div>
 					<div className="flex gap-4">
@@ -166,15 +164,16 @@ export default function Affiliate() {
 						</div>
 						<div className="flex flex-col gap-2">
 							<h2 className="font-semibold text-xl text-gray-800">
-								Prioritized support
+								Referral visibility
 							</h2>
 							<p className="text-gray-600">
-								We&apos;re online 24/7 to answer any questions or fix any issues you might stumble into in regards to Toolbird.
+							Get real-time status of your referrals in your dashboard. We use a cookie life of 60 days.							
 							</p>
 						</div>
 					</div>
 				</div>
 			</BlurSection>
+			{/*
 			<SectionIntro
 				topMargin={false}
 				heading="What others say"
@@ -190,6 +189,7 @@ export default function Affiliate() {
 			>
 				<AffiliateFAQ />
 			</BlurSection>
+			 */}
 		</Layout>
 	)
 }

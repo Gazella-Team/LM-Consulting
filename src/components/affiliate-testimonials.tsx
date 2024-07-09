@@ -21,7 +21,7 @@ export default function AffiliateTestimonials() {
 
 function ReviewCard(props: any) {
 	return props.count % 2 === 0 ? (
-		<div className="rounded-3xl w-full border shadow-clean bg-white border-gray-600/10 paragraph p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-8">
+		<div className="rounded-3xl w-full border shadow-clean shadow-main/20 bg-white border-gray-600/10 paragraph p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-8">
 			<div className="absolute mt-[-75px] mx-auto">
 				<img
 					className="w-[80px] rounded-full mx-auto border-2 border-main"
@@ -43,7 +43,7 @@ function ReviewCard(props: any) {
 			</div>
 		</div>
 	) : (
-		<div style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)', }} className="rounded-3xl w-full border shadow-clean border-gray-600/10 paragraph p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-8">
+		<div style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)', }} className="rounded-3xl w-full border shadow-clean shadow-main/20 border-gray-600/10 paragraph p-10 px-8  backdrop:blur-xl text-gray-800 flex flex-col justify-between gap-8">
 			<div className="absolute mt-[-75px] mx-auto">
 				<img
 					className="w-[80px] rounded-full mx-auto border-2 border-main"
