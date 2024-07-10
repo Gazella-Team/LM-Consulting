@@ -30,7 +30,7 @@ export default function Hero03({children}:{children:React.ReactNode}) {
 							href="https://app.toolbird.io/auth/register"
 							className="bg-main border-[3px] border-main font-medium text-sm text-white px-4 py-2 rounded-full"
 						>
-							Start 14-day free trial
+							Get started for free, no credit card
 						</Link>
 					</div>
 				</RevealLight>
