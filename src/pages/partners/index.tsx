@@ -29,7 +29,7 @@ export default function Partners() {
 			>
 				<section className=''>
 					<div style={{ background: 'linear-gradient(329deg, rgba(244,244,244,1) 0%, rgba(250,248,255,1) 17%, rgba(247,247,247,1) 37%, rgba(253,252,255,1) 67%, rgba(252,251,255,1) 94%)', }} className='max-w-2xl mx-auto rounded-3xl shadow-clean flex flex-col gap-6 shadow-main/10 border border-gray-600/10 p-10'>
-					{partnerData.map((partner) => <PartnerCards Obj={partner} />)}
+					{partnerData.map((partner) => <PartnerCards key={partner.name} Obj={partner} />)}
 					</div>
 				</section>
 			</CurvePageIntro>
