@@ -45,7 +45,7 @@ export default function CurvePageIntro(props: CurvePageIntroProps) {
 								<Link
 									target={props.buttons[0].target}
 									href={'/'}
-									className="bg-gray-800 border-[3px] border-gray-800 text-white text-xs px-4 py-1 rounded-full"
+									className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 								>
 									{props.buttons[0].text}
 								</Link>
@@ -74,7 +74,7 @@ export default function CurvePageIntro(props: CurvePageIntroProps) {
 				) : null}
 			</div>
 		</section>
-        <div className='mt-[-280px]'>
+        <div className={props.buttons ? 'mt-[-220px]':'mt-[-280px]'}>
             {props.children}
         </div>
         </>
