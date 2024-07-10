@@ -44,7 +44,7 @@ export default function CurvePageIntro(props: CurvePageIntroProps) {
 							<div className="flex items-center paragraph relative justify-center gap-3 mt-6 mb-4 font-medium">
 								<Link
 									target={props.buttons[0].target}
-									href={'/'}
+									href={props.buttons[0].path}
 									className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
 								>
 									{props.buttons[0].text}

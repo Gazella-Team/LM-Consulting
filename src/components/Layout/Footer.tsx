@@ -50,6 +50,10 @@ const FOOTER_LINKS: {
 				href: '/affiliate',
 			},
 			{
+				label: 'Partners',
+				href: '/partners',
+			},
+			{
 				label: 'Terms & Conditions',
 				href: '/legal/terms',
 			},

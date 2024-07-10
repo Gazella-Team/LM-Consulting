@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const partnerData = [
 	{name: "Luxvps", image:"/partners/luxvps.png", link: "https://luxvps.net/", description: "LuxVPS is a hosting service provider that offers Virtual Private Servers (VPS) solutions. VPS hosting is a type of web hosting that uses virtualization technology to provide dedicated resources on a server with multiple users. It's a more secure and stable solution than shared hosting, where you don’t get a dedicated server space."},
-	{name: "Burst Creators", image:"/partners/burstcreators.png", link: "https://burstcreators.com/", description: "LuxVPS is a hosting service provider that offers Virtual Private Servers (VPS) solutions. VPS hosting is a type of web hosting that uses virtualization technology to provide dedicated resources on a server with multiple users. It's a more secure and stable solution than shared hosting, where you don’t get a dedicated server space."},
+	{name: "Burst Creators", image:"/partners/burstcreators.png", link: "https://burstcreators.com/", description: "With Burst you only pay for actual views. Never overspend on influencer marketing again! Empower your brand with Burst—where impactful trends and measurable engagement drive your influencer campaigns. Pay for performance, not promises."},
 ]
 
 export default function Partners() {
@@ -23,7 +23,8 @@ export default function Partners() {
 				buttons={[
 					{
 						text: 'Become a Toolbird Partner',
-						path: 'https://app.toolbird.io/auth/register',
+						path: 'https://cal.com/lasseosmann/toolbird-partner',
+						target: "_blank",
 					},
 				]}
 			>
