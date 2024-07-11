@@ -13,7 +13,7 @@ export default function Affiliate() {
 		<Layout white={true}>
 			<Meta
 				title={`Become an affiliate - Toolbird.io`}
-				description="Get in touch with the team behind Toolbird today."
+				description="Promote Toolbird and earn 30% recurring commission as you refer people to our paid plans."
 				keywords="Contact, Mail, Phone, Team"
 			/>
 			<PageIntro
