@@ -22,12 +22,6 @@ export default function Layout(props: LayoutProps) {
 				<div>
 					<div className="relative">{props.children}</div>
 				</div>
-				<div>
-					<Footer
-						noCta={props.noCta}
-						fullWidth={props.footerFullWidth}
-					/>
-				</div>
 			</div>
 		</div>
 	)
