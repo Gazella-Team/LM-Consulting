@@ -33,7 +33,7 @@ export default function Navbar(props:NavbarProps) {
 			>
 				<div className="w-[86%] paragraph max-w-6xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<h2 className={cn("text-white", scrolled && "text-black")}>ReaktionAI</h2>
+						<h2 className={cn("text-white font-semibold text-xl", scrolled && "text-black")}>Reaktion<span className='font-normal'>.Ai</span></h2>
 					</div>
 					<div
 						className={cn(
