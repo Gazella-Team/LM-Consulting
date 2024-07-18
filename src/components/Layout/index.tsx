@@ -16,8 +16,7 @@ export default function Layout(props: LayoutProps) {
 	return (
 		<div className="flex flex-col justify-between min-h-screen">
 			<Meta />
-			<div className="w-full bg-white bg-grid-black/[0.04] relative">
-				<div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+			<div className="w-full bg-white">
 				<Navbar whiteBeforeScroll={props.whiteBeforeScroll} />
 				<div>
 					<div className="relative">{props.children}</div>

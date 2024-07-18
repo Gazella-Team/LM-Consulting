@@ -42,7 +42,7 @@ export default function Navbar(props:NavbarProps) {
 					>
 
 					</div>
-					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-white hidden lg:flex", scrolled && "text-black")}>
+					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-white flex", scrolled && "text-black")}>
 						<RefLink
 							className="hidden font-medium text-sm sm:flex"
 							href={'https://app.toolbird.io/auth/login'}
@@ -55,13 +55,6 @@ export default function Navbar(props:NavbarProps) {
 						>
 							Join the waitlist
 						</RefLink>
-					</div>
-					<div className="flex lg:hidden cursor-pointer">
-						{menuClicked ? (
-							<X onClick={() => setMenuClicked(false)} />
-						) : (
-							<Menu onClick={() => setMenuClicked(true)} />
-						)}
 					</div>
 				</div>
 			</div>
