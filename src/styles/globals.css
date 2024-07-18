@@ -4,7 +4,7 @@
 
 html {
 	font-family:
-		'Sora',
+		'Inter',
 		system-ui,
 		-apple-system,
 		BlinkMacSystemFont,
@@ -32,4 +32,10 @@ html {
 		'Open Sans',
 		'Helvetica Neue',
 		sans-serif;
+}
+
+.gradient-text {
+	background: linear-gradient(180deg, #ffffff, #c3f1d3, #d3ffd3);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

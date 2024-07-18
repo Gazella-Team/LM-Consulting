@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { FaTwitter } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
-import Cta from './Cta'
 
 type FooterProps = {
 	fullWidth?: boolean
@@ -109,7 +108,6 @@ const FOOTER_LINKS: {
 export default function Footer(props: FooterProps) {
 	return (
 		<>
-			{!props.noCta && <Cta />}
 			<footer
 				style={{
 					background:

@@ -1,57 +1,22 @@
-import Link from 'next/link'
-import { Reveal } from './Animations/Reveal'
-import { RevealLight } from './Animations/RevealLight'
-import { useEffect } from 'react'
-import { annotate } from 'rough-notation'
+import Link from "next/link";
 
 export default function Hero() {
-	return (
-		<section className="py-24 pt-[60px] relative text-center">
-			<div className="w-[86%] mx-auto max-w-6xl relative flex flex-col gap-5">
-				<Reveal delayTime={0}>
-					<p className="font-[Caveat] text-main mb-1 text-2xl md:text-3xl">
-						The all-in-one toolbox
-					</p>
-				</Reveal>
-				<Reveal delayTime={0.1}>
-					<h1 className="text-5xl md:text-6xl xl:text-7xl max-w-[800px] mx-auto font-extrabold text-gray-800 xl:leading-[110%]">
-						Collect and manage all user-insights in one place
-					</h1>
-					{/*
-					 					<h1 className="text-3xl md:text-4xl xl:text-6xl max-w-[1300px] mx-auto font-extrabold text-gray-800 xl:leading-[60px]">
-						Get{' '}
-						<span className="bg-main/10 text-gray-800 mb-2 md:mb-0 block md:inline-block p-2 py-1 rounded-xl">
-							Web Analytics,
-						</span>{' '}
-						<span className="bg-main/10 text-gray-800 block mb-2 md:mb-0 md:inline-block p-2 py-1 rounded-xl">
-							Feedback Hub
-						</span>{' '}
-						<span className="hidden md:inline-block">and</span>{' '}
-						<span className="bg-main/10 text-gray-800 block mb-2 md:mb-0 md:inline-block p-2 py-1 rounded-xl">
-							User Surveys,
-						</span>{' '}
-						all in 1 place.
-					</h1>
-					 */}
-				</Reveal>
-				<Reveal delayTime={0.2}>
-					<p className="text-base md:text-lg mx-auto xl:text-xl font-regular paragraph mb-2 max-w-[600px] w-[85%] text-gray-600">
-						Toolbird provides web analytics, feedback hub and user
-						surveys, all in one place. Get better overview and save
-						money today.
-					</p>
-				</Reveal>
-				<RevealLight delayTime={0.4}>
-					<div className="flex items-center paragraph relative justify-center gap-3 mt-4 font-medium">
-						<Link
-							href="https://app.toolbird.io/auth/register"
-							className="bg-main border-[3px] border-main font-medium text-sm text-white px-4 py-2 rounded-full"
-						>
-							Get started for free, no credit card
-						</Link>
-					</div>
-				</RevealLight>
-			</div>
-		</section>
-	)
+    return (
+        <section style={{background: "radial-gradient(circle, rgba(30,50,30,1) 0%, rgba(1,25,0,1) 100%)"}} className="h-screen flex justify-center">
+            <div className="pt-40 w-[90%] flex flex-col gap-12 mx-auto max-w-4xl text-center text-white">
+                <div className="flex flex-col gap-6">
+                    <div className="flex mb-2">
+                        <div className="rounded-full px-5 py-1 text-sm mx-auto border border-gray-200">
+                            <p>Best Reaktion Alternative</p>
+                        </div>
+                    </div>
+                    <h2 className="text-7xl font-semibold">Introducing AI-powered <span className="gradient-text">ecommerce reporting</span></h2>
+                    <p className="text-lg max-w-xl mx-auto text-gray-200">Software tailored to ambitious ecommerce agencies and fast-growing ecommerce companies. Increase your profits, save time and get.</p>
+                </div>
+                <div>
+                    <Link className="rounded-full text-green-950 font-semibold px-5 py-2 bg-gradient-to-r from-[#c3f1d3] to-[#d3ffd3]" href={"/"}>Sign up for waitlist</Link>
+                </div>
+            </div>
+        </section>
+    )
 }

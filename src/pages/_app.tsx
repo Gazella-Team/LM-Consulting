@@ -6,27 +6,12 @@ import Script from 'next/script'
 import { Toaster } from 'react-hot-toast'
 import toolbird from '@toolbird/web'
 
-toolbird.init({
-	domain: 'toolbird.io',
-})
-toolbird.setTrackingEnabled(true)
-
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<NiceModal.Provider>
 			<Meta />
 			<Component {...pageProps} />
 			<Toaster />
-			{/*<Script
-				src="https://api.toolbird.io/js/script.js"
-				strategy="lazyOnload"
-				data-domain="toolbird.io"
-			/>*/}
-			<Script
-				async
-				src="https://cdn.tolt.io/tolt.js"
-				data-tolt={process.env.NEXT_PUBLIC_TOLT_PUBLIC_KEY}
-			/>
 		</NiceModal.Provider>
 	)
 }
