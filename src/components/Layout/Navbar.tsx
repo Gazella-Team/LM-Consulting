@@ -40,9 +40,9 @@ export default function Navbar(props:NavbarProps) {
 							'flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm'
 						)}
 					>
-						<Resources />
+
 					</div>
-					<div className="w-[250px] items-center justify-end gap-5 font-medium text-white hidden lg:flex">
+					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-white hidden lg:flex", scrolled && "text-black")}>
 						<RefLink
 							className="hidden font-medium text-sm sm:flex"
 							href={'https://app.toolbird.io/auth/login'}
@@ -51,9 +51,9 @@ export default function Navbar(props:NavbarProps) {
 						</RefLink>
 						<RefLink
 							href={'https://app.toolbird.io/auth/register'}
-							className="bg-gray-800 border-[3px] border-gray-800 font-normal text-sm text-white px-4 py-1 rounded-full"
+							className={cn("bg-white border-[3px] white font-semibold text-sm text-green-900 px-4 py-1 rounded-full", scrolled && "bg-green-900 border-green-900 text-white")}
 						>
-							Start 14-day free trial
+							Join the waitlist
 						</RefLink>
 					</div>
 					<div className="flex lg:hidden cursor-pointer">

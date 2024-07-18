@@ -1,11 +1,11 @@
 import Head from 'next/head'
 
 const Meta = ({
-	title = 'Toolbird: Collect and manage all user-insights in one place',
-	keywords = 'Toolbox, SaaS, Privacy-First Web Analytics, Feedback Hub, User Surveys, Tech Products',
-	description = 'Supercharge your user-driven SaaS development today with web analytics, feedback hub, user surveys - All in one place.',
-	icon = '/seo/favicon.png',
-	banner = '/seo/banner.jpg',
+	title = 'ReaktionAI: Introducing AI-powered ecommerce reporting',
+	keywords = 'AI, Ecommerce, reporting, analysis',
+	description = 'Introducing AI-powered ecommerce reporting',
+	icon = '',
+	banner = '',
 	url = '',
 	authors,
 }: {
@@ -19,7 +19,7 @@ const Meta = ({
 }) => {
 	return (
 		<Head>
-			<meta name="theme-color" content={'#fffff'} key="theme-color" />
+			<meta name="theme-color" content={'#1e321e'} key="theme-color" />
 
 			<meta
 				name="viewport"
