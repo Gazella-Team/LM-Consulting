@@ -15,7 +15,7 @@ export default function Home() {
 					</Link>
 					<Link href={"/02"} className="rounded-2xl border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md hover:bg-gray-50 transition-all">
 						<h2 className="text-2xl font-semibold">02</h2>
-						<p className="text-gray-600">Blue and red</p>
+						<p className="text-gray-600">Black and gray</p>
 					</Link>
 					<Link href={"/03"} className="rounded-2xl border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md hover:bg-gray-50 transition-all">
 						<h2 className="text-2xl font-semibold">03</h2>
