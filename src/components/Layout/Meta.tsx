@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 const Meta = ({
-	title = 'ReaktionAI: Introducing AI-powered ecommerce reporting',
+	title = 'LM Capital: Web design page',
 	keywords = 'AI, Ecommerce, reporting, analysis',
 	description = 'Introducing AI-powered ecommerce reporting',
 	icon = '',
