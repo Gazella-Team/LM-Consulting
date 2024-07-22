@@ -11,20 +11,20 @@ export default function Home() {
 				<div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 					<Link href={"/01"} className="rounded-2xl border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md hover:bg-gray-50 transition-all">
 						<h2 className="text-2xl font-semibold">01</h2>
-						<p className="text-gray-600">Blue and green</p>
+						<p className="text-gray-600">Modern classy</p>
 					</Link>
 					<Link href={"/02"} className="rounded-2xl border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md hover:bg-gray-50 transition-all">
 						<h2 className="text-2xl font-semibold">02</h2>
-						<p className="text-gray-600">Black and gray</p>
+						<p className="text-gray-600">Dark futuristic</p>
 					</Link>
-					<Link href={"/03"} className="rounded-2xl border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md hover:bg-gray-50 transition-all">
+					<div className="rounded-2xl opacity-40 border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md transition-all">
 						<h2 className="text-2xl font-semibold">03</h2>
-						<p className="text-gray-600">Blue and red</p>
-					</Link>
-					<Link href={"/04"} className="rounded-2xl border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md hover:bg-gray-50 transition-all">
+						<p className="text-gray-600">Not finished</p>
+					</div>
+					<div className="rounded-2xl opacity-40 border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md transition-all">
 						<h2 className="text-2xl font-semibold">04</h2>
-						<p className="text-gray-600">Blue and red</p>
-					</Link>
+						<p className="text-gray-600">Not finished</p>
+					</div>
 				</div>
 			</div>
 		</section>
