@@ -3,7 +3,7 @@ import Head from 'next/head'
 const Meta = ({
 	title = 'LM Capital: Web design page',
 	keywords = 'AI, Ecommerce, reporting, analysis',
-	description = 'Introducing AI-powered ecommerce reporting',
+	description = 'Designs for Niclas and Liban',
 	icon = '',
 	banner = '',
 	url = '',
