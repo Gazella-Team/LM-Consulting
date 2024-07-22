@@ -17,10 +17,10 @@ export default function Home() {
 						<h2 className="text-2xl font-semibold">02</h2>
 						<p className="text-gray-600">Dark futuristic</p>
 					</Link>
-					<div className="rounded-2xl opacity-40 border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md transition-all">
+					<Link href={"/03"} className="rounded-2xl border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md hover:bg-gray-50 transition-all">
 						<h2 className="text-2xl font-semibold">03</h2>
-						<p className="text-gray-600">Not finished</p>
-					</div>
+						<p className="text-gray-600">Forest green</p>
+					</Link>
 					<div className="rounded-2xl opacity-40 border border-gray-600/10 flex flex-col gap-3 items-center justify-center p-10 shadow-md transition-all">
 						<h2 className="text-2xl font-semibold">04</h2>
 						<p className="text-gray-600">Not finished</p>
