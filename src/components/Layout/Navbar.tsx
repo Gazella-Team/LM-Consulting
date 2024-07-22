@@ -5,10 +5,8 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Reveal } from '../Animations/Reveal'
 import RefLink from 'next/link'
-import Flyout from './Flyouts/Flyout'
 import localFont from 'next/font/local'
 import { RevealLight } from '../Animations/RevealLight'
-import Resources from './Flyouts/Resources'
 import useScroll from '@/hooks/use-scroll'
 import { cn } from 'utils/cs'
 
@@ -25,35 +23,52 @@ export default function Navbar(props:NavbarProps) {
 		<nav className="top-0 fixed w-full z-50">
 			<div
 				className={cn(
-					'h-[58px] w-full transition-all flex items-center',
+					'h-16 border-b border-gray-600/10 w-full transition-all flex items-center',
 					scrolled
 						? ' bg-white'
 						: props.whiteBeforeScroll ? 'bg-transparent':'bg-white'
 				)}
 			>
-				<div className="w-[86%] paragraph max-w-6xl mx-auto flex items-center justify-between text-gray-800">
+				<div className="w-[95%] paragraph max-w-9xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<h2 className={cn("text-white font-semibold text-xl", scrolled && "text-black")}>Reaktion<span className='font-normal'>.Ai</span></h2>
+						<h2 className={cn("text-black font-semibold text-xl")}>LM{" "}<span className='font-normal'>Consulting</span></h2>
 					</div>
 					<div
 						className={cn(
-							'flex-1 hidden lg:flex items-center justify-center gap-8 font-medium text-sm'
+							'flex-1 hidden lg:flex items-center justify-center gap-6 font-light text-base'
 						)}
 					>
-
-					</div>
-					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-white flex", scrolled && "text-black")}>
 						<RefLink
-							className="hidden font-medium text-sm sm:flex"
+							className="hidden font-normal text-[15px] sm:flex"
 							href={'https://app.toolbird.io/auth/login'}
 						>
-							Log in
+							Services
 						</RefLink>
 						<RefLink
-							href={'https://app.toolbird.io/auth/register'}
-							className={cn("bg-white border-[3px] white font-semibold text-sm text-green-900 px-4 py-1 rounded-full", scrolled && "bg-green-900 border-green-900 text-white")}
+							className="hidden font-normal text-[15px] sm:flex"
+							href={'https://app.toolbird.io/auth/login'}
 						>
-							Join the waitlist
+							Track record
+						</RefLink>						
+						<RefLink
+							className="hidden font-normal text-[15px] sm:flex"
+							href={'https://app.toolbird.io/auth/login'}
+						>
+							Team
+						</RefLink>
+						<RefLink
+							className="hidden font-normal text-[15px] sm:flex"
+							href={'https://app.toolbird.io/auth/login'}
+						>
+							About
+						</RefLink>
+					</div>
+					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
+						<RefLink
+							className="hidden border px-5 py-1.5 rounded-full border-gray-600/40 font-medium text-sm sm:flex"
+							href={'https://app.toolbird.io/auth/login'}
+						>
+							Get in touch
 						</RefLink>
 					</div>
 				</div>
