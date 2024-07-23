@@ -29,7 +29,7 @@ export default function Navbar(props:NavbarProps) {
 						: props.whiteBeforeScroll ? 'bg-transparent':'bg-white'
 				)}
 			>
-				<div className="w-[95%] paragraph max-w-9xl mx-auto flex items-center justify-between text-gray-800">
+				<div className="w-[96%] paragraph max-w-9xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
 						<h2 className={cn("text-black font-semibold text-xl")}>LM{" "}<span className='font-normal'>Consulting</span></h2>
 					</div>
@@ -65,7 +65,7 @@ export default function Navbar(props:NavbarProps) {
 					</div>
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
-							className="hidden border px-5 py-1.5 rounded-full border-gray-600/40 font-medium text-sm sm:flex"
+							className="hidden border px-5 py-1.5 rounded-full border-gray-600/40 font-medium text-xs sm:flex"
 							href={'https://app.toolbird.io/auth/login'}
 						>
 							Get in touch

@@ -9,7 +9,7 @@ export default function Home() {
     return (
 		<Layout>
 			<Hero />
-			<img className="h-[800px] w-full object-cover" src="/bgs/abstract01.webp"></img>
+			<img className="h-[800px] w-[96%] mx-auto object-cover" src="/bgs/abstract01.webp"></img>
 			<SectionIntro heading="Meet the team">
 				<p>hey</p>
 			</SectionIntro>
