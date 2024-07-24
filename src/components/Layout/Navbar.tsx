@@ -40,25 +40,25 @@ export default function Navbar(props:NavbarProps) {
 					>
 						<RefLink
 							className="hidden font-normal text-[15px] sm:flex"
-							href={'https://app.toolbird.io/auth/login'}
+							href="/"
 						>
 							Services
 						</RefLink>
 						<RefLink
 							className="hidden font-normal text-[15px] sm:flex"
-							href={'https://app.toolbird.io/auth/login'}
+							href="/"
 						>
 							Track record
 						</RefLink>						
 						<RefLink
 							className="hidden font-normal text-[15px] sm:flex"
-							href={'https://app.toolbird.io/auth/login'}
+							href="/"
 						>
 							Team
 						</RefLink>
 						<RefLink
 							className="hidden font-normal text-[15px] sm:flex"
-							href={'https://app.toolbird.io/auth/login'}
+							href="/"
 						>
 							About
 						</RefLink>
@@ -66,7 +66,7 @@ export default function Navbar(props:NavbarProps) {
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
 							className="hidden border px-5 py-1.5 rounded-md border-gray-600/40 font-normal text-sm sm:flex"
-							href={'https://app.toolbird.io/auth/login'}
+							href="/"
 						>
 							Contact
 						</RefLink>
