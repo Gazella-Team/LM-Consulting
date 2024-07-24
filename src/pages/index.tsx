@@ -12,7 +12,7 @@ export default function Home() {
 			<Hero />
 			<img className="h-[800px] w-[96%] mx-auto object-cover" src="/bgs/abstract01.webp"></img>
 			<TrackRecord />
-			<SectionIntro heading="Meet the team">
+			<SectionIntro heading="About us.">
 				<p>hey</p>
 			</SectionIntro>
 		</Layout>

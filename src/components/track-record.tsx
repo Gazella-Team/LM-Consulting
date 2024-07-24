@@ -1,3 +1,6 @@
+import { Reveal } from "./Animations/Reveal"
+import { RevealLight } from "./Animations/RevealLight"
+
 const TrackRecordData = [
     {
         image: "/track-record/goldman-sachs.svg",
@@ -19,9 +22,9 @@ const TrackRecordData = [
 
 export default function TrackRecord() {
     return (
-        <section className="py-24">
+        <section className="pt-24 pb-12">
             <div className="w-[90%] mx-auto max-w-5xl flex items-center justify-between">
-                {TrackRecordData.map((v) => <img className={`w-${v.size}`} src={v.image}></img>)}
+                {TrackRecordData.map((v, index) => <RevealLight delayTime={index/80}><img className={`w-${v.size}`} src={v.image}></img></RevealLight>)}
             </div>
         </section>
     )
