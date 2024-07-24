@@ -31,7 +31,7 @@ export default function Navbar(props:NavbarProps) {
 			>
 				<div className="w-[90%] paragraph max-w-8xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<img className='w-32' src='/logo.svg'></img>
+						<img className='w-32' src='/logo.png'></img>
 					</div>
 					<div
 						className={cn(
