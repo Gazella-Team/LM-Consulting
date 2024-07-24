@@ -24,7 +24,7 @@ export default function TrackRecord() {
     return (
         <section className="pt-24 pb-12">
             <div className="w-[90%] mx-auto max-w-5xl flex items-center justify-between">
-                {TrackRecordData.map((v, index) => <RevealLight delayTime={index/80}><img className={`w-${v.size}`} src={v.image}></img></RevealLight>)}
+                {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={`w-${v.size}`} src={v.image}></img></RevealLight>)}
             </div>
         </section>
     )
