@@ -29,7 +29,7 @@ export default function Navbar(props:NavbarProps) {
 						: props.whiteBeforeScroll ? 'bg-transparent':'bg-white'
 				)}
 			>
-				<div className="w-[96%] paragraph max-w-9xl mx-auto flex items-center justify-between text-gray-800">
+				<div className="w-[90%] paragraph max-w-8xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
 						<img className='w-32' src='/logo.svg'></img>
 					</div>
