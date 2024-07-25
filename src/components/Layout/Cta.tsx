@@ -13,7 +13,7 @@ export default function Cta() {
               LM Capital is a digital-first advisory firm designed to support companies in capital raising and private placements
               <br></br>
               <br></br>
-              Our cutting-edge platform transforms the private placements / capital raising process, providing access to a vast network of over 10 million investors worldwide. Leveraging advanced data enrichment and automated outreach technologies, our platform connects with over 8,000 investors daily. Our tech-enabled approach allows us to significantly accelerate funding timelines and boost our clients' success rates.
+              Our cutting-edge platform transforms the private placements / capital raising process, providing access to a vast network of over 10 million investors worldwide. Leveraging advanced data enrichment and automated outreach technologies, our platform connects with over 8,000 investors daily. Our tech-enabled approach allows us to significantly accelerate funding timelines and boost our clients&apos; success rates.
               <br></br>
               <br></br>
               We&apos;ve gotten our clients in front of:
