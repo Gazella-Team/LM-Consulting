@@ -31,7 +31,7 @@ export default function Navbar(props:NavbarProps) {
 			>
 				<div className="w-[90%] paragraph max-w-8xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<img className='w-32' src='/logo.png'></img>
+						<img className='w-32' src='/logo.svg'></img>
 					</div>
 					<div
 						className={cn(
@@ -65,7 +65,7 @@ export default function Navbar(props:NavbarProps) {
 					</div>
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
-							className="hidden border px-5 py-1.5 rounded-md border-gray-600/40 font-normal text-sm sm:flex"
+							className="hidden border hover:bg-black hover:text-white transition-all px-5 py-1.5 rounded-md border-gray-600/40 font-normal text-sm sm:flex"
 							href="/"
 						>
 							Contact

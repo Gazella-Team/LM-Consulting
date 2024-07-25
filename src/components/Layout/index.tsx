@@ -21,6 +21,7 @@ export default function Layout(props: LayoutProps) {
 				<div className='pt-16'>
 					<div className="relative">{props.children}</div>
 				</div>
+				<Footer />
 			</div>
 		</div>
 	)

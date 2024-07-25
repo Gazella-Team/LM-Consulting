@@ -109,22 +109,18 @@ export default function Footer(props: FooterProps) {
 	return (
 		<>
 			<footer
-				style={{
-					background:
-						'radial-gradient(circle, rgba(247,243,255,1) 0%, rgba(255,255,255,1) 50%)',
-				}}
 				className={
 					props.fullWidth
 						? 'py-[10px] mx-auto border-t relative border-t-gray-600/10 bg-white'
-						: 'py-[10px] mx-auto max-w-7xl border-t md:rounded-t-[100px] relative border-t-gray-600/10 bg-white'
+						: 'py-[10px] mx-auto border-t relative border-t-gray-600/10 bg-white'
 				}
 			>
-				<div className="w-[86%] mx-auto min-h-[370px] max-w-6xl grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
+				<div className="w-[90%] mx-auto max-w-8xl min-h-[370px] grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
 					<div className="flex flex-col gap-6">
 						<div className="flex flex-col gap-3">
 							<img
-								className="w-28"
-								src="/logos/finallogo.svg"
+								className="w-32"
+								src="/logo.svg"
 								alt="Toolbird Logo"
 							/>
 							<p className="text-gray-500 paragraph text-sm max-w-xs font-regular">
@@ -178,9 +174,9 @@ export default function Footer(props: FooterProps) {
 						))}
 					</div>
 				</div>
-				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[86%] mx-auto max-w-6xl">
+				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[90%] mx-auto max-w-8xl">
 					<p>
-						© {new Date().getFullYear()} Toolbird - Part of{' '}
+						© {new Date().getFullYear()} LM Capital - Built and hosted by{' '}
 						<a
 							href="https://gazellateam.com"
 							className="underline"
@@ -190,9 +186,8 @@ export default function Footer(props: FooterProps) {
 						</a>
 					</p>
 					<div className="flex items-center gap-4">
-						<p>lasse@toolbird.io</p>
-						<p className="font-[Caveat] text-xl">
-							Made and hosted in the EU 🇪🇺
+						<p>
+							Based in London, UK
 						</p>
 					</div>
 				</div>

@@ -14,6 +14,7 @@ export default function SectionIntro(props:SectionIntroProps) {
                     <h2 className="text-6xl font-bold tracking-tighter times-new-font">{props.heading}</h2>
                 </Reveal>
             </div>
+            {props.children}
         </section>
     )
 }
