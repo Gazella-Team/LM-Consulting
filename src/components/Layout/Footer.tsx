@@ -12,7 +12,8 @@ const FOOTER_LINKS: {
 	title: string
 	links: { label: string; href: string; target?: string }[]
 }[] = [
-	{
+	/*
+		{
 		title: 'Products',
 		links: [
 			{
@@ -34,6 +35,7 @@ const FOOTER_LINKS: {
 			},
 		],
 	},
+	 */
 ]
 
 export default function Footer(props: FooterProps) {
@@ -56,18 +58,18 @@ export default function Footer(props: FooterProps) {
 								alt="Toolbird Logo"
 							/>
 							<p className="text-gray-500 paragraph text-sm max-w-xs font-regular">
-								Get Web Analytics, Feedback Hub and User
-								Surveys, all collected in one place.
+								Unlock Direct Access to over $1 Trillion in Investor Funds
 							</p>
 						</div>
 						<div className="flex">
 							<Link
-								href={'https://app.toolbird.io/auth/register'}
-								className="bg-gray-800 border-[3px] border-gray-800 font-normal paragraph text-xs flex text-white px-6 py-1 rounded-full"
+								className="hidden border hover:bg-black hover:text-white transition-all px-5 py-1.5 rounded-md border-gray-600/40 font-normal text-sm sm:flex"
+								href="/"
 							>
-								Start 14-day free trial
+								Contact
 							</Link>
 						</div>
+						{/*
 						<div className="flex items-center gap-2 mt-3">
 							<Link
 								href={
@@ -84,6 +86,7 @@ export default function Footer(props: FooterProps) {
 								<FaTwitter color="rgb(31 41 55)" />
 							</Link>
 						</div>
+						 */}
 					</div>
 					<div className="grid grid-cols-2 mb-24 lg:grid-cols-3 paragraph gap-16">
 						{FOOTER_LINKS.map((group) => (
