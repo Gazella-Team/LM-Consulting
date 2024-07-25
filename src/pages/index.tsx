@@ -13,9 +13,7 @@ export default function Home() {
 			<Hero />
 			<img className="h-[800px] max-w-8xl w-[90%] mx-auto object-cover" src="/bgs/abstract01.webp"></img>
 			<TrackRecord />
-			<SectionIntro heading="About us.">
-				<About />
-			</SectionIntro>
+			<About />
 		</Layout>
     )
 }

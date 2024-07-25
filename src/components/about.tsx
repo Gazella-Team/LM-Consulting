@@ -1,14 +1,19 @@
+import React from 'react';
+
 export default function About() {
-    return (
-        <section className="py-24">
-            <div className="w-[90%] mx-auto max-w-8xl grid grid-cols-2">
-                <div className="sticky">
-                    <p>anpit</p>
-                </div>
-                <div className="bg-black h-[500px]">
-                    <p>anpit</p>
-                </div>
-            </div>
-        </section>
-    )
-}
+  return (
+    <div className='flex justify-between'>
+    <div id="app">
+      <div id="container">
+        <div id="sidebar">
+          Sidebar content
+        </div>
+        <div id="content">
+          Page content
+        </div>
+      </div>
+    </div>
+    </div>
+  )
+};
+
