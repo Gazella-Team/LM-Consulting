@@ -1,31 +1,11 @@
 import React from 'react';
-import { RevealLight } from './Animations/RevealLight';
 
-const TrackRecordData = [
-  {
-      image: "/track-record/goldman-sachs.svg",
-      size: "w-24"
-  },
-  {
-      image: "/track-record/blackrock.png",
-      size: "w-32"
-  },
-  {
-      image: "/track-record/volvo.png",
-      size: "w-32"
-  },
-  {
-      image: "/track-record/psg.png",
-      size: "w-20"
-  },
-]
-
-export default function About() {
+export default function Cta() {
   return (
     <section className='py-24'>
       <div className='w-[90%] mx-auto max-w-7xl flex flex-col gap-6'>
         <div>
-          <h1 className='text-7xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>About LM Capital.</h1>
+          <h1 className='text-7xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>Get in touch.</h1>
         </div>
         <div className='flex items-center justify-end'>
           <div className='max-w-xl flex flex-col gap-14'>
@@ -38,9 +18,6 @@ export default function About() {
               <br></br>
               We&apos;ve gotten our clients in front of:
             </p>
-            <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
-              {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={v.size} src={v.image}></img></RevealLight>)}
-            </div>
           </div>
         </div>
       </div>

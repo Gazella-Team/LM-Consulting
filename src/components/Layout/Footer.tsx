@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FaTwitter } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
+import Cta from './Cta'
 
 type FooterProps = {
 	fullWidth?: boolean
@@ -38,6 +39,7 @@ const FOOTER_LINKS: {
 export default function Footer(props: FooterProps) {
 	return (
 		<>
+			<Cta />
 			<footer
 				className={
 					props.fullWidth
@@ -45,7 +47,7 @@ export default function Footer(props: FooterProps) {
 						: 'py-[10px] mx-auto border-t relative border-t-gray-600/10 bg-white'
 				}
 			>
-				<div className="w-[90%] mx-auto max-w-8xl min-h-[370px] grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
+				<div className="w-[90%] mx-auto max-w-7xl min-h-[370px] grid grid-cols-1 md:grid-cols-[35%_1fr] pt-14 gap-20">
 					<div className="flex flex-col gap-6">
 						<div className="flex flex-col gap-3">
 							<img
@@ -104,7 +106,7 @@ export default function Footer(props: FooterProps) {
 						))}
 					</div>
 				</div>
-				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[90%] mx-auto max-w-8xl">
+				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[90%] mx-auto max-w-7xl">
 					<p>
 						© {new Date().getFullYear()} LM Capital - Built and hosted by{' '}
 						<a
