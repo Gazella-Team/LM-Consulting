@@ -18,6 +18,10 @@ const TrackRecordData = [
       image: "/track-record/psg.png",
       size: "w-20"
   },
+  {
+    image: "/track-record/shell-ventures.png",
+    size: "w-60"
+},
 ]
 
 export default function About() {

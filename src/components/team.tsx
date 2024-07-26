@@ -1,0 +1,55 @@
+import React from 'react';
+import { RevealLight } from './Animations/RevealLight';
+
+const TeamData = [
+    {
+        image: "/team/liban-mohamed.webp",
+        name: "Liban Mohamed",
+        position: "Founder"
+    },
+    {
+        image: "/team/liban-mohamed.webp",
+        name: "Liban Mohamed",
+        position: "Founder"
+    },
+    {
+        image: "/team/liban-mohamed.webp",
+        name: "Liban Mohamed",
+        position: "Founder"
+    },
+    {
+        image: "/team/liban-mohamed.webp",
+        name: "Liban Mohamed",
+        position: "Founder"
+    },
+]
+
+export default function Team() {
+  return (
+    <section className='py-32 hidden lg:block'>
+      <div className='w-[90%] mx-auto max-w-7xl grid grid-cols-[20%_60%] gap-20'>
+        <div className='sticky top-20 col-span-1 hidden self-start sm:block'>
+          <h1 className='text-7xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>Our team.</h1>
+        </div>
+        <div className='flex items-center w-full justify-end'>
+          <div className='flex flex-col gap-14'>
+            <p className='text-2xl font-light text-gray-600'>LM Capital boasts a best-in-class team with an exceptional track record. Our unique blend of modern growth strategies, direct response marketing expertise, investor relations acumen, and exclusive access to top-tier investors ensures unparalleled success for our clients.</p>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6'>
+                {TeamData.map((member) => <TeamMemberCard key={member.name} member={member} />)}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    )
+}
+
+const TeamMemberCard = ({member}:{member:any}) => {
+    return (
+        <div>
+            <img className='h-[250px] w-[250px] object-cover' src={member.image}></img>
+            <h2>{member.name}</h2>
+            <p>{member.position}</p>
+        </div>
+    )
+}
