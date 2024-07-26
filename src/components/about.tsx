@@ -21,7 +21,11 @@ const TrackRecordData = [
   {
     image: "/track-record/shell-ventures.png",
     size: "w-60"
-},
+  },
+  {
+    image: "/track-record/sge.svg",
+    size: "w-40"
+  },
 ]
 
 export default function About() {
@@ -30,10 +34,10 @@ export default function About() {
     <section className='py-32 hidden lg:block'>
       <div className='w-[90%] mx-auto max-w-7xl grid grid-cols-2 gap-6'>
         <div className='sticky top-20 col-span-1 hidden self-start sm:block'>
-          <h1 className='text-7xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>About LM Capital.</h1>
+          <h1 className='text-7xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>About us.</h1>
         </div>
         <div className='flex items-center justify-end'>
-          <div className='max-w-xl flex flex-col gap-14'>
+          <div className='flex flex-col gap-14'>
             <p className='text-2xl font-light text-gray-600'>
               LM Capital is a digital-first advisory firm designed to support companies in capital raising and private placements
               <br></br>

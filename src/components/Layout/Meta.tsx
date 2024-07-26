@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
 const Meta = ({
-	title = 'LM Capital: Web design page',
-	keywords = 'AI, Ecommerce, reporting, analysis',
-	description = 'Designs for Niclas and Liban',
+	title = 'LM Capital: Unlock Direct Access to over $1 Trillion in Investor Funds',
+	keywords = 'Investor, VC, Capital, Startup',
+	description = 'LM Capital specializes in digital-first advisory services, focusing on cross-sector capital raising and private placements globally.',
 	icon = '',
 	banner = '',
 	url = '',
