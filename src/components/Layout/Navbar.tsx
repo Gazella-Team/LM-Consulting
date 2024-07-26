@@ -65,72 +65,51 @@ export default function Navbar(props:NavbarProps) {
 					</div>
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
-							className="hidden border hover:bg-black hover:text-white transition-all px-5 py-1.5 rounded-md border-gray-600/40 font-normal text-sm sm:flex"
+							className="hidden border hover:bg-black hover:text-white transition-all px-5 py-1.5 rounded-md border-gray-600/40 font-normal text-sm lg:flex"
 							href="/"
 						>
 							Contact
 						</RefLink>
 					</div>
+					<div className='block lg:hidden cursor-pointer'>
+						{menuClicked ? <X onClick={() => setMenuClicked(!menuClicked)} />:<svg onClick={() => setMenuClicked(!menuClicked)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" /></svg>}
+					</div>
 				</div>
 			</div>
 			{menuClicked && (
-				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-8 h-[calc(100vh-40px)] lg:hidden">
+				<div className="bg-white text-left text-gray-800 flex flex-col justify-between gap-4 font-semibold text-3xl w-[100%] mx-auto py-14 h-[calc(100vh-40px)] lg:hidden">
 					<div
 						className={cn(
-							'flex font-bold flex-col gap-6 w-[86%] mx-auto'
+							'flex text-5xl times-new-font flex-col gap-6 w-[90%] mx-auto'
 						)}
 					>
-						<div className="flex flex-col gap-6 border-b border-b-gray-600/10 pb-4">
-							<RefLink
-								onClick={() => setMenuClicked(false)}
-								href="/analytics"
-							>
-								Web analytics
-							</RefLink>
-							<RefLink
-								onClick={() => setMenuClicked(false)}
-								href="/coming-soon"
-							>
-								Feedback Hub
-							</RefLink>
-							<RefLink
-								onClick={() => setMenuClicked(false)}
-								href="/coming-soon"
-							>
-								User Surveys
-							</RefLink>
-						</div>
 						<RefLink
-							onClick={() => setMenuClicked(false)}
-							href="/pricing"
+							href="/"
 						>
-							Pricing
+							Services
 						</RefLink>
 						<RefLink
-							onClick={() => setMenuClicked(false)}
-							href="/blog/introducing-toolbird"
+							href="/"
+						>
+							Track record
+						</RefLink>						
+						<RefLink
+							href="/"
+						>
+							Team
+						</RefLink>
+						<RefLink
+							href="/"
 						>
 							About
-						</RefLink>
-						<RefLink
-							onClick={() => setMenuClicked(false)}
-							href="/blog"
-						>
-							Blog
 						</RefLink>
 					</div>
 					<div className="flex flex-col paragraph gap-2 text-center w-[86%] mx-auto">
 						<RefLink
-							className="bg-main border-[3px] w-full border-main text-sm font-normal text-white px-6 py-2 rounded-full hover:bg-main hover:text-white transition-all"
-							href={'https://app.toolbird.io/auth/login'}
+							className="border text-center items-center hover:text-gray-200 justify-center bg-black text-white transition-all px-5 py-3 rounded-md border-gray-600/40 font-normal text-sm flex"
+							href="/"
 						>
-							Log in
-						</RefLink>
-						<RefLink
-							className="bg-gray-800 border-[3px] w-full border-gray-800 text-sm font-normal text-white px-6 py-2 rounded-full "
-							href={'https://app.toolbird.io/auth/register'}
-						>
-							Start 14-day free trial
+							Contact
 						</RefLink>
 					</div>
 				</div>
