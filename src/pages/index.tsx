@@ -5,6 +5,7 @@ import Hero from "@/components/hero";
 import Layout from "@/components/Layout";
 import Team from "@/components/team";
 import TrackRecord from "@/components/track-record";
+import Countup from "@/components/ui/Countup";
 import SectionIntro from "@/components/ui/SectionIntro";
 import Link from "next/link";
 
