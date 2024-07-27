@@ -15,7 +15,7 @@ export default function Cta() {
             <div className='flex flex-col gap-14'>
               <div>
                 <RevealLight delayTime={0.4}>
-                  <p className='text-2xl font-light text-gray-600'>We're here to assist with any questions or concerns you may have.
+                  <p className='text-2xl font-light text-gray-600'>We&apos;re here to assist with any questions or concerns you may have.
                     Reach out to us via email or phone for prompt support.
                     Our team is dedicated to providing exceptional customer service.
                     Visit us in person for a more personalized experience.
@@ -47,7 +47,7 @@ export default function Cta() {
             <div className='flex flex-col gap-14'>
               <div>
                 <RevealLight delayTime={0.4}>
-                  <p className='text-2xl font-light text-gray-600'>We're here to assist with any questions or concerns you may have.
+                  <p className='text-2xl font-light text-gray-600'>We&apos;sre here to assist with any questions or concerns you may have.
                     Reach out to us via email or phone for prompt support.
                     Our team is dedicated to providing exceptional customer service.
                     Visit us in person for a more personalized experience.
