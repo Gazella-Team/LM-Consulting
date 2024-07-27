@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { cn } from 'utils/cs';
+import { RevealLight } from '../Animations/RevealLight';
 
 export default function Cta() {
   return (
@@ -13,20 +14,24 @@ export default function Cta() {
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
               <div>
-              < p className='text-2xl font-light text-gray-600'>We're here to assist with any questions or concerns you may have.
-                  Reach out to us via email or phone for prompt support.
-                  Our team is dedicated to providing exceptional customer service.
-                  Visit us in person for a more personalized experience.
-                  Your satisfaction is our top priority.
-                </p>
+                <RevealLight delayTime={0.4}>
+                  <p className='text-2xl font-light text-gray-600'>We're here to assist with any questions or concerns you may have.
+                    Reach out to us via email or phone for prompt support.
+                    Our team is dedicated to providing exceptional customer service.
+                    Visit us in person for a more personalized experience.
+                    Your satisfaction is our top priority.
+                  </p>
+                </RevealLight>
               </div>
               <div className="flex">
-              <Link
-                className="hidden border hover:bg-black hover:text-white transition-all px-5 py-2 rounded-md border-gray-600/40 font-normal text-base lg:flex"
-                href="/"
-              >
-                Get in touch
-              </Link>
+                <RevealLight delayTime={0.4}>
+                  <Link
+                  className="hidden border hover:bg-black hover:text-white transition-all px-5 py-2 rounded-md border-gray-600/40 font-normal text-base lg:flex"
+                  href="/"
+                >
+                  Get in touch
+                </Link>
+                </RevealLight>
 					  </div>
             </div>
           </div>
@@ -41,20 +46,24 @@ export default function Cta() {
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
               <div>
-              < p className='text-2xl font-light text-gray-600'>We're here to assist with any questions or concerns you may have.
-                  Reach out to us via email or phone for prompt support.
-                  Our team is dedicated to providing exceptional customer service.
-                  Visit us in person for a more personalized experience.
-                  Your satisfaction is our top priority.
-                </p>
+                <RevealLight delayTime={0.4}>
+                  <p className='text-2xl font-light text-gray-600'>We're here to assist with any questions or concerns you may have.
+                    Reach out to us via email or phone for prompt support.
+                    Our team is dedicated to providing exceptional customer service.
+                    Visit us in person for a more personalized experience.
+                    Your satisfaction is our top priority.
+                  </p>
+                </RevealLight>
               </div>
               <div className="flex">
-              <Link
-                className="hidden border hover:bg-black hover:text-white transition-all px-5 py-2 rounded-md border-gray-600/40 font-normal text-base lg:flex"
-                href="/"
-              >
-                Get in touch
-              </Link>
+                <RevealLight delayTime={0.4}>
+                  <Link
+                  className="hidden border hover:bg-black hover:text-white transition-all px-5 py-2 rounded-md border-gray-600/40 font-normal text-base lg:flex"
+                  href="/"
+                >
+                  Get in touch
+                </Link>
+                </RevealLight>
 					  </div>
             </div>
           </div>

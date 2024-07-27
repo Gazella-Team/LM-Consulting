@@ -4,7 +4,7 @@ const Meta = ({
 	title = 'LM Capital: Unlock Direct Access to over $1 Trillion in Investor Funds',
 	keywords = 'Investor, VC, Capital, Startup',
 	description = 'LM Capital specializes in digital-first advisory services, focusing on cross-sector capital raising and private placements globally.',
-	icon = '',
+	icon = '/seo/favicon.png',
 	banner = '',
 	url = '',
 	authors,

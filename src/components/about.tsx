@@ -1,5 +1,6 @@
 import React from 'react';
 import { RevealLight } from './Animations/RevealLight';
+import { Reveal } from './Animations/Reveal';
 
 const TrackRecordData = [
   {
@@ -38,34 +39,19 @@ export default function About() {
         </div>
         <div className='flex items-center justify-end'>
           <div className='flex flex-col gap-14'>
-            <p className='text-2xl font-light text-gray-600'>
-              LM Capital is a digital-first advisory firm designed to support companies in capital raising and private placements
-              <br></br>
-              <br></br>
-              Our cutting-edge platform transforms the private placements / capital raising process, providing access to a vast network of over 10 million investors worldwide. Leveraging advanced data enrichment and automated outreach technologies, our platform connects with over 8,000 investors daily. Our tech-enabled approach allows us to significantly accelerate funding timelines and boost our clients&apos; success rates.
-              <br></br>
-              <br></br>
-              We&apos;ve gotten our clients in front of:
-            </p>
+            <RevealLight delayTime={0.4}>
+              <p className='text-2xl font-light text-gray-600'>
+                LM Capital is a digital-first advisory firm designed to support companies in capital raising and private placements
+                <br></br>
+                <br></br>
+                Our cutting-edge platform transforms the private placements / capital raising process, providing access to a vast network of over 10 million investors worldwide. Leveraging advanced data enrichment and automated outreach technologies, our platform connects with over 8,000 investors daily. Our tech-enabled approach allows us to significantly accelerate funding timelines and boost our clients&apos; success rates.
+                <br></br>
+                <br></br>
+                We&apos;ve gotten our clients in front of:
+              </p>
+            </RevealLight>
             <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
               {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={v.size} src={v.image}></img></RevealLight>)}
-            </div>
-            <p className='text-2xl font-light text-gray-600'>
-              Our results at a glance:
-            </p>
-            <div className='grid grid-cols-3 items-center gap-14 max-w-lg'>
-              <div>
-                <h2 className='text-6xl font-semibold times-new-font'>8</h2>
-                <p className='font-light text-gray-600'>Figure term sheets</p>
-              </div>
-              <div>
-                <h2 className='text-6xl font-semibold times-new-font'>90</h2>
-                <p className='font-light text-gray-600'>Days average raise</p>
-              </div>
-              <div>
-                <h2 className='text-6xl font-semibold times-new-font'>100+</h2>
-                <p className='font-light text-gray-600'>Countries. Global coverage</p>
-              </div>
             </div>
           </div>
         </div>
@@ -79,34 +65,19 @@ export default function About() {
         </div>
         <div>
           <div className='flex flex-col gap-14'>
-            <p className='text-xl font-light text-gray-600'>
-              LM Capital is a digital-first advisory firm designed to support companies in capital raising and private placements
-              <br></br>
-              <br></br>
-              Our cutting-edge platform transforms the private placements / capital raising process, providing access to a vast network of over 10 million investors worldwide. Leveraging advanced data enrichment and automated outreach technologies, our platform connects with over 8,000 investors daily. Our tech-enabled approach allows us to significantly accelerate funding timelines and boost our clients&apos; success rates.
-              <br></br>
-              <br></br>
-              We&apos;ve gotten our clients in front of:
-            </p>
+            <RevealLight delayTime={0.4}>
+              <p className='text-xl font-light text-gray-600'>
+                LM Capital is a digital-first advisory firm designed to support companies in capital raising and private placements
+                <br></br>
+                <br></br>
+                Our cutting-edge platform transforms the private placements / capital raising process, providing access to a vast network of over 10 million investors worldwide. Leveraging advanced data enrichment and automated outreach technologies, our platform connects with over 8,000 investors daily. Our tech-enabled approach allows us to significantly accelerate funding timelines and boost our clients&apos; success rates.
+                <br></br>
+                <br></br>
+                We&apos;ve gotten our clients in front of:
+              </p>
+            </RevealLight>
             <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
               {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={v.size} src={v.image}></img></RevealLight>)}
-            </div>
-            <p className='text-xl font-light text-gray-600'>
-              Our results at a glance:
-            </p>
-            <div className='grid grid-cols-3 items-center gap-14 max-w-lg'>
-              <div>
-                <h2 className='text-6xl font-semibold times-new-font'>8</h2>
-                <p className='font-light text-gray-600'>Figure term sheets</p>
-              </div>
-              <div>
-                <h2 className='text-6xl font-semibold times-new-font'>90</h2>
-                <p className='font-light text-gray-600'>Days average raise</p>
-              </div>
-              <div>
-                <h2 className='text-6xl font-semibold times-new-font'>100+</h2>
-                <p className='font-light text-gray-600'>Countries. Global coverage</p>
-              </div>
             </div>
           </div>
         </div>
