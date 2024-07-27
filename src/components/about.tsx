@@ -75,11 +75,11 @@ export default function About() {
     <section className='py-32 block lg:hidden'>
       <div className='w-[90%] mx-auto max-w-7xl flex flex-col gap-6'>
         <div>
-          <h1 className='text-7xl tracking-tighter times-new-font heading leading-[100%] font-light'>About LM Capital.</h1>
+          <h1 className='text-5xl tracking-tighter times-new-font heading leading-[100%] font-light'>About LM Capital.</h1>
         </div>
         <div>
           <div className='flex flex-col gap-14'>
-            <p className='text-2xl font-light text-gray-600'>
+            <p className='text-xl font-light text-gray-600'>
               LM Capital is a digital-first advisory firm designed to support companies in capital raising and private placements
               <br></br>
               <br></br>
@@ -91,8 +91,8 @@ export default function About() {
             <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
               {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={v.size} src={v.image}></img></RevealLight>)}
             </div>
-            <p className='text-2xl font-light text-gray-600'>
-              We&apos;ve gotten our clients in front of:
+            <p className='text-xl font-light text-gray-600'>
+              Our results at a glance:
             </p>
             <div className='grid grid-cols-3 items-center gap-14 max-w-lg'>
               <div>
