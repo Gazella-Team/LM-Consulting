@@ -37,31 +37,28 @@ export default function Navbar(props:NavbarProps) {
 						className={cn(
 							'flex-1 hidden lg:flex items-center justify-center gap-6 font-light text-base'
 						)}
-					>
-						<RefLink
-							className="hidden font-normal text-[15px] sm:flex"
-							href="/"
-						>
-							Services
-						</RefLink>
-						<RefLink
-							className="hidden font-normal text-[15px] sm:flex"
-							href="/"
-						>
-							Track record
-						</RefLink>						
-						<RefLink
-							className="hidden font-normal text-[15px] sm:flex"
-							href="/"
-						>
-							Team
-						</RefLink>
-						<RefLink
-							className="hidden font-normal text-[15px] sm:flex"
-							href="/"
-						>
+					>	
+						<Link
+							to="about"
+							duration={10}
+							className="hidden cursor-pointer font-normal text-[15px] sm:flex"
+							>
 							About
-						</RefLink>
+						</Link>					
+						<Link
+							to="team"
+							duration={10}
+							className="hidden cursor-pointer font-normal text-[15px] sm:flex"
+							>
+							Team
+						</Link>	
+						<Link
+							to="contact"
+							duration={10}
+							className="hidden cursor-pointer font-normal text-[15px] sm:flex"
+							>
+							Contact
+						</Link>	
 					</div>
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
@@ -83,26 +80,30 @@ export default function Navbar(props:NavbarProps) {
 							'flex text-5xl times-new-font flex-col gap-6 w-[90%] mx-auto'
 						)}
 					>
-						<RefLink
-							href="/"
-						>
-							Services
-						</RefLink>
-						<RefLink
-							href="/"
-						>
-							Track record
-						</RefLink>						
-						<RefLink
-							href="/"
-						>
-							Team
-						</RefLink>
-						<RefLink
-							href="/"
-						>
+						<Link
+							to="about"
+							duration={10}
+							onClick={() => setMenuClicked(false)}
+							className="cursor-pointer"
+							>
 							About
-						</RefLink>
+						</Link>					
+						<Link
+							onClick={() => setMenuClicked(false)}
+							to="team"
+							duration={10}
+							className="cursor-pointer"
+							>
+							Team
+						</Link>	
+						<Link
+							onClick={() => setMenuClicked(false)}
+							className="cursor-pointer"
+							to="contact"
+							duration={10}
+							>
+							Contact
+						</Link>	
 					</div>
 					<div className="flex flex-col paragraph gap-2 text-center w-[86%] mx-auto">
 						<RefLink

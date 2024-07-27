@@ -41,7 +41,6 @@ const FOOTER_LINKS: {
 export default function Footer(props: FooterProps) {
 	return (
 		<>
-			<Cta />
 			<footer
 				className={
 					props.fullWidth
