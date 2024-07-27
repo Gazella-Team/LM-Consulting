@@ -12,8 +12,8 @@ const TrackRecordData = [
       size: "w-32"
   },
   {
-      image: "/track-record/volvo.png",
-      size: "w-32"
+      image: "/track-record/eqt.png",
+      size: "w-20"
   },
   {
       image: "/track-record/psg.png",
