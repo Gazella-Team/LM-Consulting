@@ -55,7 +55,7 @@ export default function Footer(props: FooterProps) {
 							<img
 								className="w-32"
 								src="/logo.svg"
-								alt="Toolbird Logo"
+								alt="logo"
 							/>
 							<p className="text-gray-500 paragraph text-sm max-w-xs font-regular">
 								Unlock Direct Access to over $1 Trillion in Investor Funds

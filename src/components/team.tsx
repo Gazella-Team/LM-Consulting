@@ -68,7 +68,7 @@ const TeamMemberCard = ({member}:{member:any}) => {
     return (
       <RevealLight delayTime={0.4}>
         <div className='flex flex-col gap-4'>
-            <img className='w-full lg:h-[250px] lg:w-[250px] object-cover' src={member.image}></img>
+            <img alt={member.image} className='w-full lg:h-[250px] lg:w-[250px] object-cover' src={member.image}></img>
             <div className='flex flex-col'>
               <h2 className='text-black font-normal'>{member.name}</h2>
               <p className='text-gray-600 font-light text-sm'>{member.position}</p>

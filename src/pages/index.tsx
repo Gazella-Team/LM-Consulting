@@ -13,7 +13,7 @@ export default function Home() {
     return (
 		<Layout>
 			<Hero />
-			<img className="md:h-[500px] lg:h-[800px] max-w-7xl w-[90%] mx-auto object-cover" src="/bgs/abstract01.webp"></img>
+			<img alt='hero-image' className="md:h-[500px] lg:h-[800px] max-w-7xl w-[90%] mx-auto object-cover" src="/bgs/abstract01.webp"></img>
 			<About />
 			<Team />
 		</Layout>

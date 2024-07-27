@@ -77,7 +77,7 @@ export default function About() {
               </p>
             </RevealLight>
             <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
-              {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={v.size} src={v.image}></img></RevealLight>)}
+              {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img alt={v.image} className={v.size} src={v.image}></img></RevealLight>)}
             </div>
           </div>
         </div>
