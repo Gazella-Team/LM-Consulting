@@ -109,7 +109,7 @@ export default function Footer(props: FooterProps) {
 						))}
 					</div>
 				</div>
-				<div className="text-center pb-6 text-gray-400 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[90%] mx-auto max-w-7xl">
+				<div className="text-center pb-6 text-gray-600 text-sm gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between paragraph w-[90%] mx-auto max-w-7xl">
 					<p>
 						© {new Date().getFullYear()} LM Capital - Built and hosted by{' '}
 						<a
