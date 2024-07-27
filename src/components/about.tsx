@@ -50,6 +50,23 @@ export default function About() {
             <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
               {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={v.size} src={v.image}></img></RevealLight>)}
             </div>
+            <p className='text-2xl font-light text-gray-600'>
+              Our results at a glance:
+            </p>
+            <div className='grid grid-cols-3 items-center gap-14 max-w-lg'>
+              <div>
+                <h2 className='text-6xl font-semibold times-new-font'>8</h2>
+                <p className='font-light text-gray-600'>Figure term sheets</p>
+              </div>
+              <div>
+                <h2 className='text-6xl font-semibold times-new-font'>90</h2>
+                <p className='font-light text-gray-600'>Days average raise</p>
+              </div>
+              <div>
+                <h2 className='text-6xl font-semibold times-new-font'>100+</h2>
+                <p className='font-light text-gray-600'>Countries. Global coverage</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -73,6 +90,23 @@ export default function About() {
             </p>
             <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
               {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img className={v.size} src={v.image}></img></RevealLight>)}
+            </div>
+            <p className='text-2xl font-light text-gray-600'>
+              We&apos;ve gotten our clients in front of:
+            </p>
+            <div className='grid grid-cols-3 items-center gap-14 max-w-lg'>
+              <div>
+                <h2 className='text-6xl font-semibold times-new-font'>8</h2>
+                <p className='font-light text-gray-600'>Figure term sheets</p>
+              </div>
+              <div>
+                <h2 className='text-6xl font-semibold times-new-font'>90</h2>
+                <p className='font-light text-gray-600'>Days average raise</p>
+              </div>
+              <div>
+                <h2 className='text-6xl font-semibold times-new-font'>100+</h2>
+                <p className='font-light text-gray-600'>Countries. Global coverage</p>
+              </div>
             </div>
           </div>
         </div>
