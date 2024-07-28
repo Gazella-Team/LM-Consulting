@@ -14,6 +14,16 @@ export default function Cta() {
                     Reach out to us via email or phone for prompt support.
                   </p>
               </RevealLight>
+              <div className="flex mx-auto mt-5">
+                <RevealLight delayTime={0.4}>
+                  <Link
+                  className="border mx-auto hover:bg-black hover:text-white transition-all px-5 py-2 rounded-md border-gray-600/40 font-normal text-base"
+                  href="/"
+                >
+                  Get in touch
+                </Link>
+                </RevealLight>
+					  </div>
         </div>
       </section>
 
