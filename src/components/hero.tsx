@@ -5,8 +5,8 @@ import { cn } from "utils/cs";
 
 export default function Hero() {
     return (
-        <section style={{background: "linear-gradient(90deg, rgba(9,25,48,1) 0%, rgba(29,58,93,1) 100%)"}} className="py-20 lg:h-[100vh] flex flex-col justify-center">
-            <div className="w-[90%] mx-auto flex text-white flex-col gap-8 max-w-7xl">
+        <section className="py-20 relative lg:h-[100vh] flex flex-col justify-center bg-[url(/hero.webp)] bg-center bg-cover">
+            <div className="w-[90%] z-10 mx-auto flex text-white flex-col gap-8 max-w-7xl">
                 <Reveal delayTime={0.3}>
                     <h1 className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light">Unlock Direct Access to over $1 Trillion in Investor Funds</h1>
                 </Reveal>
@@ -24,6 +24,7 @@ export default function Hero() {
                     </RevealLight>
                  </div>
             </div>
+            <div className="absolute inset-0 " style={{background: "linear-gradient(90deg, rgba(9,25,48,1) 0%, rgba(29,58,93,0.85) 100%)"}}></div>
         </section>
     )
 }

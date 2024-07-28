@@ -23,13 +23,13 @@ export default function Navbar(props:NavbarProps) {
 		<nav className="top-0 fixed w-full z-50">
 			<div
 				className={cn(
-					'h-22 w-full transition-all flex items-center',
-					scrolled && "bg-white"
+					'h-20 w-full transition-all flex items-center',
+					scrolled && "bg-white h-20"
 				)}
 			>
 				<div className="w-[90%] paragraph max-w-7xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<img alt='logo' className='w-32' src='/logo.svg'></img>
+						<h2 className={cn('logo-font mt-3 text-xl leading-[5px] text-white font-extralight', scrolled && "text-gray-800")}>LM<br></br><span className='font-bold text-2xl'>capital</span></h2>
 					</div>
 					<div
 						className={cn(
