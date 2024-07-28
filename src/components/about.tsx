@@ -27,6 +27,18 @@ const TrackRecordData = [
     image: "/track-record/sge.svg",
     size: "w-40"
   },
+  {
+    image: "/track-record/standard.png",
+    size: "w-60"
+  },
+  {
+    image: "/track-record/asia-partners.png",
+    size: "w-40"
+  },
+  {
+    image: "/track-record/touchdown-ventures.png",
+    size: "w-40"
+  },
 ]
 
 export default function About() {
