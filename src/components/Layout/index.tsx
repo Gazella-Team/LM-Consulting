@@ -18,7 +18,7 @@ export default function Layout(props: LayoutProps) {
 			<Meta />
 			<div className="w-full bg-white">
 				<Navbar whiteBeforeScroll={props.whiteBeforeScroll} />
-				<div className='pt-16'>
+				<div>
 					<div className="relative">{props.children}</div>
 				</div>
 				<Footer />

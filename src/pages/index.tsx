@@ -3,19 +3,22 @@ import Hero from "@/components/hero";
 import Layout from "@/components/Layout";
 import Cta from "@/components/Layout/Cta";
 import Team from "@/components/team";
+import VSL from "@/components/vsl";
 import { Element } from "react-scroll";
 
 export default function Home() {
     return (
 		<Layout>
 			<Hero />
-			<img alt='hero-image' className="md:h-[500px] lg:h-[800px] max-w-7xl w-[90%] mx-auto object-cover" src="/bgs/abstract01.webp"></img>
 			<Element name="about">
 				<About />
 			</Element>
 			<Element name="team">
 				<Team />
 			</Element>
+			<div className="w-[90%] py-24 mx-auto max-w-3xl">
+				<VSL />
+			</div>
 			<Element name="contact">
 				<Cta />
 			</Element>

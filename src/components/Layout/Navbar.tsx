@@ -23,10 +23,8 @@ export default function Navbar(props:NavbarProps) {
 		<nav className="top-0 fixed w-full z-50">
 			<div
 				className={cn(
-					'h-22 border-b border-gray-600/10 w-full transition-all flex items-center',
-					scrolled
-						? ' bg-white'
-						: props.whiteBeforeScroll ? 'bg-transparent':'bg-white'
+					'h-22 w-full transition-all flex items-center',
+					scrolled && "bg-white"
 				)}
 			>
 				<div className="w-[90%] paragraph max-w-7xl mx-auto flex items-center justify-between text-gray-800">
@@ -35,8 +33,8 @@ export default function Navbar(props:NavbarProps) {
 					</div>
 					<div
 						className={cn(
-							'flex-1 hidden lg:flex items-center justify-center gap-6 font-light text-base'
-						)}
+							'flex-1 text-white hidden lg:flex items-center justify-center gap-6 font-light text-base'
+						, scrolled && "text-black")}
 					>	
 						<Link
 							to="about"
@@ -62,7 +60,7 @@ export default function Navbar(props:NavbarProps) {
 					</div>
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
-							className="hidden border hover:bg-black hover:text-white transition-all px-5 py-1.5 rounded-md border-gray-600/40 font-normal text-sm lg:flex"
+							className={cn("hidden border text-white hover:bg-black hover:text-white transition-all px-5 py-1.5 rounded-md border-gray-500 font-normal text-sm lg:flex", scrolled && "text-black border-gray-600/40")}
 							href="/"
 						>
 							Contact
