@@ -29,7 +29,7 @@ export default function Navbar(props:NavbarProps) {
 			>
 				<div className="w-[90%] paragraph max-w-7xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<h2 className={cn('logo-font mt-3 text-xl leading-[5px] text-white font-extralight', scrolled && "text-gray-800")}>LM<br></br><span className='font-bold text-2xl'>capital</span></h2>
+						<h2 className={cn('logo-font mt-3 select-none text-xl leading-[5px] text-white font-extralight', scrolled && "text-gray-800")}>LM<br></br><span className='font-bold text-2xl'>capital</span></h2>
 					</div>
 					<div
 						className={cn(
