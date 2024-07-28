@@ -5,7 +5,7 @@ import { cn } from "utils/cs";
 
 export default function Hero() {
     return (
-        <section className="py-20 relative lg:h-[100vh] flex flex-col justify-center bg-[url(/hero.webp)] bg-center bg-cover">
+        <section className="py-[200px] pb-[130px] relative lg:h-[100vh] flex flex-col justify-center bg-[url(/hero.webp)] bg-center bg-cover">
             <div className="w-[90%] items-center z-10 mx-auto grid grid-cols-1 lg:grid-cols-1 gap-40 text-white max-w-7xl">
                 <div className="flex flex-col gap-8">
                     <Reveal delayTime={0.3}>

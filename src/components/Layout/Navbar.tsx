@@ -24,17 +24,17 @@ export default function Navbar(props:NavbarProps) {
 			<div
 				className={cn(
 					'h-20 w-full transition-all flex items-center',
-					scrolled && "bg-white h-20"
+					(scrolled || menuClicked) && "bg-white h-20"
 				)}
 			>
 				<div className="w-[90%] paragraph max-w-7xl mx-auto flex items-center justify-between text-gray-800">
 					<div className="w-[250px] flex items-center justify-start">
-						<h2 className={cn('logo-font mt-3 select-none text-xl leading-[5px] text-white font-extralight', scrolled && "text-gray-800")}>LM<br></br><span className='font-bold text-2xl'>capital</span></h2>
+						<h2 className={cn('logo-font mt-3 select-none text-xl leading-[5px] text-white font-extralight', (scrolled || menuClicked) && "text-gray-800")}>LM<br></br><span className='font-bold text-2xl'>capital</span></h2>
 					</div>
 					<div
 						className={cn(
 							'flex-1 text-white hidden lg:flex items-center justify-center gap-6 font-light text-base'
-						, scrolled && "text-black")}
+						, (scrolled || menuClicked) && "text-black")}
 					>	
 						<Link
 							to="about"
@@ -66,7 +66,7 @@ export default function Navbar(props:NavbarProps) {
 							Contact
 						</RefLink>
 					</div>
-					<div className='block lg:hidden cursor-pointer'>
+					<div className={cn('block lg:hidden text-white cursor-pointer', (scrolled || menuClicked) && "text-black")}>
 						{menuClicked ? <X onClick={() => setMenuClicked(!menuClicked)} />:<svg onClick={() => setMenuClicked(!menuClicked)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" /></svg>}
 					</div>
 				</div>
