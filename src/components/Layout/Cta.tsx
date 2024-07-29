@@ -8,7 +8,7 @@ export default function Cta() {
     <>
       <section className='py-32 pt-10 hidden lg:block'>
         <div className='w-[90%] mx-auto text-center flex flex-col gap-6 max-w-7xl'>
-          <h1 className='text-6xl tracking-tighter times-new-font heading leading-[100%] font-light'>Contact us.</h1>
+          <h1 className='text-6xl tracking-tighter times-new-font heading leading-[100%] font-bold'>Contact us.</h1>
           <RevealLight delayTime={0.4}>
                   <p className='text-xl max-w-xl mx-auto font-light text-gray-600'>We&apos;sre here to assist with any questions or concerns you may have.
                     Reach out to us via email or phone for prompt support.
@@ -27,7 +27,7 @@ export default function Cta() {
         </div>
       </section>
 
-      <section className='py-32 block lg:hidden'>
+      <section className='py-20 block lg:hidden'>
         <div className='w-[90%] mx-auto max-w-7xl flex flex-col gap-6'>
           <div>
             <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>Contact us.</h1>

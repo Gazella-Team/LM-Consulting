@@ -45,15 +45,15 @@ export default function Team() {
         </div>
       </section>
 
-      <section className='py-32 block lg:hidden'>
+      <section className='py-20 block lg:hidden'>
         <div className='w-[90%] mx-auto max-w-7xl flex flex-col gap-6'>
           <div>
-            <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>Our team.</h1>
+            <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-bold'>Our team.</h1>
           </div>
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
               <p className='text-xl font-light text-gray-600'>LM Capital boasts a best-in-class team with an exceptional track record. Our unique blend of modern growth strategies, direct response marketing expertise, investor relations acumen, and exclusive access to top-tier investors ensures unparalleled success for our clients.</p>
-              <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8'>
+              <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8'>
                   {TeamData.map((member) => <TeamMemberCard key={member.name} member={member} />)}
               </div>
             </div>

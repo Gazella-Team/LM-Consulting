@@ -20,7 +20,7 @@ export default function Home() {
 			<Element name="team">
 				<Team />
 			</Element>
-			<div className="w-[90%] py-24 mx-auto max-w-3xl">
+			<div className="w-[90%] py-10 md:py-24 mx-auto max-w-3xl">
 				<VSL />
 			</div>
 			<Element name="contact">

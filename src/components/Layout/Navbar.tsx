@@ -24,7 +24,7 @@ export default function Navbar(props:NavbarProps) {
 			<div
 				className={cn(
 					'h-20 w-full transition-all flex items-center',
-					(scrolled || menuClicked) && "bg-white h-20"
+					(scrolled || menuClicked) && "bg-white h-20 border-b transition-all"
 				)}
 			>
 				<div className="w-[90%] paragraph max-w-7xl mx-auto flex items-center justify-between text-gray-800">
@@ -60,7 +60,7 @@ export default function Navbar(props:NavbarProps) {
 					</div>
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
-							className={cn("hidden border text-white hover:bg-black hover:text-white transition-all px-5 py-1.5 rounded-md border-gray-500 font-normal text-sm lg:flex", scrolled && "text-black border-gray-600/40")}
+							className={cn("hidden border text-white hover:text-black hover:bg-white transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-sm lg:flex", scrolled && "text-white bg-blue-950 hover:bg-blue-950 border-gray-600/40 hover:text-gray-200")}
 							href="/"
 						>
 							Contact

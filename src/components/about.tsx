@@ -70,10 +70,10 @@ export default function About() {
       </div>
     </section>
 
-    <section className='py-32 block lg:hidden'>
+    <section className='py-20 pt-32 block lg:hidden'>
       <div className='w-[90%] mx-auto max-w-7xl flex flex-col gap-6'>
         <div>
-          <h1 className='text-5xl tracking-tighter times-new-font heading leading-[100%] font-light'>About LM Capital.</h1>
+          <h1 className='text-6xl tracking-tighter times-new-font heading leading-[100%] font-bold'>About LM Capital.</h1>
         </div>
         <div>
           <div className='flex flex-col gap-14'>
