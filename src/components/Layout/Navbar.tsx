@@ -23,8 +23,8 @@ export default function Navbar(props:NavbarProps) {
 		<nav className="top-0 fixed w-full z-50">
 			<div
 				className={cn(
-					'h-20 w-full transition-all flex items-center',
-					(scrolled || menuClicked) && "bg-white h-20 border-b transition-all"
+					'h-20 w-full transition-all flex items-center border-b border-transparent',
+					(scrolled || menuClicked) && "bg-white h-20 border-gray-600/10 transition-all"
 				)}
 			>
 				<div className="w-[90%] paragraph max-w-7xl mx-auto flex items-center justify-between text-gray-800">
