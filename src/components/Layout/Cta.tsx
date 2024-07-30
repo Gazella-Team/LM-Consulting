@@ -18,9 +18,10 @@ export default function Cta() {
                 <RevealLight delayTime={0.4}>
                   <Link
                   className="border mx-auto hover:bg-black hover:text-white transition-all px-5 py-2 rounded-md border-gray-600/40 font-normal text-base"
-                  href="/"
+                  href="https://cal.com/libanm94"
+                  target='_blank'
                 >
-                  Get in touch
+                  Schedule a Consultation
                 </Link>
                 </RevealLight>
 					  </div>

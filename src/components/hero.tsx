@@ -18,9 +18,10 @@ export default function Hero() {
                         <RevealLight delayTime={0.7}>
                             <Link
                                 className={cn("hidden border mt-5 text-white hover:bg-white hover:text-black transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-base lg:flex")}
-                                href="/"
+                                href="https://cal.com/libanm94"
+                                target="_blank"
                             >
-                                Contact
+                                Schedule a Consultation
                             </Link>
                         </RevealLight>
                     </div>

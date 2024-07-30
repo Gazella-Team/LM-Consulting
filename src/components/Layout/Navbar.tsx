@@ -61,9 +61,10 @@ export default function Navbar(props:NavbarProps) {
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
 							className={cn("hidden border text-white hover:text-black hover:bg-white transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-sm lg:flex", scrolled && "text-white bg-blue-950 hover:bg-blue-950 border-gray-600/40 hover:text-gray-200")}
-							href="/"
+							href="https://cal.com/libanm94"
+							target='_blank'
 						>
-							Contact
+							Schedule a Consultation
 						</RefLink>
 					</div>
 					<div className={cn('block lg:hidden text-white cursor-pointer', (scrolled || menuClicked) && "text-black")}>
