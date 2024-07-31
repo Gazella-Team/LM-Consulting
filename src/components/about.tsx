@@ -39,6 +39,18 @@ const TrackRecordData = [
     image: "/track-record/touchdown-ventures.png",
     size: "w-40"
   },
+  {
+    image: "/track-record/fifth.png",
+    size: "w-60"
+  },
+  {
+    image: "/track-record/qed.png",
+    size: "w-40"
+  },
+  {
+    image: "/track-record/bessemer.svg",
+    size: "w-40"
+  },
 ]
 
 export default function About() {
@@ -62,7 +74,7 @@ export default function About() {
                 We&apos;ve gotten our clients in front of:
               </p>
             </RevealLight>
-            <div className='grid grid-cols-3 items-center gap-14 max-w-md'>
+            <div className='grid grid-cols-4 items-center gap-14 max-w-xl'>
               {TrackRecordData.map((v, index) => <RevealLight key={v.image} delayTime={index/80}><img alt={v.image} className={v.size} src={v.image}></img></RevealLight>)}
             </div>
           </div>
