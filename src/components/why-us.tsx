@@ -33,7 +33,7 @@ export default function WhyUs() {
               <RevealLight delayTime={0.4}>
                 <p className='text-2xl font-light text-gray-600'>Raising capital is a full-time job and we understand that you already have a full-time job, which is growing your business.</p>
               </RevealLight>
-              <div className='grid grid-cols-1 gap-8'>
+              <div className='grid grid-cols-1 gap-16'>
                   {TeamData.map((member, index) => <WhyCard count={index} key={member.headline} member={member} />)}
               </div>
             </div>
