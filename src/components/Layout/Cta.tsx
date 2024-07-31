@@ -10,7 +10,7 @@ export default function Cta() {
         <div className='w-[90%] mx-auto text-center flex flex-col gap-6 max-w-7xl'>
           <h1 className='text-6xl tracking-tighter times-new-font heading leading-[100%] font-bold'>Contact us.</h1>
           <RevealLight delayTime={0.4}>
-                  <p className='text-xl max-w-xl mx-auto font-light text-gray-600'>We&apos;sre here to assist with any questions or concerns you may have.
+                  <p className='text-xl max-w-xl mx-auto font-light text-gray-600'>We&apos;re here to assist with any questions or concerns you may have.
                     Reach out to us via email or phone for prompt support.
                   </p>
               </RevealLight>
