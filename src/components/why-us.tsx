@@ -44,7 +44,7 @@ export default function WhyUs() {
       <section className='py-20 block lg:hidden'>
         <div className='w-[90%] mx-auto max-w-7xl flex flex-col gap-6'>
           <div>
-            <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-bold'>Our team.</h1>
+            <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-bold'>How we help</h1>
           </div>
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
