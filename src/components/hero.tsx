@@ -12,12 +12,12 @@ export default function Hero() {
                         <h1 className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light">Unlock Direct Access to over $1 Trillion in Investor Funds</h1>
                     </Reveal>
                     <RevealLight delayTime={0.5}>
-                        <p className="text-lg sm:text-xl lg:text-2xl max-w-lg font-light text-gray-200">LM Capital specializes in digital-first advisory services, focusing on cross-sector capital raising and private placements globally</p>
+                        <p className="text-lg mb-10 sm:text-xl lg:text-2xl max-w-lg font-light text-gray-200">LM Capital specializes in digital-first advisory services, focusing on cross-sector capital raising and private placements globally</p>
                     </RevealLight>
                     <div className="flex">
                         <RevealLight delayTime={0.7}>
                             <Link
-                                className={cn("border mt-5 text-white hover:bg-white hover:text-black transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-base")}
+                                className={cn("border mt-20 text-white hover:bg-white hover:text-black transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-base")}
                                 href="https://cal.com/libanm94"
                                 target="_blank"
                             >
