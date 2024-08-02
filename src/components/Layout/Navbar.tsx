@@ -60,7 +60,7 @@ export default function Navbar(props:NavbarProps) {
 					</div>
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
-							className={cn("hidden border text-white hover:text-black hover:bg-white transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-sm lg:flex", scrolled && "text-white bg-black hover:text-gray-200 hover:bg-black border-gray-600/40")}
+							className={cn("hidden border text-black hover:text-white hover:bg-black transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-sm lg:flex", scrolled && "text-white bg-black hover:text-gray-200 hover:bg-black border-gray-600/40")}
 							href="https://cal.com/libanm94"
 							target='_blank'
 						>
