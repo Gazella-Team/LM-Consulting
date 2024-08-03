@@ -33,15 +33,12 @@ export default function Cta() {
           <div>
             <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-light'>Contact us.</h1>
           </div>
-          <div className='flex items-center w-full justify-end'>
+          <div className='flex items-center w-full'>
             <div className='flex flex-col gap-14'>
               <div>
                 <RevealLight delayTime={0.4}>
-                  <p className='text-xl font-light text-gray-600'>We&apos;re here to assist with any questions or concerns you may have.
-                    Reach out to us via email or phone for prompt support.
-                    Our team is dedicated to providing exceptional customer service.
-                    Visit us in person for a more personalized experience.
-                    Your satisfaction is our top priority.
+                  <p className='text-xl font-light max-w-xl text-gray-600'>We&apos;re here to assist with any questions or concerns you may have.
+                  Reach out to us via email or phone for prompt support.
                   </p>
                 </RevealLight>
               </div>
@@ -52,7 +49,7 @@ export default function Cta() {
                   href="https://cal.com/lmcapital"
                   target='_blank'
                 >
-                  Get in touch
+                  Schedule a Consultation
                 </Link>
                 </RevealLight>
 					  </div>
