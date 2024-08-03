@@ -3,20 +3,20 @@ import { RevealLight } from './Animations/RevealLight';
 
 const TeamData = [
     {
-        headline: "Outsource the Tedious",
-        description: "Focus on your growth while we do the prep, research, outreach, and intros so you can keep doing what you do best."
+        headline: "Delegate the Tedious",
+        description: "Concentrate on strategic growth while we manage the preparation, research, outreach, and introductions, allowing you to focus on your core competencies."
     },
     {
-      headline: "Raise faster",
-      description: "Investors see hundreds of deals per day. Let LM Capital put your outreach on auto-pilot to ensure that your fundraising machine is formidable and that you're winning the numbers game."
+      headline: "Accelerate your Fundraise",
+      description: "Investors review hundreds of opportunities daily. Allow LM Capital to automate your outreach, ensuring your fundraising efforts are robust and effectively positioned to succeed in a competitive market."
     },
     {
-      headline: "Find the right investor",
-      description: "Smart money wins. We'll identify, target, and engage investors that are strategic partners for the next phase of your company."
+      headline: "Identify Optimal Investors",
+      description: "Strategic capital drives success. We will pinpoint, target, and engage investors who can serve as strategic partners for your company's next growth phase."
     },
     {
-      headline: "Data Room done right",
-      description: "Partner with us to get your company valuation, deck, projections, and financial models in order."
+      headline: "Optimize Your Data Room",
+      description: "Allow us to streamline your presentation deck, projections, and financial models."
     },
 ]
 
@@ -31,7 +31,7 @@ export default function WhyUs() {
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
               <RevealLight delayTime={0.4}>
-                <p className='text-2xl font-light text-gray-600'>Raising capital is a full-time job and we understand that you already have a full-time job, which is growing your business.</p>
+                <p className='text-2xl font-light text-gray-600'>Raising capital demands full-time attention and we recognize that your primary responsibility is growing your business.</p>
               </RevealLight>
               <div className='grid grid-cols-1 gap-16'>
                   {TeamData.map((member, index) => <WhyCard count={index} key={member.headline} member={member} />)}

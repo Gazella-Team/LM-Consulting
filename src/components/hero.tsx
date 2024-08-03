@@ -18,7 +18,7 @@ export default function Hero() {
                         <RevealLight delayTime={0.7}>
                             <Link
                                 className={cn("border mt-20 text-white hover:bg-white hover:text-black transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-base")}
-                                href="https://cal.com/libanm94"
+                                href="https://cal.com/lmcapital"
                                 target="_blank"
                             >
                                 Schedule a Consultation

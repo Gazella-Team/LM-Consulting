@@ -61,7 +61,7 @@ export default function Footer(props: FooterProps) {
 					</p>
 					<div className="flex items-center gap-4">
 						<p>
-							Based in London, UK
+							Based in New York | London | Dubai | Copenhagen | Singapore
 						</p>
 					</div>
 				</div>

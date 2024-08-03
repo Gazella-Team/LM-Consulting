@@ -61,7 +61,7 @@ export default function Navbar(props:NavbarProps) {
 					<div className={cn("w-[250px] items-center justify-end gap-5 font-medium text-black flex")}>
 						<RefLink
 							className={cn("hidden border text-white hover:text-black hover:bg-white transition-all px-5 py-2 rounded-md border-gray-500 font-normal text-sm lg:flex", scrolled && "text-white bg-black hover:text-gray-200 hover:bg-black border-gray-600/40")}
-							href="https://cal.com/libanm94"
+							href="https://cal.com/lmcapital"
 							target='_blank'
 						>
 							Schedule a Consultation
@@ -107,7 +107,7 @@ export default function Navbar(props:NavbarProps) {
 					<div className="flex flex-col paragraph gap-2 text-center w-[86%] mx-auto">
 						<RefLink
 							className="border text-center items-center hover:text-gray-200 justify-center bg-black text-white transition-all px-5 py-3 rounded-md border-gray-600/40 font-normal text-sm flex"
-							href="https://cal.com/libanm94"
+							href="https://cal.com/lmcapital"
 							target='_blank'
 						>
 							Schedule a Consultation
