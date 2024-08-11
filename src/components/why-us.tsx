@@ -3,8 +3,8 @@ import { RevealLight } from './Animations/RevealLight';
 
 const TeamData = [
     {
-        headline: "Delegate the Tedious",
-        description: "Concentrate on strategic growth while we manage the preparation, research, outreach, and introductions, allowing you to focus on your core competencies."
+        headline: "Fractionalize the Investor Relations Process",
+        description: "Concentrate on strategic growth while we manage research, outreach, presentation decks, financial models, etc allowing you to focus on your core competence."
     },
     {
       headline: "Accelerate your Fundraise",
@@ -15,8 +15,8 @@ const TeamData = [
       description: "Strategic capital drives success. We will pinpoint, target, and engage investors who can serve as strategic partners for your company's next growth phase."
     },
     {
-      headline: "Optimize Your Data Room",
-      description: "Allow us to streamline your presentation deck, projections, and financial models."
+      headline: "",
+      description: "We will guide you along the entire process, taking investor meetings with you and providing constant iterations until the funding closes."
     },
 ]
 
@@ -26,7 +26,7 @@ export default function WhyUs() {
       <section className='py-32 hidden lg:block'>
         <div className='w-[90%] mx-auto max-w-7xl grid grid-cols-2 gap-6'>
           <div className='sticky top-20 col-span-1 hidden self-start sm:block'>
-            <h1 className='text-7xl tracking-tighter max-w-sm times-new-font heading leading-[100%] font-light'>What we can do for you</h1>
+            <h1 className='text-7xl tracking-tighter max-w-sm times-new-font heading leading-[100%] font-light'>How We Empower your Fundraise</h1>
           </div>
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
@@ -44,7 +44,7 @@ export default function WhyUs() {
       <section className='py-20 block lg:hidden'>
         <div className='w-[90%] mx-auto max-w-7xl flex flex-col gap-6'>
           <div>
-            <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-bold'>How we help</h1>
+            <h1 className='text-6xl tracking-tighter max-w-3xl times-new-font heading leading-[100%] font-bold'>How We Empower your Fundraise</h1>
           </div>
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
