@@ -26,7 +26,7 @@ export default function WhyUs() {
       <section className='py-32 hidden lg:block'>
         <div className='w-[90%] mx-auto max-w-7xl grid grid-cols-2 gap-6'>
           <div className='sticky top-20 col-span-1 hidden self-start sm:block'>
-            <h1 className='text-7xl tracking-tighter max-w-sm times-new-font heading leading-[100%] font-light'>How We Empower your Fundraise</h1>
+            <h1 className='text-7xl tracking-tighter max-w-sm times-new-font heading leading-[100%] font-light'>How We Empower your Fundraise.</h1>
           </div>
           <div className='flex items-center w-full justify-end'>
             <div className='flex flex-col gap-14'>
