@@ -3,7 +3,7 @@ import { RevealLight } from './Animations/RevealLight';
 
 const TeamData = [
     {
-        headline: "Fractionalize the Investor Relations Process",
+        headline: "Fractionalize Investor Relations",
         description: "Concentrate on strategic growth while we manage research, outreach, presentation decks, financial models, etc allowing you to focus on your core competence."
     },
     {
