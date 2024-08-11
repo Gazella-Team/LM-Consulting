@@ -15,7 +15,7 @@ const TeamData = [
       description: "Strategic capital drives success. We will pinpoint, target, and engage investors who can serve as strategic partners for your company's next growth phase."
     },
     {
-      headline: "",
+      headline: "Collaborative Guidance",
       description: "We will guide you along the entire process, taking investor meetings with you and providing constant iterations until the funding closes."
     },
 ]
